@@ -1,0 +1,2357 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IAU Minor Planet Center</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/mpc.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/table-sorter.css">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+  <link media="all" rel="stylesheet" href="/css/all.css">
+
+  <link rel="icon" type="image/png" href="/iau/figs/MPClogo16.png">
+  <meta name="description" content="We are the official body that deals with
+      astrometric observations and orbits of minor planets (asteroids) and comets.">
+
+  <meta name="keywords" content="astrometry, observations, orbits,
+      minor planets, asteroids, comets, near earth objects, 
+      potentially hazardous asteroids">
+
+  <script type="text/javascript" src="/js/jquery-latest.js"></script>
+<!--  <script type="text/javascript" src="/js/jquery.main.js"></script> -->
+<!--  <script type="text/javascript" src="/js/jquery.metadata.js"></script> -->
+  <script type="text/javascript" src="/js/jquery.tablesorter.js"></script>
+  <script type="text/javascript" src="/js/webtrends.js"></script>
+  <script type="text/javascript" src="/js/track_pdfs.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic|PT+Sans:400,700,400italic,700italic|PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+  
+<body>
+  <!-- wrapper -->
+  <div id="wrapper">
+    <div class="w1">
+      <!-- header -->
+      <header id="header">
+        <div class="holder">
+          <!-- logo -->
+          <h1 class="logo"><a href="/">The International Astronomical Union Minor Planet Center</a></h1>
+          <div class="area">
+            <!-- top-nav -->
+            <nav class="top-nav">
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+		<!-- Contact link changed to Jira -->
+                <li><a href="https://mpc-service.atlassian.net/servicedesk/customer/portals">Contact</a></li>
+              </ul>
+            </nav>
+            <!-- search-form -->
+            <div class="form-holder">
+              <!-- This commented code opens a new page for the search. -->
+              <!--<form class="search-form" method="get" action="https://www.google.com/search" target="_blank">-->
+              <form class="search-form" method="get" action="https://www.google.com/search">
+                <fieldset>
+                  <!--<label for="search">Search</label>-->
+                  <input type="hidden" name="sitesearch" value="minorplanetcenter.net">
+                  <input type="text" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" id="search" name="q" value="Search MPC">
+                </fieldset>
+              </form>
+            </div>
+            <div class="social-bar">
+<!--              <a href="https://twitter.com/MinorPlanetCtr"><span class="social twitter">L</span></a> -->
+<!--              <a href="https://www.facebook.com/MinorPlanetCenter"><span class="social facebook">F</span></a> -->
+<!--              <a href="https://www.youtube.com/channel/UCtALMOQHuBxh5XMsYNiDhMg"><span class="social youtube">X</span></a> -->
+<!--              <a href="/iau/rss/mpc_feeds.html"><span class="social rss">R</span></a> -->
+            </div>
+          </div>
+        </div>
+        <nav class="nav-holder">
+          <!-- main navigation -->
+          <ul id="nav">
+            <li>
+              <a href="/iau/mpc.html"><span>OBSERVERS</span></a>
+              <ul>
+                <li><a href="/iau/MPEph/MPEph.html">Ephemeris Service</a></li>
+                <li><a href="/mpec/RecentMPECs.html">MPECs</a></li>
+                <li><a href="/iau/NEO/toconfirm_tabular.html">NEO Confirmation</a></li>
+                <li><a href="/iau/NEO/pccp_tabular.html">Possible Comet Confirmation</a></li>
+                <li><a href="/iau/Ephemerides/EphemOrbEls.html" class="nested">Orbital Elements</a>
+                  <ul>
+                    <li><a href="/iau/MPCORB.html">MPCORB</a></li>
+                    <li><a href="/iau/ECS/MPCAT/MPCAT.html">MPCAT</a></li>
+                    <li><a href="/iau/ECS/MPCUPDATE/MPCUPDATE.html">MPCUPDATE</a></li>
+                    <li><a href="/iau/Ephemerides/SoftwareEls.html">Orbital Elements for Software</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/services/MPCServices.html">Publications Overview</a></li>
+                <li><a href="/iau/ECS/MPCArchive/MPCArchive_TBL.html">Publications Archive</a></li>              
+                <li><a href="/iau/NEO/TheNEOPage.html" class="nested">NEO Services</a>
+                  <ul>
+                    <li><a href="/iau/NEO/toconfirm_tabular.html">Confirmation</a></li>
+                    <li><a href="/iau/NEO/PossNEO.html">Ratings</a></li>
+                    <li><a href="/cgi-bin/neaobs.cgi">Observation Planning Aid</a></li>
+                    <li><a href="/cgi-bin/checkneo.cgi">NEOChecker</a></li>
+                    <li><a href="/cgi-bin/checkneocmt.cgi">NEOCMTChecker</a></li>
+                    <li><a href="/neocp_followup_report/">NEOCP Followup Report Form</a></li>
+                    <li><a href="/neocp_followup_reports/">NEOCP Followup Reports</a></li>
+                    <li><a href="/neocp_obs">NEOCP Recent Observations</a></li>
+                  </ul>
+                </li>
+                <li><a href="/iau/services/WebCSAccess.html" class="nested">Other Observer Services</a>
+                  <ul>
+                    <li><a href="/whatsup">Observing Target List</a></li>
+                    <li><a href="/iau/NatSats/NaturalSatellites.html">Natural Satellite Ephemerides</a></li>
+                    <li><a href="/iau/MPEph/NewObjEphems.html">New Object Ephemerides</a></li>
+                    <li><a href="/cgi-bin/checkmp.cgi">MPChecker</a></li>
+                    <li><a href="/cgi-bin/checkcmt.cgi">CMTChecker</a></li>
+                    <li><a href="/iau/artsats/artsats.html">Distant Artificial Satellites</a></li>
+                    <li><a href="/iau/lists/Customize.html">Observing List Customizer</a></li>
+                  </ul>
+                </li>
+                <li><a href="/db_search">Orbits/Observations Database</a></li>
+
+                <li><a href='http://alcdef.org'>Light Curve Database</a></li>
+
+                <li><a href="/iau/ECS/MPCAT-OBS/MPCAT-OBS.html">MPCAT-OBS</a></li>
+                <li><a href="/iau/SkyCoverage.html">Sky Coverage</a></li>
+                <li><a href="/iau/MPC_Documentation.html" class="nested">Documentation</a>
+                  <ul>
+                    <li><a href="/iau/info/TechInfo.html">MPC Submission Info</a></li>
+                    <li><a href="/iau/info/Astrometry.html">Astrometry Guide</a></li>
+                    <li><a href="/iau/WhatsNew.html">What's New</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/lists/Lists.html" class="nested">Lists and Plots</a>
+                  <ul>
+                    <li><a href="/iau/lists/MPLists.html">Minor Planets</a></li>
+                      <!--<ul>
+                        <li><a href="/iau/lists/t_atens.html">Atens</a></li>
+                        <li><a href="/iau/lists/t_apollos.html">Apollos</a></li>
+                        <li><a href="/iau/lists/t_amors.html">Amors</a></li>
+                        <li><a href="/iau/lists/t_centaurs.html">Centaurs and Scattered Disk Objects</a></li>
+                        <li><a href="/iau/lists/t_tnos.html">Transneptunian Objects</a></li>
+                        <li><a href="/iau/lists/t_others.html">Other Unusual Objects</a></li>
+                        <li><a href="/iau/lists/t_dangerous.html">Potentially Hazardous Asteroids</a></li>
+                      </ul>-->
+                    <li><a href="/iau/lists/CometLists.html">Comets</a></li>
+                      <!--<ul>
+                        <li><a href="/iau/lists/LastCometObs.html">Date of Last Observation</a></li>
+                        <li><a href="/iau/lists/LastYear.html">Designations from the Past Year</a></li>
+                        <li><a href="http://www.icq.eps.harvard.edu/CometMags.html">Comet Magnitude Estimates</a></li>
+                        <li><a href="/iau/lists/ClosestComets.html">Closest Approaches</a></li>
+                        <li><a href="/iau/lists/PeriodicCodes.html">Periodic Comets</a></li>
+                      </ul>-->
+                    <li><a href="/iau/lists/ObsCodesF.html">Observatory Codes</a></li>		    
+                    <li><a href="/iau/Animations/Animations.html">Animations</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/MPCStatus.html">MPC Status</a></li>
+                <!--<li><a href="/summary">Summary</a></li>-->
+                <li><a href='/mpc/obs_stats_2014_2018'>2014-18 NEO Obs Statistics</a></li>
+                <li><a href='/mpc/summary'>Summary of Latest Data</a></li>
+              </ul>
+            </li>
+            <li><a href="/data"><span>DATA</span></a>
+            </li>
+            <li><a href="http://iawn.net/"><span>IAWN</span></a>
+            </li>
+            <li><a href="https://minorplanetcenter.net/mpcops/beta/"><span>BETA</span></a></li>
+            <li><a href="/iau/MPCStatus.html"><span style="color:Green">STATUS</a></li>
+            <li><a href="https://sbnmpc.astro.umd.edu/"><span>SBN ANNEX</span></a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- main -->
+      <div id="main">
+
+  <h3>
+  
+   2004 XK3
+  
+  
+   
+  
+</h3>
+
+    First observed at Lowell Observatory-LONEOS
+  on 2004-12-03.
+
+
+  <br>(Discoverer will be defined when the object is numbered. 
+  See <a href="/mpec/K10/K10U20.html">this note</a>
+  on how discoverers are determined.)
+
+
+<br>
+<h2>Orbit</h2>
+
+    Orbit type: Apollo
+  <br>
+
+
+    Near-Earth Object<br>
+
+    <br>
+    <div class="show-orbit-button">
+      <form accept-charset="UTF-8" action="/db_search/show_orbit" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+        <input id="number" name="number" type="hidden" />
+        <input id="designation" name="designation" type="hidden" value="2004 XK3" />
+        <input id="name" name="name" type="hidden" />
+        <input id="epoch" name="epoch" type="hidden" value="2019-04-27.0" />
+        <input id="peri" name="peri" type="hidden" value="304.6775891" />
+        <input id="m" name="m" type="hidden" value="273.35892" />
+        <input id="node" name="node" type="hidden" value="57.9273058" />
+        <input id="incl" name="incl" type="hidden" value="1.4814546" />
+        <input id="e" name="e" type="hidden" value="0.260393053" />
+        <input id="a" name="a" type="hidden" value="1.227923917810361" />
+        <input name="commit" type="submit" value="Interactive Orbit Sketch" />
+</form>    </div>
+    <div>
+       Note: WebGL enabled browser required.
+    </div>
+
+    
+
+
+  <br>
+  <table class="nb">
+    <tr>
+      <td valign="top" class="nb">
+        <table>
+          <tr><td>epoch</td><td class="rj">2019-04-27.0</td></tr>
+          <tr><td>epoch JD</td><td class="rj">2458600.5</td></tr>
+          <tr><td>perihelion date</td><td class="rj">2019-08-24.61268</td></tr>
+          <tr><td>perihelion JD</td><td class="rj">2458720.11268</td></tr>
+          <tr><td>argument of perihelion (°)</td><td class="rj">304.67759</td></tr>
+          <tr><td>ascending node (°)</td><td class="rj">57.92731</td></tr>
+          <tr><td>inclination (°)</td><td class="rj">1.48145</td></tr>
+          <tr><td>eccentricity</td><td class="rj">0.2603931</td></tr>
+          <tr><td>perihelion distance (AU)</td><td class="rj">0.9081811</td></tr>
+          <tr><td>Tisserand w.r.t. Jupiter</td><td class="rj">5.2</td></tr>
+          <tr><td>&Delta;V w.r.t. Earth (km/sec)</td><td class="rj">4.8</td></tr>
+        </table>
+      </td>
+      <td valign="top" class="nb">
+        <table>
+          <tr><td>semimajor axis (AU)</td><td class="rj">1.2279239</td></tr>
+          <tr><td>mean anomaly (°)</td><td class="rj">273.35892</td></tr>
+          <tr><td>mean daily motion (°/day)</td><td class="rj">0.72434700</td></tr>
+          <tr><td>aphelion distance (AU)</td><td class="rj">1.548</td></tr>
+          <tr><td>period (years)</td><td class="rj">1.36</td></tr>
+          <tr><td>P-vector [x]</td><td class="rj">0.99873376</td></tr>
+          <tr><td>P-vector [y]</td><td class="rj">0.05028907</td></tr>
+          <tr><td>P-vector [z]</td><td class="rj">-0.00137018</td></tr>
+          <tr><td>Q-vector [x]</td><td class="rj">-0.04528718</td></tr>
+          <tr><td>Q-vector [y]</td><td class="rj">0.91059027</td></tr>
+          <tr><td>Q-vector [z]</td><td class="rj">0.41082165</td></tr>
+          <tr><td>absolute magnitude</td><td class="rj">24.4</td></tr>
+          <tr><td>phase slope</td><td class="rj">0.15</td></tr>
+        </table>
+      </td>
+      <td valign="top" class="nb">
+        <table>
+
+            <tr><td><a href="/iau/info/UValue.html">uncertainty</a></td><td class="rj">2</td></tr>
+
+          <tr><td>reference</td><td class="rj">MPO 148557</td></tr>
+          <tr><td>observations used</td><td class="rj">229</td></tr>
+          <tr><td>oppositions</td><td class="rj">2</td></tr>
+          <tr><td>arc length (days)</td><td class="rj">1464</td></tr>
+          <tr><td>first opposition used</td><td class="rj">2004</td></tr>
+          <tr><td>last opposition used</td><td class="rj">2008</td></tr>
+          <tr><td>residual rms (arc-secs)</td><td class="rj">0.48</td></tr>
+          <tr><td><a href="/iau/info/Perturbers.html">perturbers coarse indicator</a></td><td class="rj">M-v</td></tr>
+          <tr><td><a href="/iau/info/Perturbers.html">perturbers precise indicator</a></td><td class="rj">003Eh</td></tr>
+          <tr><td>first observation date used</td><td class="rj">2004-12-03.0</td></tr>
+          <tr><td>last observation date used</td><td class="rj">2008-12-06.0</td></tr>
+          <tr><td>computer name</td><td class="rj">MPCALB</td></tr>
+        </table>
+      </td>
+    </tr>
+  </table>    
+
+  <table class="nb">
+    <tr>
+      <td valign="top" class="nb">
+      </td>
+      <td width=100px> </td>
+
+      <td valign="top" class="nb">
+    Minimum Orbit Intersection Distances (in AU)<br>for orbit epoch: 2458600.5, reference: MPO148557<br>
+          <table>
+            <tr><td>Mercury</td><td>0.5397</td></tr>
+            <tr><td>Venus</td><td>0.18407</td></tr>
+            <tr><td>Earth</td><td>0.00113</td></tr>
+            <tr><td>Mars</td><td>0.09359</td></tr>
+            <tr><td>Jupiter</td><td>3.89435</td></tr>
+            <tr><td>Saturn</td><td>7.79439</td></tr>
+            <tr><td>Uranus</td><td>16.6952</td></tr>
+            <tr><td>Neptune</td><td>28.8054</td></tr>
+          </table>    
+          <br>
+      </td>
+    </tr>
+  </table>
+
+
+<h2>Observations</h2>
+  248 total observations over interval:
+  2004 12 03.16664 &ndash; 2008 12 06.21267
+  <br>
+  These data are available for
+  <a href="../tmp/2004_XK3.txt" target="_blank">download</a>
+  (<a href="/iau/info/OpticalObs.html" target="_blank">format description</a>).
+  <br>
+  <br>
+  <table>
+    <tr>
+      <th>Date (UT)</th>
+      <th>J2000 RA</th>
+      <th>J2000 Dec</th>
+      <th>Magn</th>
+      <th><a href="/iau/lists/ObsCodesF.html">Location</a></th>
+      <th><a href="/iau/info/References.html">Ref</a></th>
+    </tr>
+
+      <tr>
+        <td class="ff">2004 12 03.16664</td>
+        <td class="ff">02 16 19.55</td>
+        <td class="ff">+18 36 49.3</td>
+        <td class="ff rj">19.1 R</td>
+        <td>699 &ndash; Lowell Observatory-LONEOS</td>
+        <td class="ff lj">MPS 120661</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 03.17883</td>
+        <td class="ff">02 16 25.67</td>
+        <td class="ff">+18 37 29.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>699 &ndash; Lowell Observatory-LONEOS</td>
+        <td class="ff lj">MPS 120661</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 03.19099</td>
+        <td class="ff">02 16 31.71</td>
+        <td class="ff">+18 38 09.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>699 &ndash; Lowell Observatory-LONEOS</td>
+        <td class="ff lj">MPS 120661</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 03.20317</td>
+        <td class="ff">02 16 37.80</td>
+        <td class="ff">+18 38 49.6</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>699 &ndash; Lowell Observatory-LONEOS</td>
+        <td class="ff lj">MPS 120661</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 03.27775</td>
+        <td class="ff">02 17 13.10</td>
+        <td class="ff">+18 42 28.4</td>
+        <td class="ff rj">19.2 R</td>
+        <td>649 &ndash; Powell Observatory, Louisburg</td>
+        <td class="ff lj">MPS 120661</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 03.27953</td>
+        <td class="ff">02 17 14.01</td>
+        <td class="ff">+18 42 34.2</td>
+        <td class="ff rj">19.1 R</td>
+        <td>649 &ndash; Powell Observatory, Louisburg</td>
+        <td class="ff lj">MPS 120661</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 03.28130</td>
+        <td class="ff">02 17 14.89</td>
+        <td class="ff">+18 42 38.9</td>
+        <td class="ff rj">19.2 R</td>
+        <td>649 &ndash; Powell Observatory, Louisburg</td>
+        <td class="ff lj">MPS 120661</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 03.30718</td>
+        <td class="ff">02 17 29.96</td>
+        <td class="ff">+18 44 14.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>673 &ndash; Table Mountain Observatory, Wrightwood</td>
+        <td class="ff lj">MPS 120661</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 03.31273</td>
+        <td class="ff">02 17 32.59</td>
+        <td class="ff">+18 44 31.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>673 &ndash; Table Mountain Observatory, Wrightwood</td>
+        <td class="ff lj">MPS 120661</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 03.31667</td>
+        <td class="ff">02 17 34.67</td>
+        <td class="ff">+18 44 44.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>673 &ndash; Table Mountain Observatory, Wrightwood</td>
+        <td class="ff lj">MPS 120661</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 04.11529</td>
+        <td class="ff">02 24 39.19</td>
+        <td class="ff">+19 24 23.3</td>
+        <td class="ff rj">18.8 R</td>
+        <td>699 &ndash; Lowell Observatory-LONEOS</td>
+        <td class="ff lj">MPS 120661</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 04.12018</td>
+        <td class="ff">02 24 41.43</td>
+        <td class="ff">+19 24 37.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>699 &ndash; Lowell Observatory-LONEOS</td>
+        <td class="ff lj">MPS 120661</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 04.12506</td>
+        <td class="ff">02 24 43.64</td>
+        <td class="ff">+19 24 54.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>699 &ndash; Lowell Observatory-LONEOS</td>
+        <td class="ff lj">MPS 120661</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 04.12995</td>
+        <td class="ff">02 24 45.96</td>
+        <td class="ff">+19 25 06.5</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>699 &ndash; Lowell Observatory-LONEOS</td>
+        <td class="ff lj">MPS 120661</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 04.15365</td>
+        <td class="ff">02 24 57.25</td>
+        <td class="ff">+19 26 15.0</td>
+        <td class="ff rj">19.0 R</td>
+        <td>673 &ndash; Table Mountain Observatory, Wrightwood</td>
+        <td class="ff lj">MPS 120661</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 04.15452</td>
+        <td class="ff">02 24 58.04</td>
+        <td class="ff">+19 26 17.6</td>
+        <td class="ff rj">20.3 R</td>
+        <td>G70 &ndash; Francisquito Observatory, Los Angeles</td>
+        <td class="ff lj">MPS 120661</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 04.15712</td>
+        <td class="ff">02 24 59.04</td>
+        <td class="ff">+19 26 25.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>673 &ndash; Table Mountain Observatory, Wrightwood</td>
+        <td class="ff lj">MPS 120661</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 04.16163</td>
+        <td class="ff">02 25 01.01</td>
+        <td class="ff">+19 26 38.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>673 &ndash; Table Mountain Observatory, Wrightwood</td>
+        <td class="ff lj">MPS 120661</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 04.16319</td>
+        <td class="ff">02 25 01.73</td>
+        <td class="ff">+19 26 42.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>673 &ndash; Table Mountain Observatory, Wrightwood</td>
+        <td class="ff lj">MPS 120661</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 04.17014</td>
+        <td class="ff">02 25 04.79</td>
+        <td class="ff">+19 27 02.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>673 &ndash; Table Mountain Observatory, Wrightwood</td>
+        <td class="ff lj">MPS 120661</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 04.17222</td>
+        <td class="ff">02 25 05.73</td>
+        <td class="ff">+19 27 09.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>673 &ndash; Table Mountain Observatory, Wrightwood</td>
+        <td class="ff lj">MPS 120661</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 04.18123</td>
+        <td class="ff">02 25 09.92</td>
+        <td class="ff">+19 27 33.7</td>
+        <td class="ff rj">20.2 R</td>
+        <td>G70 &ndash; Francisquito Observatory, Los Angeles</td>
+        <td class="ff lj">MPS 120661</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 04.20720</td>
+        <td class="ff">02 25 18.54</td>
+        <td class="ff">+19 28 36.4</td>
+        <td class="ff rj">19.2 R</td>
+        <td>649 &ndash; Powell Observatory, Louisburg</td>
+        <td class="ff lj">MPS 120661</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 04.20762</td>
+        <td class="ff">02 25 21.74</td>
+        <td class="ff">+19 28 48.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>G70 &ndash; Francisquito Observatory, Los Angeles</td>
+        <td class="ff lj">MPS 120661</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 04.20898</td>
+        <td class="ff">02 25 19.31</td>
+        <td class="ff">+19 28 41.4</td>
+        <td class="ff rj">19.3 R</td>
+        <td>649 &ndash; Powell Observatory, Louisburg</td>
+        <td class="ff lj">MPS 120661</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 04.21075</td>
+        <td class="ff">02 25 20.13</td>
+        <td class="ff">+19 28 46.4</td>
+        <td class="ff rj">19.3 R</td>
+        <td>649 &ndash; Powell Observatory, Louisburg</td>
+        <td class="ff lj">MPS 120661</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 04.21253</td>
+        <td class="ff">02 25 20.92</td>
+        <td class="ff">+19 28 50.8</td>
+        <td class="ff rj">19.5 R</td>
+        <td>649 &ndash; Powell Observatory, Louisburg</td>
+        <td class="ff lj">MPS 120661</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 04.96703</td>
+        <td class="ff">02 31 19.27</td>
+        <td class="ff">+20 01 27.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121195</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 04.96773</td>
+        <td class="ff">02 31 19.60</td>
+        <td class="ff">+20 01 28.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121195</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 04.96854</td>
+        <td class="ff">02 31 19.96</td>
+        <td class="ff">+20 01 30.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121195</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 04.96954</td>
+        <td class="ff">02 31 20.38</td>
+        <td class="ff">+20 01 33.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121195</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 04.97008</td>
+        <td class="ff">02 31 20.59</td>
+        <td class="ff">+20 01 34.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121195</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 04.97080</td>
+        <td class="ff">02 31 20.92</td>
+        <td class="ff">+20 01 35.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121195</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 04.97150</td>
+        <td class="ff">02 31 21.23</td>
+        <td class="ff">+20 01 36.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121195</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 06.82718</td>
+        <td class="ff">02 44 29.75</td>
+        <td class="ff">+21 09 23.6</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 121195</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 06.84308</td>
+        <td class="ff">02 44 35.34</td>
+        <td class="ff">+21 09 56.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 121195</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 06.85820</td>
+        <td class="ff">02 44 40.77</td>
+        <td class="ff">+21 10 26.2</td>
+        <td class="ff rj">19.8 R</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 121195</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 06.88897</td>
+        <td class="ff">02 44 50.24</td>
+        <td class="ff">+21 11 30.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121195</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 06.88966</td>
+        <td class="ff">02 44 50.43</td>
+        <td class="ff">+21 11 32.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121195</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 07.86466</td>
+        <td class="ff">02 50 50.63</td>
+        <td class="ff">+21 40 44.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121195</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 07.86623</td>
+        <td class="ff">02 50 51.14</td>
+        <td class="ff">+21 40 45.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121195</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 07.86681</td>
+        <td class="ff">02 50 51.35</td>
+        <td class="ff">+21 40 47.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121195</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 07.86733</td>
+        <td class="ff">02 50 51.50</td>
+        <td class="ff">+21 40 47.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121195</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 07.86795</td>
+        <td class="ff">02 50 51.71</td>
+        <td class="ff">+21 40 48.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121195</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 07.90209</td>
+        <td class="ff">02 51 03.12</td>
+        <td class="ff">+21 41 50.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>587 &ndash; Sormano</td>
+        <td class="ff lj">MPS 121195</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 07.90530</td>
+        <td class="ff">02 51 04.11</td>
+        <td class="ff">+21 41 56.5</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>587 &ndash; Sormano</td>
+        <td class="ff lj">MPS 121195</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 07.91419</td>
+        <td class="ff">02 51 06.93</td>
+        <td class="ff">+21 42 11.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>587 &ndash; Sormano</td>
+        <td class="ff lj">MPS 121195</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 08.15985</td>
+        <td class="ff">02 52 34.16</td>
+        <td class="ff">+21 49 08.4</td>
+        <td class="ff rj">19.3 R</td>
+        <td>734 &ndash; Farpoint Observatory, Eskridge</td>
+        <td class="ff lj">MPS 121195</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 08.16131</td>
+        <td class="ff">02 52 34.65</td>
+        <td class="ff">+21 49 10.0</td>
+        <td class="ff rj">19.5 R</td>
+        <td>734 &ndash; Farpoint Observatory, Eskridge</td>
+        <td class="ff lj">MPS 121195</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 08.16424</td>
+        <td class="ff">02 52 35.60</td>
+        <td class="ff">+21 49 14.5</td>
+        <td class="ff rj">20.1 R</td>
+        <td>734 &ndash; Farpoint Observatory, Eskridge</td>
+        <td class="ff lj">MPS 121195</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 08.16569</td>
+        <td class="ff">02 52 36.05</td>
+        <td class="ff">+21 49 17.4</td>
+        <td class="ff rj">19.8 R</td>
+        <td>734 &ndash; Farpoint Observatory, Eskridge</td>
+        <td class="ff lj">MPS 121195</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 08.16715</td>
+        <td class="ff">02 52 36.57</td>
+        <td class="ff">+21 49 20.2</td>
+        <td class="ff rj">19.7 R</td>
+        <td>734 &ndash; Farpoint Observatory, Eskridge</td>
+        <td class="ff lj">MPS 121195</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 08.18654</td>
+        <td class="ff">02 52 42.23</td>
+        <td class="ff">+21 49 50.9</td>
+        <td class="ff rj">19.8 R</td>
+        <td>649 &ndash; Powell Observatory, Louisburg</td>
+        <td class="ff lj">MPS 121195</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 08.18831</td>
+        <td class="ff">02 52 42.80</td>
+        <td class="ff">+21 49 53.9</td>
+        <td class="ff rj">19.5 R</td>
+        <td>649 &ndash; Powell Observatory, Louisburg</td>
+        <td class="ff lj">MPS 121195</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 08.19009</td>
+        <td class="ff">02 52 43.33</td>
+        <td class="ff">+21 49 57.0</td>
+        <td class="ff rj">19.7 R</td>
+        <td>649 &ndash; Powell Observatory, Louisburg</td>
+        <td class="ff lj">MPS 121195</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 08.87495</td>
+        <td class="ff">02 56 32.77</td>
+        <td class="ff">+22 07 21.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121195</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 08.87580</td>
+        <td class="ff">02 56 33.01</td>
+        <td class="ff">+22 07 22.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121195</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 08.87660</td>
+        <td class="ff">02 56 33.25</td>
+        <td class="ff">+22 07 23.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121195</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 08.87817</td>
+        <td class="ff">02 56 33.70</td>
+        <td class="ff">+22 07 25.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121196</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 08.87883</td>
+        <td class="ff">02 56 33.85</td>
+        <td class="ff">+22 07 26.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121196</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 09.16875</td>
+        <td class="ff">02 58 07.58</td>
+        <td class="ff">+22 14 44.5</td>
+        <td class="ff rj">19.3 R</td>
+        <td>734 &ndash; Farpoint Observatory, Eskridge</td>
+        <td class="ff lj">MPS 121196</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 09.17522</td>
+        <td class="ff">02 58 09.44</td>
+        <td class="ff">+22 14 54.3</td>
+        <td class="ff rj">19.6 R</td>
+        <td>734 &ndash; Farpoint Observatory, Eskridge</td>
+        <td class="ff lj">MPS 121196</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 09.18168</td>
+        <td class="ff">02 58 11.22</td>
+        <td class="ff">+22 15 03.2</td>
+        <td class="ff rj">20.2 R</td>
+        <td>734 &ndash; Farpoint Observatory, Eskridge</td>
+        <td class="ff lj">MPS 121196</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 09.20819</td>
+        <td class="ff">02 58 19.76</td>
+        <td class="ff">+22 15 52.4</td>
+        <td class="ff rj">20.0 R</td>
+        <td>448 &ndash; Desert Moon Observatory, Las Cruces</td>
+        <td class="ff lj">MPS 121196</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 09.21909</td>
+        <td class="ff">02 58 22.77</td>
+        <td class="ff">+22 16 07.8</td>
+        <td class="ff rj">20.2 R</td>
+        <td>448 &ndash; Desert Moon Observatory, Las Cruces</td>
+        <td class="ff lj">MPS 121196</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 09.22998</td>
+        <td class="ff">02 58 25.80</td>
+        <td class="ff">+22 16 22.7</td>
+        <td class="ff rj">20.1 R</td>
+        <td>448 &ndash; Desert Moon Observatory, Las Cruces</td>
+        <td class="ff lj">MPS 121196</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 09.33458</td>
+        <td class="ff">02 58 55.48</td>
+        <td class="ff">+22 18 43.4</td>
+        <td class="ff rj">20.2 V</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 121196</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 09.33996</td>
+        <td class="ff">02 58 57.12</td>
+        <td class="ff">+22 18 50.3</td>
+        <td class="ff rj">20.3 V</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 121196</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 09.34624</td>
+        <td class="ff">02 58 59.04</td>
+        <td class="ff">+22 18 58.6</td>
+        <td class="ff rj">20.2 V</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 121196</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 09.91410</td>
+        <td class="ff">03 01 55.98</td>
+        <td class="ff">+22 31 29.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121196</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 09.91480</td>
+        <td class="ff">03 01 56.16</td>
+        <td class="ff">+22 31 30.5</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121196</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 09.91600</td>
+        <td class="ff">03 01 56.49</td>
+        <td class="ff">+22 31 30.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121196</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 09.91661</td>
+        <td class="ff">03 01 56.54</td>
+        <td class="ff">+22 31 30.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121196</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 09.91755</td>
+        <td class="ff">03 01 56.82</td>
+        <td class="ff">+22 31 32.5</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121196</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 10.07325</td>
+        <td class="ff">03 02 48.93</td>
+        <td class="ff">+22 35 11.1</td>
+        <td class="ff rj">20.2 R</td>
+        <td>715 &ndash; Jornada Observatory, Las Cruces</td>
+        <td class="ff lj">MPS 121196</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 10.08545</td>
+        <td class="ff">03 02 52.22</td>
+        <td class="ff">+22 35 28.4</td>
+        <td class="ff rj">20.3 R</td>
+        <td>715 &ndash; Jornada Observatory, Las Cruces</td>
+        <td class="ff lj">MPS 121196</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 10.09296</td>
+        <td class="ff">03 02 54.25</td>
+        <td class="ff">+22 35 38.3</td>
+        <td class="ff rj">20.3 R</td>
+        <td>715 &ndash; Jornada Observatory, Las Cruces</td>
+        <td class="ff lj">MPS 121196</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 10.21625</td>
+        <td class="ff">03 03 25.24</td>
+        <td class="ff">+22 38 11.1</td>
+        <td class="ff rj">20.4 R</td>
+        <td>734 &ndash; Farpoint Observatory, Eskridge</td>
+        <td class="ff lj">MPS 121196</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 10.22164</td>
+        <td class="ff">03 03 26.64</td>
+        <td class="ff">+22 38 18.3</td>
+        <td class="ff rj">20.4 R</td>
+        <td>734 &ndash; Farpoint Observatory, Eskridge</td>
+        <td class="ff lj">MPS 121196</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 10.22918</td>
+        <td class="ff">03 03 28.63</td>
+        <td class="ff">+22 38 27.5</td>
+        <td class="ff rj">20.9 R</td>
+        <td>734 &ndash; Farpoint Observatory, Eskridge</td>
+        <td class="ff lj">MPS 121196</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 10.84251</td>
+        <td class="ff">03 06 26.44</td>
+        <td class="ff">+22 50 39.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121196</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 10.84394</td>
+        <td class="ff">03 06 26.82</td>
+        <td class="ff">+22 50 41.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121196</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 10.84507</td>
+        <td class="ff">03 06 27.08</td>
+        <td class="ff">+22 50 42.5</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121196</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 10.84846</td>
+        <td class="ff">03 06 28.04</td>
+        <td class="ff">+22 50 46.5</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121196</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 10.84910</td>
+        <td class="ff">03 06 28.12</td>
+        <td class="ff">+22 50 47.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121196</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 11.10568</td>
+        <td class="ff">03 07 40.97</td>
+        <td class="ff">+22 55 55.6</td>
+        <td class="ff rj">20.4 R</td>
+        <td>734 &ndash; Farpoint Observatory, Eskridge</td>
+        <td class="ff lj">MPS 121789</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 11.11214</td>
+        <td class="ff">03 07 42.41</td>
+        <td class="ff">+22 56 03.1</td>
+        <td class="ff rj">20.2 R</td>
+        <td>734 &ndash; Farpoint Observatory, Eskridge</td>
+        <td class="ff lj">MPS 121789</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 11.11860</td>
+        <td class="ff">03 07 43.96</td>
+        <td class="ff">+22 56 11.1</td>
+        <td class="ff rj">19.9 R</td>
+        <td>734 &ndash; Farpoint Observatory, Eskridge</td>
+        <td class="ff lj">MPS 121789</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 11.27523</td>
+        <td class="ff">03 08 22.91</td>
+        <td class="ff">+22 59 19.1</td>
+        <td class="ff rj">21.5 V</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 121789</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 11.27972</td>
+        <td class="ff">03 08 24.01</td>
+        <td class="ff">+22 59 23.1</td>
+        <td class="ff rj">21.1 V</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 121789</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 11.28412</td>
+        <td class="ff">03 08 25.06</td>
+        <td class="ff">+22 59 27.8</td>
+        <td class="ff rj">21.4 V</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 121789</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 11.90234</td>
+        <td class="ff">03 11 10.20</td>
+        <td class="ff">+23 10 10.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121789</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 11.90304</td>
+        <td class="ff">03 11 10.39</td>
+        <td class="ff">+23 10 11.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121789</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 11.90429</td>
+        <td class="ff">03 11 10.69</td>
+        <td class="ff">+23 10 13.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121789</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 11.90524</td>
+        <td class="ff">03 11 10.89</td>
+        <td class="ff">+23 10 14.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121789</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 12.15864</td>
+        <td class="ff">03 12 18.51</td>
+        <td class="ff">+23 14 58.0</td>
+        <td class="ff rj">20.3 R</td>
+        <td>715 &ndash; Jornada Observatory, Las Cruces</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 12.16812</td>
+        <td class="ff">03 12 20.57</td>
+        <td class="ff">+23 15 07.7</td>
+        <td class="ff rj">20.3 R</td>
+        <td>715 &ndash; Jornada Observatory, Las Cruces</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 12.17759</td>
+        <td class="ff">03 12 22.61</td>
+        <td class="ff">+23 15 18.1</td>
+        <td class="ff rj">20.3 R</td>
+        <td>715 &ndash; Jornada Observatory, Las Cruces</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 12.89436</td>
+        <td class="ff">03 15 19.28</td>
+        <td class="ff">+23 26 31.6</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 12.89501</td>
+        <td class="ff">03 15 19.40</td>
+        <td class="ff">+23 26 31.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 12.89583</td>
+        <td class="ff">03 15 19.55</td>
+        <td class="ff">+23 26 33.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 12.89652</td>
+        <td class="ff">03 15 19.64</td>
+        <td class="ff">+23 26 33.6</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 12.89738</td>
+        <td class="ff">03 15 19.88</td>
+        <td class="ff">+23 26 33.5</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 12.89847</td>
+        <td class="ff">03 15 20.13</td>
+        <td class="ff">+23 26 34.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 13.85545</td>
+        <td class="ff">03 19 06.50</td>
+        <td class="ff">+23 40 44.6</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 13.85630</td>
+        <td class="ff">03 19 06.68</td>
+        <td class="ff">+23 40 47.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 13.85713</td>
+        <td class="ff">03 19 06.90</td>
+        <td class="ff">+23 40 47.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 13.85816</td>
+        <td class="ff">03 19 07.11</td>
+        <td class="ff">+23 40 48.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 13.86014</td>
+        <td class="ff">03 19 07.54</td>
+        <td class="ff">+23 40 50.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 14.22662</td>
+        <td class="ff">03 20 28.82</td>
+        <td class="ff">+23 46 05.8</td>
+        <td class="ff rj">20.4 R</td>
+        <td>734 &ndash; Farpoint Observatory, Eskridge</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 14.23517</td>
+        <td class="ff">03 20 30.43</td>
+        <td class="ff">+23 46 11.8</td>
+        <td class="ff rj">21.0 R</td>
+        <td>734 &ndash; Farpoint Observatory, Eskridge</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 14.24389</td>
+        <td class="ff">03 20 32.17</td>
+        <td class="ff">+23 46 17.8</td>
+        <td class="ff rj">20.5 R</td>
+        <td>734 &ndash; Farpoint Observatory, Eskridge</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 14.36474</td>
+        <td class="ff">03 20 56.89</td>
+        <td class="ff">+23 47 56.6</td>
+        <td class="ff rj">21.2 V</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 14.37055</td>
+        <td class="ff">03 20 58.06</td>
+        <td class="ff">+23 48 00.4</td>
+        <td class="ff rj">20.8 V</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 14.37717</td>
+        <td class="ff">03 20 59.44</td>
+        <td class="ff">+23 48 05.0</td>
+        <td class="ff rj">21.4 V</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 14.84089</td>
+        <td class="ff">03 22 45.54</td>
+        <td class="ff">+23 53 56.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 14.84161</td>
+        <td class="ff">03 22 45.66</td>
+        <td class="ff">+23 53 58.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 14.84517</td>
+        <td class="ff">03 22 46.35</td>
+        <td class="ff">+23 54 00.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 14.84641</td>
+        <td class="ff">03 22 46.58</td>
+        <td class="ff">+23 54 01.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 15.86174</td>
+        <td class="ff">03 26 18.83</td>
+        <td class="ff">+24 06 20.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 15.86279</td>
+        <td class="ff">03 26 18.95</td>
+        <td class="ff">+24 06 20.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 15.86406</td>
+        <td class="ff">03 26 19.21</td>
+        <td class="ff">+24 06 21.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 15.87025</td>
+        <td class="ff">03 26 20.32</td>
+        <td class="ff">+24 06 26.5</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 16.08648</td>
+        <td class="ff">03 27 07.11</td>
+        <td class="ff">+24 09 07.6</td>
+        <td class="ff rj">21.0 R</td>
+        <td>715 &ndash; Jornada Observatory, Las Cruces</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 16.10069</td>
+        <td class="ff">03 27 09.80</td>
+        <td class="ff">+24 09 19.6</td>
+        <td class="ff rj">21.4 R</td>
+        <td>715 &ndash; Jornada Observatory, Las Cruces</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 16.16579</td>
+        <td class="ff">03 27 21.57</td>
+        <td class="ff">+24 10 06.8</td>
+        <td class="ff rj">21.6 V</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 16.17099</td>
+        <td class="ff">03 27 22.47</td>
+        <td class="ff">+24 10 10.6</td>
+        <td class="ff rj">21.7 V</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 16.17923</td>
+        <td class="ff">03 27 23.91</td>
+        <td class="ff">+24 10 17.3</td>
+        <td class="ff rj">21.2 V</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 16.43966</td>
+        <td class="ff">03 28 11.63</td>
+        <td class="ff">+24 13 18.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 16.44076</td>
+        <td class="ff">03 28 11.84</td>
+        <td class="ff">+24 13 19.5</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 16.44198</td>
+        <td class="ff">03 28 12.05</td>
+        <td class="ff">+24 13 20.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 16.44302</td>
+        <td class="ff">03 28 12.25</td>
+        <td class="ff">+24 13 20.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 17.18752</td>
+        <td class="ff">03 30 39.12</td>
+        <td class="ff">+24 20 53.7</td>
+        <td class="ff rj">21.3 R</td>
+        <td>734 &ndash; Farpoint Observatory, Eskridge</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 17.19892</td>
+        <td class="ff">03 30 40.95</td>
+        <td class="ff">+24 21 00.0</td>
+        <td class="ff rj">21.0 R</td>
+        <td>734 &ndash; Farpoint Observatory, Eskridge</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 17.21032</td>
+        <td class="ff">03 30 42.80</td>
+        <td class="ff">+24 21 07.6</td>
+        <td class="ff rj">21.5 R</td>
+        <td>734 &ndash; Farpoint Observatory, Eskridge</td>
+        <td class="ff lj">MPS 121790</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 18.31806</td>
+        <td class="ff">03 34 06.07</td>
+        <td class="ff">+24 31 52.0</td>
+        <td class="ff rj">21.9 V</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 122740</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 18.32269</td>
+        <td class="ff">03 34 06.71</td>
+        <td class="ff">+24 31 53.0</td>
+        <td class="ff rj">21.7 V</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 122740</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 18.32736</td>
+        <td class="ff">03 34 07.47</td>
+        <td class="ff">+24 31 55.1</td>
+        <td class="ff rj">21.7 V</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 122740</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 18.348737</td>
+        <td class="ff">03 34 13.745</td>
+        <td class="ff">+24 32 27.34</td>
+        <td class="ff rj">20.7 R</td>
+        <td>568 &ndash; Mauna Kea</td>
+        <td class="ff lj">MPS 125460</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 18.353166</td>
+        <td class="ff">03 34 14.427</td>
+        <td class="ff">+24 32 29.70</td>
+        <td class="ff rj">20.4 R</td>
+        <td>568 &ndash; Mauna Kea</td>
+        <td class="ff lj">MPS 125460</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 19.12152</td>
+        <td class="ff">03 36 32.59</td>
+        <td class="ff">+24 38 58.6</td>
+        <td class="ff rj">20.7 R</td>
+        <td>715 &ndash; Jornada Observatory, Las Cruces</td>
+        <td class="ff lj">MPS 122740</td>
+      </tr>
+      <tr>
+        <td class="ff">2004 12 19.13374</td>
+        <td class="ff">03 36 34.35</td>
+        <td class="ff">+24 39 07.0</td>
+        <td class="ff rj">22.0 R</td>
+        <td>715 &ndash; Jornada Observatory, Las Cruces</td>
+        <td class="ff lj">MPS 122740</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 19.25897</td>
+        <td class="ff">01 51 27.54</td>
+        <td class="ff">+07 22 35.8</td>
+        <td class="ff rj">15.4 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 265242</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 19.27139</td>
+        <td class="ff">01 52 23.89</td>
+        <td class="ff">+07 32 57.2</td>
+        <td class="ff rj">15.2 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 265242</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 19.28387</td>
+        <td class="ff">01 53 20.20</td>
+        <td class="ff">+07 43 14.3</td>
+        <td class="ff rj">15.1 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 265242</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 19.29640</td>
+        <td class="ff">01 54 16.36</td>
+        <td class="ff">+07 53 27.3</td>
+        <td class="ff rj">15.0 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 265242</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 19.30903</td>
+        <td class="ff">01 55 12.57</td>
+        <td class="ff">+08 03 36.1</td>
+        <td class="ff rj">15.0 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 265242</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 19.77480</td>
+        <td class="ff">02 27 58.03</td>
+        <td class="ff">+13 06 41.2</td>
+        <td class="ff rj">15.2 V</td>
+        <td>104 &ndash; San Marcello Pistoiese</td>
+        <td class="ff lj">MPS 265242</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 19.78807</td>
+        <td class="ff">02 28 39.54</td>
+        <td class="ff">+13 13 51.5</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>104 &ndash; San Marcello Pistoiese</td>
+        <td class="ff lj">MPS 265242</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 19.942232</td>
+        <td class="ff">02 36 13.78</td>
+        <td class="ff">+14 28 32.1</td>
+        <td class="ff rj">14.3 R</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 265242</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 19.942731</td>
+        <td class="ff">02 36 15.15</td>
+        <td class="ff">+14 28 45.9</td>
+        <td class="ff rj">14.3 R</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 19.943530</td>
+        <td class="ff">02 36 17.33</td>
+        <td class="ff">+14 29 07.9</td>
+        <td class="ff rj">14.4 R</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 19.946569</td>
+        <td class="ff">02 36 25.64</td>
+        <td class="ff">+14 30 31.6</td>
+        <td class="ff rj">14.5 R</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 19.950069</td>
+        <td class="ff">02 36 35.17</td>
+        <td class="ff">+14 32 07.6</td>
+        <td class="ff rj">14.6 R</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 19.97089</td>
+        <td class="ff">02 37 22.18</td>
+        <td class="ff">+14 42 47.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>204 &ndash; Schiaparelli Observatory</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 19.97139</td>
+        <td class="ff">02 37 23.51</td>
+        <td class="ff">+14 43 00.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>204 &ndash; Schiaparelli Observatory</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 19.97186</td>
+        <td class="ff">02 37 24.78</td>
+        <td class="ff">+14 43 13.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>204 &ndash; Schiaparelli Observatory</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 19.97232</td>
+        <td class="ff">02 37 26.02</td>
+        <td class="ff">+14 43 25.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>204 &ndash; Schiaparelli Observatory</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 19.97446</td>
+        <td class="ff">02 37 31.72</td>
+        <td class="ff">+14 44 21.8</td>
+        <td class="ff rj">14.9 R</td>
+        <td>204 &ndash; Schiaparelli Observatory</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 19.97884</td>
+        <td class="ff">02 37 35.40</td>
+        <td class="ff">+14 48 17.8</td>
+        <td class="ff rj">13.7 C</td>
+        <td>B40 &ndash; Skylive Observatory, Catania</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 19.97942</td>
+        <td class="ff">02 37 36.92</td>
+        <td class="ff">+14 48 32.6</td>
+        <td class="ff rj">13.8 C</td>
+        <td>B40 &ndash; Skylive Observatory, Catania</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 19.98018</td>
+        <td class="ff">02 37 38.91</td>
+        <td class="ff">+14 48 53.1</td>
+        <td class="ff rj">14.1 C</td>
+        <td>B40 &ndash; Skylive Observatory, Catania</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 19.98058</td>
+        <td class="ff">02 37 39.99</td>
+        <td class="ff">+14 49 03.1</td>
+        <td class="ff rj">14.1 C</td>
+        <td>B40 &ndash; Skylive Observatory, Catania</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 19.98095</td>
+        <td class="ff">02 37 41.01</td>
+        <td class="ff">+14 49 12.6</td>
+        <td class="ff rj">14.1 C</td>
+        <td>B40 &ndash; Skylive Observatory, Catania</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 19.98466</td>
+        <td class="ff">02 37 58.47</td>
+        <td class="ff">+14 48 49.1</td>
+        <td class="ff rj">14.6 R</td>
+        <td>587 &ndash; Sormano</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 19.98519</td>
+        <td class="ff">02 37 59.91</td>
+        <td class="ff">+14 49 03.2</td>
+        <td class="ff rj">14.5 R</td>
+        <td>587 &ndash; Sormano</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 19.98913</td>
+        <td class="ff">02 38 10.35</td>
+        <td class="ff">+14 50 46.0</td>
+        <td class="ff rj">14.2 R</td>
+        <td>587 &ndash; Sormano</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 19.98987</td>
+        <td class="ff">02 38 12.32</td>
+        <td class="ff">+14 51 05.2</td>
+        <td class="ff rj">14.3 R</td>
+        <td>587 &ndash; Sormano</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 19.99045</td>
+        <td class="ff">02 38 13.85</td>
+        <td class="ff">+14 51 20.1</td>
+        <td class="ff rj">14.3 R</td>
+        <td>587 &ndash; Sormano</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 20.00524</td>
+        <td class="ff">02 38 52.93</td>
+        <td class="ff">+14 57 41.3</td>
+        <td class="ff rj">14.5 R</td>
+        <td>587 &ndash; Sormano</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 20.00599</td>
+        <td class="ff">02 38 54.91</td>
+        <td class="ff">+14 58 00.5</td>
+        <td class="ff rj">14.5 R</td>
+        <td>587 &ndash; Sormano</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 20.00674</td>
+        <td class="ff">02 38 56.88</td>
+        <td class="ff">+14 58 19.6</td>
+        <td class="ff rj">14.5 R</td>
+        <td>587 &ndash; Sormano</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 20.22168</td>
+        <td class="ff">02 49 11.09</td>
+        <td class="ff">+16 27 39.3</td>
+        <td class="ff rj">14.4 V</td>
+        <td>G96 &ndash; Mt. Lemmon Survey</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 20.22733</td>
+        <td class="ff">02 49 23.26</td>
+        <td class="ff">+16 29 43.9</td>
+        <td class="ff rj">14.7 V</td>
+        <td>G96 &ndash; Mt. Lemmon Survey</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 20.23287</td>
+        <td class="ff">02 49 35.17</td>
+        <td class="ff">+16 31 45.5</td>
+        <td class="ff rj">14.7 V</td>
+        <td>G96 &ndash; Mt. Lemmon Survey</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 20.31328</td>
+        <td class="ff">02 52 24.22</td>
+        <td class="ff">+16 59 02.1</td>
+        <td class="ff rj">14.8 R</td>
+        <td>G89 &ndash; Kachina Observatory, Flagstaff</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 20.32689</td>
+        <td class="ff">02 52 52.10</td>
+        <td class="ff">+17 03 30.7</td>
+        <td class="ff rj">14.8 R</td>
+        <td>G89 &ndash; Kachina Observatory, Flagstaff</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 20.33622</td>
+        <td class="ff">02 53 11.15</td>
+        <td class="ff">+17 06 32.2</td>
+        <td class="ff rj">14.8 R</td>
+        <td>G89 &ndash; Kachina Observatory, Flagstaff</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 20.34911</td>
+        <td class="ff">02 53 37.40</td>
+        <td class="ff">+17 10 39.7</td>
+        <td class="ff rj">14.9 R</td>
+        <td>G89 &ndash; Kachina Observatory, Flagstaff</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 20.46907</td>
+        <td class="ff">02 58 59.13</td>
+        <td class="ff">+17 48 09.4</td>
+        <td class="ff rj">15.0 V</td>
+        <td>379 &ndash; Hamamatsu-Yuto</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 20.47470</td>
+        <td class="ff">02 59 09.70</td>
+        <td class="ff">+17 49 55.1</td>
+        <td class="ff rj">14.8 V</td>
+        <td>379 &ndash; Hamamatsu-Yuto</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 20.47569</td>
+        <td class="ff">02 59 11.48</td>
+        <td class="ff">+17 50 13.1</td>
+        <td class="ff rj">14.8 V</td>
+        <td>379 &ndash; Hamamatsu-Yuto</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 20.48845</td>
+        <td class="ff">02 59 35.20</td>
+        <td class="ff">+17 54 10.1</td>
+        <td class="ff rj">14.8 V</td>
+        <td>379 &ndash; Hamamatsu-Yuto</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 20.49770</td>
+        <td class="ff">02 59 52.11</td>
+        <td class="ff">+17 56 59.8</td>
+        <td class="ff rj">14.9 V</td>
+        <td>379 &ndash; Hamamatsu-Yuto</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 20.49897</td>
+        <td class="ff">02 59 54.41</td>
+        <td class="ff">+17 57 22.9</td>
+        <td class="ff rj">15.0 V</td>
+        <td>379 &ndash; Hamamatsu-Yuto</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 20.50198</td>
+        <td class="ff">02 59 59.87</td>
+        <td class="ff">+17 58 17.4</td>
+        <td class="ff rj">14.7 V</td>
+        <td>379 &ndash; Hamamatsu-Yuto</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 20.50453</td>
+        <td class="ff">03 00 04.53</td>
+        <td class="ff">+17 59 03.8</td>
+        <td class="ff rj">14.7 V</td>
+        <td>379 &ndash; Hamamatsu-Yuto</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 20.51225</td>
+        <td class="ff">03 00 18.39</td>
+        <td class="ff">+18 01 22.6</td>
+        <td class="ff rj">14.6 V</td>
+        <td>379 &ndash; Hamamatsu-Yuto</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 20.51352</td>
+        <td class="ff">03 00 20.66</td>
+        <td class="ff">+18 01 45.3</td>
+        <td class="ff rj">14.9 V</td>
+        <td>379 &ndash; Hamamatsu-Yuto</td>
+        <td class="ff lj">MPS 265243</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 22.19054</td>
+        <td class="ff">03 38 07.56</td>
+        <td class="ff">+22 55 03.0</td>
+        <td class="ff rj">16.3 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 267511</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 22.19165</td>
+        <td class="ff">03 38 08.33</td>
+        <td class="ff">+22 55 10.2</td>
+        <td class="ff rj">16.4 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 267511</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 22.19276</td>
+        <td class="ff">03 38 09.11</td>
+        <td class="ff">+22 55 17.4</td>
+        <td class="ff rj">16.6 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 267511</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 22.19386</td>
+        <td class="ff">03 38 09.87</td>
+        <td class="ff">+22 55 24.2</td>
+        <td class="ff rj">16.7 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 267511</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 22.49572</td>
+        <td class="ff">03 42 31.96</td>
+        <td class="ff">+23 24 38.2</td>
+        <td class="ff rj">16.1 V</td>
+        <td>379 &ndash; Hamamatsu-Yuto</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 22.49757</td>
+        <td class="ff">03 42 33.13</td>
+        <td class="ff">+23 24 49.5</td>
+        <td class="ff rj">16.0 V</td>
+        <td>379 &ndash; Hamamatsu-Yuto</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 22.51008</td>
+        <td class="ff">03 42 40.86</td>
+        <td class="ff">+23 26 03.5</td>
+        <td class="ff rj">15.4 V</td>
+        <td>379 &ndash; Hamamatsu-Yuto</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 22.51378</td>
+        <td class="ff">03 42 43.14</td>
+        <td class="ff">+23 26 25.4</td>
+        <td class="ff rj">15.9 V</td>
+        <td>379 &ndash; Hamamatsu-Yuto</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 22.52010</td>
+        <td class="ff">03 42 46.97</td>
+        <td class="ff">+23 27 02.1</td>
+        <td class="ff rj">16.3 V</td>
+        <td>379 &ndash; Hamamatsu-Yuto</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 22.52196</td>
+        <td class="ff">03 42 48.12</td>
+        <td class="ff">+23 27 12.9</td>
+        <td class="ff rj">16.0 V</td>
+        <td>379 &ndash; Hamamatsu-Yuto</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 22.53142</td>
+        <td class="ff">03 42 53.78</td>
+        <td class="ff">+23 28 06.9</td>
+        <td class="ff rj">15.3 V</td>
+        <td>379 &ndash; Hamamatsu-Yuto</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 22.53328</td>
+        <td class="ff">03 42 54.89</td>
+        <td class="ff">+23 28 17.6</td>
+        <td class="ff rj">15.8 V</td>
+        <td>379 &ndash; Hamamatsu-Yuto</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 22.53513</td>
+        <td class="ff">03 42 56.00</td>
+        <td class="ff">+23 28 28.5</td>
+        <td class="ff rj">15.8 V</td>
+        <td>379 &ndash; Hamamatsu-Yuto</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 22.59154</td>
+        <td class="ff">03 43 28.58</td>
+        <td class="ff">+23 33 34.0</td>
+        <td class="ff rj">16.0 V</td>
+        <td>379 &ndash; Hamamatsu-Yuto</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 22.59803</td>
+        <td class="ff">03 43 32.23</td>
+        <td class="ff">+23 34 07.4</td>
+        <td class="ff rj">15.9 V</td>
+        <td>379 &ndash; Hamamatsu-Yuto</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 22.59988</td>
+        <td class="ff">03 43 33.23</td>
+        <td class="ff">+23 34 16.9</td>
+        <td class="ff rj">15.9 V</td>
+        <td>379 &ndash; Hamamatsu-Yuto</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 22.60635</td>
+        <td class="ff">03 43 36.91</td>
+        <td class="ff">+23 34 50.2</td>
+        <td class="ff rj">16.1 V</td>
+        <td>379 &ndash; Hamamatsu-Yuto</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 22.87102</td>
+        <td class="ff">03 46 56.87</td>
+        <td class="ff">+23 54 19.9</td>
+        <td class="ff rj">16.6 V</td>
+        <td>A48 &ndash; Povegliano Veronese</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 22.87767</td>
+        <td class="ff">03 47 00.43</td>
+        <td class="ff">+23 54 52.8</td>
+        <td class="ff rj">16.6 V</td>
+        <td>A48 &ndash; Povegliano Veronese</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 22.88434</td>
+        <td class="ff">03 47 03.98</td>
+        <td class="ff">+23 55 25.4</td>
+        <td class="ff rj">16.6 V</td>
+        <td>A48 &ndash; Povegliano Veronese</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 22.89100</td>
+        <td class="ff">03 47 07.52</td>
+        <td class="ff">+23 55 57.7</td>
+        <td class="ff rj">16.5 V</td>
+        <td>A48 &ndash; Povegliano Veronese</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 23.12181</td>
+        <td class="ff">03 49 41.45</td>
+        <td class="ff">+24 12 46.1</td>
+        <td class="ff rj">17.0 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 23.12311</td>
+        <td class="ff">03 49 42.09</td>
+        <td class="ff">+24 12 52.2</td>
+        <td class="ff rj">17.2 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 23.12451</td>
+        <td class="ff">03 49 42.77</td>
+        <td class="ff">+24 12 58.6</td>
+        <td class="ff rj">17.2 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 23.12610</td>
+        <td class="ff">03 49 43.55</td>
+        <td class="ff">+24 13 05.8</td>
+        <td class="ff rj">17.4 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 23.50038</td>
+        <td class="ff">03 53 17.74</td>
+        <td class="ff">+24 37 04.9</td>
+        <td class="ff rj">16.8 V</td>
+        <td>379 &ndash; Hamamatsu-Yuto</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 23.50616</td>
+        <td class="ff">03 53 20.12</td>
+        <td class="ff">+24 37 28.4</td>
+        <td class="ff rj">16.0 V</td>
+        <td>379 &ndash; Hamamatsu-Yuto</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 23.50986</td>
+        <td class="ff">03 53 21.59</td>
+        <td class="ff">+24 37 42.7</td>
+        <td class="ff rj">16.1 V</td>
+        <td>379 &ndash; Hamamatsu-Yuto</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 23.51424</td>
+        <td class="ff">03 53 23.38</td>
+        <td class="ff">+24 38 00.1</td>
+        <td class="ff rj">16.7 V</td>
+        <td>379 &ndash; Hamamatsu-Yuto</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 23.52194</td>
+        <td class="ff">03 53 26.40</td>
+        <td class="ff">+24 38 30.6</td>
+        <td class="ff rj">16.4 V</td>
+        <td>379 &ndash; Hamamatsu-Yuto</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 23.52380</td>
+        <td class="ff">03 53 27.17</td>
+        <td class="ff">+24 38 37.8</td>
+        <td class="ff rj">16.4 V</td>
+        <td>379 &ndash; Hamamatsu-Yuto</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 25.25177</td>
+        <td class="ff">04 05 08.96</td>
+        <td class="ff">+25 52 45.6</td>
+        <td class="ff rj">17.0 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 25.26420</td>
+        <td class="ff">04 05 11.40</td>
+        <td class="ff">+25 53 10.6</td>
+        <td class="ff rj">17.3 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 25.28911</td>
+        <td class="ff">04 05 16.22</td>
+        <td class="ff">+25 53 58.6</td>
+        <td class="ff rj">17.3 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 25.29260</td>
+        <td class="ff">04 05 11.34</td>
+        <td class="ff">+25 53 28.5</td>
+        <td class="ff rj">17.7 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 25.29390</td>
+        <td class="ff">04 05 11.61</td>
+        <td class="ff">+25 53 30.6</td>
+        <td class="ff rj">17.8 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 25.29520</td>
+        <td class="ff">04 05 11.88</td>
+        <td class="ff">+25 53 32.7</td>
+        <td class="ff rj">17.7 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 25.29660</td>
+        <td class="ff">04 05 12.17</td>
+        <td class="ff">+25 53 35.0</td>
+        <td class="ff rj">17.6 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 25.29798</td>
+        <td class="ff">04 05 12.47</td>
+        <td class="ff">+25 53 37.2</td>
+        <td class="ff rj">17.7 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 25.29944</td>
+        <td class="ff">04 05 12.78</td>
+        <td class="ff">+25 53 39.6</td>
+        <td class="ff rj">17.6 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 25.30161</td>
+        <td class="ff">04 05 18.65</td>
+        <td class="ff">+25 54 21.6</td>
+        <td class="ff rj">17.2 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 26.97585</td>
+        <td class="ff">04 12 30.36</td>
+        <td class="ff">+26 35 12.9</td>
+        <td class="ff rj">17.6 R</td>
+        <td>J27 &ndash; El Guijo Observatory</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 26.97931</td>
+        <td class="ff">04 12 30.78</td>
+        <td class="ff">+26 35 17.2</td>
+        <td class="ff rj">17.4 R</td>
+        <td>J27 &ndash; El Guijo Observatory</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 26.98397</td>
+        <td class="ff">04 12 31.35</td>
+        <td class="ff">+26 35 23.2</td>
+        <td class="ff rj">17.2 R</td>
+        <td>J27 &ndash; El Guijo Observatory</td>
+        <td class="ff lj">MPS 266440</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 29.34136</td>
+        <td class="ff">04 18 52.41</td>
+        <td class="ff">+27 10 20.7</td>
+        <td class="ff rj">19.1 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 267511</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 29.34590</td>
+        <td class="ff">04 18 52.76</td>
+        <td class="ff">+27 10 22.5</td>
+        <td class="ff rj">18.8 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 267511</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 11 29.35045</td>
+        <td class="ff">04 18 53.10</td>
+        <td class="ff">+27 10 24.3</td>
+        <td class="ff rj">18.8 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 267511</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 12 03.25128</td>
+        <td class="ff">04 25 25.43</td>
+        <td class="ff">+27 40 57.3</td>
+        <td class="ff rj">19.2 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 267511</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 12 03.26377</td>
+        <td class="ff">04 25 25.70</td>
+        <td class="ff">+27 41 03.5</td>
+        <td class="ff rj">19.5 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 267511</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 12 03.27626</td>
+        <td class="ff">04 25 25.93</td>
+        <td class="ff">+27 41 07.0</td>
+        <td class="ff rj">19.6 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 267511</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 12 03.28882</td>
+        <td class="ff">04 25 26.10</td>
+        <td class="ff">+27 41 12.1</td>
+        <td class="ff rj">20.1 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 267511</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 12 03.30133</td>
+        <td class="ff">04 25 26.36</td>
+        <td class="ff">+27 41 15.5</td>
+        <td class="ff rj">19.6 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 267511</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 12 04.24454</td>
+        <td class="ff">04 26 35.73</td>
+        <td class="ff">+27 45 34.4</td>
+        <td class="ff rj">18.2 V</td>
+        <td>G96 &ndash; Mt. Lemmon Survey</td>
+        <td class="ff lj">MPS 267511</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 12 04.25296</td>
+        <td class="ff">04 26 35.84</td>
+        <td class="ff">+27 45 37.3</td>
+        <td class="ff rj">18.3 V</td>
+        <td>G96 &ndash; Mt. Lemmon Survey</td>
+        <td class="ff lj">MPS 267511</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 12 04.26145</td>
+        <td class="ff">04 26 35.95</td>
+        <td class="ff">+27 45 39.9</td>
+        <td class="ff rj">18.3 V</td>
+        <td>G96 &ndash; Mt. Lemmon Survey</td>
+        <td class="ff lj">MPS 267511</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 12 04.26988</td>
+        <td class="ff">04 26 36.06</td>
+        <td class="ff">+27 45 42.5</td>
+        <td class="ff rj">18.5 V</td>
+        <td>G96 &ndash; Mt. Lemmon Survey</td>
+        <td class="ff lj">MPS 267511</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 12 06.17727</td>
+        <td class="ff">04 28 34.10</td>
+        <td class="ff">+27 52 06.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>691 &ndash; Steward Observatory, Kitt Peak-Spacewatch</td>
+        <td class="ff lj">MPS 268803</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 12 06.19497</td>
+        <td class="ff">04 28 34.37</td>
+        <td class="ff">+27 52 12.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>691 &ndash; Steward Observatory, Kitt Peak-Spacewatch</td>
+        <td class="ff lj">MPS 268803</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 12 06.21267</td>
+        <td class="ff">04 28 34.57</td>
+        <td class="ff">+27 52 17.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>691 &ndash; Steward Observatory, Kitt Peak-Spacewatch</td>
+        <td class="ff lj">MPS 268803</td>
+      </tr>
+  </table>
+
+
+        </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer id="footer">
+    <div class="holder">
+      <nav class="nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+	  <!-- Contact link changed to Jira -->
+          <li><a href="https://mpc-service.atlassian.net/servicedesk/customer/portals">Contact</a></li>
+          <li><a href="https://www.cfa.harvard.edu/content/privacy-statement">Privacy</a></li>
+        </ul>
+      </nav>
+      
+      <a href="https://www.cfa.harvard.edu">
+      <img src="/images/CfA_Logo_Vertical_CMYK.png" width="110" height="47"></a>
+      <p>
+      <p>
+      <p>
+      <div class="copy">The Minor Planet Center is hosted by the Center for Astrophysics | Harvard &amp; Smithsonian.<center>The Minor Planet Center is funded by NASA.</center></div> 
+  </footer>
+
+<script type="text/javascript">
+  $(window).on('load', (function() {
+    $("table").tablesorter();
+  })); 
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var _tag=new WebTrends();
+_tag.dcsGetId();
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+_tag.dcsCustom=function(){
+// Add custom parameters here.
+//_tag.DCSext.param_name=param_value;
+}
+_tag.dcsCollect();
+//]]>
+</script>
+
+<noscript>
+<div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="//logs1.smithsonian.museum/dcsa7yzrmbdzpxzrosrn4tyep_5i1d/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=9.4.0&amp;dcssip=www.minorplanetcenter.net"/></div>
+</noscript>
+</body>
+
+</html>

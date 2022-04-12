@@ -1,0 +1,4327 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IAU Minor Planet Center</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/mpc.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/table-sorter.css">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+  <link media="all" rel="stylesheet" href="/css/all.css">
+
+  <link rel="icon" type="image/png" href="/iau/figs/MPClogo16.png">
+  <meta name="description" content="We are the official body that deals with
+      astrometric observations and orbits of minor planets (asteroids) and comets.">
+
+  <meta name="keywords" content="astrometry, observations, orbits,
+      minor planets, asteroids, comets, near earth objects, 
+      potentially hazardous asteroids">
+
+  <script type="text/javascript" src="/js/jquery-latest.js"></script>
+<!--  <script type="text/javascript" src="/js/jquery.main.js"></script> -->
+<!--  <script type="text/javascript" src="/js/jquery.metadata.js"></script> -->
+  <script type="text/javascript" src="/js/jquery.tablesorter.js"></script>
+  <script type="text/javascript" src="/js/webtrends.js"></script>
+  <script type="text/javascript" src="/js/track_pdfs.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic|PT+Sans:400,700,400italic,700italic|PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+  
+<body>
+  <!-- wrapper -->
+  <div id="wrapper">
+    <div class="w1">
+      <!-- header -->
+      <header id="header">
+        <div class="holder">
+          <!-- logo -->
+          <h1 class="logo"><a href="/">The International Astronomical Union Minor Planet Center</a></h1>
+          <div class="area">
+            <!-- top-nav -->
+            <nav class="top-nav">
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+		<!-- Contact link changed to Jira -->
+                <li><a href="https://mpc-service.atlassian.net/servicedesk/customer/portals">Contact</a></li>
+              </ul>
+            </nav>
+            <!-- search-form -->
+            <div class="form-holder">
+              <!-- This commented code opens a new page for the search. -->
+              <!--<form class="search-form" method="get" action="https://www.google.com/search" target="_blank">-->
+              <form class="search-form" method="get" action="https://www.google.com/search">
+                <fieldset>
+                  <!--<label for="search">Search</label>-->
+                  <input type="hidden" name="sitesearch" value="minorplanetcenter.net">
+                  <input type="text" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" id="search" name="q" value="Search MPC">
+                </fieldset>
+              </form>
+            </div>
+            <div class="social-bar">
+<!--              <a href="https://twitter.com/MinorPlanetCtr"><span class="social twitter">L</span></a> -->
+<!--              <a href="https://www.facebook.com/MinorPlanetCenter"><span class="social facebook">F</span></a> -->
+<!--              <a href="https://www.youtube.com/channel/UCtALMOQHuBxh5XMsYNiDhMg"><span class="social youtube">X</span></a> -->
+<!--              <a href="/iau/rss/mpc_feeds.html"><span class="social rss">R</span></a> -->
+            </div>
+          </div>
+        </div>
+        <nav class="nav-holder">
+          <!-- main navigation -->
+          <ul id="nav">
+            <li>
+              <a href="/iau/mpc.html"><span>OBSERVERS</span></a>
+              <ul>
+                <li><a href="/iau/MPEph/MPEph.html">Ephemeris Service</a></li>
+                <li><a href="/mpec/RecentMPECs.html">MPECs</a></li>
+                <li><a href="/iau/NEO/toconfirm_tabular.html">NEO Confirmation</a></li>
+                <li><a href="/iau/NEO/pccp_tabular.html">Possible Comet Confirmation</a></li>
+                <li><a href="/iau/Ephemerides/EphemOrbEls.html" class="nested">Orbital Elements</a>
+                  <ul>
+                    <li><a href="/iau/MPCORB.html">MPCORB</a></li>
+                    <li><a href="/iau/ECS/MPCAT/MPCAT.html">MPCAT</a></li>
+                    <li><a href="/iau/ECS/MPCUPDATE/MPCUPDATE.html">MPCUPDATE</a></li>
+                    <li><a href="/iau/Ephemerides/SoftwareEls.html">Orbital Elements for Software</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/services/MPCServices.html">Publications Overview</a></li>
+                <li><a href="/iau/ECS/MPCArchive/MPCArchive_TBL.html">Publications Archive</a></li>              
+                <li><a href="/iau/NEO/TheNEOPage.html" class="nested">NEO Services</a>
+                  <ul>
+                    <li><a href="/iau/NEO/toconfirm_tabular.html">Confirmation</a></li>
+                    <li><a href="/iau/NEO/PossNEO.html">Ratings</a></li>
+                    <li><a href="/cgi-bin/neaobs.cgi">Observation Planning Aid</a></li>
+                    <li><a href="/cgi-bin/checkneo.cgi">NEOChecker</a></li>
+                    <li><a href="/cgi-bin/checkneocmt.cgi">NEOCMTChecker</a></li>
+                    <li><a href="/neocp_followup_report/">NEOCP Followup Report Form</a></li>
+                    <li><a href="/neocp_followup_reports/">NEOCP Followup Reports</a></li>
+                    <li><a href="/neocp_obs">NEOCP Recent Observations</a></li>
+                  </ul>
+                </li>
+                <li><a href="/iau/services/WebCSAccess.html" class="nested">Other Observer Services</a>
+                  <ul>
+                    <li><a href="/whatsup">Observing Target List</a></li>
+                    <li><a href="/iau/NatSats/NaturalSatellites.html">Natural Satellite Ephemerides</a></li>
+                    <li><a href="/iau/MPEph/NewObjEphems.html">New Object Ephemerides</a></li>
+                    <li><a href="/cgi-bin/checkmp.cgi">MPChecker</a></li>
+                    <li><a href="/cgi-bin/checkcmt.cgi">CMTChecker</a></li>
+                    <li><a href="/iau/artsats/artsats.html">Distant Artificial Satellites</a></li>
+                    <li><a href="/iau/lists/Customize.html">Observing List Customizer</a></li>
+                  </ul>
+                </li>
+                <li><a href="/db_search">Orbits/Observations Database</a></li>
+
+                <li><a href='http://alcdef.org'>Light Curve Database</a></li>
+
+                <li><a href="/iau/ECS/MPCAT-OBS/MPCAT-OBS.html">MPCAT-OBS</a></li>
+                <li><a href="/iau/SkyCoverage.html">Sky Coverage</a></li>
+                <li><a href="/iau/MPC_Documentation.html" class="nested">Documentation</a>
+                  <ul>
+                    <li><a href="/iau/info/TechInfo.html">MPC Submission Info</a></li>
+                    <li><a href="/iau/info/Astrometry.html">Astrometry Guide</a></li>
+                    <li><a href="/iau/WhatsNew.html">What's New</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/lists/Lists.html" class="nested">Lists and Plots</a>
+                  <ul>
+                    <li><a href="/iau/lists/MPLists.html">Minor Planets</a></li>
+                      <!--<ul>
+                        <li><a href="/iau/lists/t_atens.html">Atens</a></li>
+                        <li><a href="/iau/lists/t_apollos.html">Apollos</a></li>
+                        <li><a href="/iau/lists/t_amors.html">Amors</a></li>
+                        <li><a href="/iau/lists/t_centaurs.html">Centaurs and Scattered Disk Objects</a></li>
+                        <li><a href="/iau/lists/t_tnos.html">Transneptunian Objects</a></li>
+                        <li><a href="/iau/lists/t_others.html">Other Unusual Objects</a></li>
+                        <li><a href="/iau/lists/t_dangerous.html">Potentially Hazardous Asteroids</a></li>
+                      </ul>-->
+                    <li><a href="/iau/lists/CometLists.html">Comets</a></li>
+                      <!--<ul>
+                        <li><a href="/iau/lists/LastCometObs.html">Date of Last Observation</a></li>
+                        <li><a href="/iau/lists/LastYear.html">Designations from the Past Year</a></li>
+                        <li><a href="http://www.icq.eps.harvard.edu/CometMags.html">Comet Magnitude Estimates</a></li>
+                        <li><a href="/iau/lists/ClosestComets.html">Closest Approaches</a></li>
+                        <li><a href="/iau/lists/PeriodicCodes.html">Periodic Comets</a></li>
+                      </ul>-->
+                    <li><a href="/iau/lists/ObsCodesF.html">Observatory Codes</a></li>		    
+                    <li><a href="/iau/Animations/Animations.html">Animations</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/MPCStatus.html">MPC Status</a></li>
+                <!--<li><a href="/summary">Summary</a></li>-->
+                <li><a href='/mpc/obs_stats_2014_2018'>2014-18 NEO Obs Statistics</a></li>
+                <li><a href='/mpc/summary'>Summary of Latest Data</a></li>
+              </ul>
+            </li>
+            <li><a href="/data"><span>DATA</span></a>
+            </li>
+            <li><a href="http://iawn.net/"><span>IAWN</span></a>
+            </li>
+            <li><a href="https://minorplanetcenter.net/mpcops/beta/"><span>BETA</span></a></li>
+            <li><a href="/iau/MPCStatus.html"><span style="color:Green">STATUS</a></li>
+            <li><a href="https://sbnmpc.astro.umd.edu/"><span>SBN ANNEX</span></a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- main -->
+      <div id="main">
+
+  <h3>
+  
+   2012 EG5
+  
+  
+   
+  
+</h3>
+
+    First observed at Pan-STARRS 1, Haleakala
+  on 2012-03-13.
+
+
+  <br>(Discoverer will be defined when the object is numbered. 
+  See <a href="/mpec/K10/K10U20.html">this note</a>
+  on how discoverers are determined.)
+
+
+<br>
+<h2>Orbit</h2>
+
+    Orbit type: Apollo
+  <br>
+
+
+    Near-Earth Object<br>
+    One opposition object seen prior.<br>
+
+    <br>
+    <div class="show-orbit-button">
+      <form accept-charset="UTF-8" action="/db_search/show_orbit" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+        <input id="number" name="number" type="hidden" />
+        <input id="designation" name="designation" type="hidden" value="2012 EG5" />
+        <input id="name" name="name" type="hidden" />
+        <input id="epoch" name="epoch" type="hidden" value="2019-04-27.0" />
+        <input id="peri" name="peri" type="hidden" value="16.0125716" />
+        <input id="m" name="m" type="hidden" value="83.8319" />
+        <input id="node" name="node" type="hidden" value="192.9176389" />
+        <input id="incl" name="incl" type="hidden" value="3.0291736" />
+        <input id="e" name="e" type="hidden" value="0.541622969" />
+        <input id="a" name="a" type="hidden" value="2.148065322671022" />
+        <input name="commit" type="submit" value="Interactive Orbit Sketch" />
+</form>    </div>
+    <div>
+       Note: WebGL enabled browser required.
+    </div>
+
+    
+
+
+  <br>
+  <table class="nb">
+    <tr>
+      <td valign="top" class="nb">
+        <table>
+          <tr><td>epoch</td><td class="rj">2019-04-27.0</td></tr>
+          <tr><td>epoch JD</td><td class="rj">2458600.5</td></tr>
+          <tr><td>perihelion date</td><td class="rj">2018-08-02.22090</td></tr>
+          <tr><td>perihelion JD</td><td class="rj">2458332.72090</td></tr>
+          <tr><td>argument of perihelion (°)</td><td class="rj">16.01257</td></tr>
+          <tr><td>ascending node (°)</td><td class="rj">192.91764</td></tr>
+          <tr><td>inclination (°)</td><td class="rj">3.02917</td></tr>
+          <tr><td>eccentricity</td><td class="rj">0.5416230</td></tr>
+          <tr><td>perihelion distance (AU)</td><td class="rj">0.9846238</td></tr>
+          <tr><td>Tisserand w.r.t. Jupiter</td><td class="rj">3.5</td></tr>
+          <tr><td>&Delta;V w.r.t. Earth (km/sec)</td><td class="rj">6.1</td></tr>
+        </table>
+      </td>
+      <td valign="top" class="nb">
+        <table>
+          <tr><td>semimajor axis (AU)</td><td class="rj">2.1480653</td></tr>
+          <tr><td>mean anomaly (°)</td><td class="rj">83.83190</td></tr>
+          <tr><td>mean daily motion (°/day)</td><td class="rj">0.31306360</td></tr>
+          <tr><td>aphelion distance (AU)</td><td class="rj">3.312</td></tr>
+          <tr><td>period (years)</td><td class="rj">3.15</td></tr>
+          <tr><td>P-vector [x]</td><td class="rj">-0.87529575</td></tr>
+          <tr><td>P-vector [y]</td><td class="rj">-0.44928012</td></tr>
+          <tr><td>P-vector [z]</td><td class="rj">-0.17889867</td></tr>
+          <tr><td>Q-vector [x]</td><td class="rj">0.48344369</td></tr>
+          <tr><td>Q-vector [y]</td><td class="rj">-0.82199281</td></tr>
+          <tr><td>Q-vector [z]</td><td class="rj">-0.30101497</td></tr>
+          <tr><td>absolute magnitude</td><td class="rj">24.3</td></tr>
+          <tr><td>phase slope</td><td class="rj">0.15</td></tr>
+        </table>
+      </td>
+      <td valign="top" class="nb">
+        <table>
+
+            <tr><td><a href="/iau/info/UValue.html">uncertainty</a></td><td class="rj">3</td></tr>
+
+          <tr><td>reference</td><td class="rj">MPO 230288</td></tr>
+          <tr><td>observations used</td><td class="rj">485</td></tr>
+          <tr><td>oppositions</td><td class="rj">1</td></tr>
+          <tr><td>arc length (days)</td><td class="rj">21</td></tr>
+          <tr><td>first opposition used</td><td class="rj">2012</td></tr>
+          <tr><td>last opposition used</td><td class="rj">2012</td></tr>
+          <tr><td>residual rms (arc-secs)</td><td class="rj">0.37</td></tr>
+          <tr><td><a href="/iau/info/Perturbers.html">perturbers coarse indicator</a></td><td class="rj">M-v</td></tr>
+          <tr><td><a href="/iau/info/Perturbers.html">perturbers precise indicator</a></td><td class="rj">003Eh</td></tr>
+          <tr><td>first observation date used</td><td class="rj">2012-03-13.0</td></tr>
+          <tr><td>last observation date used</td><td class="rj">2012-04-03.0</td></tr>
+          <tr><td>computer name</td><td class="rj">MPCADO</td></tr>
+        </table>
+      </td>
+    </tr>
+  </table>    
+
+  <table class="nb">
+    <tr>
+      <td valign="top" class="nb">
+          <table>
+            <tr><td>JD of orbit computation</td><td class="rj">2456030.839887</td></tr>
+            <tr><td>perihelion JD uncertainty (days)</td><td class="rj">1.6951E-05</td></tr>
+            <tr><td>argument of perihelion uncertainty (°)</td><td class="rj">4.5470E-06</td></tr>
+            <tr><td>ascending node uncertainty (°)</td><td class="rj">1.5838E-06</td></tr>
+            <tr><td>inclination uncertainty (°)</td><td class="rj">8.1484E-06</td></tr>
+            <tr><td>eccentricity uncertainty </td><td class="rj">3.4736E-06</td></tr>
+            <tr><td>perihelion distance uncertainty (AU)</td><td class="rj">6.1895E-08</td></tr>
+          </table>    
+      </td>
+      <td width=100px> </td>
+
+      <td valign="top" class="nb">
+    Minimum Orbit Intersection Distances (in AU)<br>for orbit epoch: 2458600.5, reference: MPO230288<br>
+          <table>
+            <tr><td>Mercury</td><td>0.54568</td></tr>
+            <tr><td>Venus</td><td>0.26336</td></tr>
+            <tr><td>Earth</td><td>0.00054</td></tr>
+            <tr><td>Mars</td><td>0.11422</td></tr>
+            <tr><td>Jupiter</td><td>1.64521</td></tr>
+            <tr><td>Saturn</td><td>5.99842</td></tr>
+            <tr><td>Uranus</td><td>16.4423</td></tr>
+            <tr><td>Neptune</td><td>26.5773</td></tr>
+          </table>    
+          <br>
+      </td>
+    </tr>
+  </table>
+
+
+<h2>Observations</h2>
+  493 total observations over interval:
+  2012 03 13.30201 &ndash; 2012 04 03.778528
+  <br>
+  These data are available for
+  <a href="../tmp/2012_EG5.txt" target="_blank">download</a>
+  (<a href="/iau/info/OpticalObs.html" target="_blank">format description</a>).
+  <br>
+  <br>
+  <table>
+    <tr>
+      <th>Date (UT)</th>
+      <th>J2000 RA</th>
+      <th>J2000 Dec</th>
+      <th>Magn</th>
+      <th><a href="/iau/lists/ObsCodesF.html">Location</a></th>
+      <th><a href="/iau/info/References.html">Ref</a></th>
+    </tr>
+
+      <tr>
+        <td class="ff">2012 03 13.30201</td>
+        <td class="ff">08 53 54.413</td>
+        <td class="ff">+04 58 00.03</td>
+        <td class="ff rj">21.0 g</td>
+        <td>F51 &ndash; Pan-STARRS 1, Haleakala</td>
+        <td class="ff lj">MPS 416242</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 13.31512</td>
+        <td class="ff">08 53 53.541</td>
+        <td class="ff">+04 57 58.64</td>
+        <td class="ff rj">20.9 g</td>
+        <td>F51 &ndash; Pan-STARRS 1, Haleakala</td>
+        <td class="ff lj">MPS 416242</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 13.32829</td>
+        <td class="ff">08 53 52.668</td>
+        <td class="ff">+04 57 56.88</td>
+        <td class="ff rj">20.5 r</td>
+        <td>F51 &ndash; Pan-STARRS 1, Haleakala</td>
+        <td class="ff lj">MPS 416242</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 13.98998</td>
+        <td class="ff">08 53 30.62</td>
+        <td class="ff">+04 55 52.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>204 &ndash; Schiaparelli Observatory</td>
+        <td class="ff lj">MPS 416242</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 14.00192</td>
+        <td class="ff">08 53 30.06</td>
+        <td class="ff">+04 55 50.4</td>
+        <td class="ff rj">20.0 R</td>
+        <td>204 &ndash; Schiaparelli Observatory</td>
+        <td class="ff lj">MPS 416242</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 14.11627</td>
+        <td class="ff">08 53 32.81</td>
+        <td class="ff">+04 55 53.4</td>
+        <td class="ff rj">20.0 R</td>
+        <td>H01 &ndash; Magdalena Ridge Observatory, Socorro</td>
+        <td class="ff lj">MPS 416242</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 14.12306</td>
+        <td class="ff">08 53 32.42</td>
+        <td class="ff">+04 55 52.5</td>
+        <td class="ff rj">19.9 R</td>
+        <td>H01 &ndash; Magdalena Ridge Observatory, Socorro</td>
+        <td class="ff lj">MPS 416242</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 14.12999</td>
+        <td class="ff">08 53 32.00</td>
+        <td class="ff">+04 55 51.8</td>
+        <td class="ff rj">20.1 R</td>
+        <td>H01 &ndash; Magdalena Ridge Observatory, Socorro</td>
+        <td class="ff lj">MPS 416242</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 14.13706</td>
+        <td class="ff">08 53 31.58</td>
+        <td class="ff">+04 55 50.9</td>
+        <td class="ff rj">20.1 R</td>
+        <td>H01 &ndash; Magdalena Ridge Observatory, Socorro</td>
+        <td class="ff lj">MPS 416242</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 14.146842</td>
+        <td class="ff">08 53 29.15</td>
+        <td class="ff">+04 55 42.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 416242</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 14.155619</td>
+        <td class="ff">08 53 28.62</td>
+        <td class="ff">+04 55 40.6</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 416242</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 14.164402</td>
+        <td class="ff">08 53 28.16</td>
+        <td class="ff">+04 55 38.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 416242</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 14.25004</td>
+        <td class="ff">08 53 25.02</td>
+        <td class="ff">+04 55 38.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 416242</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 14.25353</td>
+        <td class="ff">08 53 24.80</td>
+        <td class="ff">+04 55 37.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 416242</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 14.25701</td>
+        <td class="ff">08 53 24.59</td>
+        <td class="ff">+04 55 37.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 416242</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 14.315661</td>
+        <td class="ff">08 53 25.33</td>
+        <td class="ff">+04 55 47.9</td>
+        <td class="ff rj">20.1 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 416242</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 14.317642</td>
+        <td class="ff">08 53 25.20</td>
+        <td class="ff">+04 55 47.6</td>
+        <td class="ff rj">20.1 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 416242</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 14.319700</td>
+        <td class="ff">08 53 25.06</td>
+        <td class="ff">+04 55 47.3</td>
+        <td class="ff rj">20.1 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 416242</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 15.00546</td>
+        <td class="ff">08 53 09.80</td>
+        <td class="ff">+04 55 34.6</td>
+        <td class="ff rj">20.2 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 416242</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 15.00869</td>
+        <td class="ff">08 53 09.62</td>
+        <td class="ff">+04 55 34.5</td>
+        <td class="ff rj">20.7 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 416242</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 15.01090</td>
+        <td class="ff">08 53 09.50</td>
+        <td class="ff">+04 55 34.4</td>
+        <td class="ff rj">20.5 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 416242</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 15.01329</td>
+        <td class="ff">08 53 09.33</td>
+        <td class="ff">+04 55 34.1</td>
+        <td class="ff rj">20.1 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 416242</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 15.167621</td>
+        <td class="ff">08 53 01.63</td>
+        <td class="ff">+04 53 11.7</td>
+        <td class="ff rj">21.3 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 416242</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 15.169121</td>
+        <td class="ff">08 53 01.52</td>
+        <td class="ff">+04 53 11.6</td>
+        <td class="ff rj">21.2 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 416242</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 15.172473</td>
+        <td class="ff">08 53 01.33</td>
+        <td class="ff">+04 53 11.5</td>
+        <td class="ff rj">20.4 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 416242</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 15.81724</td>
+        <td class="ff">08 52 48.18</td>
+        <td class="ff">+04 51 21.2</td>
+        <td class="ff rj">20.3 V</td>
+        <td>C93 &ndash; Bellavista Observatory, L&#x27;Aquila</td>
+        <td class="ff lj">MPS 416242</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 15.89780</td>
+        <td class="ff">08 52 43.76</td>
+        <td class="ff">+04 50 57.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 15.89848</td>
+        <td class="ff">08 52 43.78</td>
+        <td class="ff">+04 50 57.6</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 15.90066</td>
+        <td class="ff">08 52 43.45</td>
+        <td class="ff">+04 51 06.3</td>
+        <td class="ff rj">20.3 V</td>
+        <td>C93 &ndash; Bellavista Observatory, L&#x27;Aquila</td>
+        <td class="ff lj">MPS 416242</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 16.10708</td>
+        <td class="ff">08 52 43.87</td>
+        <td class="ff">+04 50 46.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 416242</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 16.11177</td>
+        <td class="ff">08 52 43.61</td>
+        <td class="ff">+04 50 45.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 416242</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 16.11641</td>
+        <td class="ff">08 52 43.33</td>
+        <td class="ff">+04 50 45.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 416242</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 16.93125</td>
+        <td class="ff">08 52 20.51</td>
+        <td class="ff">+04 47 38.4</td>
+        <td class="ff rj">19.9 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 16.93564</td>
+        <td class="ff">08 52 20.30</td>
+        <td class="ff">+04 47 37.5</td>
+        <td class="ff rj">19.8 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 16.94443</td>
+        <td class="ff">08 52 19.90</td>
+        <td class="ff">+04 47 35.7</td>
+        <td class="ff rj">20.2 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 16.94883</td>
+        <td class="ff">08 52 19.70</td>
+        <td class="ff">+04 47 34.7</td>
+        <td class="ff rj">20.2 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 16.95323</td>
+        <td class="ff">08 52 19.51</td>
+        <td class="ff">+04 47 33.8</td>
+        <td class="ff rj">20.1 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 17.15004</td>
+        <td class="ff">08 52 20.38</td>
+        <td class="ff">+04 47 28.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 17.15508</td>
+        <td class="ff">08 52 20.05</td>
+        <td class="ff">+04 47 27.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 17.16006</td>
+        <td class="ff">08 52 19.76</td>
+        <td class="ff">+04 47 26.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 17.16990</td>
+        <td class="ff">08 52 16.53</td>
+        <td class="ff">+04 47 10.6</td>
+        <td class="ff rj">20.4 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 17.17463</td>
+        <td class="ff">08 52 16.24</td>
+        <td class="ff">+04 47 09.5</td>
+        <td class="ff rj">20.4 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 17.17999</td>
+        <td class="ff">08 52 15.95</td>
+        <td class="ff">+04 47 08.5</td>
+        <td class="ff rj">20.1 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 18.89363</td>
+        <td class="ff">08 51 49.09</td>
+        <td class="ff">+04 39 59.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 18.91227</td>
+        <td class="ff">08 51 48.15</td>
+        <td class="ff">+04 39 54.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 18.91868</td>
+        <td class="ff">08 51 47.84</td>
+        <td class="ff">+04 39 52.1</td>
+        <td class="ff rj">19.4 R</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 18.99662</td>
+        <td class="ff">08 51 51.78</td>
+        <td class="ff">+04 42 25.7</td>
+        <td class="ff rj">19.9 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 19.00263</td>
+        <td class="ff">08 51 51.42</td>
+        <td class="ff">+04 42 23.8</td>
+        <td class="ff rj">20.0 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 19.00826</td>
+        <td class="ff">08 51 51.10</td>
+        <td class="ff">+04 42 22.8</td>
+        <td class="ff rj">20.2 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 19.60506</td>
+        <td class="ff">08 51 36.14</td>
+        <td class="ff">+04 37 03.0</td>
+        <td class="ff rj">20.0 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 19.60992</td>
+        <td class="ff">08 51 35.93</td>
+        <td class="ff">+04 37 01.0</td>
+        <td class="ff rj">20.0 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 19.61479</td>
+        <td class="ff">08 51 35.70</td>
+        <td class="ff">+04 36 59.8</td>
+        <td class="ff rj">19.8 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 19.61966</td>
+        <td class="ff">08 51 35.46</td>
+        <td class="ff">+04 36 58.1</td>
+        <td class="ff rj">19.7 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 19.80198</td>
+        <td class="ff">08 51 40.62</td>
+        <td class="ff">+04 35 32.7</td>
+        <td class="ff rj">19.5 R</td>
+        <td>A17 &ndash; Guidestar Observatory, Weinheim</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 19.81762</td>
+        <td class="ff">08 51 39.88</td>
+        <td class="ff">+04 35 27.5</td>
+        <td class="ff rj">19.4 R</td>
+        <td>A17 &ndash; Guidestar Observatory, Weinheim</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 19.83327</td>
+        <td class="ff">08 51 39.16</td>
+        <td class="ff">+04 35 22.8</td>
+        <td class="ff rj">19.3 R</td>
+        <td>A17 &ndash; Guidestar Observatory, Weinheim</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 19.85486</td>
+        <td class="ff">08 51 37.75</td>
+        <td class="ff">+04 35 26.9</td>
+        <td class="ff rj">19.9 V</td>
+        <td>C91 &ndash; Montevenere Observatory, Monzuno</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 19.86181</td>
+        <td class="ff">08 51 37.40</td>
+        <td class="ff">+04 35 23.8</td>
+        <td class="ff rj">19.9 V</td>
+        <td>C91 &ndash; Montevenere Observatory, Monzuno</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 19.86875</td>
+        <td class="ff">08 51 37.14</td>
+        <td class="ff">+04 35 20.7</td>
+        <td class="ff rj">19.9 V</td>
+        <td>C91 &ndash; Montevenere Observatory, Monzuno</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 19.91224</td>
+        <td class="ff">08 51 35.02</td>
+        <td class="ff">+04 34 51.8</td>
+        <td class="ff rj">19.3 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 19.92018</td>
+        <td class="ff">08 51 34.68</td>
+        <td class="ff">+04 34 48.9</td>
+        <td class="ff rj">19.1 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 19.92460</td>
+        <td class="ff">08 51 34.49</td>
+        <td class="ff">+04 34 47.4</td>
+        <td class="ff rj">19.3 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 19.92681</td>
+        <td class="ff">08 51 34.39</td>
+        <td class="ff">+04 34 46.5</td>
+        <td class="ff rj">19.3 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 19.92903</td>
+        <td class="ff">08 51 34.30</td>
+        <td class="ff">+04 34 45.7</td>
+        <td class="ff rj">19.5 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 20.47873</td>
+        <td class="ff">08 51 33.26</td>
+        <td class="ff">+04 35 05.3</td>
+        <td class="ff rj">18.8 R</td>
+        <td>D90 &ndash; RAS Observatory, Moorook</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 20.48378</td>
+        <td class="ff">08 51 33.96</td>
+        <td class="ff">+04 32 11.5</td>
+        <td class="ff rj">19.8 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 20.48513</td>
+        <td class="ff">08 51 32.90</td>
+        <td class="ff">+04 35 03.4</td>
+        <td class="ff rj">19.0 R</td>
+        <td>D90 &ndash; RAS Observatory, Moorook</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 20.48540</td>
+        <td class="ff">08 51 33.93</td>
+        <td class="ff">+04 32 10.9</td>
+        <td class="ff rj">19.8 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 20.48702</td>
+        <td class="ff">08 51 33.82</td>
+        <td class="ff">+04 32 10.5</td>
+        <td class="ff rj">19.9 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 20.48865</td>
+        <td class="ff">08 51 33.68</td>
+        <td class="ff">+04 32 10.3</td>
+        <td class="ff rj">19.5 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 20.49027</td>
+        <td class="ff">08 51 33.63</td>
+        <td class="ff">+04 32 09.1</td>
+        <td class="ff rj">19.6 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 20.84264</td>
+        <td class="ff">08 51 30.40</td>
+        <td class="ff">+04 29 27.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 20.84417</td>
+        <td class="ff">08 51 30.35</td>
+        <td class="ff">+04 29 27.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 20.84485</td>
+        <td class="ff">08 51 30.31</td>
+        <td class="ff">+04 29 26.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 20.85084</td>
+        <td class="ff">08 51 29.99</td>
+        <td class="ff">+04 29 24.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 20.85321</td>
+        <td class="ff">08 51 29.90</td>
+        <td class="ff">+04 29 23.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 21.84134</td>
+        <td class="ff">08 51 27.99</td>
+        <td class="ff">+04 22 19.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 21.84300</td>
+        <td class="ff">08 51 27.88</td>
+        <td class="ff">+04 22 19.5</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 21.84447</td>
+        <td class="ff">08 51 27.83</td>
+        <td class="ff">+04 22 18.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 21.84508</td>
+        <td class="ff">08 51 27.79</td>
+        <td class="ff">+04 22 18.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 21.84738</td>
+        <td class="ff">08 51 27.67</td>
+        <td class="ff">+04 22 16.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 21.85041</td>
+        <td class="ff">08 51 27.59</td>
+        <td class="ff">+04 22 16.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>246 &ndash; Klet Observatory-KLENOT</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 21.85278</td>
+        <td class="ff">08 51 27.79</td>
+        <td class="ff">+04 22 24.3</td>
+        <td class="ff rj">19.6 V</td>
+        <td>C91 &ndash; Montevenere Observatory, Monzuno</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 21.86629</td>
+        <td class="ff">08 51 27.15</td>
+        <td class="ff">+04 22 18.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>104 &ndash; San Marcello Pistoiese</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 21.87345</td>
+        <td class="ff">08 51 26.78</td>
+        <td class="ff">+04 22 14.3</td>
+        <td class="ff rj">19.1 R</td>
+        <td>104 &ndash; San Marcello Pistoiese</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 21.87847</td>
+        <td class="ff">08 51 26.53</td>
+        <td class="ff">+04 22 11.7</td>
+        <td class="ff rj">19.6 V</td>
+        <td>C91 &ndash; Montevenere Observatory, Monzuno</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 21.88597</td>
+        <td class="ff">08 51 26.50</td>
+        <td class="ff">+04 22 05.1</td>
+        <td class="ff rj">19.4 R</td>
+        <td>A24 &ndash; New Millennium Observatory, Mozzate</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 21.89098</td>
+        <td class="ff">08 51 26.25</td>
+        <td class="ff">+04 22 02.6</td>
+        <td class="ff rj">19.0 R</td>
+        <td>A24 &ndash; New Millennium Observatory, Mozzate</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 21.89636</td>
+        <td class="ff">08 51 25.99</td>
+        <td class="ff">+04 21 59.7</td>
+        <td class="ff rj">19.4 R</td>
+        <td>A24 &ndash; New Millennium Observatory, Mozzate</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 21.89653</td>
+        <td class="ff">08 51 25.54</td>
+        <td class="ff">+04 22 03.0</td>
+        <td class="ff rj">19.6 V</td>
+        <td>C91 &ndash; Montevenere Observatory, Monzuno</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 21.93803</td>
+        <td class="ff">08 51 24.10</td>
+        <td class="ff">+04 21 37.9</td>
+        <td class="ff rj">19.0 R</td>
+        <td>204 &ndash; Schiaparelli Observatory</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 21.95240</td>
+        <td class="ff">08 51 23.53</td>
+        <td class="ff">+04 21 30.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>204 &ndash; Schiaparelli Observatory</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 21.96639</td>
+        <td class="ff">08 51 23.01</td>
+        <td class="ff">+04 21 23.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>204 &ndash; Schiaparelli Observatory</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 22.122106</td>
+        <td class="ff">08 51 33.30</td>
+        <td class="ff">+04 20 37.1</td>
+        <td class="ff rj">19.0 R</td>
+        <td>673 &ndash; Table Mountain Observatory, Wrightwood</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 22.131854</td>
+        <td class="ff">08 51 32.81</td>
+        <td class="ff">+04 20 32.1</td>
+        <td class="ff rj">18.9 R</td>
+        <td>673 &ndash; Table Mountain Observatory, Wrightwood</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 22.135565</td>
+        <td class="ff">08 51 32.56</td>
+        <td class="ff">+04 20 30.6</td>
+        <td class="ff rj">19.2 R</td>
+        <td>673 &ndash; Table Mountain Observatory, Wrightwood</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 22.139255</td>
+        <td class="ff">08 51 32.42</td>
+        <td class="ff">+04 20 29.1</td>
+        <td class="ff rj">19.4 R</td>
+        <td>673 &ndash; Table Mountain Observatory, Wrightwood</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 22.152924</td>
+        <td class="ff">08 51 31.60</td>
+        <td class="ff">+04 20 22.1</td>
+        <td class="ff rj">19.3 R</td>
+        <td>673 &ndash; Table Mountain Observatory, Wrightwood</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 22.155219</td>
+        <td class="ff">08 51 31.50</td>
+        <td class="ff">+04 20 20.6</td>
+        <td class="ff rj">19.4 R</td>
+        <td>673 &ndash; Table Mountain Observatory, Wrightwood</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 22.157538</td>
+        <td class="ff">08 51 31.34</td>
+        <td class="ff">+04 20 20.2</td>
+        <td class="ff rj">18.9 R</td>
+        <td>673 &ndash; Table Mountain Observatory, Wrightwood</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 22.159812</td>
+        <td class="ff">08 51 31.22</td>
+        <td class="ff">+04 20 19.1</td>
+        <td class="ff rj">19.3 R</td>
+        <td>673 &ndash; Table Mountain Observatory, Wrightwood</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 22.162191</td>
+        <td class="ff">08 51 31.07</td>
+        <td class="ff">+04 20 17.8</td>
+        <td class="ff rj">19.2 R</td>
+        <td>673 &ndash; Table Mountain Observatory, Wrightwood</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 22.88325</td>
+        <td class="ff">08 51 30.20</td>
+        <td class="ff">+04 12 59.4</td>
+        <td class="ff rj">19.0 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 22.88547</td>
+        <td class="ff">08 51 30.12</td>
+        <td class="ff">+04 12 58.0</td>
+        <td class="ff rj">19.0 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 22.88768</td>
+        <td class="ff">08 51 30.02</td>
+        <td class="ff">+04 12 56.6</td>
+        <td class="ff rj">18.9 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 417374</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 23.89370</td>
+        <td class="ff">08 51 41.48</td>
+        <td class="ff">+04 01 44.5</td>
+        <td class="ff rj">18.7 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 23.89521</td>
+        <td class="ff">08 51 41.43</td>
+        <td class="ff">+04 01 43.4</td>
+        <td class="ff rj">18.7 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 23.89672</td>
+        <td class="ff">08 51 41.38</td>
+        <td class="ff">+04 01 42.2</td>
+        <td class="ff rj">18.6 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 23.93526</td>
+        <td class="ff">08 51 40.06</td>
+        <td class="ff">+04 01 26.6</td>
+        <td class="ff rj">18.4 R</td>
+        <td>B67 &ndash; Sternwarte Mirasteilas, Falera</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 23.94086</td>
+        <td class="ff">08 51 39.86</td>
+        <td class="ff">+04 01 22.0</td>
+        <td class="ff rj">18.4 R</td>
+        <td>B67 &ndash; Sternwarte Mirasteilas, Falera</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 23.94485</td>
+        <td class="ff">08 51 39.74</td>
+        <td class="ff">+04 01 19.0</td>
+        <td class="ff rj">18.4 R</td>
+        <td>B67 &ndash; Sternwarte Mirasteilas, Falera</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 24.11215</td>
+        <td class="ff">08 51 53.64</td>
+        <td class="ff">+03 59 57.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 24.11529</td>
+        <td class="ff">08 51 53.47</td>
+        <td class="ff">+03 59 54.6</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 24.11844</td>
+        <td class="ff">08 51 53.30</td>
+        <td class="ff">+03 59 52.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 24.15569</td>
+        <td class="ff">08 51 50.63</td>
+        <td class="ff">+03 59 23.4</td>
+        <td class="ff rj">18.5 R</td>
+        <td>G48 &ndash; Harlingten Research Observatory, Rancho Hildal</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 24.15745</td>
+        <td class="ff">08 51 50.51</td>
+        <td class="ff">+03 59 21.7</td>
+        <td class="ff rj">18.7 R</td>
+        <td>G48 &ndash; Harlingten Research Observatory, Rancho Hildal</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 24.15920</td>
+        <td class="ff">08 51 50.41</td>
+        <td class="ff">+03 59 20.5</td>
+        <td class="ff rj">18.8 R</td>
+        <td>G48 &ndash; Harlingten Research Observatory, Rancho Hildal</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 24.15958</td>
+        <td class="ff">08 51 49.90</td>
+        <td class="ff">+03 59 18.9</td>
+        <td class="ff rj">18.6 R</td>
+        <td>448 &ndash; Desert Moon Observatory, Las Cruces</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 24.16096</td>
+        <td class="ff">08 51 50.29</td>
+        <td class="ff">+03 59 19.3</td>
+        <td class="ff rj">18.8 R</td>
+        <td>G48 &ndash; Harlingten Research Observatory, Rancho Hildal</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 24.16924</td>
+        <td class="ff">08 51 49.31</td>
+        <td class="ff">+03 59 11.1</td>
+        <td class="ff rj">18.6 R</td>
+        <td>448 &ndash; Desert Moon Observatory, Las Cruces</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 24.17884</td>
+        <td class="ff">08 51 48.78</td>
+        <td class="ff">+03 59 03.3</td>
+        <td class="ff rj">18.8 R</td>
+        <td>448 &ndash; Desert Moon Observatory, Las Cruces</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 24.88824</td>
+        <td class="ff">08 52 03.55</td>
+        <td class="ff">+03 47 33.0</td>
+        <td class="ff rj">18.3 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 24.89154</td>
+        <td class="ff">08 52 03.45</td>
+        <td class="ff">+03 47 29.8</td>
+        <td class="ff rj">18.3 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 24.89374</td>
+        <td class="ff">08 52 03.39</td>
+        <td class="ff">+03 47 27.5</td>
+        <td class="ff rj">18.3 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 24.89594</td>
+        <td class="ff">08 52 03.32</td>
+        <td class="ff">+03 47 25.4</td>
+        <td class="ff rj">18.5 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 24.97744</td>
+        <td class="ff">08 52 01.79</td>
+        <td class="ff">+03 46 01.5</td>
+        <td class="ff rj">18.6 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 24.97964</td>
+        <td class="ff">08 52 01.79</td>
+        <td class="ff">+03 45 59.3</td>
+        <td class="ff rj">18.5 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 24.98185</td>
+        <td class="ff">08 52 01.77</td>
+        <td class="ff">+03 45 57.0</td>
+        <td class="ff rj">18.2 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 24.98405</td>
+        <td class="ff">08 52 01.76</td>
+        <td class="ff">+03 45 54.7</td>
+        <td class="ff rj">18.5 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 25.04807</td>
+        <td class="ff">08 52 16.92</td>
+        <td class="ff">+03 46 08.5</td>
+        <td class="ff rj">18.7 R</td>
+        <td>H23 &ndash; Pear Tree Observatory, Valparaiso</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 25.06416</td>
+        <td class="ff">08 52 15.97</td>
+        <td class="ff">+03 45 52.0</td>
+        <td class="ff rj">18.6 R</td>
+        <td>H23 &ndash; Pear Tree Observatory, Valparaiso</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 25.08035</td>
+        <td class="ff">08 52 15.00</td>
+        <td class="ff">+03 45 36.2</td>
+        <td class="ff rj">18.7 R</td>
+        <td>H23 &ndash; Pear Tree Observatory, Valparaiso</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 25.24758</td>
+        <td class="ff">08 52 08.55</td>
+        <td class="ff">+03 42 20.0</td>
+        <td class="ff rj">19.0 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 25.24948</td>
+        <td class="ff">08 52 08.49</td>
+        <td class="ff">+03 42 17.3</td>
+        <td class="ff rj">19.0 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 25.25171</td>
+        <td class="ff">08 52 08.42</td>
+        <td class="ff">+03 42 15.3</td>
+        <td class="ff rj">18.8 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 25.25330</td>
+        <td class="ff">08 52 08.39</td>
+        <td class="ff">+03 42 13.2</td>
+        <td class="ff rj">18.9 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 25.25436</td>
+        <td class="ff">08 52 08.33</td>
+        <td class="ff">+03 42 12.4</td>
+        <td class="ff rj">19.1 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 25.25620</td>
+        <td class="ff">08 52 08.31</td>
+        <td class="ff">+03 42 09.8</td>
+        <td class="ff rj">18.9 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 25.25826</td>
+        <td class="ff">08 52 08.23</td>
+        <td class="ff">+03 42 07.9</td>
+        <td class="ff rj">18.9 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 25.26076</td>
+        <td class="ff">08 52 08.17</td>
+        <td class="ff">+03 42 04.7</td>
+        <td class="ff rj">19.1 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 25.26179</td>
+        <td class="ff">08 52 08.14</td>
+        <td class="ff">+03 42 03.6</td>
+        <td class="ff rj">19.2 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 25.26336</td>
+        <td class="ff">08 52 08.12</td>
+        <td class="ff">+03 42 01.6</td>
+        <td class="ff rj">18.9 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 25.81412</td>
+        <td class="ff">08 52 42.45</td>
+        <td class="ff">+03 30 45.1</td>
+        <td class="ff rj">18.2 R</td>
+        <td>B88 &ndash; Bigmuskie Observatory, Mombercelli</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 25.83016</td>
+        <td class="ff">08 52 41.84</td>
+        <td class="ff">+03 30 24.4</td>
+        <td class="ff rj">18.1 R</td>
+        <td>B88 &ndash; Bigmuskie Observatory, Mombercelli</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 25.84618</td>
+        <td class="ff">08 52 41.22</td>
+        <td class="ff">+03 30 04.2</td>
+        <td class="ff rj">17.6 R</td>
+        <td>B88 &ndash; Bigmuskie Observatory, Mombercelli</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 25.86891</td>
+        <td class="ff">08 52 39.84</td>
+        <td class="ff">+03 29 09.0</td>
+        <td class="ff rj">18.3 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 25.86972</td>
+        <td class="ff">08 52 39.82</td>
+        <td class="ff">+03 29 07.8</td>
+        <td class="ff rj">18.3 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 25.87053</td>
+        <td class="ff">08 52 39.80</td>
+        <td class="ff">+03 29 06.8</td>
+        <td class="ff rj">18.1 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 25.87134</td>
+        <td class="ff">08 52 39.79</td>
+        <td class="ff">+03 29 05.8</td>
+        <td class="ff rj">18.1 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 25.87215</td>
+        <td class="ff">08 52 39.77</td>
+        <td class="ff">+03 29 04.8</td>
+        <td class="ff rj">18.2 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 25.87295</td>
+        <td class="ff">08 52 39.75</td>
+        <td class="ff">+03 29 03.7</td>
+        <td class="ff rj">18.2 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.06562</td>
+        <td class="ff">08 52 55.75</td>
+        <td class="ff">+03 26 10.7</td>
+        <td class="ff rj">18.6 R</td>
+        <td>H23 &ndash; Pear Tree Observatory, Valparaiso</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.07784</td>
+        <td class="ff">08 52 55.17</td>
+        <td class="ff">+03 25 53.2</td>
+        <td class="ff rj">18.6 R</td>
+        <td>H23 &ndash; Pear Tree Observatory, Valparaiso</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.08994</td>
+        <td class="ff">08 52 54.50</td>
+        <td class="ff">+03 25 38.6</td>
+        <td class="ff rj">18.2 R</td>
+        <td>H23 &ndash; Pear Tree Observatory, Valparaiso</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.15445</td>
+        <td class="ff">08 52 53.11</td>
+        <td class="ff">+03 23 46.6</td>
+        <td class="ff rj">18.4 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.15609</td>
+        <td class="ff">08 52 53.01</td>
+        <td class="ff">+03 23 44.5</td>
+        <td class="ff rj">18.4 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.15839</td>
+        <td class="ff">08 52 52.88</td>
+        <td class="ff">+03 23 41.3</td>
+        <td class="ff rj">18.5 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.16190</td>
+        <td class="ff">08 52 52.71</td>
+        <td class="ff">+03 23 36.1</td>
+        <td class="ff rj">18.6 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.16329</td>
+        <td class="ff">08 52 52.65</td>
+        <td class="ff">+03 23 34.7</td>
+        <td class="ff rj">18.7 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.16564</td>
+        <td class="ff">08 52 52.55</td>
+        <td class="ff">+03 23 30.9</td>
+        <td class="ff rj">18.6 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.16805</td>
+        <td class="ff">08 52 52.43</td>
+        <td class="ff">+03 23 27.4</td>
+        <td class="ff rj">18.7 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.17076</td>
+        <td class="ff">08 52 52.33</td>
+        <td class="ff">+03 23 23.3</td>
+        <td class="ff rj">18.7 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.17350</td>
+        <td class="ff">08 52 52.21</td>
+        <td class="ff">+03 23 19.4</td>
+        <td class="ff rj">18.7 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.78729</td>
+        <td class="ff">08 53 38.42</td>
+        <td class="ff">+03 06 13.2</td>
+        <td class="ff rj">18.0 V</td>
+        <td>151 &ndash; Eschenberg Observatory, Winterthur</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.78876</td>
+        <td class="ff">08 53 38.40</td>
+        <td class="ff">+03 06 10.6</td>
+        <td class="ff rj">18.1 V</td>
+        <td>151 &ndash; Eschenberg Observatory, Winterthur</td>
+        <td class="ff lj">MPS 418613</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.79022</td>
+        <td class="ff">08 53 38.38</td>
+        <td class="ff">+03 06 08.0</td>
+        <td class="ff rj">18.1 V</td>
+        <td>151 &ndash; Eschenberg Observatory, Winterthur</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.79167</td>
+        <td class="ff">08 53 38.33</td>
+        <td class="ff">+03 06 05.7</td>
+        <td class="ff rj">18.3 V</td>
+        <td>151 &ndash; Eschenberg Observatory, Winterthur</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.79314</td>
+        <td class="ff">08 53 38.30</td>
+        <td class="ff">+03 06 03.3</td>
+        <td class="ff rj">18.3 V</td>
+        <td>151 &ndash; Eschenberg Observatory, Winterthur</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.79459</td>
+        <td class="ff">08 53 38.25</td>
+        <td class="ff">+03 06 00.9</td>
+        <td class="ff rj">18.5 V</td>
+        <td>151 &ndash; Eschenberg Observatory, Winterthur</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.79605</td>
+        <td class="ff">08 53 38.21</td>
+        <td class="ff">+03 05 58.6</td>
+        <td class="ff rj">18.5 V</td>
+        <td>151 &ndash; Eschenberg Observatory, Winterthur</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.80884</td>
+        <td class="ff">08 53 37.90</td>
+        <td class="ff">+03 05 27.3</td>
+        <td class="ff rj">18.0 R</td>
+        <td>A17 &ndash; Guidestar Observatory, Weinheim</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.81665</td>
+        <td class="ff">08 53 37.75</td>
+        <td class="ff">+03 05 13.4</td>
+        <td class="ff rj">18.0 R</td>
+        <td>A17 &ndash; Guidestar Observatory, Weinheim</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.82448</td>
+        <td class="ff">08 53 37.60</td>
+        <td class="ff">+03 04 59.4</td>
+        <td class="ff rj">17.9 R</td>
+        <td>A17 &ndash; Guidestar Observatory, Weinheim</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.83693</td>
+        <td class="ff">08 53 35.97</td>
+        <td class="ff">+03 05 06.9</td>
+        <td class="ff rj">18.1 V</td>
+        <td>C93 &ndash; Bellavista Observatory, L&#x27;Aquila</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.84354</td>
+        <td class="ff">08 53 37.03</td>
+        <td class="ff">+03 04 41.5</td>
+        <td class="ff rj">17.9 R</td>
+        <td>203 &ndash; GiaGa Observatory</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.84792</td>
+        <td class="ff">08 53 36.32</td>
+        <td class="ff">+03 04 38.6</td>
+        <td class="ff rj">18.4 V</td>
+        <td>C91 &ndash; Montevenere Observatory, Monzuno</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.85118</td>
+        <td class="ff">08 53 36.89</td>
+        <td class="ff">+03 04 27.3</td>
+        <td class="ff rj">17.8 R</td>
+        <td>A24 &ndash; New Millennium Observatory, Mozzate</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.85262</td>
+        <td class="ff">08 53 36.88</td>
+        <td class="ff">+03 04 25.0</td>
+        <td class="ff rj">18.3 R</td>
+        <td>A24 &ndash; New Millennium Observatory, Mozzate</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.86753</td>
+        <td class="ff">08 53 36.52</td>
+        <td class="ff">+03 03 57.2</td>
+        <td class="ff rj">17.9 R</td>
+        <td>A24 &ndash; New Millennium Observatory, Mozzate</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.87398</td>
+        <td class="ff">08 53 36.24</td>
+        <td class="ff">+03 03 45.8</td>
+        <td class="ff rj">17.8 R</td>
+        <td>203 &ndash; GiaGa Observatory</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.87500</td>
+        <td class="ff">08 53 35.60</td>
+        <td class="ff">+03 03 51.7</td>
+        <td class="ff rj">18.4 V</td>
+        <td>C91 &ndash; Montevenere Observatory, Monzuno</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.88280</td>
+        <td class="ff">08 53 36.16</td>
+        <td class="ff">+03 03 28.8</td>
+        <td class="ff rj">17.7 R</td>
+        <td>A24 &ndash; New Millennium Observatory, Mozzate</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.89772</td>
+        <td class="ff">08 53 35.81</td>
+        <td class="ff">+03 03 01.0</td>
+        <td class="ff rj">17.7 R</td>
+        <td>A24 &ndash; New Millennium Observatory, Mozzate</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.89916</td>
+        <td class="ff">08 53 35.81</td>
+        <td class="ff">+03 02 58.4</td>
+        <td class="ff rj">17.9 R</td>
+        <td>A24 &ndash; New Millennium Observatory, Mozzate</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.90954</td>
+        <td class="ff">08 53 34.06</td>
+        <td class="ff">+03 02 52.8</td>
+        <td class="ff rj">18.3 V</td>
+        <td>C93 &ndash; Bellavista Observatory, L&#x27;Aquila</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.99366</td>
+        <td class="ff">08 53 37.87</td>
+        <td class="ff">+03 00 08.4</td>
+        <td class="ff rj">17.4 R</td>
+        <td>J38 &ndash; Observatorio La Vara, Valdes</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.99464</td>
+        <td class="ff">08 53 37.88</td>
+        <td class="ff">+03 00 06.4</td>
+        <td class="ff rj">17.9 R</td>
+        <td>J38 &ndash; Observatorio La Vara, Valdes</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 26.99660</td>
+        <td class="ff">08 53 37.83</td>
+        <td class="ff">+03 00 03.8</td>
+        <td class="ff rj">17.8 R</td>
+        <td>J38 &ndash; Observatorio La Vara, Valdes</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.08152</td>
+        <td class="ff">08 53 57.56</td>
+        <td class="ff">+02 58 26.0</td>
+        <td class="ff rj">17.9 R</td>
+        <td>H23 &ndash; Pear Tree Observatory, Valparaiso</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.09613</td>
+        <td class="ff">08 53 56.86</td>
+        <td class="ff">+02 57 57.7</td>
+        <td class="ff rj">17.6 R</td>
+        <td>H23 &ndash; Pear Tree Observatory, Valparaiso</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.11072</td>
+        <td class="ff">08 53 56.18</td>
+        <td class="ff">+02 57 26.9</td>
+        <td class="ff rj">18.0 R</td>
+        <td>H23 &ndash; Pear Tree Observatory, Valparaiso</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.12549</td>
+        <td class="ff">08 54 02.12</td>
+        <td class="ff">+02 56 45.7</td>
+        <td class="ff rj">18.5 V</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.12662</td>
+        <td class="ff">08 54 02.07</td>
+        <td class="ff">+02 56 43.9</td>
+        <td class="ff rj">18.0 V</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.12773</td>
+        <td class="ff">08 54 02.03</td>
+        <td class="ff">+02 56 41.7</td>
+        <td class="ff rj">17.6 V</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.12889</td>
+        <td class="ff">08 54 01.97</td>
+        <td class="ff">+02 56 39.2</td>
+        <td class="ff rj">17.9 V</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.13002</td>
+        <td class="ff">08 54 01.93</td>
+        <td class="ff">+02 56 36.8</td>
+        <td class="ff rj">17.5 V</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.13116</td>
+        <td class="ff">08 54 01.90</td>
+        <td class="ff">+02 56 34.5</td>
+        <td class="ff rj">18.0 V</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.13228</td>
+        <td class="ff">08 54 01.86</td>
+        <td class="ff">+02 56 32.7</td>
+        <td class="ff rj">18.1 V</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.13341</td>
+        <td class="ff">08 54 01.77</td>
+        <td class="ff">+02 56 30.5</td>
+        <td class="ff rj">18.6 V</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.13463</td>
+        <td class="ff">08 54 01.74</td>
+        <td class="ff">+02 56 27.9</td>
+        <td class="ff rj">18.3 V</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.13576</td>
+        <td class="ff">08 54 01.70</td>
+        <td class="ff">+02 56 25.6</td>
+        <td class="ff rj">18.0 V</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.14553</td>
+        <td class="ff">08 53 57.02</td>
+        <td class="ff">+02 55 54.8</td>
+        <td class="ff rj">18.3 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.14708</td>
+        <td class="ff">08 53 57.01</td>
+        <td class="ff">+02 55 51.2</td>
+        <td class="ff rj">18.3 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.14860</td>
+        <td class="ff">08 53 56.92</td>
+        <td class="ff">+02 55 48.3</td>
+        <td class="ff rj">18.5 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.14992</td>
+        <td class="ff">08 53 56.89</td>
+        <td class="ff">+02 55 45.5</td>
+        <td class="ff rj">18.5 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.15084</td>
+        <td class="ff">08 53 56.88</td>
+        <td class="ff">+02 55 43.5</td>
+        <td class="ff rj">18.2 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.15256</td>
+        <td class="ff">08 53 56.82</td>
+        <td class="ff">+02 55 40.2</td>
+        <td class="ff rj">18.2 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.15428</td>
+        <td class="ff">08 53 56.73</td>
+        <td class="ff">+02 55 36.7</td>
+        <td class="ff rj">18.1 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.15574</td>
+        <td class="ff">08 53 56.69</td>
+        <td class="ff">+02 55 33.8</td>
+        <td class="ff rj">18.2 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.15773</td>
+        <td class="ff">08 53 56.62</td>
+        <td class="ff">+02 55 29.4</td>
+        <td class="ff rj">18.2 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.15916</td>
+        <td class="ff">08 53 56.57</td>
+        <td class="ff">+02 55 26.9</td>
+        <td class="ff rj">18.3 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.16068</td>
+        <td class="ff">08 53 56.53</td>
+        <td class="ff">+02 55 23.3</td>
+        <td class="ff rj">18.3 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.30319</td>
+        <td class="ff">08 54 00.17</td>
+        <td class="ff">+02 49 55.1</td>
+        <td class="ff rj">18.1 &nbsp;</td>
+        <td>718 &ndash; Tooele</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.31200</td>
+        <td class="ff">08 54 00.28</td>
+        <td class="ff">+02 49 35.7</td>
+        <td class="ff rj">17.7 &nbsp;</td>
+        <td>718 &ndash; Tooele</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.31799</td>
+        <td class="ff">08 54 00.31</td>
+        <td class="ff">+02 49 22.5</td>
+        <td class="ff rj">18.0 &nbsp;</td>
+        <td>718 &ndash; Tooele</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.32494</td>
+        <td class="ff">08 54 00.46</td>
+        <td class="ff">+02 49 07.0</td>
+        <td class="ff rj">17.9 &nbsp;</td>
+        <td>718 &ndash; Tooele</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.79514</td>
+        <td class="ff">08 55 04.84</td>
+        <td class="ff">+02 30 11.9</td>
+        <td class="ff rj">18.0 V</td>
+        <td>C91 &ndash; Montevenere Observatory, Monzuno</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.80000</td>
+        <td class="ff">08 55 04.82</td>
+        <td class="ff">+02 29 59.7</td>
+        <td class="ff rj">18.0 V</td>
+        <td>C91 &ndash; Montevenere Observatory, Monzuno</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.80625</td>
+        <td class="ff">08 55 04.78</td>
+        <td class="ff">+02 29 43.1</td>
+        <td class="ff rj">18.0 V</td>
+        <td>C91 &ndash; Montevenere Observatory, Monzuno</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.81020</td>
+        <td class="ff">08 55 03.97</td>
+        <td class="ff">+02 28 53.2</td>
+        <td class="ff rj">17.2 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.81175</td>
+        <td class="ff">08 55 03.97</td>
+        <td class="ff">+02 28 49.0</td>
+        <td class="ff rj">17.2 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.81349</td>
+        <td class="ff">08 55 03.99</td>
+        <td class="ff">+02 28 44.4</td>
+        <td class="ff rj">17.2 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.81521</td>
+        <td class="ff">08 55 04.00</td>
+        <td class="ff">+02 28 39.9</td>
+        <td class="ff rj">17.3 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.81693</td>
+        <td class="ff">08 55 04.02</td>
+        <td class="ff">+02 28 35.2</td>
+        <td class="ff rj">17.3 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.81736</td>
+        <td class="ff">08 55 04.65</td>
+        <td class="ff">+02 29 12.5</td>
+        <td class="ff rj">18.0 V</td>
+        <td>C91 &ndash; Montevenere Observatory, Monzuno</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.82847</td>
+        <td class="ff">08 55 04.56</td>
+        <td class="ff">+02 28 44.1</td>
+        <td class="ff rj">18.0 V</td>
+        <td>C91 &ndash; Montevenere Observatory, Monzuno</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.83333</td>
+        <td class="ff">08 55 04.50</td>
+        <td class="ff">+02 28 30.5</td>
+        <td class="ff rj">18.0 V</td>
+        <td>C91 &ndash; Montevenere Observatory, Monzuno</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.83854</td>
+        <td class="ff">08 55 04.59</td>
+        <td class="ff">+02 28 17.8</td>
+        <td class="ff rj">17.4 R</td>
+        <td>104 &ndash; San Marcello Pistoiese</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.84225</td>
+        <td class="ff">08 55 04.56</td>
+        <td class="ff">+02 28 07.8</td>
+        <td class="ff rj">17.4 R</td>
+        <td>104 &ndash; San Marcello Pistoiese</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.84632</td>
+        <td class="ff">08 55 04.52</td>
+        <td class="ff">+02 27 56.8</td>
+        <td class="ff rj">17.3 R</td>
+        <td>104 &ndash; San Marcello Pistoiese</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.86344</td>
+        <td class="ff">08 55 04.51</td>
+        <td class="ff">+02 27 03.9</td>
+        <td class="ff rj">18.2 R</td>
+        <td>560 &ndash; Madonna di Dossobuono</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.86451</td>
+        <td class="ff">08 55 04.52</td>
+        <td class="ff">+02 26 59.8</td>
+        <td class="ff rj">18.3 R</td>
+        <td>560 &ndash; Madonna di Dossobuono</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.86503</td>
+        <td class="ff">08 55 04.49</td>
+        <td class="ff">+02 26 59.7</td>
+        <td class="ff rj">18.3 R</td>
+        <td>560 &ndash; Madonna di Dossobuono</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.95235</td>
+        <td class="ff">08 55 09.65</td>
+        <td class="ff">+02 23 06.1</td>
+        <td class="ff rj">17.7 R</td>
+        <td>J38 &ndash; Observatorio La Vara, Valdes</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.95309</td>
+        <td class="ff">08 55 09.71</td>
+        <td class="ff">+02 23 03.9</td>
+        <td class="ff rj">17.7 R</td>
+        <td>J38 &ndash; Observatorio La Vara, Valdes</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 27.95606</td>
+        <td class="ff">08 55 09.73</td>
+        <td class="ff">+02 22 55.0</td>
+        <td class="ff rj">17.1 R</td>
+        <td>J38 &ndash; Observatorio La Vara, Valdes</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.22213</td>
+        <td class="ff">08 55 45.58</td>
+        <td class="ff">+02 09 51.6</td>
+        <td class="ff rj">17.4 &nbsp;</td>
+        <td>718 &ndash; Tooele</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.22961</td>
+        <td class="ff">08 55 45.67</td>
+        <td class="ff">+02 09 27.4</td>
+        <td class="ff rj">17.6 &nbsp;</td>
+        <td>718 &ndash; Tooele</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.23585</td>
+        <td class="ff">08 55 45.67</td>
+        <td class="ff">+02 09 07.5</td>
+        <td class="ff rj">17.4 &nbsp;</td>
+        <td>718 &ndash; Tooele</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.24976</td>
+        <td class="ff">08 55 45.81</td>
+        <td class="ff">+02 08 22.2</td>
+        <td class="ff rj">17.1 &nbsp;</td>
+        <td>718 &ndash; Tooele</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.27193</td>
+        <td class="ff">08 55 39.65</td>
+        <td class="ff">+02 07 39.7</td>
+        <td class="ff rj">17.7 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.27371</td>
+        <td class="ff">08 55 39.79</td>
+        <td class="ff">+02 07 33.5</td>
+        <td class="ff rj">17.7 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.27451</td>
+        <td class="ff">08 55 39.81</td>
+        <td class="ff">+02 07 31.1</td>
+        <td class="ff rj">17.7 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.27653</td>
+        <td class="ff">08 55 39.95</td>
+        <td class="ff">+02 07 25.9</td>
+        <td class="ff rj">17.9 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.27943</td>
+        <td class="ff">08 55 40.04</td>
+        <td class="ff">+02 07 14.4</td>
+        <td class="ff rj">17.7 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.28026</td>
+        <td class="ff">08 55 40.11</td>
+        <td class="ff">+02 07 11.9</td>
+        <td class="ff rj">17.6 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.28310</td>
+        <td class="ff">08 55 40.28</td>
+        <td class="ff">+02 07 02.7</td>
+        <td class="ff rj">17.7 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.28464</td>
+        <td class="ff">08 55 40.40</td>
+        <td class="ff">+02 06 56.8</td>
+        <td class="ff rj">17.7 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.28611</td>
+        <td class="ff">08 55 40.50</td>
+        <td class="ff">+02 06 52.0</td>
+        <td class="ff rj">17.7 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.28805</td>
+        <td class="ff">08 55 40.59</td>
+        <td class="ff">+02 06 45.3</td>
+        <td class="ff rj">17.6 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.78774</td>
+        <td class="ff">08 57 28.39</td>
+        <td class="ff">+01 34 14.5</td>
+        <td class="ff rj">17.1 V</td>
+        <td>151 &ndash; Eschenberg Observatory, Winterthur</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.78890</td>
+        <td class="ff">08 57 28.44</td>
+        <td class="ff">+01 34 09.6</td>
+        <td class="ff rj">17.2 V</td>
+        <td>151 &ndash; Eschenberg Observatory, Winterthur</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.79123</td>
+        <td class="ff">08 57 28.56</td>
+        <td class="ff">+01 33 59.7</td>
+        <td class="ff rj">17.3 V</td>
+        <td>151 &ndash; Eschenberg Observatory, Winterthur</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.79357</td>
+        <td class="ff">08 57 28.67</td>
+        <td class="ff">+01 33 49.9</td>
+        <td class="ff rj">17.2 V</td>
+        <td>151 &ndash; Eschenberg Observatory, Winterthur</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.79473</td>
+        <td class="ff">08 57 28.72</td>
+        <td class="ff">+01 33 45.1</td>
+        <td class="ff rj">17.1 V</td>
+        <td>151 &ndash; Eschenberg Observatory, Winterthur</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.81184</td>
+        <td class="ff">08 57 27.73</td>
+        <td class="ff">+01 32 01.7</td>
+        <td class="ff rj">16.8 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.81323</td>
+        <td class="ff">08 57 27.79</td>
+        <td class="ff">+01 31 55.6</td>
+        <td class="ff rj">16.8 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.81461</td>
+        <td class="ff">08 57 27.87</td>
+        <td class="ff">+01 31 49.8</td>
+        <td class="ff rj">16.8 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.81600</td>
+        <td class="ff">08 57 27.95</td>
+        <td class="ff">+01 31 43.5</td>
+        <td class="ff rj">17.0 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.81739</td>
+        <td class="ff">08 57 28.03</td>
+        <td class="ff">+01 31 37.4</td>
+        <td class="ff rj">17.0 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.81878</td>
+        <td class="ff">08 57 28.11</td>
+        <td class="ff">+01 31 31.3</td>
+        <td class="ff rj">16.9 R</td>
+        <td>B15 &ndash; Inastars Observatory, Potsdam (since 2006)</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.823135</td>
+        <td class="ff">08 57 30.23</td>
+        <td class="ff">+01 31 20.8</td>
+        <td class="ff rj">17.4 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.829716</td>
+        <td class="ff">08 57 30.57</td>
+        <td class="ff">+01 30 51.9</td>
+        <td class="ff rj">17.7 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.83542</td>
+        <td class="ff">08 57 29.46</td>
+        <td class="ff">+01 31 07.6</td>
+        <td class="ff rj">17.4 V</td>
+        <td>C91 &ndash; Montevenere Observatory, Monzuno</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.836297</td>
+        <td class="ff">08 57 30.93</td>
+        <td class="ff">+01 30 22.9</td>
+        <td class="ff rj">17.3 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.836470</td>
+        <td class="ff">08 57 28.75</td>
+        <td class="ff">+01 30 21.1</td>
+        <td class="ff rj">17.0 R</td>
+        <td>C01 &ndash; Lohrmann-Observatorium, Triebenberg</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.837442</td>
+        <td class="ff">08 57 28.78</td>
+        <td class="ff">+01 30 17.4</td>
+        <td class="ff rj">16.9 R</td>
+        <td>C01 &ndash; Lohrmann-Observatorium, Triebenberg</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.838403</td>
+        <td class="ff">08 57 28.85</td>
+        <td class="ff">+01 30 12.7</td>
+        <td class="ff rj">16.9 R</td>
+        <td>C01 &ndash; Lohrmann-Observatorium, Triebenberg</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.83889</td>
+        <td class="ff">08 57 29.61</td>
+        <td class="ff">+01 30 52.4</td>
+        <td class="ff rj">17.4 V</td>
+        <td>C91 &ndash; Montevenere Observatory, Monzuno</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.839375</td>
+        <td class="ff">08 57 28.90</td>
+        <td class="ff">+01 30 08.9</td>
+        <td class="ff rj">17.0 R</td>
+        <td>C01 &ndash; Lohrmann-Observatorium, Triebenberg</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.840336</td>
+        <td class="ff">08 57 28.95</td>
+        <td class="ff">+01 30 04.4</td>
+        <td class="ff rj">16.9 R</td>
+        <td>C01 &ndash; Lohrmann-Observatorium, Triebenberg</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.842878</td>
+        <td class="ff">08 57 31.29</td>
+        <td class="ff">+01 29 54.0</td>
+        <td class="ff rj">17.5 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.84583</td>
+        <td class="ff">08 57 29.87</td>
+        <td class="ff">+01 30 21.9</td>
+        <td class="ff rj">17.4 V</td>
+        <td>C91 &ndash; Montevenere Observatory, Monzuno</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.849459</td>
+        <td class="ff">08 57 31.65</td>
+        <td class="ff">+01 29 24.7</td>
+        <td class="ff rj">17.3 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.856039</td>
+        <td class="ff">08 57 32.01</td>
+        <td class="ff">+01 28 55.2</td>
+        <td class="ff rj">17.5 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.86250</td>
+        <td class="ff">08 57 30.50</td>
+        <td class="ff">+01 29 07.2</td>
+        <td class="ff rj">17.4 V</td>
+        <td>C91 &ndash; Montevenere Observatory, Monzuno</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.87222</td>
+        <td class="ff">08 57 30.93</td>
+        <td class="ff">+01 28 23.4</td>
+        <td class="ff rj">17.4 V</td>
+        <td>C91 &ndash; Montevenere Observatory, Monzuno</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.87652</td>
+        <td class="ff">08 57 38.55</td>
+        <td class="ff">+01 28 10.2</td>
+        <td class="ff rj">17.1 R</td>
+        <td>J38 &ndash; Observatorio La Vara, Valdes</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.87697</td>
+        <td class="ff">08 57 38.55</td>
+        <td class="ff">+01 28 08.3</td>
+        <td class="ff rj">16.8 R</td>
+        <td>J38 &ndash; Observatorio La Vara, Valdes</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.87922</td>
+        <td class="ff">08 57 38.63</td>
+        <td class="ff">+01 27 57.9</td>
+        <td class="ff rj">17.1 R</td>
+        <td>J38 &ndash; Observatorio La Vara, Valdes</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.90021</td>
+        <td class="ff">08 57 38.19</td>
+        <td class="ff">+01 26 42.5</td>
+        <td class="ff rj">17.2 V</td>
+        <td>I76 &ndash; Observatorio Tesla, Valdemorillo</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.90501</td>
+        <td class="ff">08 57 32.51</td>
+        <td class="ff">+01 25 24.5</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.90666</td>
+        <td class="ff">08 57 32.62</td>
+        <td class="ff">+01 25 17.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.90743</td>
+        <td class="ff">08 57 32.66</td>
+        <td class="ff">+01 25 13.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.90899</td>
+        <td class="ff">08 57 32.81</td>
+        <td class="ff">+01 25 05.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 28.94451</td>
+        <td class="ff">08 57 39.99</td>
+        <td class="ff">+01 23 16.5</td>
+        <td class="ff rj">17.2 V</td>
+        <td>I76 &ndash; Observatorio Tesla, Valdemorillo</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.09815</td>
+        <td class="ff">08 58 24.29</td>
+        <td class="ff">+01 11 27.2</td>
+        <td class="ff rj">16.8 R</td>
+        <td>850 &ndash; Cordell-Lorenz Observatory, Sewanee</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.11378</td>
+        <td class="ff">08 58 24.84</td>
+        <td class="ff">+01 10 06.8</td>
+        <td class="ff rj">16.6 R</td>
+        <td>850 &ndash; Cordell-Lorenz Observatory, Sewanee</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.12938</td>
+        <td class="ff">08 58 25.41</td>
+        <td class="ff">+01 08 45.9</td>
+        <td class="ff rj">16.9 R</td>
+        <td>850 &ndash; Cordell-Lorenz Observatory, Sewanee</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.14498</td>
+        <td class="ff">08 58 26.05</td>
+        <td class="ff">+01 07 24.0</td>
+        <td class="ff rj">16.6 R</td>
+        <td>850 &ndash; Cordell-Lorenz Observatory, Sewanee</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.19323</td>
+        <td class="ff">08 58 40.83</td>
+        <td class="ff">+01 03 30.0</td>
+        <td class="ff rj">17.0 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.20907</td>
+        <td class="ff">08 58 41.44</td>
+        <td class="ff">+01 02 03.4</td>
+        <td class="ff rj">17.2 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.21700</td>
+        <td class="ff">08 58 41.80</td>
+        <td class="ff">+01 01 19.9</td>
+        <td class="ff rj">17.1 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.24127</td>
+        <td class="ff">08 58 35.83</td>
+        <td class="ff">+00 58 41.8</td>
+        <td class="ff rj">17.3 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.24304</td>
+        <td class="ff">08 58 36.02</td>
+        <td class="ff">+00 58 31.8</td>
+        <td class="ff rj">17.3 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.24391</td>
+        <td class="ff">08 58 36.14</td>
+        <td class="ff">+00 58 26.7</td>
+        <td class="ff rj">17.1 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.24484</td>
+        <td class="ff">08 58 36.24</td>
+        <td class="ff">+00 58 21.6</td>
+        <td class="ff rj">17.5 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.24584</td>
+        <td class="ff">08 58 36.33</td>
+        <td class="ff">+00 58 16.1</td>
+        <td class="ff rj">17.1 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.24689</td>
+        <td class="ff">08 58 36.44</td>
+        <td class="ff">+00 58 09.5</td>
+        <td class="ff rj">17.0 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.24775</td>
+        <td class="ff">08 58 36.53</td>
+        <td class="ff">+00 58 04.9</td>
+        <td class="ff rj">17.2 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.24866</td>
+        <td class="ff">08 58 36.60</td>
+        <td class="ff">+00 57 59.7</td>
+        <td class="ff rj">17.1 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.25018</td>
+        <td class="ff">08 58 36.80</td>
+        <td class="ff">+00 57 51.1</td>
+        <td class="ff rj">17.2 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.25255</td>
+        <td class="ff">08 58 37.05</td>
+        <td class="ff">+00 57 37.7</td>
+        <td class="ff rj">17.2 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.25365</td>
+        <td class="ff">08 58 37.18</td>
+        <td class="ff">+00 57 31.9</td>
+        <td class="ff rj">17.3 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.25503</td>
+        <td class="ff">08 58 37.32</td>
+        <td class="ff">+00 57 23.9</td>
+        <td class="ff rj">17.2 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.25642</td>
+        <td class="ff">08 58 37.49</td>
+        <td class="ff">+00 57 15.7</td>
+        <td class="ff rj">17.2 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.25784</td>
+        <td class="ff">08 58 37.67</td>
+        <td class="ff">+00 57 08.0</td>
+        <td class="ff rj">17.2 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.25922</td>
+        <td class="ff">08 58 37.82</td>
+        <td class="ff">+00 57 00.0</td>
+        <td class="ff rj">17.1 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.69526</td>
+        <td class="ff">09 01 07.24</td>
+        <td class="ff">+00 06 33.2</td>
+        <td class="ff rj">17.1 V</td>
+        <td>168 &ndash; Kourovskaya</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.77524</td>
+        <td class="ff">09 01 22.88</td>
+        <td class="ff">-00 03 58.1</td>
+        <td class="ff rj">17.2 V</td>
+        <td>168 &ndash; Kourovskaya</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.79213</td>
+        <td class="ff">09 01 49.89</td>
+        <td class="ff">-00 04 42.8</td>
+        <td class="ff rj">16.4 R</td>
+        <td>B88 &ndash; Bigmuskie Observatory, Mombercelli</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.79861</td>
+        <td class="ff">09 01 50.96</td>
+        <td class="ff">-00 05 36.0</td>
+        <td class="ff rj">16.3 R</td>
+        <td>B88 &ndash; Bigmuskie Observatory, Mombercelli</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.80514</td>
+        <td class="ff">09 01 52.01</td>
+        <td class="ff">-00 06 30.1</td>
+        <td class="ff rj">16.5 R</td>
+        <td>B88 &ndash; Bigmuskie Observatory, Mombercelli</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.82275</td>
+        <td class="ff">09 01 33.94</td>
+        <td class="ff">-00 10 30.8</td>
+        <td class="ff rj">16.6 V</td>
+        <td>168 &ndash; Kourovskaya</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.87562</td>
+        <td class="ff">09 02 10.37</td>
+        <td class="ff">-00 15 48.0</td>
+        <td class="ff rj">16.0 R</td>
+        <td>I99 &ndash; Observatorio Blanquita, Vaciamadrid</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.87958</td>
+        <td class="ff">09 02 11.01</td>
+        <td class="ff">-00 16 22.7</td>
+        <td class="ff rj">16.1 R</td>
+        <td>I99 &ndash; Observatorio Blanquita, Vaciamadrid</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.88050</td>
+        <td class="ff">09 02 10.68</td>
+        <td class="ff">-00 18 06.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.88255</td>
+        <td class="ff">09 02 11.48</td>
+        <td class="ff">-00 16 48.3</td>
+        <td class="ff rj">15.9 R</td>
+        <td>I99 &ndash; Observatorio Blanquita, Vaciamadrid</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.88345</td>
+        <td class="ff">09 02 11.27</td>
+        <td class="ff">-00 18 32.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.88642</td>
+        <td class="ff">09 02 11.86</td>
+        <td class="ff">-00 18 58.4</td>
+        <td class="ff rj">16.1 R</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.93337</td>
+        <td class="ff">09 02 20.35</td>
+        <td class="ff">-00 24 23.6</td>
+        <td class="ff rj">16.6 V</td>
+        <td>I76 &ndash; Observatorio Tesla, Valdemorillo</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.95448</td>
+        <td class="ff">09 02 24.39</td>
+        <td class="ff">-00 27 37.7</td>
+        <td class="ff rj">16.5 V</td>
+        <td>I76 &ndash; Observatorio Tesla, Valdemorillo</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 29.96101</td>
+        <td class="ff">09 02 25.71</td>
+        <td class="ff">-00 28 38.2</td>
+        <td class="ff rj">16.5 V</td>
+        <td>I76 &ndash; Observatorio Tesla, Valdemorillo</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.11598</td>
+        <td class="ff">09 03 28.47</td>
+        <td class="ff">-00 38 22.6</td>
+        <td class="ff rj">15.6 R</td>
+        <td>844 &ndash; Observatorio Astronomico Los Molinos</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.11936</td>
+        <td class="ff">09 03 29.28</td>
+        <td class="ff">-00 38 56.8</td>
+        <td class="ff rj">15.7 R</td>
+        <td>844 &ndash; Observatorio Astronomico Los Molinos</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.13780</td>
+        <td class="ff">09 03 34.06</td>
+        <td class="ff">-00 42 06.3</td>
+        <td class="ff rj">15.5 R</td>
+        <td>844 &ndash; Observatorio Astronomico Los Molinos</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.14411</td>
+        <td class="ff">09 03 35.83</td>
+        <td class="ff">-00 43 11.9</td>
+        <td class="ff rj">15.6 R</td>
+        <td>844 &ndash; Observatorio Astronomico Los Molinos</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.14423</td>
+        <td class="ff">09 04 00.06</td>
+        <td class="ff">-00 58 26.5</td>
+        <td class="ff rj">16.8 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.14527</td>
+        <td class="ff">09 04 00.26</td>
+        <td class="ff">-00 58 38.2</td>
+        <td class="ff rj">16.4 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.14663</td>
+        <td class="ff">09 04 00.55</td>
+        <td class="ff">-00 58 52.8</td>
+        <td class="ff rj">16.6 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.14802</td>
+        <td class="ff">09 04 00.84</td>
+        <td class="ff">-00 59 07.9</td>
+        <td class="ff rj">16.4 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.14944</td>
+        <td class="ff">09 04 01.15</td>
+        <td class="ff">-00 59 23.3</td>
+        <td class="ff rj">16.3 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.15079</td>
+        <td class="ff">09 04 01.42</td>
+        <td class="ff">-00 59 38.1</td>
+        <td class="ff rj">16.2 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.15218</td>
+        <td class="ff">09 04 01.74</td>
+        <td class="ff">-00 59 53.2</td>
+        <td class="ff rj">16.3 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.15359</td>
+        <td class="ff">09 04 02.03</td>
+        <td class="ff">-01 00 09.0</td>
+        <td class="ff rj">16.4 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.15496</td>
+        <td class="ff">09 04 02.34</td>
+        <td class="ff">-01 00 24.0</td>
+        <td class="ff rj">16.2 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.15635</td>
+        <td class="ff">09 04 02.58</td>
+        <td class="ff">-01 00 38.9</td>
+        <td class="ff rj">16.5 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.15775</td>
+        <td class="ff">09 04 02.93</td>
+        <td class="ff">-01 00 54.1</td>
+        <td class="ff rj">16.4 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.15913</td>
+        <td class="ff">09 04 03.23</td>
+        <td class="ff">-01 01 09.2</td>
+        <td class="ff rj">16.9 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.16052</td>
+        <td class="ff">09 04 03.53</td>
+        <td class="ff">-01 01 24.7</td>
+        <td class="ff rj">16.3 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.16190</td>
+        <td class="ff">09 04 03.83</td>
+        <td class="ff">-01 01 40.1</td>
+        <td class="ff rj">16.3 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.16329</td>
+        <td class="ff">09 04 04.14</td>
+        <td class="ff">-01 01 55.3</td>
+        <td class="ff rj">16.3 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.22386</td>
+        <td class="ff">09 04 33.59</td>
+        <td class="ff">-01 14 23.6</td>
+        <td class="ff rj">15.9 &nbsp;</td>
+        <td>718 &ndash; Tooele</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.23077</td>
+        <td class="ff">09 04 35.40</td>
+        <td class="ff">-01 15 44.4</td>
+        <td class="ff rj">16.2 &nbsp;</td>
+        <td>718 &ndash; Tooele</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.24109</td>
+        <td class="ff">09 04 38.22</td>
+        <td class="ff">-01 17 45.7</td>
+        <td class="ff rj">16.0 &nbsp;</td>
+        <td>718 &ndash; Tooele</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.24600</td>
+        <td class="ff">09 04 39.61</td>
+        <td class="ff">-01 18 43.3</td>
+        <td class="ff rj">16.1 &nbsp;</td>
+        <td>718 &ndash; Tooele</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.25160</td>
+        <td class="ff">09 04 41.23</td>
+        <td class="ff">-01 19 49.2</td>
+        <td class="ff rj">15.9 &nbsp;</td>
+        <td>718 &ndash; Tooele</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.79032</td>
+        <td class="ff">09 11 35.28</td>
+        <td class="ff">-03 42 59.9</td>
+        <td class="ff rj">15.1 R</td>
+        <td>104 &ndash; San Marcello Pistoiese</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.81781</td>
+        <td class="ff">09 11 52.50</td>
+        <td class="ff">-03 52 48.8</td>
+        <td class="ff rj">15.2 R</td>
+        <td>104 &ndash; San Marcello Pistoiese</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.82721</td>
+        <td class="ff">09 12 01.67</td>
+        <td class="ff">-03 56 17.9</td>
+        <td class="ff rj">15.1 V</td>
+        <td>C77 &ndash; Bernezzo Observatory</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.82756</td>
+        <td class="ff">09 12 01.86</td>
+        <td class="ff">-03 56 25.0</td>
+        <td class="ff rj">15.1 V</td>
+        <td>C77 &ndash; Bernezzo Observatory</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.82785</td>
+        <td class="ff">09 11 58.91</td>
+        <td class="ff">-03 56 28.6</td>
+        <td class="ff rj">15.1 R</td>
+        <td>104 &ndash; San Marcello Pistoiese</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.82791</td>
+        <td class="ff">09 12 02.10</td>
+        <td class="ff">-03 56 33.0</td>
+        <td class="ff rj">15.2 V</td>
+        <td>C77 &ndash; Bernezzo Observatory</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.82826</td>
+        <td class="ff">09 12 02.33</td>
+        <td class="ff">-03 56 41.0</td>
+        <td class="ff rj">15.0 V</td>
+        <td>C77 &ndash; Bernezzo Observatory</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.82861</td>
+        <td class="ff">09 12 02.54</td>
+        <td class="ff">-03 56 48.2</td>
+        <td class="ff rj">15.2 V</td>
+        <td>C77 &ndash; Bernezzo Observatory</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.82896</td>
+        <td class="ff">09 12 02.72</td>
+        <td class="ff">-03 56 55.7</td>
+        <td class="ff rj">15.4 V</td>
+        <td>C77 &ndash; Bernezzo Observatory</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.82932</td>
+        <td class="ff">09 12 03.00</td>
+        <td class="ff">-03 57 03.8</td>
+        <td class="ff rj">15.4 V</td>
+        <td>C77 &ndash; Bernezzo Observatory</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.82968</td>
+        <td class="ff">09 12 03.23</td>
+        <td class="ff">-03 57 11.6</td>
+        <td class="ff rj">15.3 V</td>
+        <td>C77 &ndash; Bernezzo Observatory</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.83490</td>
+        <td class="ff">09 12 13.53</td>
+        <td class="ff">-04 00 27.8</td>
+        <td class="ff rj">15.4 V</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.83627</td>
+        <td class="ff">09 12 07.52</td>
+        <td class="ff">-03 59 37.4</td>
+        <td class="ff rj">15.5 V</td>
+        <td>C77 &ndash; Bernezzo Observatory</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.83663</td>
+        <td class="ff">09 12 07.75</td>
+        <td class="ff">-03 59 45.4</td>
+        <td class="ff rj">15.0 V</td>
+        <td>C77 &ndash; Bernezzo Observatory</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.83698</td>
+        <td class="ff">09 12 07.97</td>
+        <td class="ff">-03 59 53.8</td>
+        <td class="ff rj">15.0 V</td>
+        <td>C77 &ndash; Bernezzo Observatory</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.83733</td>
+        <td class="ff">09 12 08.22</td>
+        <td class="ff">-04 00 01.7</td>
+        <td class="ff rj">15.2 V</td>
+        <td>C77 &ndash; Bernezzo Observatory</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.83767</td>
+        <td class="ff">09 12 08.46</td>
+        <td class="ff">-04 00 09.9</td>
+        <td class="ff rj">15.1 V</td>
+        <td>C77 &ndash; Bernezzo Observatory</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.83802</td>
+        <td class="ff">09 12 08.69</td>
+        <td class="ff">-04 00 17.4</td>
+        <td class="ff rj">15.1 V</td>
+        <td>C77 &ndash; Bernezzo Observatory</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.83837</td>
+        <td class="ff">09 12 08.91</td>
+        <td class="ff">-04 00 24.8</td>
+        <td class="ff rj">15.1 V</td>
+        <td>C77 &ndash; Bernezzo Observatory</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.83857</td>
+        <td class="ff">09 12 16.10</td>
+        <td class="ff">-04 01 50.0</td>
+        <td class="ff rj">15.7 V</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.83873</td>
+        <td class="ff">09 12 09.10</td>
+        <td class="ff">-04 00 32.2</td>
+        <td class="ff rj">15.0 V</td>
+        <td>C77 &ndash; Bernezzo Observatory</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.84223</td>
+        <td class="ff">09 12 18.68</td>
+        <td class="ff">-04 03 12.1</td>
+        <td class="ff rj">15.6 V</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.84589</td>
+        <td class="ff">09 12 21.27</td>
+        <td class="ff">-04 04 34.2</td>
+        <td class="ff rj">15.4 V</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.84956</td>
+        <td class="ff">09 12 23.83</td>
+        <td class="ff">-04 05 57.8</td>
+        <td class="ff rj">15.4 V</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.85322</td>
+        <td class="ff">09 12 26.44</td>
+        <td class="ff">-04 07 20.2</td>
+        <td class="ff rj">15.5 V</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.85402</td>
+        <td class="ff">09 12 15.97</td>
+        <td class="ff">-04 06 12.2</td>
+        <td class="ff rj">15.3 R</td>
+        <td>104 &ndash; San Marcello Pistoiese</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.86736</td>
+        <td class="ff">09 12 24.64</td>
+        <td class="ff">-04 11 19.2</td>
+        <td class="ff rj">15.6 V</td>
+        <td>C91 &ndash; Montevenere Observatory, Monzuno</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.86944</td>
+        <td class="ff">09 12 26.06</td>
+        <td class="ff">-04 12 07.2</td>
+        <td class="ff rj">15.6 V</td>
+        <td>C91 &ndash; Montevenere Observatory, Monzuno</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.87153</td>
+        <td class="ff">09 12 27.49</td>
+        <td class="ff">-04 12 55.0</td>
+        <td class="ff rj">15.6 V</td>
+        <td>C91 &ndash; Montevenere Observatory, Monzuno</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.87172</td>
+        <td class="ff">09 12 27.96</td>
+        <td class="ff">-04 12 56.8</td>
+        <td class="ff rj">15.2 R</td>
+        <td>104 &ndash; San Marcello Pistoiese</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.87361</td>
+        <td class="ff">09 12 28.91</td>
+        <td class="ff">-04 13 43.6</td>
+        <td class="ff rj">15.6 V</td>
+        <td>C91 &ndash; Montevenere Observatory, Monzuno</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.87569</td>
+        <td class="ff">09 12 30.35</td>
+        <td class="ff">-04 14 31.5</td>
+        <td class="ff rj">15.6 V</td>
+        <td>C91 &ndash; Montevenere Observatory, Monzuno</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.89536</td>
+        <td class="ff">09 12 44.69</td>
+        <td class="ff">-04 22 11.1</td>
+        <td class="ff rj">15.1 R</td>
+        <td>104 &ndash; San Marcello Pistoiese</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.91078</td>
+        <td class="ff">09 13 12.17</td>
+        <td class="ff">-04 28 19.3</td>
+        <td class="ff rj">15.3 R</td>
+        <td>J38 &ndash; Observatorio La Vara, Valdes</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.91089</td>
+        <td class="ff">09 13 12.26</td>
+        <td class="ff">-04 28 21.7</td>
+        <td class="ff rj">15.1 R</td>
+        <td>J38 &ndash; Observatorio La Vara, Valdes</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.91115</td>
+        <td class="ff">09 13 12.44</td>
+        <td class="ff">-04 28 28.4</td>
+        <td class="ff rj">15.0 R</td>
+        <td>J38 &ndash; Observatorio La Vara, Valdes</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.91592</td>
+        <td class="ff">09 13 00.06</td>
+        <td class="ff">-04 30 25.2</td>
+        <td class="ff rj">15.1 R</td>
+        <td>104 &ndash; San Marcello Pistoiese</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.92174</td>
+        <td class="ff">09 13 04.56</td>
+        <td class="ff">-04 32 47.1</td>
+        <td class="ff rj">15.1 R</td>
+        <td>104 &ndash; San Marcello Pistoiese</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.96200</td>
+        <td class="ff">09 13 29.36</td>
+        <td class="ff">-04 49 48.5</td>
+        <td class="ff rj">14.7 &nbsp;</td>
+        <td>583 &ndash; Odessa-Mayaki</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.96270</td>
+        <td class="ff">09 13 30.01</td>
+        <td class="ff">-04 50 06.2</td>
+        <td class="ff rj">15.0 &nbsp;</td>
+        <td>583 &ndash; Odessa-Mayaki</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.96294</td>
+        <td class="ff">09 13 30.35</td>
+        <td class="ff">-04 50 10.9</td>
+        <td class="ff rj">15.3 &nbsp;</td>
+        <td>583 &ndash; Odessa-Mayaki</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.96365</td>
+        <td class="ff">09 13 30.96</td>
+        <td class="ff">-04 50 30.9</td>
+        <td class="ff rj">14.8 &nbsp;</td>
+        <td>583 &ndash; Odessa-Mayaki</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.96392</td>
+        <td class="ff">09 13 31.22</td>
+        <td class="ff">-04 50 37.0</td>
+        <td class="ff rj">14.7 &nbsp;</td>
+        <td>583 &ndash; Odessa-Mayaki</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.96412</td>
+        <td class="ff">09 13 31.43</td>
+        <td class="ff">-04 50 42.3</td>
+        <td class="ff rj">14.7 &nbsp;</td>
+        <td>583 &ndash; Odessa-Mayaki</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.96509</td>
+        <td class="ff">09 13 32.48</td>
+        <td class="ff">-04 51 07.2</td>
+        <td class="ff rj">14.8 &nbsp;</td>
+        <td>583 &ndash; Odessa-Mayaki</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.96543</td>
+        <td class="ff">09 13 32.81</td>
+        <td class="ff">-04 51 16.7</td>
+        <td class="ff rj">15.0 &nbsp;</td>
+        <td>583 &ndash; Odessa-Mayaki</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.96613</td>
+        <td class="ff">09 13 33.44</td>
+        <td class="ff">-04 51 34.2</td>
+        <td class="ff rj">14.4 &nbsp;</td>
+        <td>583 &ndash; Odessa-Mayaki</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.96647</td>
+        <td class="ff">09 13 33.80</td>
+        <td class="ff">-04 51 43.2</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>583 &ndash; Odessa-Mayaki</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.96744</td>
+        <td class="ff">09 13 34.74</td>
+        <td class="ff">-04 52 08.8</td>
+        <td class="ff rj">14.5 &nbsp;</td>
+        <td>583 &ndash; Odessa-Mayaki</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.96788</td>
+        <td class="ff">09 13 35.26</td>
+        <td class="ff">-04 52 19.8</td>
+        <td class="ff rj">14.5 &nbsp;</td>
+        <td>583 &ndash; Odessa-Mayaki</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.96844</td>
+        <td class="ff">09 13 35.74</td>
+        <td class="ff">-04 52 33.9</td>
+        <td class="ff rj">14.9 &nbsp;</td>
+        <td>583 &ndash; Odessa-Mayaki</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.96872</td>
+        <td class="ff">09 13 36.00</td>
+        <td class="ff">-04 52 41.2</td>
+        <td class="ff rj">14.6 &nbsp;</td>
+        <td>583 &ndash; Odessa-Mayaki</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.96891</td>
+        <td class="ff">09 13 36.22</td>
+        <td class="ff">-04 52 47.3</td>
+        <td class="ff rj">14.9 &nbsp;</td>
+        <td>583 &ndash; Odessa-Mayaki</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.96947</td>
+        <td class="ff">09 13 36.78</td>
+        <td class="ff">-04 53 00.5</td>
+        <td class="ff rj">14.5 &nbsp;</td>
+        <td>583 &ndash; Odessa-Mayaki</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.96975</td>
+        <td class="ff">09 13 37.06</td>
+        <td class="ff">-04 53 07.4</td>
+        <td class="ff rj">14.7 &nbsp;</td>
+        <td>583 &ndash; Odessa-Mayaki</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.97133</td>
+        <td class="ff">09 13 38.54</td>
+        <td class="ff">-04 53 48.4</td>
+        <td class="ff rj">14.9 &nbsp;</td>
+        <td>583 &ndash; Odessa-Mayaki</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.97175</td>
+        <td class="ff">09 13 39.12</td>
+        <td class="ff">-04 54 00.0</td>
+        <td class="ff rj">14.4 &nbsp;</td>
+        <td>583 &ndash; Odessa-Mayaki</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.97314</td>
+        <td class="ff">09 13 40.57</td>
+        <td class="ff">-04 54 34.8</td>
+        <td class="ff rj">15.9 &nbsp;</td>
+        <td>583 &ndash; Odessa-Mayaki</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.97369</td>
+        <td class="ff">09 13 41.17</td>
+        <td class="ff">-04 54 50.6</td>
+        <td class="ff rj">15.3 &nbsp;</td>
+        <td>583 &ndash; Odessa-Mayaki</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.97388</td>
+        <td class="ff">09 13 41.31</td>
+        <td class="ff">-04 54 55.5</td>
+        <td class="ff rj">14.7 &nbsp;</td>
+        <td>583 &ndash; Odessa-Mayaki</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.97457</td>
+        <td class="ff">09 13 42.00</td>
+        <td class="ff">-04 55 13.0</td>
+        <td class="ff rj">15.6 &nbsp;</td>
+        <td>583 &ndash; Odessa-Mayaki</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.97507</td>
+        <td class="ff">09 13 42.57</td>
+        <td class="ff">-04 55 24.9</td>
+        <td class="ff rj">14.7 &nbsp;</td>
+        <td>583 &ndash; Odessa-Mayaki</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.97652</td>
+        <td class="ff">09 13 44.05</td>
+        <td class="ff">-04 56 02.9</td>
+        <td class="ff rj">15.0 &nbsp;</td>
+        <td>583 &ndash; Odessa-Mayaki</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 30.97721</td>
+        <td class="ff">09 13 44.80</td>
+        <td class="ff">-04 56 21.2</td>
+        <td class="ff rj">15.2 &nbsp;</td>
+        <td>583 &ndash; Odessa-Mayaki</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.07581</td>
+        <td class="ff">09 17 05.83</td>
+        <td class="ff">-05 40 57.2</td>
+        <td class="ff rj">15.2 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.07609</td>
+        <td class="ff">09 17 06.09</td>
+        <td class="ff">-05 41 05.6</td>
+        <td class="ff rj">15.2 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418614</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.07669</td>
+        <td class="ff">09 17 06.64</td>
+        <td class="ff">-05 41 24.0</td>
+        <td class="ff rj">15.2 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.07729</td>
+        <td class="ff">09 17 07.24</td>
+        <td class="ff">-05 41 42.5</td>
+        <td class="ff rj">15.5 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.07823</td>
+        <td class="ff">09 17 08.13</td>
+        <td class="ff">-05 42 11.2</td>
+        <td class="ff rj">15.4 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.07916</td>
+        <td class="ff">09 17 09.00</td>
+        <td class="ff">-05 42 40.0</td>
+        <td class="ff rj">15.5 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.07991</td>
+        <td class="ff">09 17 09.70</td>
+        <td class="ff">-05 43 03.2</td>
+        <td class="ff rj">15.3 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.08062</td>
+        <td class="ff">09 17 10.40</td>
+        <td class="ff">-05 43 25.0</td>
+        <td class="ff rj">15.6 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.08130</td>
+        <td class="ff">09 17 11.03</td>
+        <td class="ff">-05 43 45.7</td>
+        <td class="ff rj">15.6 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.08199</td>
+        <td class="ff">09 17 11.68</td>
+        <td class="ff">-05 44 07.0</td>
+        <td class="ff rj">15.3 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.08269</td>
+        <td class="ff">09 17 12.35</td>
+        <td class="ff">-05 44 28.6</td>
+        <td class="ff rj">15.4 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.08338</td>
+        <td class="ff">09 17 13.01</td>
+        <td class="ff">-05 44 49.9</td>
+        <td class="ff rj">15.4 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.08407</td>
+        <td class="ff">09 17 13.68</td>
+        <td class="ff">-05 45 11.6</td>
+        <td class="ff rj">15.4 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.08478</td>
+        <td class="ff">09 17 14.33</td>
+        <td class="ff">-05 45 33.0</td>
+        <td class="ff rj">15.5 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.08546</td>
+        <td class="ff">09 17 14.99</td>
+        <td class="ff">-05 45 54.1</td>
+        <td class="ff rj">15.6 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.08616</td>
+        <td class="ff">09 17 15.65</td>
+        <td class="ff">-05 46 16.3</td>
+        <td class="ff rj">15.5 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.08685</td>
+        <td class="ff">09 17 16.31</td>
+        <td class="ff">-05 46 37.5</td>
+        <td class="ff rj">15.2 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.08755</td>
+        <td class="ff">09 17 16.99</td>
+        <td class="ff">-05 46 59.1</td>
+        <td class="ff rj">15.2 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.08824</td>
+        <td class="ff">09 17 17.64</td>
+        <td class="ff">-05 47 20.6</td>
+        <td class="ff rj">15.0 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.08894</td>
+        <td class="ff">09 17 18.31</td>
+        <td class="ff">-05 47 42.1</td>
+        <td class="ff rj">15.4 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.08963</td>
+        <td class="ff">09 17 18.95</td>
+        <td class="ff">-05 48 03.7</td>
+        <td class="ff rj">15.2 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.09032</td>
+        <td class="ff">09 17 19.63</td>
+        <td class="ff">-05 48 25.7</td>
+        <td class="ff rj">15.2 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.09102</td>
+        <td class="ff">09 17 20.29</td>
+        <td class="ff">-05 48 47.0</td>
+        <td class="ff rj">15.3 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.09171</td>
+        <td class="ff">09 17 20.94</td>
+        <td class="ff">-05 49 08.5</td>
+        <td class="ff rj">15.3 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.09241</td>
+        <td class="ff">09 17 21.62</td>
+        <td class="ff">-05 49 30.7</td>
+        <td class="ff rj">15.4 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.09310</td>
+        <td class="ff">09 17 22.29</td>
+        <td class="ff">-05 49 52.0</td>
+        <td class="ff rj">15.4 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.15191</td>
+        <td class="ff">09 18 46.34</td>
+        <td class="ff">-06 23 23.7</td>
+        <td class="ff rj">14.9 &nbsp;</td>
+        <td>718 &ndash; Tooele</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.16582</td>
+        <td class="ff">09 19 01.78</td>
+        <td class="ff">-06 31 22.7</td>
+        <td class="ff rj">15.0 &nbsp;</td>
+        <td>718 &ndash; Tooele</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.17971</td>
+        <td class="ff">09 19 17.46</td>
+        <td class="ff">-06 39 30.9</td>
+        <td class="ff rj">14.8 &nbsp;</td>
+        <td>718 &ndash; Tooele</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.416636</td>
+        <td class="ff">09 27 29.64</td>
+        <td class="ff">-08 57 00.3</td>
+        <td class="ff rj">14.9 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.417002</td>
+        <td class="ff">09 27 30.31</td>
+        <td class="ff">-08 57 19.1</td>
+        <td class="ff rj">15.2 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.417357</td>
+        <td class="ff">09 27 30.96</td>
+        <td class="ff">-08 57 37.4</td>
+        <td class="ff rj">14.9 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.417715</td>
+        <td class="ff">09 27 31.62</td>
+        <td class="ff">-08 57 55.8</td>
+        <td class="ff rj">15.1 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.418065</td>
+        <td class="ff">09 27 32.26</td>
+        <td class="ff">-08 58 13.8</td>
+        <td class="ff rj">14.9 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.418420</td>
+        <td class="ff">09 27 32.92</td>
+        <td class="ff">-08 58 32.1</td>
+        <td class="ff rj">15.2 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.418776</td>
+        <td class="ff">09 27 33.57</td>
+        <td class="ff">-08 58 50.5</td>
+        <td class="ff rj">15.1 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.419136</td>
+        <td class="ff">09 27 34.23</td>
+        <td class="ff">-08 59 09.0</td>
+        <td class="ff rj">15.3 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.419859</td>
+        <td class="ff">09 27 35.56</td>
+        <td class="ff">-08 59 46.3</td>
+        <td class="ff rj">15.3 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.420219</td>
+        <td class="ff">09 27 36.23</td>
+        <td class="ff">-09 00 04.9</td>
+        <td class="ff rj">15.1 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.420572</td>
+        <td class="ff">09 27 36.88</td>
+        <td class="ff">-09 00 23.1</td>
+        <td class="ff rj">15.3 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.83033</td>
+        <td class="ff">09 55 06.90</td>
+        <td class="ff">-19 08 06.4</td>
+        <td class="ff rj">12.9 R</td>
+        <td>A24 &ndash; New Millennium Observatory, Mozzate</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.83660</td>
+        <td class="ff">09 55 43.66</td>
+        <td class="ff">-19 21 54.4</td>
+        <td class="ff rj">13.0 R</td>
+        <td>A24 &ndash; New Millennium Observatory, Mozzate</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.84385</td>
+        <td class="ff">09 56 27.31</td>
+        <td class="ff">-19 38 05.6</td>
+        <td class="ff rj">12.6 R</td>
+        <td>A24 &ndash; New Millennium Observatory, Mozzate</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.85229</td>
+        <td class="ff">09 57 19.48</td>
+        <td class="ff">-19 57 19.7</td>
+        <td class="ff rj">13.0 R</td>
+        <td>A24 &ndash; New Millennium Observatory, Mozzate</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.86073</td>
+        <td class="ff">09 58 12.80</td>
+        <td class="ff">-20 16 57.0</td>
+        <td class="ff rj">13.0 R</td>
+        <td>A24 &ndash; New Millennium Observatory, Mozzate</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.87230</td>
+        <td class="ff">09 59 28.42</td>
+        <td class="ff">-20 44 32.0</td>
+        <td class="ff rj">13.5 R</td>
+        <td>A24 &ndash; New Millennium Observatory, Mozzate</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.927993</td>
+        <td class="ff">10 06 50.01</td>
+        <td class="ff">-23 11 20.4</td>
+        <td class="ff rj">13.0 R</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.957065</td>
+        <td class="ff">10 11 03.86</td>
+        <td class="ff">-24 35 42.2</td>
+        <td class="ff rj">13.0 R</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.958401</td>
+        <td class="ff">10 11 16.20</td>
+        <td class="ff">-24 39 42.7</td>
+        <td class="ff rj">13.1 R</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.960356</td>
+        <td class="ff">10 11 34.44</td>
+        <td class="ff">-24 45 39.1</td>
+        <td class="ff rj">12.9 R</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 03 31.961730</td>
+        <td class="ff">10 11 47.31</td>
+        <td class="ff">-24 49 49.6</td>
+        <td class="ff rj">13.3 R</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 04 02.771408</td>
+        <td class="ff">20 21 45.42</td>
+        <td class="ff">-14 22 18.0</td>
+        <td class="ff rj">18.1 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 04 02.771754</td>
+        <td class="ff">20 21 45.74</td>
+        <td class="ff">-14 22 09.1</td>
+        <td class="ff rj">17.3 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 04 02.772100</td>
+        <td class="ff">20 21 46.09</td>
+        <td class="ff">-14 22 00.3</td>
+        <td class="ff rj">17.6 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 04 02.772445</td>
+        <td class="ff">20 21 46.44</td>
+        <td class="ff">-14 21 51.3</td>
+        <td class="ff rj">17.6 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 04 02.772827</td>
+        <td class="ff">20 21 46.81</td>
+        <td class="ff">-14 21 41.6</td>
+        <td class="ff rj">17.4 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 04 02.773188</td>
+        <td class="ff">20 21 47.17</td>
+        <td class="ff">-14 21 32.4</td>
+        <td class="ff rj">17.4 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 04 02.773551</td>
+        <td class="ff">20 21 47.52</td>
+        <td class="ff">-14 21 23.1</td>
+        <td class="ff rj">17.3 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 04 02.773941</td>
+        <td class="ff">20 21 47.90</td>
+        <td class="ff">-14 21 13.1</td>
+        <td class="ff rj">17.1 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 04 02.774296</td>
+        <td class="ff">20 21 48.26</td>
+        <td class="ff">-14 21 03.9</td>
+        <td class="ff rj">17.5 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 04 02.774646</td>
+        <td class="ff">20 21 48.60</td>
+        <td class="ff">-14 20 55.0</td>
+        <td class="ff rj">17.9 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 04 02.775031</td>
+        <td class="ff">20 21 48.97</td>
+        <td class="ff">-14 20 45.0</td>
+        <td class="ff rj">18.2 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 04 02.775393</td>
+        <td class="ff">20 21 49.33</td>
+        <td class="ff">-14 20 35.7</td>
+        <td class="ff rj">18.2 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 04 02.802281</td>
+        <td class="ff">20 22 14.29</td>
+        <td class="ff">-14 09 17.1</td>
+        <td class="ff rj">18.4 V</td>
+        <td>E12 &ndash; Siding Spring Survey</td>
+        <td class="ff lj">MPS 418615</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 04 03.769114</td>
+        <td class="ff">20 34 26.36</td>
+        <td class="ff">-09 56 34.8</td>
+        <td class="ff rj">19.2 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 04 03.769691</td>
+        <td class="ff">20 34 26.51</td>
+        <td class="ff">-09 56 29.7</td>
+        <td class="ff rj">19.2 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 04 03.770255</td>
+        <td class="ff">20 34 26.66</td>
+        <td class="ff">-09 56 24.6</td>
+        <td class="ff rj">18.9 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 04 03.770833</td>
+        <td class="ff">20 34 26.82</td>
+        <td class="ff">-09 56 19.6</td>
+        <td class="ff rj">19.1 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 04 03.771363</td>
+        <td class="ff">20 34 26.96</td>
+        <td class="ff">-09 56 14.8</td>
+        <td class="ff rj">18.9 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 04 03.771924</td>
+        <td class="ff">20 34 27.10</td>
+        <td class="ff">-09 56 09.8</td>
+        <td class="ff rj">18.3 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 04 03.772498</td>
+        <td class="ff">20 34 27.26</td>
+        <td class="ff">-09 56 04.6</td>
+        <td class="ff rj">18.2 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 04 03.773026</td>
+        <td class="ff">20 34 27.39</td>
+        <td class="ff">-09 55 59.9</td>
+        <td class="ff rj">18.2 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 04 03.773598</td>
+        <td class="ff">20 34 27.54</td>
+        <td class="ff">-09 55 54.9</td>
+        <td class="ff rj">18.6 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 04 03.774168</td>
+        <td class="ff">20 34 27.70</td>
+        <td class="ff">-09 55 49.7</td>
+        <td class="ff rj">19.1 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 04 03.774693</td>
+        <td class="ff">20 34 27.83</td>
+        <td class="ff">-09 55 45.1</td>
+        <td class="ff rj">19.3 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 04 03.775219</td>
+        <td class="ff">20 34 27.97</td>
+        <td class="ff">-09 55 40.4</td>
+        <td class="ff rj">19.3 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 04 03.775784</td>
+        <td class="ff">20 34 28.11</td>
+        <td class="ff">-09 55 35.4</td>
+        <td class="ff rj">19.2 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 04 03.776356</td>
+        <td class="ff">20 34 28.25</td>
+        <td class="ff">-09 55 30.3</td>
+        <td class="ff rj">19.4 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 04 03.776875</td>
+        <td class="ff">20 34 28.39</td>
+        <td class="ff">-09 55 25.6</td>
+        <td class="ff rj">19.5 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 04 03.777404</td>
+        <td class="ff">20 34 28.52</td>
+        <td class="ff">-09 55 21.1</td>
+        <td class="ff rj">19.5 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 04 03.777959</td>
+        <td class="ff">20 34 28.66</td>
+        <td class="ff">-09 55 16.1</td>
+        <td class="ff rj">19.7 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 04 03.778528</td>
+        <td class="ff">20 34 28.81</td>
+        <td class="ff">-09 55 11.0</td>
+        <td class="ff rj">19.5 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 420481</td>
+      </tr>
+  </table>
+
+
+        </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer id="footer">
+    <div class="holder">
+      <nav class="nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+	  <!-- Contact link changed to Jira -->
+          <li><a href="https://mpc-service.atlassian.net/servicedesk/customer/portals">Contact</a></li>
+          <li><a href="https://www.cfa.harvard.edu/content/privacy-statement">Privacy</a></li>
+        </ul>
+      </nav>
+      
+      <a href="https://www.cfa.harvard.edu">
+      <img src="/images/CfA_Logo_Vertical_CMYK.png" width="110" height="47"></a>
+      <p>
+      <p>
+      <p>
+      <div class="copy">The Minor Planet Center is hosted by the Center for Astrophysics | Harvard &amp; Smithsonian.<center>The Minor Planet Center is funded by NASA.</center></div> 
+  </footer>
+
+<script type="text/javascript">
+  $(window).on('load', (function() {
+    $("table").tablesorter();
+  })); 
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var _tag=new WebTrends();
+_tag.dcsGetId();
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+_tag.dcsCustom=function(){
+// Add custom parameters here.
+//_tag.DCSext.param_name=param_value;
+}
+_tag.dcsCollect();
+//]]>
+</script>
+
+<noscript>
+<div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="//logs1.smithsonian.museum/dcsa7yzrmbdzpxzrosrn4tyep_5i1d/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=9.4.0&amp;dcssip=www.minorplanetcenter.net"/></div>
+</noscript>
+</body>
+
+</html>

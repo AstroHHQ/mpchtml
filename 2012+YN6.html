@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IAU Minor Planet Center</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/mpc.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/table-sorter.css">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+  <link media="all" rel="stylesheet" href="/css/all.css">
+
+  <link rel="icon" type="image/png" href="/iau/figs/MPClogo16.png">
+  <meta name="description" content="We are the official body that deals with
+      astrometric observations and orbits of minor planets (asteroids) and comets.">
+
+  <meta name="keywords" content="astrometry, observations, orbits,
+      minor planets, asteroids, comets, near earth objects, 
+      potentially hazardous asteroids">
+
+  <script type="text/javascript" src="/js/jquery-latest.js"></script>
+<!--  <script type="text/javascript" src="/js/jquery.main.js"></script> -->
+<!--  <script type="text/javascript" src="/js/jquery.metadata.js"></script> -->
+  <script type="text/javascript" src="/js/jquery.tablesorter.js"></script>
+  <script type="text/javascript" src="/js/webtrends.js"></script>
+  <script type="text/javascript" src="/js/track_pdfs.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic|PT+Sans:400,700,400italic,700italic|PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+  
+<body>
+  <!-- wrapper -->
+  <div id="wrapper">
+    <div class="w1">
+      <!-- header -->
+      <header id="header">
+        <div class="holder">
+          <!-- logo -->
+          <h1 class="logo"><a href="/">The International Astronomical Union Minor Planet Center</a></h1>
+          <div class="area">
+            <!-- top-nav -->
+            <nav class="top-nav">
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+		<!-- Contact link changed to Jira -->
+                <li><a href="https://mpc-service.atlassian.net/servicedesk/customer/portals">Contact</a></li>
+              </ul>
+            </nav>
+            <!-- search-form -->
+            <div class="form-holder">
+              <!-- This commented code opens a new page for the search. -->
+              <!--<form class="search-form" method="get" action="https://www.google.com/search" target="_blank">-->
+              <form class="search-form" method="get" action="https://www.google.com/search">
+                <fieldset>
+                  <!--<label for="search">Search</label>-->
+                  <input type="hidden" name="sitesearch" value="minorplanetcenter.net">
+                  <input type="text" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" id="search" name="q" value="Search MPC">
+                </fieldset>
+              </form>
+            </div>
+            <div class="social-bar">
+<!--              <a href="https://twitter.com/MinorPlanetCtr"><span class="social twitter">L</span></a> -->
+<!--              <a href="https://www.facebook.com/MinorPlanetCenter"><span class="social facebook">F</span></a> -->
+<!--              <a href="https://www.youtube.com/channel/UCtALMOQHuBxh5XMsYNiDhMg"><span class="social youtube">X</span></a> -->
+<!--              <a href="/iau/rss/mpc_feeds.html"><span class="social rss">R</span></a> -->
+            </div>
+          </div>
+        </div>
+        <nav class="nav-holder">
+          <!-- main navigation -->
+          <ul id="nav">
+            <li>
+              <a href="/iau/mpc.html"><span>OBSERVERS</span></a>
+              <ul>
+                <li><a href="/iau/MPEph/MPEph.html">Ephemeris Service</a></li>
+                <li><a href="/mpec/RecentMPECs.html">MPECs</a></li>
+                <li><a href="/iau/NEO/toconfirm_tabular.html">NEO Confirmation</a></li>
+                <li><a href="/iau/NEO/pccp_tabular.html">Possible Comet Confirmation</a></li>
+                <li><a href="/iau/Ephemerides/EphemOrbEls.html" class="nested">Orbital Elements</a>
+                  <ul>
+                    <li><a href="/iau/MPCORB.html">MPCORB</a></li>
+                    <li><a href="/iau/ECS/MPCAT/MPCAT.html">MPCAT</a></li>
+                    <li><a href="/iau/ECS/MPCUPDATE/MPCUPDATE.html">MPCUPDATE</a></li>
+                    <li><a href="/iau/Ephemerides/SoftwareEls.html">Orbital Elements for Software</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/services/MPCServices.html">Publications Overview</a></li>
+                <li><a href="/iau/ECS/MPCArchive/MPCArchive_TBL.html">Publications Archive</a></li>              
+                <li><a href="/iau/NEO/TheNEOPage.html" class="nested">NEO Services</a>
+                  <ul>
+                    <li><a href="/iau/NEO/toconfirm_tabular.html">Confirmation</a></li>
+                    <li><a href="/iau/NEO/PossNEO.html">Ratings</a></li>
+                    <li><a href="/cgi-bin/neaobs.cgi">Observation Planning Aid</a></li>
+                    <li><a href="/cgi-bin/checkneo.cgi">NEOChecker</a></li>
+                    <li><a href="/cgi-bin/checkneocmt.cgi">NEOCMTChecker</a></li>
+                    <li><a href="/neocp_followup_report/">NEOCP Followup Report Form</a></li>
+                    <li><a href="/neocp_followup_reports/">NEOCP Followup Reports</a></li>
+                    <li><a href="/neocp_obs">NEOCP Recent Observations</a></li>
+                  </ul>
+                </li>
+                <li><a href="/iau/services/WebCSAccess.html" class="nested">Other Observer Services</a>
+                  <ul>
+                    <li><a href="/whatsup">Observing Target List</a></li>
+                    <li><a href="/iau/NatSats/NaturalSatellites.html">Natural Satellite Ephemerides</a></li>
+                    <li><a href="/iau/MPEph/NewObjEphems.html">New Object Ephemerides</a></li>
+                    <li><a href="/cgi-bin/checkmp.cgi">MPChecker</a></li>
+                    <li><a href="/cgi-bin/checkcmt.cgi">CMTChecker</a></li>
+                    <li><a href="/iau/artsats/artsats.html">Distant Artificial Satellites</a></li>
+                    <li><a href="/iau/lists/Customize.html">Observing List Customizer</a></li>
+                  </ul>
+                </li>
+                <li><a href="/db_search">Orbits/Observations Database</a></li>
+
+                <li><a href='http://alcdef.org'>Light Curve Database</a></li>
+
+                <li><a href="/iau/ECS/MPCAT-OBS/MPCAT-OBS.html">MPCAT-OBS</a></li>
+                <li><a href="/iau/SkyCoverage.html">Sky Coverage</a></li>
+                <li><a href="/iau/MPC_Documentation.html" class="nested">Documentation</a>
+                  <ul>
+                    <li><a href="/iau/info/TechInfo.html">MPC Submission Info</a></li>
+                    <li><a href="/iau/info/Astrometry.html">Astrometry Guide</a></li>
+                    <li><a href="/iau/WhatsNew.html">What's New</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/lists/Lists.html" class="nested">Lists and Plots</a>
+                  <ul>
+                    <li><a href="/iau/lists/MPLists.html">Minor Planets</a></li>
+                      <!--<ul>
+                        <li><a href="/iau/lists/t_atens.html">Atens</a></li>
+                        <li><a href="/iau/lists/t_apollos.html">Apollos</a></li>
+                        <li><a href="/iau/lists/t_amors.html">Amors</a></li>
+                        <li><a href="/iau/lists/t_centaurs.html">Centaurs and Scattered Disk Objects</a></li>
+                        <li><a href="/iau/lists/t_tnos.html">Transneptunian Objects</a></li>
+                        <li><a href="/iau/lists/t_others.html">Other Unusual Objects</a></li>
+                        <li><a href="/iau/lists/t_dangerous.html">Potentially Hazardous Asteroids</a></li>
+                      </ul>-->
+                    <li><a href="/iau/lists/CometLists.html">Comets</a></li>
+                      <!--<ul>
+                        <li><a href="/iau/lists/LastCometObs.html">Date of Last Observation</a></li>
+                        <li><a href="/iau/lists/LastYear.html">Designations from the Past Year</a></li>
+                        <li><a href="http://www.icq.eps.harvard.edu/CometMags.html">Comet Magnitude Estimates</a></li>
+                        <li><a href="/iau/lists/ClosestComets.html">Closest Approaches</a></li>
+                        <li><a href="/iau/lists/PeriodicCodes.html">Periodic Comets</a></li>
+                      </ul>-->
+                    <li><a href="/iau/lists/ObsCodesF.html">Observatory Codes</a></li>		    
+                    <li><a href="/iau/Animations/Animations.html">Animations</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/MPCStatus.html">MPC Status</a></li>
+                <!--<li><a href="/summary">Summary</a></li>-->
+                <li><a href='/mpc/obs_stats_2014_2018'>2014-18 NEO Obs Statistics</a></li>
+                <li><a href='/mpc/summary'>Summary of Latest Data</a></li>
+              </ul>
+            </li>
+            <li><a href="/data"><span>DATA</span></a>
+            </li>
+            <li><a href="http://iawn.net/"><span>IAWN</span></a>
+            </li>
+            <li><a href="https://minorplanetcenter.net/mpcops/beta/"><span>BETA</span></a></li>
+            <li><a href="/iau/MPCStatus.html"><span style="color:Green">STATUS</a></li>
+            <li><a href="https://sbnmpc.astro.umd.edu/"><span>SBN ANNEX</span></a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- main -->
+      <div id="main">
+
+  <h3>
+  
+   2012 YN6
+  
+  
+   
+  
+</h3>
+
+    First observed at Pan-STARRS 1, Haleakala
+  on 2012-12-22.
+
+
+  <br>(Discoverer will be defined when the object is numbered. 
+  See <a href="/mpec/K10/K10U20.html">this note</a>
+  on how discoverers are determined.)
+
+
+<br>
+<h2>Orbit</h2>
+
+    Orbit type: Amor
+  <br>
+
+
+    Near-Earth Object<br>
+
+    <br>
+    <div class="show-orbit-button">
+      <form accept-charset="UTF-8" action="/db_search/show_orbit" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+        <input id="number" name="number" type="hidden" />
+        <input id="designation" name="designation" type="hidden" value="2012 YN6" />
+        <input id="name" name="name" type="hidden" />
+        <input id="epoch" name="epoch" type="hidden" value="2019-04-27.0" />
+        <input id="peri" name="peri" type="hidden" value="207.8433628" />
+        <input id="m" name="m" type="hidden" value="2.00512" />
+        <input id="node" name="node" type="hidden" value="291.5912634" />
+        <input id="incl" name="incl" type="hidden" value="5.6706397" />
+        <input id="e" name="e" type="hidden" value="0.51858822" />
+        <input id="a" name="a" type="hidden" value="2.125119937862759" />
+        <input name="commit" type="submit" value="Interactive Orbit Sketch" />
+</form>    </div>
+    <div>
+       Note: WebGL enabled browser required.
+    </div>
+
+    
+
+
+  <br>
+  <table class="nb">
+    <tr>
+      <td valign="top" class="nb">
+        <table>
+          <tr><td>epoch</td><td class="rj">2019-04-27.0</td></tr>
+          <tr><td>epoch JD</td><td class="rj">2458600.5</td></tr>
+          <tr><td>perihelion date</td><td class="rj">2019-04-20.69752</td></tr>
+          <tr><td>perihelion JD</td><td class="rj">2458594.19752</td></tr>
+          <tr><td>argument of perihelion (°)</td><td class="rj">207.84336</td></tr>
+          <tr><td>ascending node (°)</td><td class="rj">291.59126</td></tr>
+          <tr><td>inclination (°)</td><td class="rj">5.67064</td></tr>
+          <tr><td>eccentricity</td><td class="rj">0.5185882</td></tr>
+          <tr><td>perihelion distance (AU)</td><td class="rj">1.0230578</td></tr>
+          <tr><td>Tisserand w.r.t. Jupiter</td><td class="rj">3.5</td></tr>
+          <tr><td>&Delta;V w.r.t. Earth (km/sec)</td><td class="rj">6.2</td></tr>
+        </table>
+      </td>
+      <td valign="top" class="nb">
+        <table>
+          <tr><td>semimajor axis (AU)</td><td class="rj">2.1251199</td></tr>
+          <tr><td>mean anomaly (°)</td><td class="rj">2.00512</td></tr>
+          <tr><td>mean daily motion (°/day)</td><td class="rj">0.31814760</td></tr>
+          <tr><td>aphelion distance (AU)</td><td class="rj">3.227</td></tr>
+          <tr><td>period (years)</td><td class="rj">3.1</td></tr>
+          <tr><td>P-vector [x]</td><td class="rj">-0.75753922</td></tr>
+          <tr><td>P-vector [y]</td><td class="rj">0.61578154</td></tr>
+          <tr><td>P-vector [z]</td><td class="rj">0.21667356</td></tr>
+          <tr><td>Q-vector [x]</td><td class="rj">-0.64629175</td></tr>
+          <tr><td>Q-vector [y]</td><td class="rj">-0.66076365</td></tr>
+          <tr><td>Q-vector [z]</td><td class="rj">-0.38170456</td></tr>
+          <tr><td>absolute magnitude</td><td class="rj">22.2</td></tr>
+          <tr><td>phase slope</td><td class="rj">0.15</td></tr>
+        </table>
+      </td>
+      <td valign="top" class="nb">
+        <table>
+
+            <tr><td><a href="/iau/info/UValue.html">uncertainty</a></td><td class="rj">0</td></tr>
+
+          <tr><td>reference</td><td class="rj">MPO 354489</td></tr>
+          <tr><td>observations used</td><td class="rj">116</td></tr>
+          <tr><td>oppositions</td><td class="rj">2</td></tr>
+          <tr><td>arc length (days)</td><td class="rj">1049</td></tr>
+          <tr><td>first opposition used</td><td class="rj">2012</td></tr>
+          <tr><td>last opposition used</td><td class="rj">2015</td></tr>
+          <tr><td>residual rms (arc-secs)</td><td class="rj">0.35</td></tr>
+          <tr><td><a href="/iau/info/Perturbers.html">perturbers coarse indicator</a></td><td class="rj">M-v</td></tr>
+          <tr><td><a href="/iau/info/Perturbers.html">perturbers precise indicator</a></td><td class="rj">003Eh</td></tr>
+          <tr><td>first observation date used</td><td class="rj">2012-12-22.0</td></tr>
+          <tr><td>last observation date used</td><td class="rj">2015-11-06.0</td></tr>
+          <tr><td>computer name</td><td class="rj">MPCW</td></tr>
+        </table>
+      </td>
+    </tr>
+  </table>    
+
+  <table class="nb">
+    <tr>
+      <td valign="top" class="nb">
+          <table>
+            <tr><td>JD of orbit computation</td><td class="rj">2457334.341868</td></tr>
+            <tr><td>perihelion JD uncertainty (days)</td><td class="rj">6.6228E-05</td></tr>
+            <tr><td>argument of perihelion uncertainty (°)</td><td class="rj">1.2401E-05</td></tr>
+            <tr><td>ascending node uncertainty (°)</td><td class="rj">8.4276E-06</td></tr>
+            <tr><td>inclination uncertainty (°)</td><td class="rj">2.9661E-06</td></tr>
+            <tr><td>eccentricity uncertainty </td><td class="rj">2.0923E-08</td></tr>
+            <tr><td>perihelion distance uncertainty (AU)</td><td class="rj">2.1653E-08</td></tr>
+          </table>    
+      </td>
+      <td width=100px> </td>
+
+      <td valign="top" class="nb">
+    Minimum Orbit Intersection Distances (in AU)<br>for orbit epoch: 2458600.5, reference: MPO354489<br>
+          <table>
+            <tr><td>Mercury</td><td>0.68446</td></tr>
+            <tr><td>Venus</td><td>0.31516</td></tr>
+            <tr><td>Earth</td><td>0.0533</td></tr>
+            <tr><td>Mars</td><td>0.11659</td></tr>
+            <tr><td>Jupiter</td><td>1.83331</td></tr>
+            <tr><td>Saturn</td><td>6.64538</td></tr>
+            <tr><td>Uranus</td><td>16.5278</td></tr>
+            <tr><td>Neptune</td><td>26.7919</td></tr>
+          </table>    
+          <br>
+      </td>
+    </tr>
+  </table>
+
+
+<h2>Observations</h2>
+  119 total observations over interval:
+  2012 12 22.39668 &ndash; 2015 11 06.02812
+  <br>
+  These data are available for
+  <a href="../tmp/2012_YN6.txt" target="_blank">download</a>
+  (<a href="/iau/info/OpticalObs.html" target="_blank">format description</a>).
+  <br>
+  <br>
+  <table>
+    <tr>
+      <th>Date (UT)</th>
+      <th>J2000 RA</th>
+      <th>J2000 Dec</th>
+      <th>Magn</th>
+      <th><a href="/iau/lists/ObsCodesF.html">Location</a></th>
+      <th><a href="/iau/info/References.html">Ref</a></th>
+    </tr>
+
+      <tr>
+        <td class="ff">2012 12 22.39668</td>
+        <td class="ff">05 05 44.998</td>
+        <td class="ff">+36 28 45.48</td>
+        <td class="ff rj">19.7 i</td>
+        <td>F51 &ndash; Pan-STARRS 1, Haleakala</td>
+        <td class="ff lj">MPS 448853</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 12 22.41063</td>
+        <td class="ff">05 05 44.701</td>
+        <td class="ff">+36 28 35.10</td>
+        <td class="ff rj">19.9 i</td>
+        <td>F51 &ndash; Pan-STARRS 1, Haleakala</td>
+        <td class="ff lj">MPS 448853</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 12 22.47697</td>
+        <td class="ff">05 05 43.398</td>
+        <td class="ff">+36 27 42.28</td>
+        <td class="ff rj">19.7 r</td>
+        <td>F51 &ndash; Pan-STARRS 1, Haleakala</td>
+        <td class="ff lj">MPS 448853</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 12 22.48935</td>
+        <td class="ff">05 05 43.185</td>
+        <td class="ff">+36 27 32.00</td>
+        <td class="ff rj">19.7 r</td>
+        <td>F51 &ndash; Pan-STARRS 1, Haleakala</td>
+        <td class="ff lj">MPS 448853</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 12 24.14073</td>
+        <td class="ff">05 05 54.06</td>
+        <td class="ff">+36 05 11.7</td>
+        <td class="ff rj">19.2 V</td>
+        <td>G96 &ndash; Mt. Lemmon Survey</td>
+        <td class="ff lj">MPS 448853</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 12 24.14333</td>
+        <td class="ff">05 05 54.02</td>
+        <td class="ff">+36 05 09.8</td>
+        <td class="ff rj">19.2 V</td>
+        <td>G96 &ndash; Mt. Lemmon Survey</td>
+        <td class="ff lj">MPS 448853</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 12 24.14599</td>
+        <td class="ff">05 05 54.02</td>
+        <td class="ff">+36 05 07.0</td>
+        <td class="ff rj">18.7 V</td>
+        <td>G96 &ndash; Mt. Lemmon Survey</td>
+        <td class="ff lj">MPS 448853</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 12 24.14862</td>
+        <td class="ff">05 05 54.02</td>
+        <td class="ff">+36 05 05.4</td>
+        <td class="ff rj">18.8 V</td>
+        <td>G96 &ndash; Mt. Lemmon Survey</td>
+        <td class="ff lj">MPS 448853</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 12 24.15124</td>
+        <td class="ff">05 05 54.02</td>
+        <td class="ff">+36 05 03.8</td>
+        <td class="ff rj">18.5 V</td>
+        <td>G96 &ndash; Mt. Lemmon Survey</td>
+        <td class="ff lj">MPS 448853</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 12 29.10590</td>
+        <td class="ff">05 07 11.43</td>
+        <td class="ff">+34 38 01.6</td>
+        <td class="ff rj">18.9 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 448853</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 12 29.11053</td>
+        <td class="ff">05 07 11.43</td>
+        <td class="ff">+34 37 56.1</td>
+        <td class="ff rj">19.0 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 448853</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 12 29.11495</td>
+        <td class="ff">05 07 11.45</td>
+        <td class="ff">+34 37 50.5</td>
+        <td class="ff rj">19.0 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 448853</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 12 31.74444</td>
+        <td class="ff">05 08 36.48</td>
+        <td class="ff">+33 34 32.1</td>
+        <td class="ff rj">20.1 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 457692</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 12 31.74540</td>
+        <td class="ff">05 08 36.52</td>
+        <td class="ff">+33 34 30.6</td>
+        <td class="ff rj">20.2 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 457692</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 12 31.74636</td>
+        <td class="ff">05 08 36.59</td>
+        <td class="ff">+33 34 28.5</td>
+        <td class="ff rj">20.2 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 457692</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 12 31.74830</td>
+        <td class="ff">05 08 36.58</td>
+        <td class="ff">+33 34 24.9</td>
+        <td class="ff rj">20.1 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 457692</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 03.86941</td>
+        <td class="ff">05 11 24.34</td>
+        <td class="ff">+32 03 15.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>J13 &ndash; La Palma-Liverpool Telescope</td>
+        <td class="ff lj">MPS 453874</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 03.86986</td>
+        <td class="ff">05 11 24.34</td>
+        <td class="ff">+32 03 14.5</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>J13 &ndash; La Palma-Liverpool Telescope</td>
+        <td class="ff lj">MPS 453874</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 03.87032</td>
+        <td class="ff">05 11 24.38</td>
+        <td class="ff">+32 03 13.6</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>J13 &ndash; La Palma-Liverpool Telescope</td>
+        <td class="ff lj">MPS 453874</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 03.87078</td>
+        <td class="ff">05 11 24.38</td>
+        <td class="ff">+32 03 12.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>J13 &ndash; La Palma-Liverpool Telescope</td>
+        <td class="ff lj">MPS 453874</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 05.05779</td>
+        <td class="ff">05 12 45.64</td>
+        <td class="ff">+31 22 23.7</td>
+        <td class="ff rj">19.6 R</td>
+        <td>G48 &ndash; Harlingten Research Observatory, Rancho Hildal</td>
+        <td class="ff lj">MPS 449757</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 05.06062</td>
+        <td class="ff">05 12 45.80</td>
+        <td class="ff">+31 22 17.6</td>
+        <td class="ff rj">18.9 R</td>
+        <td>G48 &ndash; Harlingten Research Observatory, Rancho Hildal</td>
+        <td class="ff lj">MPS 449757</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 05.06157</td>
+        <td class="ff">05 12 45.83</td>
+        <td class="ff">+31 22 15.3</td>
+        <td class="ff rj">18.7 R</td>
+        <td>G48 &ndash; Harlingten Research Observatory, Rancho Hildal</td>
+        <td class="ff lj">MPS 449757</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 05.17531</td>
+        <td class="ff">05 12 51.90</td>
+        <td class="ff">+31 18 24.2</td>
+        <td class="ff rj">18.3 R</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 449757</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 05.17701</td>
+        <td class="ff">05 12 51.98</td>
+        <td class="ff">+31 18 20.4</td>
+        <td class="ff rj">18.4 R</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 449757</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 05.17870</td>
+        <td class="ff">05 12 52.06</td>
+        <td class="ff">+31 18 17.2</td>
+        <td class="ff rj">18.3 R</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 449757</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 05.84517</td>
+        <td class="ff">05 13 42.34</td>
+        <td class="ff">+30 53 28.9</td>
+        <td class="ff rj">18.5 R</td>
+        <td>157 &ndash; Frasso Sabino</td>
+        <td class="ff lj">MPS 449757</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 05.84937</td>
+        <td class="ff">05 13 42.58</td>
+        <td class="ff">+30 53 19.0</td>
+        <td class="ff rj">18.4 R</td>
+        <td>157 &ndash; Frasso Sabino</td>
+        <td class="ff lj">MPS 449757</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 05.85357</td>
+        <td class="ff">05 13 42.74</td>
+        <td class="ff">+30 53 10.2</td>
+        <td class="ff rj">18.5 R</td>
+        <td>157 &ndash; Frasso Sabino</td>
+        <td class="ff lj">MPS 449757</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 05.85966</td>
+        <td class="ff">05 13 43.07</td>
+        <td class="ff">+30 52 56.6</td>
+        <td class="ff rj">18.5 R</td>
+        <td>157 &ndash; Frasso Sabino</td>
+        <td class="ff lj">MPS 449757</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 06.01586</td>
+        <td class="ff">05 13 57.37</td>
+        <td class="ff">+30 46 54.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>I42 &ndash; Westport Observatory</td>
+        <td class="ff lj">MPS 449757</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 06.01869</td>
+        <td class="ff">05 13 57.60</td>
+        <td class="ff">+30 46 48.5</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>I42 &ndash; Westport Observatory</td>
+        <td class="ff lj">MPS 449757</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 06.11837</td>
+        <td class="ff">05 13 59.40</td>
+        <td class="ff">+30 42 37.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>204 &ndash; Schiaparelli Observatory</td>
+        <td class="ff lj">MPS 451057</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 06.12753</td>
+        <td class="ff">05 14 00.11</td>
+        <td class="ff">+30 42 15.6</td>
+        <td class="ff rj">19.2 R</td>
+        <td>204 &ndash; Schiaparelli Observatory</td>
+        <td class="ff lj">MPS 451057</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 07.86388</td>
+        <td class="ff">05 16 40.21</td>
+        <td class="ff">+29 31 09.3</td>
+        <td class="ff rj">18.7 R</td>
+        <td>157 &ndash; Frasso Sabino</td>
+        <td class="ff lj">MPS 449757</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 07.86925</td>
+        <td class="ff">05 16 40.57</td>
+        <td class="ff">+29 30 55.1</td>
+        <td class="ff rj">19.1 R</td>
+        <td>157 &ndash; Frasso Sabino</td>
+        <td class="ff lj">MPS 449757</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 07.87462</td>
+        <td class="ff">05 16 40.92</td>
+        <td class="ff">+29 30 40.8</td>
+        <td class="ff rj">18.8 R</td>
+        <td>157 &ndash; Frasso Sabino</td>
+        <td class="ff lj">MPS 449757</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 07.88078</td>
+        <td class="ff">05 16 41.70</td>
+        <td class="ff">+29 30 20.4</td>
+        <td class="ff rj">18.4 R</td>
+        <td>B88 &ndash; Bigmuskie Observatory, Mombercelli</td>
+        <td class="ff lj">MPS 449757</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 07.90590</td>
+        <td class="ff">05 16 43.58</td>
+        <td class="ff">+29 29 14.7</td>
+        <td class="ff rj">18.1 R</td>
+        <td>B88 &ndash; Bigmuskie Observatory, Mombercelli</td>
+        <td class="ff lj">MPS 449757</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 07.92826</td>
+        <td class="ff">05 16 45.18</td>
+        <td class="ff">+29 28 14.8</td>
+        <td class="ff rj">18.4 R</td>
+        <td>B88 &ndash; Bigmuskie Observatory, Mombercelli</td>
+        <td class="ff lj">MPS 449757</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 07.98179</td>
+        <td class="ff">05 16 54.54</td>
+        <td class="ff">+29 25 48.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>I42 &ndash; Westport Observatory</td>
+        <td class="ff lj">MPS 449758</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 07.98395</td>
+        <td class="ff">05 16 54.71</td>
+        <td class="ff">+29 25 42.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>I42 &ndash; Westport Observatory</td>
+        <td class="ff lj">MPS 449758</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 10.29934</td>
+        <td class="ff">05 21 08.47</td>
+        <td class="ff">+27 34 08.7</td>
+        <td class="ff rj">18.0 R</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 449758</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 10.30016</td>
+        <td class="ff">05 21 08.55</td>
+        <td class="ff">+27 34 06.0</td>
+        <td class="ff rj">18.0 R</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 449758</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 10.30097</td>
+        <td class="ff">05 21 09.05</td>
+        <td class="ff">+27 34 04.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 449758</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 11.79209</td>
+        <td class="ff">05 24 34.60</td>
+        <td class="ff">+26 10 37.1</td>
+        <td class="ff rj">18.6 V</td>
+        <td>C77 &ndash; Bernezzo Observatory</td>
+        <td class="ff lj">MPS 451057</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 11.79833</td>
+        <td class="ff">05 24 35.35</td>
+        <td class="ff">+26 10 15.0</td>
+        <td class="ff rj">18.5 V</td>
+        <td>C77 &ndash; Bernezzo Observatory</td>
+        <td class="ff lj">MPS 451057</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 11.80943</td>
+        <td class="ff">05 24 36.70</td>
+        <td class="ff">+26 09 37.4</td>
+        <td class="ff rj">18.6 V</td>
+        <td>C77 &ndash; Bernezzo Observatory</td>
+        <td class="ff lj">MPS 451057</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 11.81362</td>
+        <td class="ff">05 24 37.13</td>
+        <td class="ff">+26 09 23.8</td>
+        <td class="ff rj">18.5 V</td>
+        <td>C77 &ndash; Bernezzo Observatory</td>
+        <td class="ff lj">MPS 451057</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 15.211999</td>
+        <td class="ff">05 34 09.57</td>
+        <td class="ff">+22 20 00.9</td>
+        <td class="ff rj">18.2 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 451057</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 15.212907</td>
+        <td class="ff">05 34 09.72</td>
+        <td class="ff">+22 19 56.6</td>
+        <td class="ff rj">18.4 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 451058</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 15.214266</td>
+        <td class="ff">05 34 09.94</td>
+        <td class="ff">+22 19 50.4</td>
+        <td class="ff rj">18.2 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 451058</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 15.215379</td>
+        <td class="ff">05 34 10.14</td>
+        <td class="ff">+22 19 44.9</td>
+        <td class="ff rj">18.1 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 451058</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 15.329577</td>
+        <td class="ff">05 34 29.78</td>
+        <td class="ff">+22 10 42.3</td>
+        <td class="ff rj">18.3 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 451058</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 15.332456</td>
+        <td class="ff">05 34 30.32</td>
+        <td class="ff">+22 10 28.4</td>
+        <td class="ff rj">18.5 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 451058</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 15.335290</td>
+        <td class="ff">05 34 30.83</td>
+        <td class="ff">+22 10 14.7</td>
+        <td class="ff rj">18.5 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 451058</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 15.338021</td>
+        <td class="ff">05 34 31.34</td>
+        <td class="ff">+22 10 01.7</td>
+        <td class="ff rj">18.3 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 451058</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 19.11725</td>
+        <td class="ff">05 49 24.80</td>
+        <td class="ff">+16 27 50.1</td>
+        <td class="ff rj">17.7 &nbsp;</td>
+        <td>718 &ndash; Tooele</td>
+        <td class="ff lj">MPS 452371</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 19.11903</td>
+        <td class="ff">05 49 25.23</td>
+        <td class="ff">+16 27 38.7</td>
+        <td class="ff rj">17.6 &nbsp;</td>
+        <td>718 &ndash; Tooele</td>
+        <td class="ff lj">MPS 452371</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 19.12081</td>
+        <td class="ff">05 49 25.72</td>
+        <td class="ff">+16 27 26.6</td>
+        <td class="ff rj">17.3 &nbsp;</td>
+        <td>718 &ndash; Tooele</td>
+        <td class="ff lj">MPS 452371</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 19.132332</td>
+        <td class="ff">05 49 26.14</td>
+        <td class="ff">+16 26 21.0</td>
+        <td class="ff rj">18.1 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 452371</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 19.136619</td>
+        <td class="ff">05 49 27.13</td>
+        <td class="ff">+16 25 53.6</td>
+        <td class="ff rj">17.9 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 452371</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 19.140804</td>
+        <td class="ff">05 49 28.13</td>
+        <td class="ff">+16 25 27.5</td>
+        <td class="ff rj">17.9 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 452371</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 19.18525</td>
+        <td class="ff">05 49 39.15</td>
+        <td class="ff">+16 20 54.6</td>
+        <td class="ff rj">18.3 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 452371</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 19.18655</td>
+        <td class="ff">05 49 39.38</td>
+        <td class="ff">+16 20 46.7</td>
+        <td class="ff rj">18.4 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 452371</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 19.18718</td>
+        <td class="ff">05 49 39.58</td>
+        <td class="ff">+16 20 42.9</td>
+        <td class="ff rj">18.3 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 452371</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 19.18777</td>
+        <td class="ff">05 49 39.66</td>
+        <td class="ff">+16 20 39.3</td>
+        <td class="ff rj">18.3 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 452371</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 19.18959</td>
+        <td class="ff">05 49 40.09</td>
+        <td class="ff">+16 20 27.6</td>
+        <td class="ff rj">18.4 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 452371</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 19.19127</td>
+        <td class="ff">05 49 40.49</td>
+        <td class="ff">+16 20 17.0</td>
+        <td class="ff rj">18.4 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 452371</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 19.19272</td>
+        <td class="ff">05 49 40.83</td>
+        <td class="ff">+16 20 07.7</td>
+        <td class="ff rj">18.2 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 452371</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 19.19356</td>
+        <td class="ff">05 49 40.99</td>
+        <td class="ff">+16 20 02.1</td>
+        <td class="ff rj">18.2 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 452371</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 21.20611</td>
+        <td class="ff">05 59 38.94</td>
+        <td class="ff">+12 29 46.1</td>
+        <td class="ff rj">17.8 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 452371</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 21.20707</td>
+        <td class="ff">05 59 39.18</td>
+        <td class="ff">+12 29 38.9</td>
+        <td class="ff rj">17.9 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 452371</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 21.20865</td>
+        <td class="ff">05 59 39.65</td>
+        <td class="ff">+12 29 27.8</td>
+        <td class="ff rj">17.9 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 452371</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 21.20922</td>
+        <td class="ff">05 59 39.84</td>
+        <td class="ff">+12 29 23.1</td>
+        <td class="ff rj">17.7 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 452371</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 21.21013</td>
+        <td class="ff">05 59 40.11</td>
+        <td class="ff">+12 29 16.1</td>
+        <td class="ff rj">17.9 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 452371</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 21.21088</td>
+        <td class="ff">05 59 40.30</td>
+        <td class="ff">+12 29 10.7</td>
+        <td class="ff rj">17.9 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 452371</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 21.21175</td>
+        <td class="ff">05 59 40.51</td>
+        <td class="ff">+12 29 03.8</td>
+        <td class="ff rj">18.1 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 452371</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 21.21316</td>
+        <td class="ff">05 59 40.92</td>
+        <td class="ff">+12 28 54.0</td>
+        <td class="ff rj">18.1 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 452371</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 25.630088</td>
+        <td class="ff">06 27 44.47</td>
+        <td class="ff">+01 46 35.0</td>
+        <td class="ff rj">17.7 R</td>
+        <td>D90 &ndash; RAS Observatory, Moorook</td>
+        <td class="ff lj">MPS 453222</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 25.633323</td>
+        <td class="ff">06 27 45.75</td>
+        <td class="ff">+01 46 02.0</td>
+        <td class="ff rj">17.1 R</td>
+        <td>D90 &ndash; RAS Observatory, Moorook</td>
+        <td class="ff lj">MPS 453222</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 25.636554</td>
+        <td class="ff">06 27 47.09</td>
+        <td class="ff">+01 45 29.2</td>
+        <td class="ff rj">17.3 R</td>
+        <td>D90 &ndash; RAS Observatory, Moorook</td>
+        <td class="ff lj">MPS 453222</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 26.154228</td>
+        <td class="ff">06 31 48.22</td>
+        <td class="ff">+00 13 51.2</td>
+        <td class="ff rj">17.3 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 453222</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 26.161475</td>
+        <td class="ff">06 31 51.28</td>
+        <td class="ff">+00 12 35.2</td>
+        <td class="ff rj">17.1 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 453222</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 26.164661</td>
+        <td class="ff">06 31 52.59</td>
+        <td class="ff">+00 12 02.1</td>
+        <td class="ff rj">17.3 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 453222</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 26.175286</td>
+        <td class="ff">06 31 57.01</td>
+        <td class="ff">+00 10 11.4</td>
+        <td class="ff rj">17.4 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 453222</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 26.178464</td>
+        <td class="ff">06 31 58.32</td>
+        <td class="ff">+00 09 38.1</td>
+        <td class="ff rj">17.3 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 453222</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 26.181434</td>
+        <td class="ff">06 31 59.56</td>
+        <td class="ff">+00 09 07.2</td>
+        <td class="ff rj">17.5 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 453222</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 27.184200</td>
+        <td class="ff">06 40 01.52</td>
+        <td class="ff">-02 50 22.5</td>
+        <td class="ff rj">17.3 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 453222</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 27.187087</td>
+        <td class="ff">06 40 02.81</td>
+        <td class="ff">-02 50 54.4</td>
+        <td class="ff rj">17.5 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 453222</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 27.189965</td>
+        <td class="ff">06 40 04.09</td>
+        <td class="ff">-02 51 26.0</td>
+        <td class="ff rj">17.5 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 453222</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 27.192850</td>
+        <td class="ff">06 40 05.39</td>
+        <td class="ff">-02 51 57.9</td>
+        <td class="ff rj">17.6 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 453222</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 27.195544</td>
+        <td class="ff">06 40 06.60</td>
+        <td class="ff">-02 52 27.6</td>
+        <td class="ff rj">17.7 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 453222</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 27.198708</td>
+        <td class="ff">06 40 08.02</td>
+        <td class="ff">-02 53 02.4</td>
+        <td class="ff rj">17.8 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 453222</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 28.551528</td>
+        <td class="ff">06 51 52.92</td>
+        <td class="ff">-07 05 48.5</td>
+        <td class="ff rj">16.0 R</td>
+        <td>D90 &ndash; RAS Observatory, Moorook</td>
+        <td class="ff lj">MPS 453222</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 01 28.559049</td>
+        <td class="ff">06 51 56.60</td>
+        <td class="ff">-07 07 15.8</td>
+        <td class="ff rj">16.6 R</td>
+        <td>D90 &ndash; RAS Observatory, Moorook</td>
+        <td class="ff lj">MPS 453222</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 02 05.02367</td>
+        <td class="ff">08 15 03.13</td>
+        <td class="ff">-31 18 49.1</td>
+        <td class="ff rj">17.5 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 453874</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 02 05.02721</td>
+        <td class="ff">08 15 05.71</td>
+        <td class="ff">-31 19 26.4</td>
+        <td class="ff rj">17.5 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 453874</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 02 05.03088</td>
+        <td class="ff">08 15 08.39</td>
+        <td class="ff">-31 20 04.9</td>
+        <td class="ff rj">17.4 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 453874</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 02 05.03457</td>
+        <td class="ff">08 15 11.06</td>
+        <td class="ff">-31 20 43.7</td>
+        <td class="ff rj">17.7 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 453874</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 02 19.38079</td>
+        <td class="ff">11 07 35.42</td>
+        <td class="ff">-50 07 28.9</td>
+        <td class="ff rj">18.7 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 456437</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 02 19.38375</td>
+        <td class="ff">11 07 36.90</td>
+        <td class="ff">-50 07 30.4</td>
+        <td class="ff rj">18.6 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 456437</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 02 19.38696</td>
+        <td class="ff">11 07 38.51</td>
+        <td class="ff">-50 07 32.1</td>
+        <td class="ff rj">18.5 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 456437</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 02 19.39006</td>
+        <td class="ff">11 07 40.06</td>
+        <td class="ff">-50 07 33.6</td>
+        <td class="ff rj">18.6 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 456437</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 02 19.39314</td>
+        <td class="ff">11 07 41.60</td>
+        <td class="ff">-50 07 35.1</td>
+        <td class="ff rj">18.7 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 456437</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 03 02.22936</td>
+        <td class="ff">12 16 00.88</td>
+        <td class="ff">-49 42 21.4</td>
+        <td class="ff rj">19.2 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 464108</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 03 02.23527</td>
+        <td class="ff">12 16 02.13</td>
+        <td class="ff">-49 42 17.5</td>
+        <td class="ff rj">19.5 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 464108</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 03 03.17298</td>
+        <td class="ff">12 19 48.78</td>
+        <td class="ff">-49 30 22.5</td>
+        <td class="ff rj">19.4 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 457692</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 03 03.17546</td>
+        <td class="ff">12 19 49.26</td>
+        <td class="ff">-49 30 21.0</td>
+        <td class="ff rj">19.4 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 457692</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 03 03.17795</td>
+        <td class="ff">12 19 49.75</td>
+        <td class="ff">-49 30 19.4</td>
+        <td class="ff rj">19.8 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 457692</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 03 03.18045</td>
+        <td class="ff">12 19 50.24</td>
+        <td class="ff">-49 30 17.8</td>
+        <td class="ff rj">19.4 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 457692</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 03 03.18294</td>
+        <td class="ff">12 19 50.73</td>
+        <td class="ff">-49 30 16.2</td>
+        <td class="ff rj">19.9 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 457692</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 03 12.39671</td>
+        <td class="ff">12 44 50.83</td>
+        <td class="ff">-46 57 52.1</td>
+        <td class="ff rj">19.7 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 459384</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 03 12.40091</td>
+        <td class="ff">12 44 51.22</td>
+        <td class="ff">-46 57 46.7</td>
+        <td class="ff rj">19.7 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 459384</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 03 12.40508</td>
+        <td class="ff">12 44 51.63</td>
+        <td class="ff">-46 57 40.6</td>
+        <td class="ff rj">18.8 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 459384</td>
+      </tr>
+      <tr>
+        <td class="ff">2013 03 12.40885</td>
+        <td class="ff">12 44 51.91</td>
+        <td class="ff">-46 57 35.8</td>
+        <td class="ff rj">18.4 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 459384</td>
+      </tr>
+      <tr>
+        <td class="ff">2015 11 06.02351</td>
+        <td class="ff">01 36 12.19</td>
+        <td class="ff">+23 24 57.3</td>
+        <td class="ff rj">22.2 R</td>
+        <td>950 &ndash; La Palma</td>
+        <td class="ff lj">MPS 645505</td>
+      </tr>
+      <tr>
+        <td class="ff">2015 11 06.02607</td>
+        <td class="ff">01 36 11.91</td>
+        <td class="ff">+23 24 55.9</td>
+        <td class="ff rj">22.4 R</td>
+        <td>950 &ndash; La Palma</td>
+        <td class="ff lj">MPS 645505</td>
+      </tr>
+      <tr>
+        <td class="ff">2015 11 06.02812</td>
+        <td class="ff">01 36 11.68</td>
+        <td class="ff">+23 24 54.6</td>
+        <td class="ff rj">22.1 R</td>
+        <td>950 &ndash; La Palma</td>
+        <td class="ff lj">MPS 645505</td>
+      </tr>
+  </table>
+
+
+        </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer id="footer">
+    <div class="holder">
+      <nav class="nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+	  <!-- Contact link changed to Jira -->
+          <li><a href="https://mpc-service.atlassian.net/servicedesk/customer/portals">Contact</a></li>
+          <li><a href="https://www.cfa.harvard.edu/content/privacy-statement">Privacy</a></li>
+        </ul>
+      </nav>
+      
+      <a href="https://www.cfa.harvard.edu">
+      <img src="/images/CfA_Logo_Vertical_CMYK.png" width="110" height="47"></a>
+      <p>
+      <p>
+      <p>
+      <div class="copy">The Minor Planet Center is hosted by the Center for Astrophysics | Harvard &amp; Smithsonian.<center>The Minor Planet Center is funded by NASA.</center></div> 
+  </footer>
+
+<script type="text/javascript">
+  $(window).on('load', (function() {
+    $("table").tablesorter();
+  })); 
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var _tag=new WebTrends();
+_tag.dcsGetId();
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+_tag.dcsCustom=function(){
+// Add custom parameters here.
+//_tag.DCSext.param_name=param_value;
+}
+_tag.dcsCollect();
+//]]>
+</script>
+
+<noscript>
+<div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="//logs1.smithsonian.museum/dcsa7yzrmbdzpxzrosrn4tyep_5i1d/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=9.4.0&amp;dcssip=www.minorplanetcenter.net"/></div>
+</noscript>
+</body>
+
+</html>

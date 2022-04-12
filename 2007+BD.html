@@ -1,0 +1,2814 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IAU Minor Planet Center</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/mpc.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/table-sorter.css">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+  <link media="all" rel="stylesheet" href="/css/all.css">
+
+  <link rel="icon" type="image/png" href="/iau/figs/MPClogo16.png">
+  <meta name="description" content="We are the official body that deals with
+      astrometric observations and orbits of minor planets (asteroids) and comets.">
+
+  <meta name="keywords" content="astrometry, observations, orbits,
+      minor planets, asteroids, comets, near earth objects, 
+      potentially hazardous asteroids">
+
+  <script type="text/javascript" src="/js/jquery-latest.js"></script>
+<!--  <script type="text/javascript" src="/js/jquery.main.js"></script> -->
+<!--  <script type="text/javascript" src="/js/jquery.metadata.js"></script> -->
+  <script type="text/javascript" src="/js/jquery.tablesorter.js"></script>
+  <script type="text/javascript" src="/js/webtrends.js"></script>
+  <script type="text/javascript" src="/js/track_pdfs.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic|PT+Sans:400,700,400italic,700italic|PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+  
+<body>
+  <!-- wrapper -->
+  <div id="wrapper">
+    <div class="w1">
+      <!-- header -->
+      <header id="header">
+        <div class="holder">
+          <!-- logo -->
+          <h1 class="logo"><a href="/">The International Astronomical Union Minor Planet Center</a></h1>
+          <div class="area">
+            <!-- top-nav -->
+            <nav class="top-nav">
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+		<!-- Contact link changed to Jira -->
+                <li><a href="https://mpc-service.atlassian.net/servicedesk/customer/portals">Contact</a></li>
+              </ul>
+            </nav>
+            <!-- search-form -->
+            <div class="form-holder">
+              <!-- This commented code opens a new page for the search. -->
+              <!--<form class="search-form" method="get" action="https://www.google.com/search" target="_blank">-->
+              <form class="search-form" method="get" action="https://www.google.com/search">
+                <fieldset>
+                  <!--<label for="search">Search</label>-->
+                  <input type="hidden" name="sitesearch" value="minorplanetcenter.net">
+                  <input type="text" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" id="search" name="q" value="Search MPC">
+                </fieldset>
+              </form>
+            </div>
+            <div class="social-bar">
+<!--              <a href="https://twitter.com/MinorPlanetCtr"><span class="social twitter">L</span></a> -->
+<!--              <a href="https://www.facebook.com/MinorPlanetCenter"><span class="social facebook">F</span></a> -->
+<!--              <a href="https://www.youtube.com/channel/UCtALMOQHuBxh5XMsYNiDhMg"><span class="social youtube">X</span></a> -->
+<!--              <a href="/iau/rss/mpc_feeds.html"><span class="social rss">R</span></a> -->
+            </div>
+          </div>
+        </div>
+        <nav class="nav-holder">
+          <!-- main navigation -->
+          <ul id="nav">
+            <li>
+              <a href="/iau/mpc.html"><span>OBSERVERS</span></a>
+              <ul>
+                <li><a href="/iau/MPEph/MPEph.html">Ephemeris Service</a></li>
+                <li><a href="/mpec/RecentMPECs.html">MPECs</a></li>
+                <li><a href="/iau/NEO/toconfirm_tabular.html">NEO Confirmation</a></li>
+                <li><a href="/iau/NEO/pccp_tabular.html">Possible Comet Confirmation</a></li>
+                <li><a href="/iau/Ephemerides/EphemOrbEls.html" class="nested">Orbital Elements</a>
+                  <ul>
+                    <li><a href="/iau/MPCORB.html">MPCORB</a></li>
+                    <li><a href="/iau/ECS/MPCAT/MPCAT.html">MPCAT</a></li>
+                    <li><a href="/iau/ECS/MPCUPDATE/MPCUPDATE.html">MPCUPDATE</a></li>
+                    <li><a href="/iau/Ephemerides/SoftwareEls.html">Orbital Elements for Software</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/services/MPCServices.html">Publications Overview</a></li>
+                <li><a href="/iau/ECS/MPCArchive/MPCArchive_TBL.html">Publications Archive</a></li>              
+                <li><a href="/iau/NEO/TheNEOPage.html" class="nested">NEO Services</a>
+                  <ul>
+                    <li><a href="/iau/NEO/toconfirm_tabular.html">Confirmation</a></li>
+                    <li><a href="/iau/NEO/PossNEO.html">Ratings</a></li>
+                    <li><a href="/cgi-bin/neaobs.cgi">Observation Planning Aid</a></li>
+                    <li><a href="/cgi-bin/checkneo.cgi">NEOChecker</a></li>
+                    <li><a href="/cgi-bin/checkneocmt.cgi">NEOCMTChecker</a></li>
+                    <li><a href="/neocp_followup_report/">NEOCP Followup Report Form</a></li>
+                    <li><a href="/neocp_followup_reports/">NEOCP Followup Reports</a></li>
+                    <li><a href="/neocp_obs">NEOCP Recent Observations</a></li>
+                  </ul>
+                </li>
+                <li><a href="/iau/services/WebCSAccess.html" class="nested">Other Observer Services</a>
+                  <ul>
+                    <li><a href="/whatsup">Observing Target List</a></li>
+                    <li><a href="/iau/NatSats/NaturalSatellites.html">Natural Satellite Ephemerides</a></li>
+                    <li><a href="/iau/MPEph/NewObjEphems.html">New Object Ephemerides</a></li>
+                    <li><a href="/cgi-bin/checkmp.cgi">MPChecker</a></li>
+                    <li><a href="/cgi-bin/checkcmt.cgi">CMTChecker</a></li>
+                    <li><a href="/iau/artsats/artsats.html">Distant Artificial Satellites</a></li>
+                    <li><a href="/iau/lists/Customize.html">Observing List Customizer</a></li>
+                  </ul>
+                </li>
+                <li><a href="/db_search">Orbits/Observations Database</a></li>
+
+                <li><a href='http://alcdef.org'>Light Curve Database</a></li>
+
+                <li><a href="/iau/ECS/MPCAT-OBS/MPCAT-OBS.html">MPCAT-OBS</a></li>
+                <li><a href="/iau/SkyCoverage.html">Sky Coverage</a></li>
+                <li><a href="/iau/MPC_Documentation.html" class="nested">Documentation</a>
+                  <ul>
+                    <li><a href="/iau/info/TechInfo.html">MPC Submission Info</a></li>
+                    <li><a href="/iau/info/Astrometry.html">Astrometry Guide</a></li>
+                    <li><a href="/iau/WhatsNew.html">What's New</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/lists/Lists.html" class="nested">Lists and Plots</a>
+                  <ul>
+                    <li><a href="/iau/lists/MPLists.html">Minor Planets</a></li>
+                      <!--<ul>
+                        <li><a href="/iau/lists/t_atens.html">Atens</a></li>
+                        <li><a href="/iau/lists/t_apollos.html">Apollos</a></li>
+                        <li><a href="/iau/lists/t_amors.html">Amors</a></li>
+                        <li><a href="/iau/lists/t_centaurs.html">Centaurs and Scattered Disk Objects</a></li>
+                        <li><a href="/iau/lists/t_tnos.html">Transneptunian Objects</a></li>
+                        <li><a href="/iau/lists/t_others.html">Other Unusual Objects</a></li>
+                        <li><a href="/iau/lists/t_dangerous.html">Potentially Hazardous Asteroids</a></li>
+                      </ul>-->
+                    <li><a href="/iau/lists/CometLists.html">Comets</a></li>
+                      <!--<ul>
+                        <li><a href="/iau/lists/LastCometObs.html">Date of Last Observation</a></li>
+                        <li><a href="/iau/lists/LastYear.html">Designations from the Past Year</a></li>
+                        <li><a href="http://www.icq.eps.harvard.edu/CometMags.html">Comet Magnitude Estimates</a></li>
+                        <li><a href="/iau/lists/ClosestComets.html">Closest Approaches</a></li>
+                        <li><a href="/iau/lists/PeriodicCodes.html">Periodic Comets</a></li>
+                      </ul>-->
+                    <li><a href="/iau/lists/ObsCodesF.html">Observatory Codes</a></li>		    
+                    <li><a href="/iau/Animations/Animations.html">Animations</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/MPCStatus.html">MPC Status</a></li>
+                <!--<li><a href="/summary">Summary</a></li>-->
+                <li><a href='/mpc/obs_stats_2014_2018'>2014-18 NEO Obs Statistics</a></li>
+                <li><a href='/mpc/summary'>Summary of Latest Data</a></li>
+              </ul>
+            </li>
+            <li><a href="/data"><span>DATA</span></a>
+            </li>
+            <li><a href="http://iawn.net/"><span>IAWN</span></a>
+            </li>
+            <li><a href="https://minorplanetcenter.net/mpcops/beta/"><span>BETA</span></a></li>
+            <li><a href="/iau/MPCStatus.html"><span style="color:Green">STATUS</a></li>
+            <li><a href="https://sbnmpc.astro.umd.edu/"><span>SBN ANNEX</span></a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- main -->
+      <div id="main">
+
+  <h3>
+  
+   2007 BD
+  
+  
+   
+  
+</h3>
+
+    First observed at Catalina Sky Survey
+  on 2007-01-16.
+
+
+  <br>(Discoverer will be defined when the object is numbered. 
+  See <a href="/mpec/K10/K10U20.html">this note</a>
+  on how discoverers are determined.)
+
+
+<br>
+<h2>Orbit</h2>
+
+    Orbit type: Atira
+  <br>
+
+
+    Near-Earth Object<br>
+    One opposition object seen prior.<br>
+
+    <br>
+    <div class="show-orbit-button">
+      <form accept-charset="UTF-8" action="/db_search/show_orbit" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+        <input id="number" name="number" type="hidden" />
+        <input id="designation" name="designation" type="hidden" value="2007 BD" />
+        <input id="name" name="name" type="hidden" />
+        <input id="epoch" name="epoch" type="hidden" value="2019-04-27.0" />
+        <input id="peri" name="peri" type="hidden" value="359.2561705" />
+        <input id="m" name="m" type="hidden" value="13.86549" />
+        <input id="node" name="node" type="hidden" value="297.4705821" />
+        <input id="incl" name="incl" type="hidden" value="9.2714983" />
+        <input id="e" name="e" type="hidden" value="0.344406196" />
+        <input id="a" name="a" type="hidden" value="0.7335545578158027" />
+        <input name="commit" type="submit" value="Interactive Orbit Sketch" />
+</form>    </div>
+    <div>
+       Note: WebGL enabled browser required.
+    </div>
+
+    
+
+
+  <br>
+  <table class="nb">
+    <tr>
+      <td valign="top" class="nb">
+        <table>
+          <tr><td>epoch</td><td class="rj">2019-04-27.0</td></tr>
+          <tr><td>epoch JD</td><td class="rj">2458600.5</td></tr>
+          <tr><td>perihelion date</td><td class="rj">2019-04-18.16147</td></tr>
+          <tr><td>perihelion JD</td><td class="rj">2458591.66147</td></tr>
+          <tr><td>argument of perihelion (°)</td><td class="rj">359.25617</td></tr>
+          <tr><td>ascending node (°)</td><td class="rj">297.47058</td></tr>
+          <tr><td>inclination (°)</td><td class="rj">9.27150</td></tr>
+          <tr><td>eccentricity</td><td class="rj">0.3444062</td></tr>
+          <tr><td>perihelion distance (AU)</td><td class="rj">0.4809138</td></tr>
+          <tr><td>Tisserand w.r.t. Jupiter</td><td class="rj">7.8</td></tr>
+          <tr><td>&Delta;V w.r.t. Earth (km/sec)</td><td class="rj">9.9</td></tr>
+        </table>
+      </td>
+      <td valign="top" class="nb">
+        <table>
+          <tr><td>semimajor axis (AU)</td><td class="rj">0.7335546</td></tr>
+          <tr><td>mean anomaly (°)</td><td class="rj">13.86549</td></tr>
+          <tr><td>mean daily motion (°/day)</td><td class="rj">1.56875530</td></tr>
+          <tr><td>aphelion distance (AU)</td><td class="rj">0.986</td></tr>
+          <tr><td>period (years)</td><td class="rj">0.63</td></tr>
+          <tr><td>P-vector [x]</td><td class="rj">0.44988656</td></tr>
+          <tr><td>P-vector [y]</td><td class="rj">-0.81855590</td></tr>
+          <tr><td>P-vector [z]</td><td class="rj">-0.35716708</td></tr>
+          <tr><td>Q-vector [x]</td><td class="rj">0.88157145</td></tr>
+          <tr><td>Q-vector [y]</td><td class="rj">0.34301457</td></tr>
+          <tr><td>Q-vector [z]</td><td class="rj">0.32430353</td></tr>
+          <tr><td>absolute magnitude</td><td class="rj">25.4</td></tr>
+          <tr><td>phase slope</td><td class="rj">0.15</td></tr>
+        </table>
+      </td>
+      <td valign="top" class="nb">
+        <table>
+
+            <tr><td><a href="/iau/info/UValue.html">uncertainty</a></td><td class="rj">4</td></tr>
+
+          <tr><td>reference</td><td class="rj">MPO 118187</td></tr>
+          <tr><td>observations used</td><td class="rj">237</td></tr>
+          <tr><td>oppositions</td><td class="rj">1</td></tr>
+          <tr><td>arc length (days)</td><td class="rj">4</td></tr>
+          <tr><td>first opposition used</td><td class="rj">2007</td></tr>
+          <tr><td>last opposition used</td><td class="rj">2007</td></tr>
+          <tr><td>residual rms (arc-secs)</td><td class="rj">0.91</td></tr>
+          <tr><td><a href="/iau/info/Perturbers.html">perturbers coarse indicator</a></td><td class="rj">M-v</td></tr>
+          <tr><td><a href="/iau/info/Perturbers.html">perturbers precise indicator</a></td><td class="rj">003Eh</td></tr>
+          <tr><td>first observation date used</td><td class="rj">2007-01-16.0</td></tr>
+          <tr><td>last observation date used</td><td class="rj">2007-01-20.0</td></tr>
+          <tr><td>computer name</td><td class="rj">MPCALB</td></tr>
+        </table>
+      </td>
+    </tr>
+  </table>    
+
+  <table class="nb">
+    <tr>
+      <td valign="top" class="nb">
+      </td>
+      <td width=100px> </td>
+
+      <td valign="top" class="nb">
+    Minimum Orbit Intersection Distances (in AU)<br>for orbit epoch: 2458600.5, reference: MPO118187<br>
+          <table>
+            <tr><td>Mercury</td><td>0.03069</td></tr>
+            <tr><td>Venus</td><td>0.13139</td></tr>
+            <tr><td>Earth</td><td>0.0027</td></tr>
+            <tr><td>Mars</td><td>0.62572</td></tr>
+            <tr><td>Jupiter</td><td>4.17771</td></tr>
+            <tr><td>Saturn</td><td>8.12554</td></tr>
+            <tr><td>Uranus</td><td>17.3718</td></tr>
+            <tr><td>Neptune</td><td>29.0859</td></tr>
+          </table>    
+          <br>
+      </td>
+    </tr>
+  </table>
+
+
+<h2>Observations</h2>
+  305 total observations over interval:
+  2007 01 16.43733 &ndash; 2007 01 20.82751
+  <br>
+  These data are available for
+  <a href="../tmp/2007_BD.txt" target="_blank">download</a>
+  (<a href="/iau/info/OpticalObs.html" target="_blank">format description</a>).
+  <br>
+  <br>
+  <table>
+    <tr>
+      <th>Date (UT)</th>
+      <th>J2000 RA</th>
+      <th>J2000 Dec</th>
+      <th>Magn</th>
+      <th><a href="/iau/lists/ObsCodesF.html">Location</a></th>
+      <th><a href="/iau/info/References.html">Ref</a></th>
+    </tr>
+
+      <tr>
+        <td class="ff">2007 01 16.43733</td>
+        <td class="ff">13 26 48.66</td>
+        <td class="ff">+27 23 19.1</td>
+        <td class="ff rj">17.7 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 16.44390</td>
+        <td class="ff">13 26 31.63</td>
+        <td class="ff">+27 25 18.9</td>
+        <td class="ff rj">17.7 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 16.45064</td>
+        <td class="ff">13 26 13.84</td>
+        <td class="ff">+27 27 21.8</td>
+        <td class="ff rj">18.5 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 16.45757</td>
+        <td class="ff">13 25 55.52</td>
+        <td class="ff">+27 29 28.4</td>
+        <td class="ff rj">17.6 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 16.49392</td>
+        <td class="ff">13 24 15.08</td>
+        <td class="ff">+27 40 31.6</td>
+        <td class="ff rj">17.6 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 16.49430</td>
+        <td class="ff">13 24 13.96</td>
+        <td class="ff">+27 40 39.0</td>
+        <td class="ff rj">17.6 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 16.49466</td>
+        <td class="ff">13 24 12.99</td>
+        <td class="ff">+27 40 45.0</td>
+        <td class="ff rj">17.4 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 16.49502</td>
+        <td class="ff">13 24 11.95</td>
+        <td class="ff">+27 40 51.6</td>
+        <td class="ff rj">17.4 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 16.55726</td>
+        <td class="ff">13 21 06.26</td>
+        <td class="ff">+27 59 45.2</td>
+        <td class="ff rj">17.5 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 16.55761</td>
+        <td class="ff">13 21 05.22</td>
+        <td class="ff">+27 59 51.7</td>
+        <td class="ff rj">17.2 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 16.55797</td>
+        <td class="ff">13 21 04.06</td>
+        <td class="ff">+27 59 58.6</td>
+        <td class="ff rj">17.4 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 16.55833</td>
+        <td class="ff">13 21 03.02</td>
+        <td class="ff">+28 00 05.0</td>
+        <td class="ff rj">17.3 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.09446</td>
+        <td class="ff">12 46 53.38</td>
+        <td class="ff">+31 32 43.8</td>
+        <td class="ff rj">16.1 R</td>
+        <td>A50 &ndash; Andrushivka Astronomical Observatory</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.09533</td>
+        <td class="ff">12 46 48.31</td>
+        <td class="ff">+31 33 12.3</td>
+        <td class="ff rj">16.1 R</td>
+        <td>A50 &ndash; Andrushivka Astronomical Observatory</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.09621</td>
+        <td class="ff">12 46 42.43</td>
+        <td class="ff">+31 33 42.4</td>
+        <td class="ff rj">16.2 R</td>
+        <td>A50 &ndash; Andrushivka Astronomical Observatory</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.09734</td>
+        <td class="ff">12 46 35.17</td>
+        <td class="ff">+31 34 20.8</td>
+        <td class="ff rj">16.2 R</td>
+        <td>A50 &ndash; Andrushivka Astronomical Observatory</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.27655</td>
+        <td class="ff">12 28 06.99</td>
+        <td class="ff">+33 17 56.3</td>
+        <td class="ff rj">15.2 R</td>
+        <td>854 &ndash; Sabino Canyon Observatory, Tucson</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.27793</td>
+        <td class="ff">12 27 55.72</td>
+        <td class="ff">+33 18 58.8</td>
+        <td class="ff rj">15.7 R</td>
+        <td>854 &ndash; Sabino Canyon Observatory, Tucson</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.27849</td>
+        <td class="ff">12 27 51.23</td>
+        <td class="ff">+33 19 24.2</td>
+        <td class="ff rj">15.5 R</td>
+        <td>854 &ndash; Sabino Canyon Observatory, Tucson</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.28072</td>
+        <td class="ff">12 27 32.92</td>
+        <td class="ff">+33 21 06.0</td>
+        <td class="ff rj">15.6 R</td>
+        <td>854 &ndash; Sabino Canyon Observatory, Tucson</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.28100</td>
+        <td class="ff">12 27 30.65</td>
+        <td class="ff">+33 21 18.5</td>
+        <td class="ff rj">15.7 R</td>
+        <td>854 &ndash; Sabino Canyon Observatory, Tucson</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.28123</td>
+        <td class="ff">12 27 28.38</td>
+        <td class="ff">+33 21 31.3</td>
+        <td class="ff rj">16.2 R</td>
+        <td>854 &ndash; Sabino Canyon Observatory, Tucson</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.38674</td>
+        <td class="ff">12 10 41.37</td>
+        <td class="ff">+34 44 03.5</td>
+        <td class="ff rj">16.6 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.38699</td>
+        <td class="ff">12 10 38.74</td>
+        <td class="ff">+34 44 14.7</td>
+        <td class="ff rj">16.5 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.38722</td>
+        <td class="ff">12 10 36.12</td>
+        <td class="ff">+34 44 26.0</td>
+        <td class="ff rj">16.1 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.38748</td>
+        <td class="ff">12 10 33.31</td>
+        <td class="ff">+34 44 38.3</td>
+        <td class="ff rj">16.0 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.43669</td>
+        <td class="ff">12 00 13.78</td>
+        <td class="ff">+35 19 49.9</td>
+        <td class="ff rj">16.8 R</td>
+        <td>734 &ndash; Farpoint Observatory, Eskridge</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.43971</td>
+        <td class="ff">11 59 36.02</td>
+        <td class="ff">+35 22 04.2</td>
+        <td class="ff rj">15.9 R</td>
+        <td>734 &ndash; Farpoint Observatory, Eskridge</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.44439</td>
+        <td class="ff">11 58 36.95</td>
+        <td class="ff">+35 25 31.5</td>
+        <td class="ff rj">16.0 R</td>
+        <td>734 &ndash; Farpoint Observatory, Eskridge</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.44811</td>
+        <td class="ff">11 57 49.65</td>
+        <td class="ff">+35 28 16.2</td>
+        <td class="ff rj">15.6 R</td>
+        <td>734 &ndash; Farpoint Observatory, Eskridge</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.814425</td>
+        <td class="ff">10 10 32.70</td>
+        <td class="ff">+38 33 56.5</td>
+        <td class="ff rj">15.2 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.815451</td>
+        <td class="ff">10 10 05.48</td>
+        <td class="ff">+38 34 08.0</td>
+        <td class="ff rj">14.4 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.816913</td>
+        <td class="ff">10 09 26.45</td>
+        <td class="ff">+38 34 24.1</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.817887</td>
+        <td class="ff">10 09 00.47</td>
+        <td class="ff">+38 34 34.5</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.818860</td>
+        <td class="ff">10 08 34.33</td>
+        <td class="ff">+38 34 44.4</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.819832</td>
+        <td class="ff">10 08 08.22</td>
+        <td class="ff">+38 34 54.0</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.820804</td>
+        <td class="ff">10 07 42.03</td>
+        <td class="ff">+38 35 03.4</td>
+        <td class="ff rj">13.7 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.822760</td>
+        <td class="ff">10 06 49.22</td>
+        <td class="ff">+38 35 20.0</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.823732</td>
+        <td class="ff">10 06 22.87</td>
+        <td class="ff">+38 35 28.7</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.825678</td>
+        <td class="ff">10 05 29.93</td>
+        <td class="ff">+38 35 43.8</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.826649</td>
+        <td class="ff">10 05 03.43</td>
+        <td class="ff">+38 35 50.8</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.827621</td>
+        <td class="ff">10 04 36.87</td>
+        <td class="ff">+38 35 57.1</td>
+        <td class="ff rj">14.5 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.828595</td>
+        <td class="ff">10 04 10.28</td>
+        <td class="ff">+38 36 03.9</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.829566</td>
+        <td class="ff">10 03 43.69</td>
+        <td class="ff">+38 36 08.7</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.830538</td>
+        <td class="ff">10 03 16.90</td>
+        <td class="ff">+38 36 14.3</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.832483</td>
+        <td class="ff">10 02 23.15</td>
+        <td class="ff">+38 36 24.2</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.833456</td>
+        <td class="ff">10 01 56.25</td>
+        <td class="ff">+38 36 28.3</td>
+        <td class="ff rj">13.7 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.834428</td>
+        <td class="ff">10 01 29.33</td>
+        <td class="ff">+38 36 32.0</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.835400</td>
+        <td class="ff">10 01 02.33</td>
+        <td class="ff">+38 36 35.5</td>
+        <td class="ff rj">14.4 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.836372</td>
+        <td class="ff">10 00 35.15</td>
+        <td class="ff">+38 36 38.6</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.837344</td>
+        <td class="ff">10 00 08.04</td>
+        <td class="ff">+38 36 40.8</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.839288</td>
+        <td class="ff">09 59 13.63</td>
+        <td class="ff">+38 36 45.0</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.840261</td>
+        <td class="ff">09 58 46.27</td>
+        <td class="ff">+38 36 45.6</td>
+        <td class="ff rj">14.4 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.841233</td>
+        <td class="ff">09 58 18.87</td>
+        <td class="ff">+38 36 46.8</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.842205</td>
+        <td class="ff">09 57 51.50</td>
+        <td class="ff">+38 36 46.9</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.843177</td>
+        <td class="ff">09 57 24.05</td>
+        <td class="ff">+38 36 46.9</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196458</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.844150</td>
+        <td class="ff">09 56 56.45</td>
+        <td class="ff">+38 36 46.4</td>
+        <td class="ff rj">14.6 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.844459</td>
+        <td class="ff">09 56 01.32</td>
+        <td class="ff">+38 23 40.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.844943</td>
+        <td class="ff">09 55 47.78</td>
+        <td class="ff">+38 23 39.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.845122</td>
+        <td class="ff">09 56 28.87</td>
+        <td class="ff">+38 36 45.5</td>
+        <td class="ff rj">13.9 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.845475</td>
+        <td class="ff">09 55 33.23</td>
+        <td class="ff">+38 23 36.6</td>
+        <td class="ff rj">15.3 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.845951</td>
+        <td class="ff">09 55 19.46</td>
+        <td class="ff">+38 23 33.9</td>
+        <td class="ff rj">15.5 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.846094</td>
+        <td class="ff">09 56 01.31</td>
+        <td class="ff">+38 36 44.0</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.846924</td>
+        <td class="ff">09 54 52.11</td>
+        <td class="ff">+38 23 28.8</td>
+        <td class="ff rj">15.5 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.847066</td>
+        <td class="ff">09 55 33.56</td>
+        <td class="ff">+38 36 41.7</td>
+        <td class="ff rj">13.9 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.847168</td>
+        <td class="ff">09 54 45.48</td>
+        <td class="ff">+38 23 27.5</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.847654</td>
+        <td class="ff">09 54 31.77</td>
+        <td class="ff">+38 23 24.7</td>
+        <td class="ff rj">14.4 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.848038</td>
+        <td class="ff">09 55 05.80</td>
+        <td class="ff">+38 36 39.6</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.849011</td>
+        <td class="ff">09 54 37.91</td>
+        <td class="ff">+38 36 36.8</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.849983</td>
+        <td class="ff">09 54 10.08</td>
+        <td class="ff">+38 36 33.4</td>
+        <td class="ff rj">13.8 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.850580</td>
+        <td class="ff">09 53 08.85</td>
+        <td class="ff">+38 23 05.7</td>
+        <td class="ff rj">14.7 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.850955</td>
+        <td class="ff">09 53 42.14</td>
+        <td class="ff">+38 36 29.6</td>
+        <td class="ff rj">13.9 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.851069</td>
+        <td class="ff">09 52 55.13</td>
+        <td class="ff">+38 23 01.6</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.851803</td>
+        <td class="ff">09 52 34.06</td>
+        <td class="ff">+38 22 56.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.851928</td>
+        <td class="ff">09 53 14.16</td>
+        <td class="ff">+38 36 25.2</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.852539</td>
+        <td class="ff">09 52 13.32</td>
+        <td class="ff">+38 22 50.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.852783</td>
+        <td class="ff">09 52 06.21</td>
+        <td class="ff">+38 22 47.9</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.852900</td>
+        <td class="ff">09 52 46.12</td>
+        <td class="ff">+38 36 21.0</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.853269</td>
+        <td class="ff">09 51 52.45</td>
+        <td class="ff">+38 22 44.0</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.853511</td>
+        <td class="ff">09 51 45.47</td>
+        <td class="ff">+38 22 41.8</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.853754</td>
+        <td class="ff">09 51 38.50</td>
+        <td class="ff">+38 22 39.8</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.853872</td>
+        <td class="ff">09 52 18.01</td>
+        <td class="ff">+38 36 16.0</td>
+        <td class="ff rj">13.8 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.854240</td>
+        <td class="ff">09 51 24.69</td>
+        <td class="ff">+38 22 35.5</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.854484</td>
+        <td class="ff">09 51 17.75</td>
+        <td class="ff">+38 22 33.3</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.854727</td>
+        <td class="ff">09 51 10.70</td>
+        <td class="ff">+38 22 31.2</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.854844</td>
+        <td class="ff">09 51 49.93</td>
+        <td class="ff">+38 36 10.4</td>
+        <td class="ff rj">13.9 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.855816</td>
+        <td class="ff">09 51 21.67</td>
+        <td class="ff">+38 36 04.4</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.856069</td>
+        <td class="ff">09 50 32.33</td>
+        <td class="ff">+38 22 18.1</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.856312</td>
+        <td class="ff">09 50 25.45</td>
+        <td class="ff">+38 22 15.9</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.856555</td>
+        <td class="ff">09 50 18.40</td>
+        <td class="ff">+38 22 13.3</td>
+        <td class="ff rj">14.5 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.856788</td>
+        <td class="ff">09 50 53.39</td>
+        <td class="ff">+38 35 58.2</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.856797</td>
+        <td class="ff">09 50 11.61</td>
+        <td class="ff">+38 22 10.9</td>
+        <td class="ff rj">14.4 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.857040</td>
+        <td class="ff">09 50 04.62</td>
+        <td class="ff">+38 22 08.3</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.857283</td>
+        <td class="ff">09 49 57.54</td>
+        <td class="ff">+38 22 05.9</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.857529</td>
+        <td class="ff">09 49 50.69</td>
+        <td class="ff">+38 22 03.4</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.857761</td>
+        <td class="ff">09 50 25.03</td>
+        <td class="ff">+38 35 51.1</td>
+        <td class="ff rj">13.8 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.857776</td>
+        <td class="ff">09 49 43.35</td>
+        <td class="ff">+38 22 00.5</td>
+        <td class="ff rj">13.9 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.858023</td>
+        <td class="ff">09 49 36.21</td>
+        <td class="ff">+38 21 58.0</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.858270</td>
+        <td class="ff">09 49 29.23</td>
+        <td class="ff">+38 21 55.3</td>
+        <td class="ff rj">13.9 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.858517</td>
+        <td class="ff">09 49 22.13</td>
+        <td class="ff">+38 21 52.4</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.858733</td>
+        <td class="ff">09 49 56.73</td>
+        <td class="ff">+38 35 43.5</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.858763</td>
+        <td class="ff">09 49 15.03</td>
+        <td class="ff">+38 21 49.8</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.859705</td>
+        <td class="ff">09 49 28.31</td>
+        <td class="ff">+38 35 35.5</td>
+        <td class="ff rj">13.9 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.860678</td>
+        <td class="ff">09 48 59.83</td>
+        <td class="ff">+38 35 27.2</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.861650</td>
+        <td class="ff">09 48 31.33</td>
+        <td class="ff">+38 35 17.9</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.862371</td>
+        <td class="ff">09 47 30.83</td>
+        <td class="ff">+38 21 06.3</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.862617</td>
+        <td class="ff">09 47 23.56</td>
+        <td class="ff">+38 21 02.9</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.862622</td>
+        <td class="ff">09 48 02.75</td>
+        <td class="ff">+38 35 08.7</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.863106</td>
+        <td class="ff">09 47 09.33</td>
+        <td class="ff">+38 20 56.6</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.863352</td>
+        <td class="ff">09 47 02.20</td>
+        <td class="ff">+38 20 53.3</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.863595</td>
+        <td class="ff">09 47 34.13</td>
+        <td class="ff">+38 34 58.1</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.863599</td>
+        <td class="ff">09 46 55.06</td>
+        <td class="ff">+38 20 50.0</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.863843</td>
+        <td class="ff">09 46 47.96</td>
+        <td class="ff">+38 20 46.6</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.864089</td>
+        <td class="ff">09 46 40.87</td>
+        <td class="ff">+38 20 43.3</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.864568</td>
+        <td class="ff">09 47 05.45</td>
+        <td class="ff">+38 34 48.1</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.864582</td>
+        <td class="ff">09 46 26.51</td>
+        <td class="ff">+38 20 36.4</td>
+        <td class="ff rj">14.4 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.865076</td>
+        <td class="ff">09 46 12.24</td>
+        <td class="ff">+38 20 29.5</td>
+        <td class="ff rj">14.4 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.865540</td>
+        <td class="ff">09 46 36.65</td>
+        <td class="ff">+38 34 36.8</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.866440</td>
+        <td class="ff">09 45 32.36</td>
+        <td class="ff">+38 20 09.5</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.866512</td>
+        <td class="ff">09 46 07.81</td>
+        <td class="ff">+38 34 25.8</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.866689</td>
+        <td class="ff">09 45 24.81</td>
+        <td class="ff">+38 20 05.8</td>
+        <td class="ff rj">14.5 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.867251</td>
+        <td class="ff">09 45 08.65</td>
+        <td class="ff">+38 19 57.3</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.867485</td>
+        <td class="ff">09 45 39.08</td>
+        <td class="ff">+38 34 13.1</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.867507</td>
+        <td class="ff">09 45 01.02</td>
+        <td class="ff">+38 19 53.2</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.867754</td>
+        <td class="ff">09 44 53.83</td>
+        <td class="ff">+38 19 49.4</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.868252</td>
+        <td class="ff">09 44 39.36</td>
+        <td class="ff">+38 19 41.4</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.868456</td>
+        <td class="ff">09 45 10.21</td>
+        <td class="ff">+38 34 00.8</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.868502</td>
+        <td class="ff">09 44 31.89</td>
+        <td class="ff">+38 19 37.4</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.868755</td>
+        <td class="ff">09 44 24.48</td>
+        <td class="ff">+38 19 33.2</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.869429</td>
+        <td class="ff">09 44 41.18</td>
+        <td class="ff">+38 33 47.6</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.869751</td>
+        <td class="ff">09 43 55.22</td>
+        <td class="ff">+38 19 16.9</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.870401</td>
+        <td class="ff">09 44 12.18</td>
+        <td class="ff">+38 33 34.5</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.871373</td>
+        <td class="ff">09 43 43.20</td>
+        <td class="ff">+38 33 20.2</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.872346</td>
+        <td class="ff">09 43 14.08</td>
+        <td class="ff">+38 33 05.9</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.873318</td>
+        <td class="ff">09 42 44.92</td>
+        <td class="ff">+38 32 50.8</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.874290</td>
+        <td class="ff">09 42 15.70</td>
+        <td class="ff">+38 32 35.1</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.875262</td>
+        <td class="ff">09 41 46.43</td>
+        <td class="ff">+38 32 18.9</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.876234</td>
+        <td class="ff">09 41 17.17</td>
+        <td class="ff">+38 32 02.5</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.876344</td>
+        <td class="ff">09 40 40.54</td>
+        <td class="ff">+38 17 15.4</td>
+        <td class="ff rj">13.9 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.877207</td>
+        <td class="ff">09 40 47.81</td>
+        <td class="ff">+38 31 45.4</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.878180</td>
+        <td class="ff">09 40 18.36</td>
+        <td class="ff">+38 31 27.5</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.879163</td>
+        <td class="ff">09 39 48.55</td>
+        <td class="ff">+38 31 09.0</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.880135</td>
+        <td class="ff">09 39 19.09</td>
+        <td class="ff">+38 30 50.7</td>
+        <td class="ff rj">13.9 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.881107</td>
+        <td class="ff">09 38 49.58</td>
+        <td class="ff">+38 30 31.3</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.881688</td>
+        <td class="ff">09 38 01.20</td>
+        <td class="ff">+38 15 19.5</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.881935</td>
+        <td class="ff">09 37 53.72</td>
+        <td class="ff">+38 15 13.7</td>
+        <td class="ff rj">14.4 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.882080</td>
+        <td class="ff">09 38 19.89</td>
+        <td class="ff">+38 30 11.0</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.883052</td>
+        <td class="ff">09 37 50.22</td>
+        <td class="ff">+38 29 50.9</td>
+        <td class="ff rj">13.9 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.883424</td>
+        <td class="ff">09 37 08.97</td>
+        <td class="ff">+38 14 38.5</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.883918</td>
+        <td class="ff">09 36 54.01</td>
+        <td class="ff">+38 14 26.4</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.884024</td>
+        <td class="ff">09 37 20.53</td>
+        <td class="ff">+38 29 29.7</td>
+        <td class="ff rj">13.9 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.884166</td>
+        <td class="ff">09 36 46.58</td>
+        <td class="ff">+38 14 20.5</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.884413</td>
+        <td class="ff">09 36 39.16</td>
+        <td class="ff">+38 14 14.4</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.884662</td>
+        <td class="ff">09 36 31.76</td>
+        <td class="ff">+38 14 08.5</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.884911</td>
+        <td class="ff">09 36 24.27</td>
+        <td class="ff">+38 14 02.3</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.884996</td>
+        <td class="ff">09 36 50.77</td>
+        <td class="ff">+38 29 08.3</td>
+        <td class="ff rj">13.8 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.885160</td>
+        <td class="ff">09 36 16.67</td>
+        <td class="ff">+38 13 56.1</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.885407</td>
+        <td class="ff">09 36 09.14</td>
+        <td class="ff">+38 13 49.7</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.885424</td>
+        <td class="ff">09 37 38.86</td>
+        <td class="ff">+38 18 59.9</td>
+        <td class="ff rj">14.3 R</td>
+        <td>143 &ndash; Gnosca</td>
+        <td class="ff lj">MPS 198219</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.885969</td>
+        <td class="ff">09 36 20.98</td>
+        <td class="ff">+38 28 46.2</td>
+        <td class="ff rj">14.5 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.886579</td>
+        <td class="ff">09 35 33.85</td>
+        <td class="ff">+38 13 19.8</td>
+        <td class="ff rj">14.5 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.886940</td>
+        <td class="ff">09 36 53.42</td>
+        <td class="ff">+38 18 29.7</td>
+        <td class="ff rj">14.4 R</td>
+        <td>143 &ndash; Gnosca</td>
+        <td class="ff lj">MPS 198219</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.886941</td>
+        <td class="ff">09 35 51.11</td>
+        <td class="ff">+38 28 23.6</td>
+        <td class="ff rj">13.9 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.887074</td>
+        <td class="ff">09 35 18.82</td>
+        <td class="ff">+38 13 07.0</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.887568</td>
+        <td class="ff">09 35 04.00</td>
+        <td class="ff">+38 12 54.1</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.887817</td>
+        <td class="ff">09 34 56.34</td>
+        <td class="ff">+38 12 47.4</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.887913</td>
+        <td class="ff">09 35 21.26</td>
+        <td class="ff">+38 28 00.5</td>
+        <td class="ff rj">13.9 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.888064</td>
+        <td class="ff">09 34 48.97</td>
+        <td class="ff">+38 12 40.9</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.888261</td>
+        <td class="ff">09 36 13.67</td>
+        <td class="ff">+38 18 03.2</td>
+        <td class="ff rj">14.3 R</td>
+        <td>143 &ndash; Gnosca</td>
+        <td class="ff lj">MPS 198219</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.888561</td>
+        <td class="ff">09 34 33.84</td>
+        <td class="ff">+38 12 27.3</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.888809</td>
+        <td class="ff">09 34 26.37</td>
+        <td class="ff">+38 12 20.8</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.888885</td>
+        <td class="ff">09 34 51.32</td>
+        <td class="ff">+38 27 36.6</td>
+        <td class="ff rj">13.9 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.889057</td>
+        <td class="ff">09 34 18.94</td>
+        <td class="ff">+38 12 14.2</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.889306</td>
+        <td class="ff">09 34 11.46</td>
+        <td class="ff">+38 12 07.4</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.889806</td>
+        <td class="ff">09 33 56.10</td>
+        <td class="ff">+38 11 53.5</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.890052</td>
+        <td class="ff">09 33 48.65</td>
+        <td class="ff">+38 11 46.6</td>
+        <td class="ff rj">14.4 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.890299</td>
+        <td class="ff">09 35 12.16</td>
+        <td class="ff">+38 17 19.5</td>
+        <td class="ff rj">14.6 R</td>
+        <td>143 &ndash; Gnosca</td>
+        <td class="ff lj">MPS 198219</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.890301</td>
+        <td class="ff">09 33 41.17</td>
+        <td class="ff">+38 11 40.0</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.891690</td>
+        <td class="ff">09 32 58.91</td>
+        <td class="ff">+38 11 00.7</td>
+        <td class="ff rj">14.4 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.891738</td>
+        <td class="ff">09 34 28.65</td>
+        <td class="ff">+38 16 47.2</td>
+        <td class="ff rj">14.5 R</td>
+        <td>143 &ndash; Gnosca</td>
+        <td class="ff lj">MPS 198219</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.891938</td>
+        <td class="ff">09 32 51.36</td>
+        <td class="ff">+38 10 53.2</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.892187</td>
+        <td class="ff">09 32 43.75</td>
+        <td class="ff">+38 10 46.1</td>
+        <td class="ff rj">14.4 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.892684</td>
+        <td class="ff">09 32 28.53</td>
+        <td class="ff">+38 10 31.5</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.892934</td>
+        <td class="ff">09 32 21.01</td>
+        <td class="ff">+38 10 24.3</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.893142</td>
+        <td class="ff">09 33 46.08</td>
+        <td class="ff">+38 16 14.3</td>
+        <td class="ff rj">14.4 R</td>
+        <td>143 &ndash; Gnosca</td>
+        <td class="ff lj">MPS 198219</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.893185</td>
+        <td class="ff">09 32 13.38</td>
+        <td class="ff">+38 10 16.9</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.893435</td>
+        <td class="ff">09 32 05.64</td>
+        <td class="ff">+38 10 09.3</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.893685</td>
+        <td class="ff">09 31 57.98</td>
+        <td class="ff">+38 10 02.0</td>
+        <td class="ff rj">14.5 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.893934</td>
+        <td class="ff">09 31 50.44</td>
+        <td class="ff">+38 09 54.5</td>
+        <td class="ff rj">14.4 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.894184</td>
+        <td class="ff">09 31 42.92</td>
+        <td class="ff">+38 09 47.1</td>
+        <td class="ff rj">14.6 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.894434</td>
+        <td class="ff">09 31 35.16</td>
+        <td class="ff">+38 09 39.3</td>
+        <td class="ff rj">14.5 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.894684</td>
+        <td class="ff">09 31 27.66</td>
+        <td class="ff">+38 09 32.0</td>
+        <td class="ff rj">14.5 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.894933</td>
+        <td class="ff">09 31 19.88</td>
+        <td class="ff">+38 09 24.1</td>
+        <td class="ff rj">14.5 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.895183</td>
+        <td class="ff">09 31 12.31</td>
+        <td class="ff">+38 09 16.8</td>
+        <td class="ff rj">14.5 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.895440</td>
+        <td class="ff">09 31 04.48</td>
+        <td class="ff">+38 09 08.7</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.896640</td>
+        <td class="ff">09 30 27.74</td>
+        <td class="ff">+38 08 31.0</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.897139</td>
+        <td class="ff">09 30 12.30</td>
+        <td class="ff">+38 08 15.2</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.897390</td>
+        <td class="ff">09 30 04.55</td>
+        <td class="ff">+38 08 07.1</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.897638</td>
+        <td class="ff">09 29 57.01</td>
+        <td class="ff">+38 07 59.2</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.897885</td>
+        <td class="ff">09 29 49.45</td>
+        <td class="ff">+38 07 51.3</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.898134</td>
+        <td class="ff">09 29 41.94</td>
+        <td class="ff">+38 07 43.4</td>
+        <td class="ff rj">14.5 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.898632</td>
+        <td class="ff">09 29 26.33</td>
+        <td class="ff">+38 07 26.7</td>
+        <td class="ff rj">14.5 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.898883</td>
+        <td class="ff">09 29 18.69</td>
+        <td class="ff">+38 07 18.6</td>
+        <td class="ff rj">14.5 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.899132</td>
+        <td class="ff">09 29 11.15</td>
+        <td class="ff">+38 07 10.6</td>
+        <td class="ff rj">14.4 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.899382</td>
+        <td class="ff">09 29 03.41</td>
+        <td class="ff">+38 07 02.4</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.899631</td>
+        <td class="ff">09 28 55.71</td>
+        <td class="ff">+38 06 54.0</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.899882</td>
+        <td class="ff">09 28 47.88</td>
+        <td class="ff">+38 06 45.5</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.900132</td>
+        <td class="ff">09 28 40.26</td>
+        <td class="ff">+38 06 37.1</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202374</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.901375</td>
+        <td class="ff">09 28 01.87</td>
+        <td class="ff">+38 05 54.0</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.901624</td>
+        <td class="ff">09 27 54.26</td>
+        <td class="ff">+38 05 45.7</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.901873</td>
+        <td class="ff">09 27 46.55</td>
+        <td class="ff">+38 05 37.4</td>
+        <td class="ff rj">14.4 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.902120</td>
+        <td class="ff">09 27 39.02</td>
+        <td class="ff">+38 05 29.0</td>
+        <td class="ff rj">14.4 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.902367</td>
+        <td class="ff">09 27 31.25</td>
+        <td class="ff">+38 05 20.4</td>
+        <td class="ff rj">14.5 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.902617</td>
+        <td class="ff">09 27 23.50</td>
+        <td class="ff">+38 05 11.5</td>
+        <td class="ff rj">14.4 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.902868</td>
+        <td class="ff">09 27 15.79</td>
+        <td class="ff">+38 05 02.7</td>
+        <td class="ff rj">14.7 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.903120</td>
+        <td class="ff">09 27 08.09</td>
+        <td class="ff">+38 04 53.9</td>
+        <td class="ff rj">14.5 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.903869</td>
+        <td class="ff">09 26 44.76</td>
+        <td class="ff">+38 04 27.1</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.904118</td>
+        <td class="ff">09 26 37.15</td>
+        <td class="ff">+38 04 17.8</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.904368</td>
+        <td class="ff">09 26 29.36</td>
+        <td class="ff">+38 04 09.3</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.904616</td>
+        <td class="ff">09 26 21.60</td>
+        <td class="ff">+38 03 59.9</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.905113</td>
+        <td class="ff">09 26 06.20</td>
+        <td class="ff">+38 03 41.3</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.906257</td>
+        <td class="ff">09 25 30.63</td>
+        <td class="ff">+38 03 00.0</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.906506</td>
+        <td class="ff">09 25 23.04</td>
+        <td class="ff">+38 02 50.2</td>
+        <td class="ff rj">14.5 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.906755</td>
+        <td class="ff">09 25 15.30</td>
+        <td class="ff">+38 02 40.9</td>
+        <td class="ff rj">14.5 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.907004</td>
+        <td class="ff">09 25 07.37</td>
+        <td class="ff">+38 02 31.5</td>
+        <td class="ff rj">14.5 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.907253</td>
+        <td class="ff">09 24 59.69</td>
+        <td class="ff">+38 02 21.9</td>
+        <td class="ff rj">14.4 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.907504</td>
+        <td class="ff">09 24 51.90</td>
+        <td class="ff">+38 02 12.5</td>
+        <td class="ff rj">14.7 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.908005</td>
+        <td class="ff">09 24 36.36</td>
+        <td class="ff">+38 01 53.4</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.908253</td>
+        <td class="ff">09 24 28.62</td>
+        <td class="ff">+38 01 43.8</td>
+        <td class="ff rj">14.5 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.908502</td>
+        <td class="ff">09 24 20.79</td>
+        <td class="ff">+38 01 34.1</td>
+        <td class="ff rj">14.4 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.908751</td>
+        <td class="ff">09 24 12.99</td>
+        <td class="ff">+38 01 24.4</td>
+        <td class="ff rj">14.4 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.909251</td>
+        <td class="ff">09 23 57.57</td>
+        <td class="ff">+38 01 05.2</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.909500</td>
+        <td class="ff">09 23 49.61</td>
+        <td class="ff">+38 00 55.1</td>
+        <td class="ff rj">14.4 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.911421</td>
+        <td class="ff">09 22 49.64</td>
+        <td class="ff">+37 59 38.5</td>
+        <td class="ff rj">14.5 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.911921</td>
+        <td class="ff">09 22 34.14</td>
+        <td class="ff">+37 59 18.3</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.912666</td>
+        <td class="ff">09 22 10.65</td>
+        <td class="ff">+37 58 47.5</td>
+        <td class="ff rj">14.4 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.912914</td>
+        <td class="ff">09 22 02.95</td>
+        <td class="ff">+37 58 37.3</td>
+        <td class="ff rj">14.4 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.913413</td>
+        <td class="ff">09 21 47.23</td>
+        <td class="ff">+37 58 16.3</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.913662</td>
+        <td class="ff">09 21 39.41</td>
+        <td class="ff">+37 58 06.0</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.913912</td>
+        <td class="ff">09 21 31.55</td>
+        <td class="ff">+37 57 55.4</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.914161</td>
+        <td class="ff">09 21 23.79</td>
+        <td class="ff">+37 57 45.0</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.914413</td>
+        <td class="ff">09 21 15.91</td>
+        <td class="ff">+37 57 34.3</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.914663</td>
+        <td class="ff">09 21 08.14</td>
+        <td class="ff">+37 57 23.8</td>
+        <td class="ff rj">14.4 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.916236</td>
+        <td class="ff">09 20 18.50</td>
+        <td class="ff">+37 56 16.1</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.916986</td>
+        <td class="ff">09 19 54.91</td>
+        <td class="ff">+37 55 42.9</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.917236</td>
+        <td class="ff">09 19 47.00</td>
+        <td class="ff">+37 55 32.1</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.917486</td>
+        <td class="ff">09 19 39.22</td>
+        <td class="ff">+37 55 21.0</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.917987</td>
+        <td class="ff">09 19 23.29</td>
+        <td class="ff">+37 54 58.5</td>
+        <td class="ff rj">14.3 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.918236</td>
+        <td class="ff">09 19 15.42</td>
+        <td class="ff">+37 54 47.3</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.918735</td>
+        <td class="ff">09 18 59.85</td>
+        <td class="ff">+37 54 25.1</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.918988</td>
+        <td class="ff">09 18 51.83</td>
+        <td class="ff">+37 54 13.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.919236</td>
+        <td class="ff">09 18 44.14</td>
+        <td class="ff">+37 54 02.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.921824</td>
+        <td class="ff">09 17 22.06</td>
+        <td class="ff">+37 52 02.9</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.922075</td>
+        <td class="ff">09 17 14.20</td>
+        <td class="ff">+37 51 50.8</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.922326</td>
+        <td class="ff">09 17 06.12</td>
+        <td class="ff">+37 51 38.8</td>
+        <td class="ff rj">14.0 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.922578</td>
+        <td class="ff">09 16 58.15</td>
+        <td class="ff">+37 51 26.9</td>
+        <td class="ff rj">13.9 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.922827</td>
+        <td class="ff">09 16 50.33</td>
+        <td class="ff">+37 51 15.2</td>
+        <td class="ff rj">13.9 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.923078</td>
+        <td class="ff">09 16 42.25</td>
+        <td class="ff">+37 51 03.0</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.923328</td>
+        <td class="ff">09 16 34.35</td>
+        <td class="ff">+37 50 50.9</td>
+        <td class="ff rj">14.1 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.923627</td>
+        <td class="ff">09 16 33.09</td>
+        <td class="ff">+38 06 56.9</td>
+        <td class="ff rj">14.5 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.924310</td>
+        <td class="ff">09 16 11.03</td>
+        <td class="ff">+38 06 24.7</td>
+        <td class="ff rj">14.2 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.925297</td>
+        <td class="ff">09 15 31.98</td>
+        <td class="ff">+37 49 15.2</td>
+        <td class="ff rj">15.1 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.925308</td>
+        <td class="ff">09 15 38.72</td>
+        <td class="ff">+38 05 36.9</td>
+        <td class="ff rj">13.9 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.926055</td>
+        <td class="ff">09 15 07.79</td>
+        <td class="ff">+37 48 37.7</td>
+        <td class="ff rj">15.2 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.926280</td>
+        <td class="ff">09 15 07.14</td>
+        <td class="ff">+38 04 49.5</td>
+        <td class="ff rj">13.6 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.927275</td>
+        <td class="ff">09 14 34.91</td>
+        <td class="ff">+38 04 00.5</td>
+        <td class="ff rj">13.5 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.928247</td>
+        <td class="ff">09 14 03.31</td>
+        <td class="ff">+38 03 11.8</td>
+        <td class="ff rj">13.7 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.929231</td>
+        <td class="ff">09 13 31.28</td>
+        <td class="ff">+38 02 21.9</td>
+        <td class="ff rj">13.5 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.930203</td>
+        <td class="ff">09 12 59.62</td>
+        <td class="ff">+38 01 31.6</td>
+        <td class="ff rj">13.7 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.931175</td>
+        <td class="ff">09 12 27.88</td>
+        <td class="ff">+38 00 40.9</td>
+        <td class="ff rj">13.6 &nbsp;</td>
+        <td>095 &ndash; Crimea-Nauchnij</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.931181</td>
+        <td class="ff">09 12 24.22</td>
+        <td class="ff">+37 44 13.2</td>
+        <td class="ff rj">15.4 &nbsp;</td>
+        <td>084 &ndash; Pulkovo</td>
+        <td class="ff lj">MPS 202375</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.935314</td>
+        <td class="ff">09 11 42.27</td>
+        <td class="ff">+37 50 44.1</td>
+        <td class="ff rj">14.2 R</td>
+        <td>143 &ndash; Gnosca</td>
+        <td class="ff lj">MPS 198219</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.936384</td>
+        <td class="ff">09 11 07.67</td>
+        <td class="ff">+37 49 50.5</td>
+        <td class="ff rj">14.4 R</td>
+        <td>143 &ndash; Gnosca</td>
+        <td class="ff lj">MPS 198219</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.937576</td>
+        <td class="ff">09 10 29.06</td>
+        <td class="ff">+37 48 50.2</td>
+        <td class="ff rj">14.2 R</td>
+        <td>143 &ndash; Gnosca</td>
+        <td class="ff lj">MPS 198219</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.938747</td>
+        <td class="ff">09 09 51.09</td>
+        <td class="ff">+37 47 49.7</td>
+        <td class="ff rj">14.2 R</td>
+        <td>143 &ndash; Gnosca</td>
+        <td class="ff lj">MPS 198219</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.939938</td>
+        <td class="ff">09 09 12.43</td>
+        <td class="ff">+37 46 46.7</td>
+        <td class="ff rj">14.4 R</td>
+        <td>143 &ndash; Gnosca</td>
+        <td class="ff lj">MPS 198219</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.941619</td>
+        <td class="ff">09 08 17.75</td>
+        <td class="ff">+37 45 16.7</td>
+        <td class="ff rj">14.2 R</td>
+        <td>143 &ndash; Gnosca</td>
+        <td class="ff lj">MPS 198219</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.942905</td>
+        <td class="ff">09 07 35.84</td>
+        <td class="ff">+37 44 06.5</td>
+        <td class="ff rj">14.2 R</td>
+        <td>143 &ndash; Gnosca</td>
+        <td class="ff lj">MPS 198219</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.944165</td>
+        <td class="ff">09 06 54.76</td>
+        <td class="ff">+37 42 56.7</td>
+        <td class="ff rj">14.4 R</td>
+        <td>143 &ndash; Gnosca</td>
+        <td class="ff lj">MPS 198219</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.965356</td>
+        <td class="ff">08 55 15.71</td>
+        <td class="ff">+37 20 33.6</td>
+        <td class="ff rj">14.3 R</td>
+        <td>143 &ndash; Gnosca</td>
+        <td class="ff lj">MPS 198219</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.966626</td>
+        <td class="ff">08 54 33.40</td>
+        <td class="ff">+37 19 02.9</td>
+        <td class="ff rj">14.1 R</td>
+        <td>143 &ndash; Gnosca</td>
+        <td class="ff lj">MPS 198219</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.967907</td>
+        <td class="ff">08 53 50.71</td>
+        <td class="ff">+37 17 29.9</td>
+        <td class="ff rj">14.4 R</td>
+        <td>143 &ndash; Gnosca</td>
+        <td class="ff lj">MPS 198219</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.986139</td>
+        <td class="ff">08 43 38.82</td>
+        <td class="ff">+36 53 18.2</td>
+        <td class="ff rj">14.2 R</td>
+        <td>143 &ndash; Gnosca</td>
+        <td class="ff lj">MPS 198219</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.988284</td>
+        <td class="ff">08 42 26.47</td>
+        <td class="ff">+36 50 11.0</td>
+        <td class="ff rj">14.1 R</td>
+        <td>143 &ndash; Gnosca</td>
+        <td class="ff lj">MPS 198219</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.989891</td>
+        <td class="ff">08 41 32.16</td>
+        <td class="ff">+36 47 48.6</td>
+        <td class="ff rj">14.1 R</td>
+        <td>143 &ndash; Gnosca</td>
+        <td class="ff lj">MPS 198219</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.990844</td>
+        <td class="ff">08 40 59.95</td>
+        <td class="ff">+36 46 23.1</td>
+        <td class="ff rj">14.3 R</td>
+        <td>143 &ndash; Gnosca</td>
+        <td class="ff lj">MPS 198219</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 17.992086</td>
+        <td class="ff">08 40 18.02</td>
+        <td class="ff">+36 44 31.0</td>
+        <td class="ff rj">14.3 R</td>
+        <td>143 &ndash; Gnosca</td>
+        <td class="ff lj">MPS 198219</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 18.010330</td>
+        <td class="ff">08 29 59.55</td>
+        <td class="ff">+36 14 47.7</td>
+        <td class="ff rj">13.9 R</td>
+        <td>143 &ndash; Gnosca</td>
+        <td class="ff lj">MPS 198219</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 18.011596</td>
+        <td class="ff">08 29 16.63</td>
+        <td class="ff">+36 12 33.9</td>
+        <td class="ff rj">14.0 R</td>
+        <td>143 &ndash; Gnosca</td>
+        <td class="ff lj">MPS 198219</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 18.012797</td>
+        <td class="ff">08 28 35.82</td>
+        <td class="ff">+36 10 26.5</td>
+        <td class="ff rj">14.1 R</td>
+        <td>143 &ndash; Gnosca</td>
+        <td class="ff lj">MPS 198219</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 18.013960</td>
+        <td class="ff">08 27 56.34</td>
+        <td class="ff">+36 08 22.4</td>
+        <td class="ff rj">13.9 R</td>
+        <td>143 &ndash; Gnosca</td>
+        <td class="ff lj">MPS 198219</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 18.016197</td>
+        <td class="ff">08 26 40.38</td>
+        <td class="ff">+36 04 19.8</td>
+        <td class="ff rj">14.3 R</td>
+        <td>143 &ndash; Gnosca</td>
+        <td class="ff lj">MPS 198219</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 18.08687</td>
+        <td class="ff">07 46 55.12</td>
+        <td class="ff">+33 21 13.7</td>
+        <td class="ff rj">13.5 R</td>
+        <td>118 &ndash; Astronomical and Geophysical Observatory, Modra</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 18.08730</td>
+        <td class="ff">07 46 41.21</td>
+        <td class="ff">+33 20 05.4</td>
+        <td class="ff rj">13.8 R</td>
+        <td>118 &ndash; Astronomical and Geophysical Observatory, Modra</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 18.08773</td>
+        <td class="ff">07 46 27.29</td>
+        <td class="ff">+33 18 57.0</td>
+        <td class="ff rj">13.8 R</td>
+        <td>118 &ndash; Astronomical and Geophysical Observatory, Modra</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 18.08816</td>
+        <td class="ff">07 46 13.41</td>
+        <td class="ff">+33 17 48.7</td>
+        <td class="ff rj">13.4 R</td>
+        <td>118 &ndash; Astronomical and Geophysical Observatory, Modra</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 18.08858</td>
+        <td class="ff">07 45 59.58</td>
+        <td class="ff">+33 16 39.5</td>
+        <td class="ff rj">14.1 R</td>
+        <td>118 &ndash; Astronomical and Geophysical Observatory, Modra</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 18.08901</td>
+        <td class="ff">07 45 45.63</td>
+        <td class="ff">+33 15 31.4</td>
+        <td class="ff rj">13.8 R</td>
+        <td>118 &ndash; Astronomical and Geophysical Observatory, Modra</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 18.08944</td>
+        <td class="ff">07 45 31.72</td>
+        <td class="ff">+33 14 22.8</td>
+        <td class="ff rj">14.4 R</td>
+        <td>118 &ndash; Astronomical and Geophysical Observatory, Modra</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 18.15664</td>
+        <td class="ff">07 17 39.26</td>
+        <td class="ff">+30 25 59.3</td>
+        <td class="ff rj">14.0 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 18.15683</td>
+        <td class="ff">07 17 33.43</td>
+        <td class="ff">+30 25 27.0</td>
+        <td class="ff rj">13.8 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 18.15723</td>
+        <td class="ff">07 17 21.12</td>
+        <td class="ff">+30 24 19.0</td>
+        <td class="ff rj">13.7 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 196459</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 20.81269</td>
+        <td class="ff">02 56 26.61</td>
+        <td class="ff">-13 46 16.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 197151</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 20.82106</td>
+        <td class="ff">02 56 18.60</td>
+        <td class="ff">-13 47 23.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 197151</td>
+      </tr>
+      <tr>
+        <td class="ff">2007 01 20.82751</td>
+        <td class="ff">02 56 12.48</td>
+        <td class="ff">-13 48 15.3</td>
+        <td class="ff rj">19.4 R</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 197151</td>
+      </tr>
+  </table>
+
+
+        </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer id="footer">
+    <div class="holder">
+      <nav class="nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+	  <!-- Contact link changed to Jira -->
+          <li><a href="https://mpc-service.atlassian.net/servicedesk/customer/portals">Contact</a></li>
+          <li><a href="https://www.cfa.harvard.edu/content/privacy-statement">Privacy</a></li>
+        </ul>
+      </nav>
+      
+      <a href="https://www.cfa.harvard.edu">
+      <img src="/images/CfA_Logo_Vertical_CMYK.png" width="110" height="47"></a>
+      <p>
+      <p>
+      <p>
+      <div class="copy">The Minor Planet Center is hosted by the Center for Astrophysics | Harvard &amp; Smithsonian.<center>The Minor Planet Center is funded by NASA.</center></div> 
+  </footer>
+
+<script type="text/javascript">
+  $(window).on('load', (function() {
+    $("table").tablesorter();
+  })); 
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var _tag=new WebTrends();
+_tag.dcsGetId();
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+_tag.dcsCustom=function(){
+// Add custom parameters here.
+//_tag.DCSext.param_name=param_value;
+}
+_tag.dcsCollect();
+//]]>
+</script>
+
+<noscript>
+<div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="//logs1.smithsonian.museum/dcsa7yzrmbdzpxzrosrn4tyep_5i1d/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=9.4.0&amp;dcssip=www.minorplanetcenter.net"/></div>
+</noscript>
+</body>
+
+</html>

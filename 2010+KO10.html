@@ -1,0 +1,2231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IAU Minor Planet Center</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/mpc.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/table-sorter.css">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+  <link media="all" rel="stylesheet" href="/css/all.css">
+
+  <link rel="icon" type="image/png" href="/iau/figs/MPClogo16.png">
+  <meta name="description" content="We are the official body that deals with
+      astrometric observations and orbits of minor planets (asteroids) and comets.">
+
+  <meta name="keywords" content="astrometry, observations, orbits,
+      minor planets, asteroids, comets, near earth objects, 
+      potentially hazardous asteroids">
+
+  <script type="text/javascript" src="/js/jquery-latest.js"></script>
+<!--  <script type="text/javascript" src="/js/jquery.main.js"></script> -->
+<!--  <script type="text/javascript" src="/js/jquery.metadata.js"></script> -->
+  <script type="text/javascript" src="/js/jquery.tablesorter.js"></script>
+  <script type="text/javascript" src="/js/webtrends.js"></script>
+  <script type="text/javascript" src="/js/track_pdfs.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic|PT+Sans:400,700,400italic,700italic|PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+  
+<body>
+  <!-- wrapper -->
+  <div id="wrapper">
+    <div class="w1">
+      <!-- header -->
+      <header id="header">
+        <div class="holder">
+          <!-- logo -->
+          <h1 class="logo"><a href="/">The International Astronomical Union Minor Planet Center</a></h1>
+          <div class="area">
+            <!-- top-nav -->
+            <nav class="top-nav">
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+		<!-- Contact link changed to Jira -->
+                <li><a href="https://mpc-service.atlassian.net/servicedesk/customer/portals">Contact</a></li>
+              </ul>
+            </nav>
+            <!-- search-form -->
+            <div class="form-holder">
+              <!-- This commented code opens a new page for the search. -->
+              <!--<form class="search-form" method="get" action="https://www.google.com/search" target="_blank">-->
+              <form class="search-form" method="get" action="https://www.google.com/search">
+                <fieldset>
+                  <!--<label for="search">Search</label>-->
+                  <input type="hidden" name="sitesearch" value="minorplanetcenter.net">
+                  <input type="text" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" id="search" name="q" value="Search MPC">
+                </fieldset>
+              </form>
+            </div>
+            <div class="social-bar">
+<!--              <a href="https://twitter.com/MinorPlanetCtr"><span class="social twitter">L</span></a> -->
+<!--              <a href="https://www.facebook.com/MinorPlanetCenter"><span class="social facebook">F</span></a> -->
+<!--              <a href="https://www.youtube.com/channel/UCtALMOQHuBxh5XMsYNiDhMg"><span class="social youtube">X</span></a> -->
+<!--              <a href="/iau/rss/mpc_feeds.html"><span class="social rss">R</span></a> -->
+            </div>
+          </div>
+        </div>
+        <nav class="nav-holder">
+          <!-- main navigation -->
+          <ul id="nav">
+            <li>
+              <a href="/iau/mpc.html"><span>OBSERVERS</span></a>
+              <ul>
+                <li><a href="/iau/MPEph/MPEph.html">Ephemeris Service</a></li>
+                <li><a href="/mpec/RecentMPECs.html">MPECs</a></li>
+                <li><a href="/iau/NEO/toconfirm_tabular.html">NEO Confirmation</a></li>
+                <li><a href="/iau/NEO/pccp_tabular.html">Possible Comet Confirmation</a></li>
+                <li><a href="/iau/Ephemerides/EphemOrbEls.html" class="nested">Orbital Elements</a>
+                  <ul>
+                    <li><a href="/iau/MPCORB.html">MPCORB</a></li>
+                    <li><a href="/iau/ECS/MPCAT/MPCAT.html">MPCAT</a></li>
+                    <li><a href="/iau/ECS/MPCUPDATE/MPCUPDATE.html">MPCUPDATE</a></li>
+                    <li><a href="/iau/Ephemerides/SoftwareEls.html">Orbital Elements for Software</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/services/MPCServices.html">Publications Overview</a></li>
+                <li><a href="/iau/ECS/MPCArchive/MPCArchive_TBL.html">Publications Archive</a></li>              
+                <li><a href="/iau/NEO/TheNEOPage.html" class="nested">NEO Services</a>
+                  <ul>
+                    <li><a href="/iau/NEO/toconfirm_tabular.html">Confirmation</a></li>
+                    <li><a href="/iau/NEO/PossNEO.html">Ratings</a></li>
+                    <li><a href="/cgi-bin/neaobs.cgi">Observation Planning Aid</a></li>
+                    <li><a href="/cgi-bin/checkneo.cgi">NEOChecker</a></li>
+                    <li><a href="/cgi-bin/checkneocmt.cgi">NEOCMTChecker</a></li>
+                    <li><a href="/neocp_followup_report/">NEOCP Followup Report Form</a></li>
+                    <li><a href="/neocp_followup_reports/">NEOCP Followup Reports</a></li>
+                    <li><a href="/neocp_obs">NEOCP Recent Observations</a></li>
+                  </ul>
+                </li>
+                <li><a href="/iau/services/WebCSAccess.html" class="nested">Other Observer Services</a>
+                  <ul>
+                    <li><a href="/whatsup">Observing Target List</a></li>
+                    <li><a href="/iau/NatSats/NaturalSatellites.html">Natural Satellite Ephemerides</a></li>
+                    <li><a href="/iau/MPEph/NewObjEphems.html">New Object Ephemerides</a></li>
+                    <li><a href="/cgi-bin/checkmp.cgi">MPChecker</a></li>
+                    <li><a href="/cgi-bin/checkcmt.cgi">CMTChecker</a></li>
+                    <li><a href="/iau/artsats/artsats.html">Distant Artificial Satellites</a></li>
+                    <li><a href="/iau/lists/Customize.html">Observing List Customizer</a></li>
+                  </ul>
+                </li>
+                <li><a href="/db_search">Orbits/Observations Database</a></li>
+
+                <li><a href='http://alcdef.org'>Light Curve Database</a></li>
+
+                <li><a href="/iau/ECS/MPCAT-OBS/MPCAT-OBS.html">MPCAT-OBS</a></li>
+                <li><a href="/iau/SkyCoverage.html">Sky Coverage</a></li>
+                <li><a href="/iau/MPC_Documentation.html" class="nested">Documentation</a>
+                  <ul>
+                    <li><a href="/iau/info/TechInfo.html">MPC Submission Info</a></li>
+                    <li><a href="/iau/info/Astrometry.html">Astrometry Guide</a></li>
+                    <li><a href="/iau/WhatsNew.html">What's New</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/lists/Lists.html" class="nested">Lists and Plots</a>
+                  <ul>
+                    <li><a href="/iau/lists/MPLists.html">Minor Planets</a></li>
+                      <!--<ul>
+                        <li><a href="/iau/lists/t_atens.html">Atens</a></li>
+                        <li><a href="/iau/lists/t_apollos.html">Apollos</a></li>
+                        <li><a href="/iau/lists/t_amors.html">Amors</a></li>
+                        <li><a href="/iau/lists/t_centaurs.html">Centaurs and Scattered Disk Objects</a></li>
+                        <li><a href="/iau/lists/t_tnos.html">Transneptunian Objects</a></li>
+                        <li><a href="/iau/lists/t_others.html">Other Unusual Objects</a></li>
+                        <li><a href="/iau/lists/t_dangerous.html">Potentially Hazardous Asteroids</a></li>
+                      </ul>-->
+                    <li><a href="/iau/lists/CometLists.html">Comets</a></li>
+                      <!--<ul>
+                        <li><a href="/iau/lists/LastCometObs.html">Date of Last Observation</a></li>
+                        <li><a href="/iau/lists/LastYear.html">Designations from the Past Year</a></li>
+                        <li><a href="http://www.icq.eps.harvard.edu/CometMags.html">Comet Magnitude Estimates</a></li>
+                        <li><a href="/iau/lists/ClosestComets.html">Closest Approaches</a></li>
+                        <li><a href="/iau/lists/PeriodicCodes.html">Periodic Comets</a></li>
+                      </ul>-->
+                    <li><a href="/iau/lists/ObsCodesF.html">Observatory Codes</a></li>		    
+                    <li><a href="/iau/Animations/Animations.html">Animations</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/MPCStatus.html">MPC Status</a></li>
+                <!--<li><a href="/summary">Summary</a></li>-->
+                <li><a href='/mpc/obs_stats_2014_2018'>2014-18 NEO Obs Statistics</a></li>
+                <li><a href='/mpc/summary'>Summary of Latest Data</a></li>
+              </ul>
+            </li>
+            <li><a href="/data"><span>DATA</span></a>
+            </li>
+            <li><a href="http://iawn.net/"><span>IAWN</span></a>
+            </li>
+            <li><a href="https://minorplanetcenter.net/mpcops/beta/"><span>BETA</span></a></li>
+            <li><a href="/iau/MPCStatus.html"><span style="color:Green">STATUS</a></li>
+            <li><a href="https://sbnmpc.astro.umd.edu/"><span>SBN ANNEX</span></a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- main -->
+      <div id="main">
+
+  <h3>
+  
+   2010 KO10
+  
+  
+   
+  
+</h3>
+
+    First observed at Catalina Sky Survey
+  on 2010-05-20.
+
+
+  <br>(Discoverer will be defined when the object is numbered. 
+  See <a href="/mpec/K10/K10U20.html">this note</a>
+  on how discoverers are determined.)
+
+
+<br>
+<h2>Orbit</h2>
+
+    Orbit type: Apollo
+  <br>
+
+
+    Near-Earth Object<br>
+    One opposition object seen prior.<br>
+
+    <br>
+    <div class="show-orbit-button">
+      <form accept-charset="UTF-8" action="/db_search/show_orbit" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+        <input id="number" name="number" type="hidden" />
+        <input id="designation" name="designation" type="hidden" value="2010 KO10" />
+        <input id="name" name="name" type="hidden" />
+        <input id="epoch" name="epoch" type="hidden" value="2019-04-27.0" />
+        <input id="peri" name="peri" type="hidden" value="222.7025408" />
+        <input id="m" name="m" type="hidden" value="104.93438" />
+        <input id="node" name="node" type="hidden" value="61.7953169" />
+        <input id="incl" name="incl" type="hidden" value="8.0754948" />
+        <input id="e" name="e" type="hidden" value="0.522609185" />
+        <input id="a" name="a" type="hidden" value="1.932214521136105" />
+        <input name="commit" type="submit" value="Interactive Orbit Sketch" />
+</form>    </div>
+    <div>
+       Note: WebGL enabled browser required.
+    </div>
+
+    
+
+
+  <br>
+  <table class="nb">
+    <tr>
+      <td valign="top" class="nb">
+        <table>
+          <tr><td>epoch</td><td class="rj">2019-04-27.0</td></tr>
+          <tr><td>epoch JD</td><td class="rj">2458600.5</td></tr>
+          <tr><td>perihelion date</td><td class="rj">2018-07-15.04549</td></tr>
+          <tr><td>perihelion JD</td><td class="rj">2458314.54549</td></tr>
+          <tr><td>argument of perihelion (°)</td><td class="rj">222.70254</td></tr>
+          <tr><td>ascending node (°)</td><td class="rj">61.79532</td></tr>
+          <tr><td>inclination (°)</td><td class="rj">8.07549</td></tr>
+          <tr><td>eccentricity</td><td class="rj">0.5226092</td></tr>
+          <tr><td>perihelion distance (AU)</td><td class="rj">0.9224215</td></tr>
+          <tr><td>Tisserand w.r.t. Jupiter</td><td class="rj">3.7</td></tr>
+          <tr><td>&Delta;V w.r.t. Earth (km/sec)</td><td class="rj">6.4</td></tr>
+        </table>
+      </td>
+      <td valign="top" class="nb">
+        <table>
+          <tr><td>semimajor axis (AU)</td><td class="rj">1.9322145</td></tr>
+          <tr><td>mean anomaly (°)</td><td class="rj">104.93438</td></tr>
+          <tr><td>mean daily motion (°/day)</td><td class="rj">0.36696180</td></tr>
+          <tr><td>aphelion distance (AU)</td><td class="rj">2.942</td></tr>
+          <tr><td>period (years)</td><td class="rj">2.69</td></tr>
+          <tr><td>P-vector [x]</td><td class="rj">0.24441724</td></tr>
+          <tr><td>P-vector [y]</td><td class="rj">-0.84745393</td></tr>
+          <tr><td>P-vector [z]</td><td class="rj">-0.47125582</td></tr>
+          <tr><td>Q-vector [x]</td><td class="rj">0.96173501</td></tr>
+          <tr><td>Q-vector [y]</td><td class="rj">0.27391037</td></tr>
+          <tr><td>Q-vector [z]</td><td class="rj">0.00623482</td></tr>
+          <tr><td>absolute magnitude</td><td class="rj">27.1</td></tr>
+          <tr><td>phase slope</td><td class="rj">0.15</td></tr>
+        </table>
+      </td>
+      <td valign="top" class="nb">
+        <table>
+
+            <tr><td><a href="/iau/info/UValue.html">uncertainty</a></td><td class="rj">5</td></tr>
+
+          <tr><td>reference</td><td class="rj">MPO 331300</td></tr>
+          <tr><td>observations used</td><td class="rj">177</td></tr>
+          <tr><td>oppositions</td><td class="rj">1</td></tr>
+          <tr><td>arc length (days)</td><td class="rj">3</td></tr>
+          <tr><td>first opposition used</td><td class="rj">2010</td></tr>
+          <tr><td>last opposition used</td><td class="rj">2010</td></tr>
+          <tr><td>residual rms (arc-secs)</td><td class="rj">0.63</td></tr>
+          <tr><td><a href="/iau/info/Perturbers.html">perturbers coarse indicator</a></td><td class="rj">M-v</td></tr>
+          <tr><td><a href="/iau/info/Perturbers.html">perturbers precise indicator</a></td><td class="rj">003Eh</td></tr>
+          <tr><td>first observation date used</td><td class="rj">2010-05-20.0</td></tr>
+          <tr><td>last observation date used</td><td class="rj">2010-05-22.0</td></tr>
+          <tr><td>computer name</td><td class="rj">MPCW</td></tr>
+        </table>
+      </td>
+    </tr>
+  </table>    
+
+  <table class="nb">
+    <tr>
+      <td valign="top" class="nb">
+          <table>
+            <tr><td>JD of orbit computation</td><td class="rj">2457067.589962</td></tr>
+            <tr><td>perihelion JD uncertainty (days)</td><td class="rj">2.1020E-04</td></tr>
+            <tr><td>argument of perihelion uncertainty (°)</td><td class="rj">5.6907E-05</td></tr>
+            <tr><td>ascending node uncertainty (°)</td><td class="rj">2.1947E-06</td></tr>
+            <tr><td>inclination uncertainty (°)</td><td class="rj">1.7013E-04</td></tr>
+            <tr><td>eccentricity uncertainty </td><td class="rj">1.6808E-05</td></tr>
+            <tr><td>perihelion distance uncertainty (AU)</td><td class="rj">1.7937E-06</td></tr>
+          </table>    
+      </td>
+      <td width=100px> </td>
+
+      <td valign="top" class="nb">
+    Minimum Orbit Intersection Distances (in AU)<br>for orbit epoch: 2458600.5, reference: MPO331300<br>
+          <table>
+            <tr><td>Mercury</td><td>0.46445</td></tr>
+            <tr><td>Venus</td><td>0.20239</td></tr>
+            <tr><td>Earth</td><td>0.00105</td></tr>
+            <tr><td>Mars</td><td>0.11865</td></tr>
+            <tr><td>Jupiter</td><td>2.26046</td></tr>
+            <tr><td>Saturn</td><td>6.18117</td></tr>
+            <tr><td>Uranus</td><td>15.7071</td></tr>
+            <tr><td>Neptune</td><td>27.156</td></tr>
+          </table>    
+          <br>
+      </td>
+    </tr>
+  </table>
+
+
+<h2>Observations</h2>
+  231 total observations over interval:
+  2010 05 20.32287 &ndash; 2010 05 23.029271
+  <br>
+  These data are available for
+  <a href="../tmp/2010_KO10.txt" target="_blank">download</a>
+  (<a href="/iau/info/OpticalObs.html" target="_blank">format description</a>).
+  <br>
+  <br>
+  <table>
+    <tr>
+      <th>Date (UT)</th>
+      <th>J2000 RA</th>
+      <th>J2000 Dec</th>
+      <th>Magn</th>
+      <th><a href="/iau/lists/ObsCodesF.html">Location</a></th>
+      <th><a href="/iau/info/References.html">Ref</a></th>
+    </tr>
+
+      <tr>
+        <td class="ff">2010 05 20.32287</td>
+        <td class="ff">14 43 32.80</td>
+        <td class="ff">+10 49 41.0</td>
+        <td class="ff rj">20.2 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 328697</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 20.33038</td>
+        <td class="ff">14 43 33.85</td>
+        <td class="ff">+10 49 39.3</td>
+        <td class="ff rj">19.7 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 328697</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 20.33782</td>
+        <td class="ff">14 43 34.89</td>
+        <td class="ff">+10 49 36.5</td>
+        <td class="ff rj">19.8 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 328697</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 20.34649</td>
+        <td class="ff">14 43 36.22</td>
+        <td class="ff">+10 49 33.3</td>
+        <td class="ff rj">19.7 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 328697</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 20.41479</td>
+        <td class="ff">14 43 48.43</td>
+        <td class="ff">+10 49 07.2</td>
+        <td class="ff rj">20.0 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 328697</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 20.41571</td>
+        <td class="ff">14 43 48.57</td>
+        <td class="ff">+10 49 06.6</td>
+        <td class="ff rj">19.8 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 328697</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 20.41663</td>
+        <td class="ff">14 43 48.79</td>
+        <td class="ff">+10 49 06.3</td>
+        <td class="ff rj">19.8 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 328697</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 20.41757</td>
+        <td class="ff">14 43 49.04</td>
+        <td class="ff">+10 49 05.8</td>
+        <td class="ff rj">19.9 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 328697</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 20.85189</td>
+        <td class="ff">14 47 07.62</td>
+        <td class="ff">+10 46 45.0</td>
+        <td class="ff rj">19.0 R</td>
+        <td>B04 &ndash; OAVdA, Saint-Barthelemy</td>
+        <td class="ff lj">MPS 328697</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 20.86899</td>
+        <td class="ff">14 47 12.84</td>
+        <td class="ff">+10 46 44.9</td>
+        <td class="ff rj">19.2 R</td>
+        <td>B04 &ndash; OAVdA, Saint-Barthelemy</td>
+        <td class="ff lj">MPS 328697</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 20.88083</td>
+        <td class="ff">14 47 16.45</td>
+        <td class="ff">+10 46 44.1</td>
+        <td class="ff rj">18.8 R</td>
+        <td>B04 &ndash; OAVdA, Saint-Barthelemy</td>
+        <td class="ff lj">MPS 328697</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.23303</td>
+        <td class="ff">14 50 25.79</td>
+        <td class="ff">+10 47 23.9</td>
+        <td class="ff rj">18.6 R</td>
+        <td>854 &ndash; Sabino Canyon Observatory, Tucson</td>
+        <td class="ff lj">MPS 328697</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.23599</td>
+        <td class="ff">14 50 33.33</td>
+        <td class="ff">+10 46 18.9</td>
+        <td class="ff rj">18.9 C</td>
+        <td>G56 &ndash; Walnut Creek</td>
+        <td class="ff lj">MPS 328697</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.23879</td>
+        <td class="ff">14 50 28.19</td>
+        <td class="ff">+10 47 22.7</td>
+        <td class="ff rj">18.6 R</td>
+        <td>854 &ndash; Sabino Canyon Observatory, Tucson</td>
+        <td class="ff lj">MPS 328697</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.24043</td>
+        <td class="ff">14 50 35.26</td>
+        <td class="ff">+10 46 17.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>G56 &ndash; Walnut Creek</td>
+        <td class="ff lj">MPS 328697</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.24458</td>
+        <td class="ff">14 50 30.62</td>
+        <td class="ff">+10 47 21.8</td>
+        <td class="ff rj">18.6 R</td>
+        <td>854 &ndash; Sabino Canyon Observatory, Tucson</td>
+        <td class="ff lj">MPS 328697</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.24488</td>
+        <td class="ff">14 50 37.24</td>
+        <td class="ff">+10 46 17.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>G56 &ndash; Walnut Creek</td>
+        <td class="ff lj">MPS 328697</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.25029</td>
+        <td class="ff">14 50 39.56</td>
+        <td class="ff">+10 46 16.8</td>
+        <td class="ff rj">18.9 C</td>
+        <td>G56 &ndash; Walnut Creek</td>
+        <td class="ff lj">MPS 328697</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.25283</td>
+        <td class="ff">14 50 31.43</td>
+        <td class="ff">+10 47 02.0</td>
+        <td class="ff rj">18.2 R</td>
+        <td>H01 &ndash; Magdalena Ridge Observatory, Socorro</td>
+        <td class="ff lj">MPS 328697</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.25730</td>
+        <td class="ff">14 50 35.84</td>
+        <td class="ff">+10 47 27.6</td>
+        <td class="ff rj">18.5 R</td>
+        <td>926 &ndash; Tenagra II Observatory, Nogales</td>
+        <td class="ff lj">MPS 328697</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.25895</td>
+        <td class="ff">14 50 36.51</td>
+        <td class="ff">+10 47 27.4</td>
+        <td class="ff rj">18.4 R</td>
+        <td>926 &ndash; Tenagra II Observatory, Nogales</td>
+        <td class="ff lj">MPS 328697</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.26060</td>
+        <td class="ff">14 50 37.19</td>
+        <td class="ff">+10 47 26.8</td>
+        <td class="ff rj">18.5 R</td>
+        <td>926 &ndash; Tenagra II Observatory, Nogales</td>
+        <td class="ff lj">MPS 328697</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.26074</td>
+        <td class="ff">14 50 34.74</td>
+        <td class="ff">+10 46 59.3</td>
+        <td class="ff rj">18.2 R</td>
+        <td>H01 &ndash; Magdalena Ridge Observatory, Socorro</td>
+        <td class="ff lj">MPS 328697</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.27128</td>
+        <td class="ff">14 50 39.18</td>
+        <td class="ff">+10 46 55.3</td>
+        <td class="ff rj">18.2 R</td>
+        <td>H01 &ndash; Magdalena Ridge Observatory, Socorro</td>
+        <td class="ff lj">MPS 328697</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.27943</td>
+        <td class="ff">14 50 42.67</td>
+        <td class="ff">+10 46 52.0</td>
+        <td class="ff rj">17.7 R</td>
+        <td>H01 &ndash; Magdalena Ridge Observatory, Socorro</td>
+        <td class="ff lj">MPS 328697</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.32682</td>
+        <td class="ff">14 51 04.07</td>
+        <td class="ff">+10 46 26.3</td>
+        <td class="ff rj">18.0 R</td>
+        <td>H01 &ndash; Magdalena Ridge Observatory, Socorro</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.33492</td>
+        <td class="ff">14 51 07.97</td>
+        <td class="ff">+10 46 20.7</td>
+        <td class="ff rj">18.0 R</td>
+        <td>H01 &ndash; Magdalena Ridge Observatory, Socorro</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.34531</td>
+        <td class="ff">14 51 13.09</td>
+        <td class="ff">+10 46 13.5</td>
+        <td class="ff rj">18.1 R</td>
+        <td>H01 &ndash; Magdalena Ridge Observatory, Socorro</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.35241</td>
+        <td class="ff">14 51 16.68</td>
+        <td class="ff">+10 46 08.1</td>
+        <td class="ff rj">18.1 R</td>
+        <td>H01 &ndash; Magdalena Ridge Observatory, Socorro</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.86635</td>
+        <td class="ff">15 00 46.74</td>
+        <td class="ff">+10 39 12.5</td>
+        <td class="ff rj">17.3 C</td>
+        <td>C12 &ndash; Berta Observatory, Sabadell</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.87306</td>
+        <td class="ff">15 00 54.61</td>
+        <td class="ff">+10 39 08.1</td>
+        <td class="ff rj">17.4 C</td>
+        <td>C12 &ndash; Berta Observatory, Sabadell</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.87886</td>
+        <td class="ff">15 01 01.39</td>
+        <td class="ff">+10 39 04.7</td>
+        <td class="ff rj">17.1 C</td>
+        <td>C12 &ndash; Berta Observatory, Sabadell</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.88699</td>
+        <td class="ff">15 01 11.01</td>
+        <td class="ff">+10 38 59.6</td>
+        <td class="ff rj">17.6 C</td>
+        <td>C12 &ndash; Berta Observatory, Sabadell</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.89256</td>
+        <td class="ff">15 01 17.47</td>
+        <td class="ff">+10 38 56.1</td>
+        <td class="ff rj">17.3 C</td>
+        <td>C12 &ndash; Berta Observatory, Sabadell</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.90774</td>
+        <td class="ff">15 01 28.58</td>
+        <td class="ff">+10 36 50.0</td>
+        <td class="ff rj">18.4 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.91050</td>
+        <td class="ff">15 01 32.02</td>
+        <td class="ff">+10 36 47.1</td>
+        <td class="ff rj">18.3 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.91325</td>
+        <td class="ff">15 01 35.43</td>
+        <td class="ff">+10 36 43.8</td>
+        <td class="ff rj">18.1 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.92851</td>
+        <td class="ff">15 01 42.47</td>
+        <td class="ff">+10 35 08.1</td>
+        <td class="ff rj">17.3 R</td>
+        <td>152 &ndash; Moletai Astronomical Observatory</td>
+        <td class="ff lj">MPS 357522</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.92926</td>
+        <td class="ff">15 01 43.47</td>
+        <td class="ff">+10 35 05.7</td>
+        <td class="ff rj">17.4 R</td>
+        <td>152 &ndash; Moletai Astronomical Observatory</td>
+        <td class="ff lj">MPS 571013</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.93008</td>
+        <td class="ff">15 01 44.77</td>
+        <td class="ff">+10 35 05.0</td>
+        <td class="ff rj">18.1 R</td>
+        <td>152 &ndash; Moletai Astronomical Observatory</td>
+        <td class="ff lj">MPS 346418</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.93104</td>
+        <td class="ff">15 01 45.75</td>
+        <td class="ff">+10 35 04.7</td>
+        <td class="ff rj">17.2 R</td>
+        <td>152 &ndash; Moletai Astronomical Observatory</td>
+        <td class="ff lj">MPS 571013</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.93194</td>
+        <td class="ff">15 01 46.75</td>
+        <td class="ff">+10 35 03.2</td>
+        <td class="ff rj">18.1 R</td>
+        <td>152 &ndash; Moletai Astronomical Observatory</td>
+        <td class="ff lj">MPS 346418</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.93281</td>
+        <td class="ff">15 01 48.11</td>
+        <td class="ff">+10 35 01.2</td>
+        <td class="ff rj">17.3 R</td>
+        <td>152 &ndash; Moletai Astronomical Observatory</td>
+        <td class="ff lj">MPS 571013</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.93451</td>
+        <td class="ff">15 01 50.39</td>
+        <td class="ff">+10 34 59.0</td>
+        <td class="ff rj">17.2 R</td>
+        <td>152 &ndash; Moletai Astronomical Observatory</td>
+        <td class="ff lj">MPS 357522</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.93674</td>
+        <td class="ff">15 01 53.28</td>
+        <td class="ff">+10 34 55.5</td>
+        <td class="ff rj">17.4 R</td>
+        <td>152 &ndash; Moletai Astronomical Observatory</td>
+        <td class="ff lj">MPS 357522</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.93808</td>
+        <td class="ff">15 01 55.10</td>
+        <td class="ff">+10 34 54.7</td>
+        <td class="ff rj">17.4 R</td>
+        <td>152 &ndash; Moletai Astronomical Observatory</td>
+        <td class="ff lj">MPS 359175</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.93906</td>
+        <td class="ff">15 01 56.39</td>
+        <td class="ff">+10 34 52.0</td>
+        <td class="ff rj">17.3 R</td>
+        <td>152 &ndash; Moletai Astronomical Observatory</td>
+        <td class="ff lj">MPS 846068</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.93991</td>
+        <td class="ff">15 01 57.56</td>
+        <td class="ff">+10 34 51.1</td>
+        <td class="ff rj">17.8 R</td>
+        <td>152 &ndash; Moletai Astronomical Observatory</td>
+        <td class="ff lj">MPS 359175</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.94124</td>
+        <td class="ff">15 01 59.22</td>
+        <td class="ff">+10 34 48.9</td>
+        <td class="ff rj">17.3 R</td>
+        <td>152 &ndash; Moletai Astronomical Observatory</td>
+        <td class="ff lj">MPS 383045</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.94229</td>
+        <td class="ff">15 02 00.69</td>
+        <td class="ff">+10 34 47.3</td>
+        <td class="ff rj">17.3 R</td>
+        <td>152 &ndash; Moletai Astronomical Observatory</td>
+        <td class="ff lj">MPS 383045</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.94352</td>
+        <td class="ff">15 02 02.32</td>
+        <td class="ff">+10 34 45.3</td>
+        <td class="ff rj">17.3 R</td>
+        <td>152 &ndash; Moletai Astronomical Observatory</td>
+        <td class="ff lj">MPS 383045</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.94463</td>
+        <td class="ff">15 02 03.71</td>
+        <td class="ff">+10 34 43.7</td>
+        <td class="ff rj">17.6 R</td>
+        <td>152 &ndash; Moletai Astronomical Observatory</td>
+        <td class="ff lj">MPS 383045</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.94547</td>
+        <td class="ff">15 02 04.95</td>
+        <td class="ff">+10 34 42.0</td>
+        <td class="ff rj">17.3 R</td>
+        <td>152 &ndash; Moletai Astronomical Observatory</td>
+        <td class="ff lj">MPS 383045</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 21.94675</td>
+        <td class="ff">15 02 06.72</td>
+        <td class="ff">+10 34 40.8</td>
+        <td class="ff rj">17.2 R</td>
+        <td>152 &ndash; Moletai Astronomical Observatory</td>
+        <td class="ff lj">MPS 383045</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.17741</td>
+        <td class="ff">15 10 30.56</td>
+        <td class="ff">+10 34 14.6</td>
+        <td class="ff rj">16.7 R</td>
+        <td>H01 &ndash; Magdalena Ridge Observatory, Socorro</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.18811</td>
+        <td class="ff">15 10 52.77</td>
+        <td class="ff">+10 34 00.7</td>
+        <td class="ff rj">16.7 R</td>
+        <td>H01 &ndash; Magdalena Ridge Observatory, Socorro</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.19835</td>
+        <td class="ff">15 11 14.34</td>
+        <td class="ff">+10 33 46.0</td>
+        <td class="ff rj">16.7 R</td>
+        <td>H01 &ndash; Magdalena Ridge Observatory, Socorro</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.20799</td>
+        <td class="ff">15 11 34.92</td>
+        <td class="ff">+10 33 31.4</td>
+        <td class="ff rj">16.7 R</td>
+        <td>H01 &ndash; Magdalena Ridge Observatory, Socorro</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.21628</td>
+        <td class="ff">15 11 52.88</td>
+        <td class="ff">+10 33 17.9</td>
+        <td class="ff rj">16.9 R</td>
+        <td>H01 &ndash; Magdalena Ridge Observatory, Socorro</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.231364</td>
+        <td class="ff">15 12 01.10</td>
+        <td class="ff">+10 30 57.3</td>
+        <td class="ff rj">17.5 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.232271</td>
+        <td class="ff">15 12 03.14</td>
+        <td class="ff">+10 30 55.3</td>
+        <td class="ff rj">17.3 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.234098</td>
+        <td class="ff">15 12 07.25</td>
+        <td class="ff">+10 30 50.3</td>
+        <td class="ff rj">16.7 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.235611</td>
+        <td class="ff">15 12 10.65</td>
+        <td class="ff">+10 30 47.1</td>
+        <td class="ff rj">17.2 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.237439</td>
+        <td class="ff">15 12 14.80</td>
+        <td class="ff">+10 30 42.5</td>
+        <td class="ff rj">17.1 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.238649</td>
+        <td class="ff">15 12 17.58</td>
+        <td class="ff">+10 30 39.5</td>
+        <td class="ff rj">17.2 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.242466</td>
+        <td class="ff">15 12 26.28</td>
+        <td class="ff">+10 30 30.0</td>
+        <td class="ff rj">17.4 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.84942</td>
+        <td class="ff">16 28 33.35</td>
+        <td class="ff">+08 44 54.5</td>
+        <td class="ff rj">15.1 V</td>
+        <td>198 &ndash; Wildberg</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.85048</td>
+        <td class="ff">16 28 53.04</td>
+        <td class="ff">+08 44 20.6</td>
+        <td class="ff rj">15.2 V</td>
+        <td>198 &ndash; Wildberg</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.85154</td>
+        <td class="ff">16 29 12.85</td>
+        <td class="ff">+08 43 46.2</td>
+        <td class="ff rj">15.1 V</td>
+        <td>198 &ndash; Wildberg</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.85366</td>
+        <td class="ff">16 29 52.88</td>
+        <td class="ff">+08 42 36.9</td>
+        <td class="ff rj">15.2 V</td>
+        <td>198 &ndash; Wildberg</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.86837</td>
+        <td class="ff">16 34 41.66</td>
+        <td class="ff">+08 34 04.8</td>
+        <td class="ff rj">15.2 V</td>
+        <td>198 &ndash; Wildberg</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.86943</td>
+        <td class="ff">16 35 03.22</td>
+        <td class="ff">+08 33 26.0</td>
+        <td class="ff rj">15.1 V</td>
+        <td>198 &ndash; Wildberg</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.87049</td>
+        <td class="ff">16 35 24.90</td>
+        <td class="ff">+08 32 46.3</td>
+        <td class="ff rj">15.1 V</td>
+        <td>198 &ndash; Wildberg</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.88741</td>
+        <td class="ff">16 41 23.79</td>
+        <td class="ff">+08 19 36.8</td>
+        <td class="ff rj">15.0 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.88981</td>
+        <td class="ff">16 42 17.93</td>
+        <td class="ff">+08 17 53.6</td>
+        <td class="ff rj">15.6 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.89222</td>
+        <td class="ff">16 43 12.92</td>
+        <td class="ff">+08 16 08.4</td>
+        <td class="ff rj">15.5 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.89235</td>
+        <td class="ff">16 43 15.95</td>
+        <td class="ff">+08 16 02.5</td>
+        <td class="ff rj">15.5 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.90113</td>
+        <td class="ff">16 46 46.23</td>
+        <td class="ff">+08 11 23.9</td>
+        <td class="ff rj">15.0 V</td>
+        <td>198 &ndash; Wildberg</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.90220</td>
+        <td class="ff">16 47 11.96</td>
+        <td class="ff">+08 10 33.4</td>
+        <td class="ff rj">15.1 V</td>
+        <td>198 &ndash; Wildberg</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.90327</td>
+        <td class="ff">16 47 37.89</td>
+        <td class="ff">+08 09 42.9</td>
+        <td class="ff rj">15.0 V</td>
+        <td>198 &ndash; Wildberg</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.90447</td>
+        <td class="ff">16 48 03.54</td>
+        <td class="ff">+08 06 41.0</td>
+        <td class="ff rj">16.2 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.907086</td>
+        <td class="ff">16 49 09.31</td>
+        <td class="ff">+08 05 43.2</td>
+        <td class="ff rj">15.1 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.907213</td>
+        <td class="ff">16 49 12.50</td>
+        <td class="ff">+08 05 36.7</td>
+        <td class="ff rj">15.1 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.907350</td>
+        <td class="ff">16 49 15.89</td>
+        <td class="ff">+08 05 30.6</td>
+        <td class="ff rj">15.1 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.907486</td>
+        <td class="ff">16 49 19.28</td>
+        <td class="ff">+08 05 23.3</td>
+        <td class="ff rj">15.1 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.907624</td>
+        <td class="ff">16 49 22.69</td>
+        <td class="ff">+08 05 16.5</td>
+        <td class="ff rj">15.1 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.907760</td>
+        <td class="ff">16 49 26.13</td>
+        <td class="ff">+08 05 09.5</td>
+        <td class="ff rj">15.1 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.907898</td>
+        <td class="ff">16 49 29.52</td>
+        <td class="ff">+08 05 03.0</td>
+        <td class="ff rj">15.0 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.908035</td>
+        <td class="ff">16 49 32.94</td>
+        <td class="ff">+08 04 55.9</td>
+        <td class="ff rj">15.0 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.908171</td>
+        <td class="ff">16 49 36.37</td>
+        <td class="ff">+08 04 49.3</td>
+        <td class="ff rj">15.1 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.908309</td>
+        <td class="ff">16 49 39.81</td>
+        <td class="ff">+08 04 42.7</td>
+        <td class="ff rj">15.1 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.908446</td>
+        <td class="ff">16 49 43.23</td>
+        <td class="ff">+08 04 35.3</td>
+        <td class="ff rj">15.1 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.90851</td>
+        <td class="ff">16 49 43.52</td>
+        <td class="ff">+08 03 22.3</td>
+        <td class="ff rj">15.9 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.908583</td>
+        <td class="ff">16 49 46.68</td>
+        <td class="ff">+08 04 28.7</td>
+        <td class="ff rj">15.2 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.908720</td>
+        <td class="ff">16 49 50.04</td>
+        <td class="ff">+08 04 22.2</td>
+        <td class="ff rj">15.2 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.908856</td>
+        <td class="ff">16 49 53.52</td>
+        <td class="ff">+08 04 15.4</td>
+        <td class="ff rj">15.1 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.908994</td>
+        <td class="ff">16 49 56.94</td>
+        <td class="ff">+08 04 08.5</td>
+        <td class="ff rj">15.1 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.909131</td>
+        <td class="ff">16 50 00.37</td>
+        <td class="ff">+08 04 01.6</td>
+        <td class="ff rj">15.1 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.90926</td>
+        <td class="ff">16 50 02.35</td>
+        <td class="ff">+08 02 44.4</td>
+        <td class="ff rj">16.0 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.909269</td>
+        <td class="ff">16 50 03.80</td>
+        <td class="ff">+08 03 54.5</td>
+        <td class="ff rj">15.2 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.909405</td>
+        <td class="ff">16 50 07.23</td>
+        <td class="ff">+08 03 48.1</td>
+        <td class="ff rj">15.1 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.909542</td>
+        <td class="ff">16 50 10.66</td>
+        <td class="ff">+08 03 41.1</td>
+        <td class="ff rj">15.1 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.91108</td>
+        <td class="ff">16 51 10.20</td>
+        <td class="ff">+07 59 00.2</td>
+        <td class="ff rj">14.6 C</td>
+        <td>J18 &ndash; Dingle Observatory, Montgomery</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.914729</td>
+        <td class="ff">16 52 22.93</td>
+        <td class="ff">+07 59 15.5</td>
+        <td class="ff rj">15.0 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.914865</td>
+        <td class="ff">16 52 26.45</td>
+        <td class="ff">+07 59 08.4</td>
+        <td class="ff rj">15.1 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.915002</td>
+        <td class="ff">16 52 30.03</td>
+        <td class="ff">+07 59 00.9</td>
+        <td class="ff rj">14.9 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.91509</td>
+        <td class="ff">16 52 31.14</td>
+        <td class="ff">+07 57 44.5</td>
+        <td class="ff rj">16.1 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.915141</td>
+        <td class="ff">16 52 33.59</td>
+        <td class="ff">+07 58 53.4</td>
+        <td class="ff rj">15.1 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.915278</td>
+        <td class="ff">16 52 37.16</td>
+        <td class="ff">+07 58 46.5</td>
+        <td class="ff rj">15.1 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.91539</td>
+        <td class="ff">16 52 38.91</td>
+        <td class="ff">+07 57 28.7</td>
+        <td class="ff rj">16.2 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.915421</td>
+        <td class="ff">16 52 40.86</td>
+        <td class="ff">+07 58 39.1</td>
+        <td class="ff rj">15.2 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.915559</td>
+        <td class="ff">16 52 44.45</td>
+        <td class="ff">+07 58 31.6</td>
+        <td class="ff rj">15.3 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.915698</td>
+        <td class="ff">16 52 48.06</td>
+        <td class="ff">+07 58 24.2</td>
+        <td class="ff rj">15.2 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.91580</td>
+        <td class="ff">16 53 12.50</td>
+        <td class="ff">+07 54 53.9</td>
+        <td class="ff rj">14.8 C</td>
+        <td>J18 &ndash; Dingle Observatory, Montgomery</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.915834</td>
+        <td class="ff">16 52 51.61</td>
+        <td class="ff">+07 58 16.8</td>
+        <td class="ff rj">15.1 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.915972</td>
+        <td class="ff">16 52 55.16</td>
+        <td class="ff">+07 58 09.8</td>
+        <td class="ff rj">14.9 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.916109</td>
+        <td class="ff">16 52 58.75</td>
+        <td class="ff">+07 58 02.2</td>
+        <td class="ff rj">15.2 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.916384</td>
+        <td class="ff">16 53 05.94</td>
+        <td class="ff">+07 57 48.0</td>
+        <td class="ff rj">15.1 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.91644</td>
+        <td class="ff">16 53 06.26</td>
+        <td class="ff">+07 56 33.3</td>
+        <td class="ff rj">15.7 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.92718</td>
+        <td class="ff">16 57 55.05</td>
+        <td class="ff">+07 46 37.7</td>
+        <td class="ff rj">15.4 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.927709</td>
+        <td class="ff">16 58 10.60</td>
+        <td class="ff">+07 47 20.3</td>
+        <td class="ff rj">15.0 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.927839</td>
+        <td class="ff">16 58 14.23</td>
+        <td class="ff">+07 47 12.7</td>
+        <td class="ff rj">14.9 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.927972</td>
+        <td class="ff">16 58 17.92</td>
+        <td class="ff">+07 47 05.4</td>
+        <td class="ff rj">15.0 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.928105</td>
+        <td class="ff">16 58 21.63</td>
+        <td class="ff">+07 46 57.8</td>
+        <td class="ff rj">14.9 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.928238</td>
+        <td class="ff">16 58 25.28</td>
+        <td class="ff">+07 46 50.6</td>
+        <td class="ff rj">14.9 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.92832</td>
+        <td class="ff">16 58 26.73</td>
+        <td class="ff">+07 45 31.5</td>
+        <td class="ff rj">15.2 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.928372</td>
+        <td class="ff">16 58 29.04</td>
+        <td class="ff">+07 46 42.0</td>
+        <td class="ff rj">14.9 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.928505</td>
+        <td class="ff">16 58 32.74</td>
+        <td class="ff">+07 46 34.6</td>
+        <td class="ff rj">15.0 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.928638</td>
+        <td class="ff">16 58 36.42</td>
+        <td class="ff">+07 46 27.0</td>
+        <td class="ff rj">15.0 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.928771</td>
+        <td class="ff">16 58 40.17</td>
+        <td class="ff">+07 46 19.3</td>
+        <td class="ff rj">15.0 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.928904</td>
+        <td class="ff">16 58 43.88</td>
+        <td class="ff">+07 46 11.1</td>
+        <td class="ff rj">15.0 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.929036</td>
+        <td class="ff">16 58 47.59</td>
+        <td class="ff">+07 46 03.3</td>
+        <td class="ff rj">15.1 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.929169</td>
+        <td class="ff">16 58 51.33</td>
+        <td class="ff">+07 45 55.5</td>
+        <td class="ff rj">15.0 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.929302</td>
+        <td class="ff">16 58 55.03</td>
+        <td class="ff">+07 45 48.0</td>
+        <td class="ff rj">14.8 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.92933</td>
+        <td class="ff">16 58 54.95</td>
+        <td class="ff">+07 44 31.6</td>
+        <td class="ff rj">15.4 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.929435</td>
+        <td class="ff">16 58 58.77</td>
+        <td class="ff">+07 45 40.0</td>
+        <td class="ff rj">14.9 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.929568</td>
+        <td class="ff">16 59 02.50</td>
+        <td class="ff">+07 45 32.2</td>
+        <td class="ff rj">15.1 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.929701</td>
+        <td class="ff">16 59 06.21</td>
+        <td class="ff">+07 45 24.5</td>
+        <td class="ff rj">15.0 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.929969</td>
+        <td class="ff">16 59 13.72</td>
+        <td class="ff">+07 45 09.0</td>
+        <td class="ff rj">15.1 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.930101</td>
+        <td class="ff">16 59 17.43</td>
+        <td class="ff">+07 45 01.2</td>
+        <td class="ff rj">15.0 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.930237</td>
+        <td class="ff">16 59 21.28</td>
+        <td class="ff">+07 44 52.8</td>
+        <td class="ff rj">15.1 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.930375</td>
+        <td class="ff">16 59 25.15</td>
+        <td class="ff">+07 44 44.9</td>
+        <td class="ff rj">15.0 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.930512</td>
+        <td class="ff">16 59 29.03</td>
+        <td class="ff">+07 44 36.5</td>
+        <td class="ff rj">15.0 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.93059</td>
+        <td class="ff">16 59 30.36</td>
+        <td class="ff">+07 43 17.0</td>
+        <td class="ff rj">15.4 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.93573</td>
+        <td class="ff">17 01 57.48</td>
+        <td class="ff">+07 38 05.6</td>
+        <td class="ff rj">14.5 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.93772</td>
+        <td class="ff">17 02 55.55</td>
+        <td class="ff">+07 36 01.4</td>
+        <td class="ff rj">14.7 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.94071</td>
+        <td class="ff">17 04 24.03</td>
+        <td class="ff">+07 32 51.0</td>
+        <td class="ff rj">14.8 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.943010</td>
+        <td class="ff">17 05 33.70</td>
+        <td class="ff">+07 31 38.7</td>
+        <td class="ff rj">14.6 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.943144</td>
+        <td class="ff">17 05 37.76</td>
+        <td class="ff">+07 31 29.9</td>
+        <td class="ff rj">14.8 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.943280</td>
+        <td class="ff">17 05 41.88</td>
+        <td class="ff">+07 31 21.0</td>
+        <td class="ff rj">15.0 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.943415</td>
+        <td class="ff">17 05 45.94</td>
+        <td class="ff">+07 31 12.1</td>
+        <td class="ff rj">15.0 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.943549</td>
+        <td class="ff">17 05 50.06</td>
+        <td class="ff">+07 31 03.1</td>
+        <td class="ff rj">14.9 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.943685</td>
+        <td class="ff">17 05 54.14</td>
+        <td class="ff">+07 30 54.5</td>
+        <td class="ff rj">14.9 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.943820</td>
+        <td class="ff">17 05 58.20</td>
+        <td class="ff">+07 30 45.2</td>
+        <td class="ff rj">14.7 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.943954</td>
+        <td class="ff">17 06 02.33</td>
+        <td class="ff">+07 30 36.9</td>
+        <td class="ff rj">14.7 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.944090</td>
+        <td class="ff">17 06 06.46</td>
+        <td class="ff">+07 30 27.3</td>
+        <td class="ff rj">14.7 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.944225</td>
+        <td class="ff">17 06 10.56</td>
+        <td class="ff">+07 30 18.8</td>
+        <td class="ff rj">14.8 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.944630</td>
+        <td class="ff">17 06 22.88</td>
+        <td class="ff">+07 29 51.8</td>
+        <td class="ff rj">14.7 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.944764</td>
+        <td class="ff">17 06 27.02</td>
+        <td class="ff">+07 29 43.0</td>
+        <td class="ff rj">14.8 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.944900</td>
+        <td class="ff">17 06 31.12</td>
+        <td class="ff">+07 29 33.9</td>
+        <td class="ff rj">14.9 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.945035</td>
+        <td class="ff">17 06 35.26</td>
+        <td class="ff">+07 29 24.9</td>
+        <td class="ff rj">14.9 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.945170</td>
+        <td class="ff">17 06 39.40</td>
+        <td class="ff">+07 29 16.0</td>
+        <td class="ff rj">14.8 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.945305</td>
+        <td class="ff">17 06 43.53</td>
+        <td class="ff">+07 29 06.7</td>
+        <td class="ff rj">14.8 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.945440</td>
+        <td class="ff">17 06 47.65</td>
+        <td class="ff">+07 28 58.2</td>
+        <td class="ff rj">14.8 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.945576</td>
+        <td class="ff">17 06 51.82</td>
+        <td class="ff">+07 28 49.1</td>
+        <td class="ff rj">14.7 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.95103</td>
+        <td class="ff">17 09 41.20</td>
+        <td class="ff">+07 21 18.1</td>
+        <td class="ff rj">14.9 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.95204</td>
+        <td class="ff">17 10 13.26</td>
+        <td class="ff">+07 20 06.8</td>
+        <td class="ff rj">15.0 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.95344</td>
+        <td class="ff">17 10 57.96</td>
+        <td class="ff">+07 18 27.4</td>
+        <td class="ff rj">15.0 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.95457</td>
+        <td class="ff">17 11 34.33</td>
+        <td class="ff">+07 17 06.2</td>
+        <td class="ff rj">15.2 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.95521</td>
+        <td class="ff">17 11 55.03</td>
+        <td class="ff">+07 16 20.1</td>
+        <td class="ff rj">15.2 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.95711</td>
+        <td class="ff">17 12 56.92</td>
+        <td class="ff">+07 14 01.8</td>
+        <td class="ff rj">15.5 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.96052</td>
+        <td class="ff">17 14 49.71</td>
+        <td class="ff">+07 09 47.6</td>
+        <td class="ff rj">15.5 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.964503</td>
+        <td class="ff">17 17 04.36</td>
+        <td class="ff">+07 06 02.9</td>
+        <td class="ff rj">14.9 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.964636</td>
+        <td class="ff">17 17 08.96</td>
+        <td class="ff">+07 05 52.6</td>
+        <td class="ff rj">14.8 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.964770</td>
+        <td class="ff">17 17 13.54</td>
+        <td class="ff">+07 05 42.3</td>
+        <td class="ff rj">15.1 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.964903</td>
+        <td class="ff">17 17 18.15</td>
+        <td class="ff">+07 05 31.4</td>
+        <td class="ff rj">15.0 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.965038</td>
+        <td class="ff">17 17 22.68</td>
+        <td class="ff">+07 05 21.3</td>
+        <td class="ff rj">15.0 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.965171</td>
+        <td class="ff">17 17 27.29</td>
+        <td class="ff">+07 05 10.9</td>
+        <td class="ff rj">14.9 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.965305</td>
+        <td class="ff">17 17 31.90</td>
+        <td class="ff">+07 05 00.5</td>
+        <td class="ff rj">15.0 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.965439</td>
+        <td class="ff">17 17 36.50</td>
+        <td class="ff">+07 04 49.6</td>
+        <td class="ff rj">14.7 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.96549</td>
+        <td class="ff">17 17 38.14</td>
+        <td class="ff">+07 03 23.9</td>
+        <td class="ff rj">14.4 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.965573</td>
+        <td class="ff">17 17 41.09</td>
+        <td class="ff">+07 04 39.2</td>
+        <td class="ff rj">14.7 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.965707</td>
+        <td class="ff">17 17 45.69</td>
+        <td class="ff">+07 04 28.8</td>
+        <td class="ff rj">14.8 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.965841</td>
+        <td class="ff">17 17 50.28</td>
+        <td class="ff">+07 04 18.0</td>
+        <td class="ff rj">14.8 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.965974</td>
+        <td class="ff">17 17 54.90</td>
+        <td class="ff">+07 04 07.4</td>
+        <td class="ff rj">14.9 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.966105</td>
+        <td class="ff">17 17 59.40</td>
+        <td class="ff">+07 03 57.6</td>
+        <td class="ff rj">14.9 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.966239</td>
+        <td class="ff">17 18 04.00</td>
+        <td class="ff">+07 03 46.7</td>
+        <td class="ff rj">14.9 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.966372</td>
+        <td class="ff">17 18 08.61</td>
+        <td class="ff">+07 03 35.9</td>
+        <td class="ff rj">14.9 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.966506</td>
+        <td class="ff">17 18 13.20</td>
+        <td class="ff">+07 03 26.6</td>
+        <td class="ff rj">14.9 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.966644</td>
+        <td class="ff">17 18 18.02</td>
+        <td class="ff">+07 03 14.4</td>
+        <td class="ff rj">14.9 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.966778</td>
+        <td class="ff">17 18 22.63</td>
+        <td class="ff">+07 03 04.0</td>
+        <td class="ff rj">14.9 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.978671</td>
+        <td class="ff">17 25 28.67</td>
+        <td class="ff">+06 46 33.8</td>
+        <td class="ff rj">14.7 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.978806</td>
+        <td class="ff">17 25 33.72</td>
+        <td class="ff">+06 46 21.9</td>
+        <td class="ff rj">14.6 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.978940</td>
+        <td class="ff">17 25 38.75</td>
+        <td class="ff">+06 46 09.8</td>
+        <td class="ff rj">14.8 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.979076</td>
+        <td class="ff">17 25 43.73</td>
+        <td class="ff">+06 45 58.2</td>
+        <td class="ff rj">14.7 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.979210</td>
+        <td class="ff">17 25 48.73</td>
+        <td class="ff">+06 45 46.3</td>
+        <td class="ff rj">15.0 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.979345</td>
+        <td class="ff">17 25 53.75</td>
+        <td class="ff">+06 45 34.1</td>
+        <td class="ff rj">14.9 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.979481</td>
+        <td class="ff">17 25 58.79</td>
+        <td class="ff">+06 45 22.3</td>
+        <td class="ff rj">14.8 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.979615</td>
+        <td class="ff">17 26 03.83</td>
+        <td class="ff">+06 45 10.6</td>
+        <td class="ff rj">15.0 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.979751</td>
+        <td class="ff">17 26 08.89</td>
+        <td class="ff">+06 44 58.6</td>
+        <td class="ff rj">14.9 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.979889</td>
+        <td class="ff">17 26 13.90</td>
+        <td class="ff">+06 44 46.9</td>
+        <td class="ff rj">14.8 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.980024</td>
+        <td class="ff">17 26 18.91</td>
+        <td class="ff">+06 44 34.9</td>
+        <td class="ff rj">14.8 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.980293</td>
+        <td class="ff">17 26 28.98</td>
+        <td class="ff">+06 44 11.0</td>
+        <td class="ff rj">14.8 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.980429</td>
+        <td class="ff">17 26 34.02</td>
+        <td class="ff">+06 43 59.0</td>
+        <td class="ff rj">14.8 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.980563</td>
+        <td class="ff">17 26 39.09</td>
+        <td class="ff">+06 43 46.8</td>
+        <td class="ff rj">14.8 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.980833</td>
+        <td class="ff">17 26 49.19</td>
+        <td class="ff">+06 43 23.7</td>
+        <td class="ff rj">14.9 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.992849</td>
+        <td class="ff">17 34 36.71</td>
+        <td class="ff">+06 24 39.0</td>
+        <td class="ff rj">14.5 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.992984</td>
+        <td class="ff">17 34 42.16</td>
+        <td class="ff">+06 24 25.7</td>
+        <td class="ff rj">14.4 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.993120</td>
+        <td class="ff">17 34 47.61</td>
+        <td class="ff">+06 24 12.5</td>
+        <td class="ff rj">14.5 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.993255</td>
+        <td class="ff">17 34 53.10</td>
+        <td class="ff">+06 23 59.2</td>
+        <td class="ff rj">14.5 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.993391</td>
+        <td class="ff">17 34 58.58</td>
+        <td class="ff">+06 23 45.8</td>
+        <td class="ff rj">14.5 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.993525</td>
+        <td class="ff">17 35 04.00</td>
+        <td class="ff">+06 23 32.6</td>
+        <td class="ff rj">14.3 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.993660</td>
+        <td class="ff">17 35 09.45</td>
+        <td class="ff">+06 23 19.1</td>
+        <td class="ff rj">14.4 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.993795</td>
+        <td class="ff">17 35 14.91</td>
+        <td class="ff">+06 23 05.7</td>
+        <td class="ff rj">14.4 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.993930</td>
+        <td class="ff">17 35 20.40</td>
+        <td class="ff">+06 22 52.3</td>
+        <td class="ff rj">14.4 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.994064</td>
+        <td class="ff">17 35 25.85</td>
+        <td class="ff">+06 22 38.9</td>
+        <td class="ff rj">14.4 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.994200</td>
+        <td class="ff">17 35 31.34</td>
+        <td class="ff">+06 22 25.5</td>
+        <td class="ff rj">14.4 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.994334</td>
+        <td class="ff">17 35 36.81</td>
+        <td class="ff">+06 22 12.5</td>
+        <td class="ff rj">14.5 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.994469</td>
+        <td class="ff">17 35 42.28</td>
+        <td class="ff">+06 21 59.0</td>
+        <td class="ff rj">14.5 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.994604</td>
+        <td class="ff">17 35 47.76</td>
+        <td class="ff">+06 21 45.5</td>
+        <td class="ff rj">14.4 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 22.994739</td>
+        <td class="ff">17 35 53.30</td>
+        <td class="ff">+06 21 31.6</td>
+        <td class="ff rj">14.4 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 23.027931</td>
+        <td class="ff">18 00 44.61</td>
+        <td class="ff">+05 18 13.5</td>
+        <td class="ff rj">14.8 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 23.028064</td>
+        <td class="ff">18 00 51.18</td>
+        <td class="ff">+05 17 56.2</td>
+        <td class="ff rj">14.7 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 23.028197</td>
+        <td class="ff">18 00 57.77</td>
+        <td class="ff">+05 17 38.8</td>
+        <td class="ff rj">14.7 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 23.028332</td>
+        <td class="ff">18 01 04.37</td>
+        <td class="ff">+05 17 21.3</td>
+        <td class="ff rj">14.7 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 23.028466</td>
+        <td class="ff">18 01 11.06</td>
+        <td class="ff">+05 17 03.6</td>
+        <td class="ff rj">14.7 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 23.028600</td>
+        <td class="ff">18 01 17.72</td>
+        <td class="ff">+05 16 46.0</td>
+        <td class="ff rj">14.8 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 23.028734</td>
+        <td class="ff">18 01 24.36</td>
+        <td class="ff">+05 16 28.6</td>
+        <td class="ff rj">14.8 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 23.029003</td>
+        <td class="ff">18 01 37.68</td>
+        <td class="ff">+05 15 53.5</td>
+        <td class="ff rj">15.0 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 23.029137</td>
+        <td class="ff">18 01 44.40</td>
+        <td class="ff">+05 15 35.5</td>
+        <td class="ff rj">14.8 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 05 23.029271</td>
+        <td class="ff">18 01 51.07</td>
+        <td class="ff">+05 15 18.0</td>
+        <td class="ff rj">14.8 V</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 328698</td>
+      </tr>
+  </table>
+
+
+        </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer id="footer">
+    <div class="holder">
+      <nav class="nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+	  <!-- Contact link changed to Jira -->
+          <li><a href="https://mpc-service.atlassian.net/servicedesk/customer/portals">Contact</a></li>
+          <li><a href="https://www.cfa.harvard.edu/content/privacy-statement">Privacy</a></li>
+        </ul>
+      </nav>
+      
+      <a href="https://www.cfa.harvard.edu">
+      <img src="/images/CfA_Logo_Vertical_CMYK.png" width="110" height="47"></a>
+      <p>
+      <p>
+      <p>
+      <div class="copy">The Minor Planet Center is hosted by the Center for Astrophysics | Harvard &amp; Smithsonian.<center>The Minor Planet Center is funded by NASA.</center></div> 
+  </footer>
+
+<script type="text/javascript">
+  $(window).on('load', (function() {
+    $("table").tablesorter();
+  })); 
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var _tag=new WebTrends();
+_tag.dcsGetId();
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+_tag.dcsCustom=function(){
+// Add custom parameters here.
+//_tag.DCSext.param_name=param_value;
+}
+_tag.dcsCollect();
+//]]>
+</script>
+
+<noscript>
+<div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="//logs1.smithsonian.museum/dcsa7yzrmbdzpxzrosrn4tyep_5i1d/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=9.4.0&amp;dcssip=www.minorplanetcenter.net"/></div>
+</noscript>
+</body>
+
+</html>

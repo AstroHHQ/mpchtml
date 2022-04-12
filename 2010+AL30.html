@@ -1,0 +1,2862 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IAU Minor Planet Center</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/mpc.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/table-sorter.css">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+  <link media="all" rel="stylesheet" href="/css/all.css">
+
+  <link rel="icon" type="image/png" href="/iau/figs/MPClogo16.png">
+  <meta name="description" content="We are the official body that deals with
+      astrometric observations and orbits of minor planets (asteroids) and comets.">
+
+  <meta name="keywords" content="astrometry, observations, orbits,
+      minor planets, asteroids, comets, near earth objects, 
+      potentially hazardous asteroids">
+
+  <script type="text/javascript" src="/js/jquery-latest.js"></script>
+<!--  <script type="text/javascript" src="/js/jquery.main.js"></script> -->
+<!--  <script type="text/javascript" src="/js/jquery.metadata.js"></script> -->
+  <script type="text/javascript" src="/js/jquery.tablesorter.js"></script>
+  <script type="text/javascript" src="/js/webtrends.js"></script>
+  <script type="text/javascript" src="/js/track_pdfs.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic|PT+Sans:400,700,400italic,700italic|PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+  
+<body>
+  <!-- wrapper -->
+  <div id="wrapper">
+    <div class="w1">
+      <!-- header -->
+      <header id="header">
+        <div class="holder">
+          <!-- logo -->
+          <h1 class="logo"><a href="/">The International Astronomical Union Minor Planet Center</a></h1>
+          <div class="area">
+            <!-- top-nav -->
+            <nav class="top-nav">
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+		<!-- Contact link changed to Jira -->
+                <li><a href="https://mpc-service.atlassian.net/servicedesk/customer/portals">Contact</a></li>
+              </ul>
+            </nav>
+            <!-- search-form -->
+            <div class="form-holder">
+              <!-- This commented code opens a new page for the search. -->
+              <!--<form class="search-form" method="get" action="https://www.google.com/search" target="_blank">-->
+              <form class="search-form" method="get" action="https://www.google.com/search">
+                <fieldset>
+                  <!--<label for="search">Search</label>-->
+                  <input type="hidden" name="sitesearch" value="minorplanetcenter.net">
+                  <input type="text" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" id="search" name="q" value="Search MPC">
+                </fieldset>
+              </form>
+            </div>
+            <div class="social-bar">
+<!--              <a href="https://twitter.com/MinorPlanetCtr"><span class="social twitter">L</span></a> -->
+<!--              <a href="https://www.facebook.com/MinorPlanetCenter"><span class="social facebook">F</span></a> -->
+<!--              <a href="https://www.youtube.com/channel/UCtALMOQHuBxh5XMsYNiDhMg"><span class="social youtube">X</span></a> -->
+<!--              <a href="/iau/rss/mpc_feeds.html"><span class="social rss">R</span></a> -->
+            </div>
+          </div>
+        </div>
+        <nav class="nav-holder">
+          <!-- main navigation -->
+          <ul id="nav">
+            <li>
+              <a href="/iau/mpc.html"><span>OBSERVERS</span></a>
+              <ul>
+                <li><a href="/iau/MPEph/MPEph.html">Ephemeris Service</a></li>
+                <li><a href="/mpec/RecentMPECs.html">MPECs</a></li>
+                <li><a href="/iau/NEO/toconfirm_tabular.html">NEO Confirmation</a></li>
+                <li><a href="/iau/NEO/pccp_tabular.html">Possible Comet Confirmation</a></li>
+                <li><a href="/iau/Ephemerides/EphemOrbEls.html" class="nested">Orbital Elements</a>
+                  <ul>
+                    <li><a href="/iau/MPCORB.html">MPCORB</a></li>
+                    <li><a href="/iau/ECS/MPCAT/MPCAT.html">MPCAT</a></li>
+                    <li><a href="/iau/ECS/MPCUPDATE/MPCUPDATE.html">MPCUPDATE</a></li>
+                    <li><a href="/iau/Ephemerides/SoftwareEls.html">Orbital Elements for Software</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/services/MPCServices.html">Publications Overview</a></li>
+                <li><a href="/iau/ECS/MPCArchive/MPCArchive_TBL.html">Publications Archive</a></li>              
+                <li><a href="/iau/NEO/TheNEOPage.html" class="nested">NEO Services</a>
+                  <ul>
+                    <li><a href="/iau/NEO/toconfirm_tabular.html">Confirmation</a></li>
+                    <li><a href="/iau/NEO/PossNEO.html">Ratings</a></li>
+                    <li><a href="/cgi-bin/neaobs.cgi">Observation Planning Aid</a></li>
+                    <li><a href="/cgi-bin/checkneo.cgi">NEOChecker</a></li>
+                    <li><a href="/cgi-bin/checkneocmt.cgi">NEOCMTChecker</a></li>
+                    <li><a href="/neocp_followup_report/">NEOCP Followup Report Form</a></li>
+                    <li><a href="/neocp_followup_reports/">NEOCP Followup Reports</a></li>
+                    <li><a href="/neocp_obs">NEOCP Recent Observations</a></li>
+                  </ul>
+                </li>
+                <li><a href="/iau/services/WebCSAccess.html" class="nested">Other Observer Services</a>
+                  <ul>
+                    <li><a href="/whatsup">Observing Target List</a></li>
+                    <li><a href="/iau/NatSats/NaturalSatellites.html">Natural Satellite Ephemerides</a></li>
+                    <li><a href="/iau/MPEph/NewObjEphems.html">New Object Ephemerides</a></li>
+                    <li><a href="/cgi-bin/checkmp.cgi">MPChecker</a></li>
+                    <li><a href="/cgi-bin/checkcmt.cgi">CMTChecker</a></li>
+                    <li><a href="/iau/artsats/artsats.html">Distant Artificial Satellites</a></li>
+                    <li><a href="/iau/lists/Customize.html">Observing List Customizer</a></li>
+                  </ul>
+                </li>
+                <li><a href="/db_search">Orbits/Observations Database</a></li>
+
+                <li><a href='http://alcdef.org'>Light Curve Database</a></li>
+
+                <li><a href="/iau/ECS/MPCAT-OBS/MPCAT-OBS.html">MPCAT-OBS</a></li>
+                <li><a href="/iau/SkyCoverage.html">Sky Coverage</a></li>
+                <li><a href="/iau/MPC_Documentation.html" class="nested">Documentation</a>
+                  <ul>
+                    <li><a href="/iau/info/TechInfo.html">MPC Submission Info</a></li>
+                    <li><a href="/iau/info/Astrometry.html">Astrometry Guide</a></li>
+                    <li><a href="/iau/WhatsNew.html">What's New</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/lists/Lists.html" class="nested">Lists and Plots</a>
+                  <ul>
+                    <li><a href="/iau/lists/MPLists.html">Minor Planets</a></li>
+                      <!--<ul>
+                        <li><a href="/iau/lists/t_atens.html">Atens</a></li>
+                        <li><a href="/iau/lists/t_apollos.html">Apollos</a></li>
+                        <li><a href="/iau/lists/t_amors.html">Amors</a></li>
+                        <li><a href="/iau/lists/t_centaurs.html">Centaurs and Scattered Disk Objects</a></li>
+                        <li><a href="/iau/lists/t_tnos.html">Transneptunian Objects</a></li>
+                        <li><a href="/iau/lists/t_others.html">Other Unusual Objects</a></li>
+                        <li><a href="/iau/lists/t_dangerous.html">Potentially Hazardous Asteroids</a></li>
+                      </ul>-->
+                    <li><a href="/iau/lists/CometLists.html">Comets</a></li>
+                      <!--<ul>
+                        <li><a href="/iau/lists/LastCometObs.html">Date of Last Observation</a></li>
+                        <li><a href="/iau/lists/LastYear.html">Designations from the Past Year</a></li>
+                        <li><a href="http://www.icq.eps.harvard.edu/CometMags.html">Comet Magnitude Estimates</a></li>
+                        <li><a href="/iau/lists/ClosestComets.html">Closest Approaches</a></li>
+                        <li><a href="/iau/lists/PeriodicCodes.html">Periodic Comets</a></li>
+                      </ul>-->
+                    <li><a href="/iau/lists/ObsCodesF.html">Observatory Codes</a></li>		    
+                    <li><a href="/iau/Animations/Animations.html">Animations</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/MPCStatus.html">MPC Status</a></li>
+                <!--<li><a href="/summary">Summary</a></li>-->
+                <li><a href='/mpc/obs_stats_2014_2018'>2014-18 NEO Obs Statistics</a></li>
+                <li><a href='/mpc/summary'>Summary of Latest Data</a></li>
+              </ul>
+            </li>
+            <li><a href="/data"><span>DATA</span></a>
+            </li>
+            <li><a href="http://iawn.net/"><span>IAWN</span></a>
+            </li>
+            <li><a href="https://minorplanetcenter.net/mpcops/beta/"><span>BETA</span></a></li>
+            <li><a href="/iau/MPCStatus.html"><span style="color:Green">STATUS</a></li>
+            <li><a href="https://sbnmpc.astro.umd.edu/"><span>SBN ANNEX</span></a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- main -->
+      <div id="main">
+
+  <h3>
+  
+   2010 AL30
+  
+  
+   
+  
+</h3>
+
+    First observed at Lincoln Laboratory ETS, New Mexico
+  on 2010-01-10.
+
+
+  <br>(Discoverer will be defined when the object is numbered. 
+  See <a href="/mpec/K10/K10U20.html">this note</a>
+  on how discoverers are determined.)
+
+
+<br>
+<h2>Orbit</h2>
+
+    Orbit type: Apollo
+  <br>
+
+
+    Near-Earth Object<br>
+    One opposition object seen prior.<br>
+
+    <br>
+    <div class="show-orbit-button">
+      <form accept-charset="UTF-8" action="/db_search/show_orbit" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+        <input id="number" name="number" type="hidden" />
+        <input id="designation" name="designation" type="hidden" value="2010 AL30" />
+        <input id="name" name="name" type="hidden" />
+        <input id="epoch" name="epoch" type="hidden" value="2019-04-27.0" />
+        <input id="peri" name="peri" type="hidden" value="97.7501625" />
+        <input id="m" name="m" type="hidden" value="181.61856" />
+        <input id="node" name="node" type="hidden" value="112.3648247" />
+        <input id="incl" name="incl" type="hidden" value="3.8305987" />
+        <input id="e" name="e" type="hidden" value="0.307636473" />
+        <input id="a" name="a" type="hidden" value="1.046129294445056" />
+        <input name="commit" type="submit" value="Interactive Orbit Sketch" />
+</form>    </div>
+    <div>
+       Note: WebGL enabled browser required.
+    </div>
+
+    
+
+
+  <br>
+  <table class="nb">
+    <tr>
+      <td valign="top" class="nb">
+        <table>
+          <tr><td>epoch</td><td class="rj">2019-04-27.0</td></tr>
+          <tr><td>epoch JD</td><td class="rj">2458600.5</td></tr>
+          <tr><td>perihelion date</td><td class="rj">2019-11-06.65284</td></tr>
+          <tr><td>perihelion JD</td><td class="rj">2458794.15284</td></tr>
+          <tr><td>argument of perihelion (°)</td><td class="rj">97.75016</td></tr>
+          <tr><td>ascending node (°)</td><td class="rj">112.36482</td></tr>
+          <tr><td>inclination (°)</td><td class="rj">3.83060</td></tr>
+          <tr><td>eccentricity</td><td class="rj">0.3076365</td></tr>
+          <tr><td>perihelion distance (AU)</td><td class="rj">0.7243018</td></tr>
+          <tr><td>Tisserand w.r.t. Jupiter</td><td class="rj">5.8</td></tr>
+          <tr><td>&Delta;V w.r.t. Earth (km/sec)</td><td class="rj">6.3</td></tr>
+        </table>
+      </td>
+      <td valign="top" class="nb">
+        <table>
+          <tr><td>semimajor axis (AU)</td><td class="rj">1.0461293</td></tr>
+          <tr><td>mean anomaly (°)</td><td class="rj">181.61856</td></tr>
+          <tr><td>mean daily motion (°/day)</td><td class="rj">0.92114030</td></tr>
+          <tr><td>aphelion distance (AU)</td><td class="rj">1.368</td></tr>
+          <tr><td>period (years)</td><td class="rj">1.07</td></tr>
+          <tr><td>P-vector [x]</td><td class="rj">-0.86297306</td></tr>
+          <tr><td>P-vector [y]</td><td class="rj">-0.48589338</td></tr>
+          <tr><td>P-vector [z]</td><td class="rj">-0.13851036</td></tr>
+          <tr><td>Q-vector [x]</td><td class="rj">0.50145841</td></tr>
+          <tr><td>Q-vector [y]</td><td class="rj">-0.79016207</td></tr>
+          <tr><td>Q-vector [z]</td><td class="rj">-0.35239660</td></tr>
+          <tr><td>absolute magnitude</td><td class="rj">27.2</td></tr>
+          <tr><td>phase slope</td><td class="rj">0.15</td></tr>
+        </table>
+      </td>
+      <td valign="top" class="nb">
+        <table>
+
+            <tr><td><a href="/iau/info/UValue.html">uncertainty</a></td><td class="rj">3</td></tr>
+
+          <tr><td>reference</td><td class="rj">MPO 170308</td></tr>
+          <tr><td>observations used</td><td class="rj">297</td></tr>
+          <tr><td>oppositions</td><td class="rj">1</td></tr>
+          <tr><td>arc length (days)</td><td class="rj">3</td></tr>
+          <tr><td>first opposition used</td><td class="rj">2010</td></tr>
+          <tr><td>last opposition used</td><td class="rj">2010</td></tr>
+          <tr><td>residual rms (arc-secs)</td><td class="rj">0.55</td></tr>
+          <tr><td><a href="/iau/info/Perturbers.html">perturbers coarse indicator</a></td><td class="rj">M-v</td></tr>
+          <tr><td><a href="/iau/info/Perturbers.html">perturbers precise indicator</a></td><td class="rj">003Eh</td></tr>
+          <tr><td>first observation date used</td><td class="rj">2010-01-10.0</td></tr>
+          <tr><td>last observation date used</td><td class="rj">2010-01-13.0</td></tr>
+          <tr><td>computer name</td><td class="rj">MPCALB</td></tr>
+        </table>
+      </td>
+    </tr>
+  </table>    
+
+  <table class="nb">
+    <tr>
+      <td valign="top" class="nb">
+      </td>
+      <td width=100px> </td>
+
+      <td valign="top" class="nb">
+    Minimum Orbit Intersection Distances (in AU)<br>for orbit epoch: 2458600.5, reference: MPO170308<br>
+          <table>
+            <tr><td>Mercury</td><td>0.28213</td></tr>
+            <tr><td>Venus</td><td>0.01345</td></tr>
+            <tr><td>Earth</td><td>0.00108</td></tr>
+            <tr><td>Mars</td><td>0.08941</td></tr>
+            <tr><td>Jupiter</td><td>3.58923</td></tr>
+            <tr><td>Saturn</td><td>7.85158</td></tr>
+            <tr><td>Uranus</td><td>17.4539</td></tr>
+            <tr><td>Neptune</td><td>28.5214</td></tr>
+          </table>    
+          <br>
+      </td>
+    </tr>
+  </table>
+
+
+<h2>Observations</h2>
+  311 total observations over interval:
+  2010 01 10.27372 &ndash; 2010 01 13.458502
+  <br>
+  These data are available for
+  <a href="../tmp/2010_AL30.txt" target="_blank">download</a>
+  (<a href="/iau/info/OpticalObs.html" target="_blank">format description</a>).
+  <br>
+  <br>
+  <table>
+    <tr>
+      <th>Date (UT)</th>
+      <th>J2000 RA</th>
+      <th>J2000 Dec</th>
+      <th>Magn</th>
+      <th><a href="/iau/lists/ObsCodesF.html">Location</a></th>
+      <th><a href="/iau/info/References.html">Ref</a></th>
+    </tr>
+
+      <tr>
+        <td class="ff">2010 01 10.27372</td>
+        <td class="ff">07 56 21.69</td>
+        <td class="ff">+08 43 54.1</td>
+        <td class="ff rj">18.8 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 310393</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 10.28653</td>
+        <td class="ff">07 56 17.04</td>
+        <td class="ff">+08 44 03.1</td>
+        <td class="ff rj">19.1 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 310393</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 10.29935</td>
+        <td class="ff">07 56 12.26</td>
+        <td class="ff">+08 44 10.5</td>
+        <td class="ff rj">19.9 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 310393</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 10.31215</td>
+        <td class="ff">07 56 07.52</td>
+        <td class="ff">+08 44 18.6</td>
+        <td class="ff rj">19.9 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 310393</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 10.32497</td>
+        <td class="ff">07 56 02.62</td>
+        <td class="ff">+08 44 25.9</td>
+        <td class="ff rj">19.0 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 310393</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 11.29321</td>
+        <td class="ff">07 51 24.76</td>
+        <td class="ff">+08 58 24.2</td>
+        <td class="ff rj">18.3 V</td>
+        <td>G96 &ndash; Mt. Lemmon Survey</td>
+        <td class="ff lj">MPS 310393</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 11.29368</td>
+        <td class="ff">07 51 24.44</td>
+        <td class="ff">+08 58 25.0</td>
+        <td class="ff rj">18.1 V</td>
+        <td>G96 &ndash; Mt. Lemmon Survey</td>
+        <td class="ff lj">MPS 310393</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 11.29412</td>
+        <td class="ff">07 51 24.15</td>
+        <td class="ff">+08 58 25.5</td>
+        <td class="ff rj">18.3 V</td>
+        <td>G96 &ndash; Mt. Lemmon Survey</td>
+        <td class="ff lj">MPS 310393</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 11.29455</td>
+        <td class="ff">07 51 23.86</td>
+        <td class="ff">+08 58 25.9</td>
+        <td class="ff rj">18.4 V</td>
+        <td>G96 &ndash; Mt. Lemmon Survey</td>
+        <td class="ff lj">MPS 310393</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 11.29498</td>
+        <td class="ff">07 51 23.58</td>
+        <td class="ff">+08 58 26.6</td>
+        <td class="ff rj">18.4 V</td>
+        <td>G96 &ndash; Mt. Lemmon Survey</td>
+        <td class="ff lj">MPS 310393</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 11.58340</td>
+        <td class="ff">07 48 59.75</td>
+        <td class="ff">+09 19 43.0</td>
+        <td class="ff rj">17.9 R</td>
+        <td>E16 &ndash; Grove Creek Observatory, Trunkey</td>
+        <td class="ff lj">MPS 310393</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 11.58801</td>
+        <td class="ff">07 48 55.85</td>
+        <td class="ff">+09 19 53.2</td>
+        <td class="ff rj">17.9 R</td>
+        <td>E16 &ndash; Grove Creek Observatory, Trunkey</td>
+        <td class="ff lj">MPS 310393</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 11.59153</td>
+        <td class="ff">07 48 52.86</td>
+        <td class="ff">+09 20 01.3</td>
+        <td class="ff rj">17.8 R</td>
+        <td>E16 &ndash; Grove Creek Observatory, Trunkey</td>
+        <td class="ff lj">MPS 310393</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 11.59622</td>
+        <td class="ff">07 48 48.85</td>
+        <td class="ff">+09 20 10.9</td>
+        <td class="ff rj">17.8 R</td>
+        <td>E16 &ndash; Grove Creek Observatory, Trunkey</td>
+        <td class="ff lj">MPS 310393</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 11.59769</td>
+        <td class="ff">07 48 47.58</td>
+        <td class="ff">+09 20 14.2</td>
+        <td class="ff rj">17.7 R</td>
+        <td>E16 &ndash; Grove Creek Observatory, Trunkey</td>
+        <td class="ff lj">MPS 310393</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 11.59891</td>
+        <td class="ff">07 48 46.52</td>
+        <td class="ff">+09 20 16.9</td>
+        <td class="ff rj">17.5 R</td>
+        <td>E16 &ndash; Grove Creek Observatory, Trunkey</td>
+        <td class="ff lj">MPS 310393</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 11.87974</td>
+        <td class="ff">07 46 06.45</td>
+        <td class="ff">+09 11 12.2</td>
+        <td class="ff rj">17.3 R</td>
+        <td>143 &ndash; Gnosca</td>
+        <td class="ff lj">MPS 310393</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 11.88315</td>
+        <td class="ff">07 46 03.10</td>
+        <td class="ff">+09 11 20.9</td>
+        <td class="ff rj">17.3 R</td>
+        <td>143 &ndash; Gnosca</td>
+        <td class="ff lj">MPS 310393</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 11.88681</td>
+        <td class="ff">07 45 59.47</td>
+        <td class="ff">+09 11 30.1</td>
+        <td class="ff rj">17.2 R</td>
+        <td>143 &ndash; Gnosca</td>
+        <td class="ff lj">MPS 310393</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 11.93498</td>
+        <td class="ff">07 45 15.61</td>
+        <td class="ff">+09 14 31.6</td>
+        <td class="ff rj">17.3 C</td>
+        <td>C12 &ndash; Berta Observatory, Sabadell</td>
+        <td class="ff lj">MPS 310393</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 11.94503</td>
+        <td class="ff">07 45 04.41</td>
+        <td class="ff">+09 14 59.8</td>
+        <td class="ff rj">17.2 C</td>
+        <td>C12 &ndash; Berta Observatory, Sabadell</td>
+        <td class="ff lj">MPS 310393</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 11.96379</td>
+        <td class="ff">07 44 42.96</td>
+        <td class="ff">+09 15 48.8</td>
+        <td class="ff rj">16.2 C</td>
+        <td>C12 &ndash; Berta Observatory, Sabadell</td>
+        <td class="ff lj">MPS 310393</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 11.96533</td>
+        <td class="ff">07 44 40.91</td>
+        <td class="ff">+09 15 53.5</td>
+        <td class="ff rj">17.1 R</td>
+        <td>213 &ndash; Observatorio Montcabre</td>
+        <td class="ff lj">MPS 310393</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 11.96849</td>
+        <td class="ff">07 44 37.20</td>
+        <td class="ff">+09 16 01.6</td>
+        <td class="ff rj">17.3 R</td>
+        <td>213 &ndash; Observatorio Montcabre</td>
+        <td class="ff lj">MPS 310393</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 11.97666</td>
+        <td class="ff">07 44 27.55</td>
+        <td class="ff">+09 16 22.4</td>
+        <td class="ff rj">17.2 R</td>
+        <td>213 &ndash; Observatorio Montcabre</td>
+        <td class="ff lj">MPS 310393</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 11.98137</td>
+        <td class="ff">07 44 21.89</td>
+        <td class="ff">+09 16 35.1</td>
+        <td class="ff rj">17.4 R</td>
+        <td>213 &ndash; Observatorio Montcabre</td>
+        <td class="ff lj">MPS 310393</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.09227</td>
+        <td class="ff">07 43 22.84</td>
+        <td class="ff">+09 32 42.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>H78 &ndash; University of Narino Observatory, Pasto</td>
+        <td class="ff lj">MPS 311261</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.09268</td>
+        <td class="ff">07 43 22.46</td>
+        <td class="ff">+09 32 43.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>H78 &ndash; University of Narino Observatory, Pasto</td>
+        <td class="ff lj">MPS 311261</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.09310</td>
+        <td class="ff">07 43 21.63</td>
+        <td class="ff">+09 32 46.5</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>H78 &ndash; University of Narino Observatory, Pasto</td>
+        <td class="ff lj">MPS 311261</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.09369</td>
+        <td class="ff">07 43 20.97</td>
+        <td class="ff">+09 32 49.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>H78 &ndash; University of Narino Observatory, Pasto</td>
+        <td class="ff lj">MPS 311261</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.09474</td>
+        <td class="ff">07 43 19.52</td>
+        <td class="ff">+09 32 53.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>H78 &ndash; University of Narino Observatory, Pasto</td>
+        <td class="ff lj">MPS 311261</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.17466</td>
+        <td class="ff">07 41 46.79</td>
+        <td class="ff">+09 27 01.0</td>
+        <td class="ff rj">16.9 R</td>
+        <td>H01 &ndash; Magdalena Ridge Observatory, Socorro</td>
+        <td class="ff lj">MPS 310393</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.18371</td>
+        <td class="ff">07 41 34.04</td>
+        <td class="ff">+09 27 37.2</td>
+        <td class="ff rj">16.7 R</td>
+        <td>H01 &ndash; Magdalena Ridge Observatory, Socorro</td>
+        <td class="ff lj">MPS 310393</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.19806</td>
+        <td class="ff">07 41 13.15</td>
+        <td class="ff">+09 28 34.7</td>
+        <td class="ff rj">16.8 R</td>
+        <td>H01 &ndash; Magdalena Ridge Observatory, Socorro</td>
+        <td class="ff lj">MPS 310393</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.20930</td>
+        <td class="ff">07 40 56.21</td>
+        <td class="ff">+09 29 19.9</td>
+        <td class="ff rj">16.9 R</td>
+        <td>H01 &ndash; Magdalena Ridge Observatory, Socorro</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.22684</td>
+        <td class="ff">07 40 28.82</td>
+        <td class="ff">+09 30 30.6</td>
+        <td class="ff rj">16.8 R</td>
+        <td>H01 &ndash; Magdalena Ridge Observatory, Socorro</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.27905</td>
+        <td class="ff">07 39 05.14</td>
+        <td class="ff">+09 31 49.8</td>
+        <td class="ff rj">17.0 &nbsp;</td>
+        <td>718 &ndash; Tooele</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.28233</td>
+        <td class="ff">07 38 59.40</td>
+        <td class="ff">+09 32 03.7</td>
+        <td class="ff rj">17.0 &nbsp;</td>
+        <td>718 &ndash; Tooele</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.28781</td>
+        <td class="ff">07 38 49.80</td>
+        <td class="ff">+09 32 25.4</td>
+        <td class="ff rj">17.5 &nbsp;</td>
+        <td>718 &ndash; Tooele</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.31491</td>
+        <td class="ff">07 37 59.31</td>
+        <td class="ff">+09 37 16.2</td>
+        <td class="ff rj">17.3 C</td>
+        <td>926 &ndash; Tenagra II Observatory, Nogales</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.31578</td>
+        <td class="ff">07 37 57.65</td>
+        <td class="ff">+09 37 19.9</td>
+        <td class="ff rj">17.2 C</td>
+        <td>926 &ndash; Tenagra II Observatory, Nogales</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.31666</td>
+        <td class="ff">07 37 55.97</td>
+        <td class="ff">+09 37 23.4</td>
+        <td class="ff rj">17.0 C</td>
+        <td>926 &ndash; Tenagra II Observatory, Nogales</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.31752</td>
+        <td class="ff">07 37 54.30</td>
+        <td class="ff">+09 37 27.0</td>
+        <td class="ff rj">17.2 C</td>
+        <td>926 &ndash; Tenagra II Observatory, Nogales</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.31839</td>
+        <td class="ff">07 37 52.66</td>
+        <td class="ff">+09 37 30.2</td>
+        <td class="ff rj">17.0 C</td>
+        <td>926 &ndash; Tenagra II Observatory, Nogales</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.31882</td>
+        <td class="ff">07 37 51.81</td>
+        <td class="ff">+09 37 32.2</td>
+        <td class="ff rj">17.3 C</td>
+        <td>926 &ndash; Tenagra II Observatory, Nogales</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.31970</td>
+        <td class="ff">07 37 50.15</td>
+        <td class="ff">+09 37 35.8</td>
+        <td class="ff rj">17.0 C</td>
+        <td>926 &ndash; Tenagra II Observatory, Nogales</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.36631</td>
+        <td class="ff">07 36 11.40</td>
+        <td class="ff">+09 40 06.8</td>
+        <td class="ff rj">16.2 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.36798</td>
+        <td class="ff">07 36 08.00</td>
+        <td class="ff">+09 40 13.4</td>
+        <td class="ff rj">16.4 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.36999</td>
+        <td class="ff">07 36 03.93</td>
+        <td class="ff">+09 40 21.5</td>
+        <td class="ff rj">16.4 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.37166</td>
+        <td class="ff">07 36 00.52</td>
+        <td class="ff">+09 40 28.1</td>
+        <td class="ff rj">16.3 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.37367</td>
+        <td class="ff">07 35 56.46</td>
+        <td class="ff">+09 40 36.1</td>
+        <td class="ff rj">16.3 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.37995</td>
+        <td class="ff">07 35 43.54</td>
+        <td class="ff">+09 41 00.0</td>
+        <td class="ff rj">16.9 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.38247</td>
+        <td class="ff">07 35 38.35</td>
+        <td class="ff">+09 41 09.8</td>
+        <td class="ff rj">16.7 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.38377</td>
+        <td class="ff">07 35 35.67</td>
+        <td class="ff">+09 41 14.9</td>
+        <td class="ff rj">16.6 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.38500</td>
+        <td class="ff">07 35 33.10</td>
+        <td class="ff">+09 41 19.7</td>
+        <td class="ff rj">17.0 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.42414</td>
+        <td class="ff">07 34 10.97</td>
+        <td class="ff">+09 43 50.4</td>
+        <td class="ff rj">16.1 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.42591</td>
+        <td class="ff">07 34 07.10</td>
+        <td class="ff">+09 43 57.7</td>
+        <td class="ff rj">16.3 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.43951</td>
+        <td class="ff">07 34 40.76</td>
+        <td class="ff">+09 50 55.3</td>
+        <td class="ff rj">16.4 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.44012</td>
+        <td class="ff">07 34 39.33</td>
+        <td class="ff">+09 50 58.4</td>
+        <td class="ff rj">16.3 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.44075</td>
+        <td class="ff">07 34 37.87</td>
+        <td class="ff">+09 51 01.7</td>
+        <td class="ff rj">16.2 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.44134</td>
+        <td class="ff">07 34 36.47</td>
+        <td class="ff">+09 51 04.8</td>
+        <td class="ff rj">16.3 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.44193</td>
+        <td class="ff">07 34 35.05</td>
+        <td class="ff">+09 51 07.9</td>
+        <td class="ff rj">16.4 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.44253</td>
+        <td class="ff">07 34 33.65</td>
+        <td class="ff">+09 51 11.0</td>
+        <td class="ff rj">16.5 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.44310</td>
+        <td class="ff">07 34 32.31</td>
+        <td class="ff">+09 51 13.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.44341</td>
+        <td class="ff">07 33 29.60</td>
+        <td class="ff">+09 45 05.5</td>
+        <td class="ff rj">16.0 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.44418</td>
+        <td class="ff">07 34 29.74</td>
+        <td class="ff">+09 51 19.5</td>
+        <td class="ff rj">16.2 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.44488</td>
+        <td class="ff">07 34 28.08</td>
+        <td class="ff">+09 51 23.1</td>
+        <td class="ff rj">16.3 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.44509</td>
+        <td class="ff">07 33 25.98</td>
+        <td class="ff">+09 45 12.1</td>
+        <td class="ff rj">16.1 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.44545</td>
+        <td class="ff">07 34 26.73</td>
+        <td class="ff">+09 51 26.0</td>
+        <td class="ff rj">16.3 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.44670</td>
+        <td class="ff">07 34 23.75</td>
+        <td class="ff">+09 51 32.5</td>
+        <td class="ff rj">16.2 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.44678</td>
+        <td class="ff">07 33 22.28</td>
+        <td class="ff">+09 45 18.3</td>
+        <td class="ff rj">15.8 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.44732</td>
+        <td class="ff">07 34 22.27</td>
+        <td class="ff">+09 51 35.6</td>
+        <td class="ff rj">16.3 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.44801</td>
+        <td class="ff">07 34 20.64</td>
+        <td class="ff">+09 51 39.2</td>
+        <td class="ff rj">16.4 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.44908</td>
+        <td class="ff">07 34 18.08</td>
+        <td class="ff">+09 51 45.3</td>
+        <td class="ff rj">16.3 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.44972</td>
+        <td class="ff">07 34 16.54</td>
+        <td class="ff">+09 51 48.6</td>
+        <td class="ff rj">16.2 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.45033</td>
+        <td class="ff">07 34 15.08</td>
+        <td class="ff">+09 51 51.8</td>
+        <td class="ff rj">16.3 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.45094</td>
+        <td class="ff">07 34 13.63</td>
+        <td class="ff">+09 51 54.9</td>
+        <td class="ff rj">16.3 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.45151</td>
+        <td class="ff">07 34 12.27</td>
+        <td class="ff">+09 51 57.9</td>
+        <td class="ff rj">16.4 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.45212</td>
+        <td class="ff">07 34 10.78</td>
+        <td class="ff">+09 52 01.2</td>
+        <td class="ff rj">16.4 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.45269</td>
+        <td class="ff">07 34 09.42</td>
+        <td class="ff">+09 52 04.1</td>
+        <td class="ff rj">16.2 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.45330</td>
+        <td class="ff">07 34 07.97</td>
+        <td class="ff">+09 52 07.3</td>
+        <td class="ff rj">16.2 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.45433</td>
+        <td class="ff">07 34 05.48</td>
+        <td class="ff">+09 52 12.6</td>
+        <td class="ff rj">16.4 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.45492</td>
+        <td class="ff">07 34 04.05</td>
+        <td class="ff">+09 52 15.7</td>
+        <td class="ff rj">16.4 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.45552</td>
+        <td class="ff">07 34 02.59</td>
+        <td class="ff">+09 52 18.9</td>
+        <td class="ff rj">16.2 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.45619</td>
+        <td class="ff">07 34 00.99</td>
+        <td class="ff">+09 52 22.3</td>
+        <td class="ff rj">16.2 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.45680</td>
+        <td class="ff">07 33 59.51</td>
+        <td class="ff">+09 52 25.5</td>
+        <td class="ff rj">16.2 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.47369</td>
+        <td class="ff">07 32 25.72</td>
+        <td class="ff">+09 46 44.9</td>
+        <td class="ff rj">16.3 R</td>
+        <td>H01 &ndash; Magdalena Ridge Observatory, Socorro</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.48155</td>
+        <td class="ff">07 32 08.41</td>
+        <td class="ff">+09 47 16.0</td>
+        <td class="ff rj">16.3 R</td>
+        <td>H01 &ndash; Magdalena Ridge Observatory, Socorro</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.48271</td>
+        <td class="ff">07 32 55.47</td>
+        <td class="ff">+09 54 40.2</td>
+        <td class="ff rj">16.2 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.48321</td>
+        <td class="ff">07 32 54.21</td>
+        <td class="ff">+09 54 42.8</td>
+        <td class="ff rj">16.1 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.48353</td>
+        <td class="ff">07 34 10.67</td>
+        <td class="ff">+10 16 15.6</td>
+        <td class="ff rj">17.1 V</td>
+        <td>415 &ndash; Kambah</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.48379</td>
+        <td class="ff">07 32 52.75</td>
+        <td class="ff">+09 54 45.8</td>
+        <td class="ff rj">16.3 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.48433</td>
+        <td class="ff">07 32 51.36</td>
+        <td class="ff">+09 54 48.7</td>
+        <td class="ff rj">16.3 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.48486</td>
+        <td class="ff">07 32 50.03</td>
+        <td class="ff">+09 54 51.4</td>
+        <td class="ff rj">16.3 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.48538</td>
+        <td class="ff">07 32 48.71</td>
+        <td class="ff">+09 54 54.2</td>
+        <td class="ff rj">16.3 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.48597</td>
+        <td class="ff">07 32 47.22</td>
+        <td class="ff">+09 54 57.2</td>
+        <td class="ff rj">16.1 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.48656</td>
+        <td class="ff">07 34 03.72</td>
+        <td class="ff">+10 16 39.1</td>
+        <td class="ff rj">17.0 V</td>
+        <td>415 &ndash; Kambah</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.48657</td>
+        <td class="ff">07 32 45.72</td>
+        <td class="ff">+09 55 00.3</td>
+        <td class="ff rj">16.2 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.48706</td>
+        <td class="ff">07 31 56.23</td>
+        <td class="ff">+09 47 37.9</td>
+        <td class="ff rj">16.4 R</td>
+        <td>H01 &ndash; Magdalena Ridge Observatory, Socorro</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.48712</td>
+        <td class="ff">07 32 44.32</td>
+        <td class="ff">+09 55 03.1</td>
+        <td class="ff rj">16.2 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.48766</td>
+        <td class="ff">07 32 42.95</td>
+        <td class="ff">+09 55 05.9</td>
+        <td class="ff rj">16.2 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.48786</td>
+        <td class="ff">07 34 00.72</td>
+        <td class="ff">+10 16 49.0</td>
+        <td class="ff rj">17.0 V</td>
+        <td>415 &ndash; Kambah</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.48820</td>
+        <td class="ff">07 32 41.58</td>
+        <td class="ff">+09 55 08.8</td>
+        <td class="ff rj">16.3 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.48927</td>
+        <td class="ff">07 32 38.86</td>
+        <td class="ff">+09 55 14.3</td>
+        <td class="ff rj">16.1 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.48982</td>
+        <td class="ff">07 32 37.42</td>
+        <td class="ff">+09 55 17.2</td>
+        <td class="ff rj">16.3 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.49036</td>
+        <td class="ff">07 32 36.08</td>
+        <td class="ff">+09 55 19.9</td>
+        <td class="ff rj">16.3 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.49091</td>
+        <td class="ff">07 32 34.67</td>
+        <td class="ff">+09 55 22.8</td>
+        <td class="ff rj">16.3 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.49147</td>
+        <td class="ff">07 32 33.27</td>
+        <td class="ff">+09 55 25.6</td>
+        <td class="ff rj">16.3 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.49202</td>
+        <td class="ff">07 32 31.84</td>
+        <td class="ff">+09 55 28.5</td>
+        <td class="ff rj">16.1 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.49258</td>
+        <td class="ff">07 32 30.42</td>
+        <td class="ff">+09 55 31.4</td>
+        <td class="ff rj">16.2 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.49311</td>
+        <td class="ff">07 32 29.08</td>
+        <td class="ff">+09 55 34.1</td>
+        <td class="ff rj">16.2 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.49365</td>
+        <td class="ff">07 32 27.67</td>
+        <td class="ff">+09 55 37.0</td>
+        <td class="ff rj">16.2 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.49475</td>
+        <td class="ff">07 32 24.87</td>
+        <td class="ff">+09 55 42.6</td>
+        <td class="ff rj">16.2 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.49529</td>
+        <td class="ff">07 32 23.47</td>
+        <td class="ff">+09 55 45.5</td>
+        <td class="ff rj">16.1 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.49582</td>
+        <td class="ff">07 32 22.10</td>
+        <td class="ff">+09 55 48.4</td>
+        <td class="ff rj">16.2 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.49640</td>
+        <td class="ff">07 32 20.62</td>
+        <td class="ff">+09 55 51.3</td>
+        <td class="ff rj">16.3 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.49747</td>
+        <td class="ff">07 32 17.88</td>
+        <td class="ff">+09 55 56.7</td>
+        <td class="ff rj">16.3 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.49801</td>
+        <td class="ff">07 32 16.47</td>
+        <td class="ff">+09 55 59.6</td>
+        <td class="ff rj">16.1 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.49855</td>
+        <td class="ff">07 32 15.07</td>
+        <td class="ff">+09 56 02.4</td>
+        <td class="ff rj">16.0 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.51427</td>
+        <td class="ff">07 32 57.52</td>
+        <td class="ff">+10 20 14.8</td>
+        <td class="ff rj">17.2 V</td>
+        <td>415 &ndash; Kambah</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.52054</td>
+        <td class="ff">07 32 41.85</td>
+        <td class="ff">+10 21 04.9</td>
+        <td class="ff rj">16.5 V</td>
+        <td>415 &ndash; Kambah</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.52390</td>
+        <td class="ff">07 32 33.37</td>
+        <td class="ff">+10 21 31.4</td>
+        <td class="ff rj">16.8 V</td>
+        <td>415 &ndash; Kambah</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.52573</td>
+        <td class="ff">07 31 03.84</td>
+        <td class="ff">+09 58 23.2</td>
+        <td class="ff rj">16.1 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.52641</td>
+        <td class="ff">07 31 02.03</td>
+        <td class="ff">+09 58 26.8</td>
+        <td class="ff rj">16.2 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.52703</td>
+        <td class="ff">07 31 00.37</td>
+        <td class="ff">+09 58 30.0</td>
+        <td class="ff rj">16.2 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.52763</td>
+        <td class="ff">07 32 23.79</td>
+        <td class="ff">+10 22 01.4</td>
+        <td class="ff rj">16.5 V</td>
+        <td>415 &ndash; Kambah</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.52763</td>
+        <td class="ff">07 30 58.77</td>
+        <td class="ff">+09 58 33.0</td>
+        <td class="ff rj">16.2 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.52835</td>
+        <td class="ff">07 30 56.84</td>
+        <td class="ff">+09 58 36.8</td>
+        <td class="ff rj">16.1 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.52894</td>
+        <td class="ff">07 30 55.26</td>
+        <td class="ff">+09 58 39.9</td>
+        <td class="ff rj">16.1 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.52953</td>
+        <td class="ff">07 30 53.70</td>
+        <td class="ff">+09 58 42.9</td>
+        <td class="ff rj">16.2 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.53019</td>
+        <td class="ff">07 30 51.92</td>
+        <td class="ff">+09 58 46.3</td>
+        <td class="ff rj">16.2 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.53076</td>
+        <td class="ff">07 30 50.39</td>
+        <td class="ff">+09 58 49.3</td>
+        <td class="ff rj">16.2 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.53252</td>
+        <td class="ff">07 30 45.68</td>
+        <td class="ff">+09 58 58.4</td>
+        <td class="ff rj">16.0 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.53331</td>
+        <td class="ff">07 30 43.55</td>
+        <td class="ff">+09 59 02.5</td>
+        <td class="ff rj">16.1 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.53389</td>
+        <td class="ff">07 30 42.02</td>
+        <td class="ff">+09 59 05.5</td>
+        <td class="ff rj">16.0 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.53451</td>
+        <td class="ff">07 30 40.33</td>
+        <td class="ff">+09 59 08.7</td>
+        <td class="ff rj">15.9 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.53506</td>
+        <td class="ff">07 30 38.84</td>
+        <td class="ff">+09 59 11.6</td>
+        <td class="ff rj">15.9 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.53563</td>
+        <td class="ff">07 30 37.32</td>
+        <td class="ff">+09 59 14.5</td>
+        <td class="ff rj">16.0 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.53622</td>
+        <td class="ff">07 30 35.73</td>
+        <td class="ff">+09 59 17.5</td>
+        <td class="ff rj">16.0 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.53679</td>
+        <td class="ff">07 30 34.21</td>
+        <td class="ff">+09 59 20.4</td>
+        <td class="ff rj">16.0 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.53820</td>
+        <td class="ff">07 30 30.40</td>
+        <td class="ff">+09 59 27.8</td>
+        <td class="ff rj">16.1 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.53877</td>
+        <td class="ff">07 30 28.85</td>
+        <td class="ff">+09 59 30.7</td>
+        <td class="ff rj">16.1 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.53937</td>
+        <td class="ff">07 30 27.25</td>
+        <td class="ff">+09 59 33.7</td>
+        <td class="ff rj">16.1 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.53990</td>
+        <td class="ff">07 30 25.80</td>
+        <td class="ff">+09 59 36.6</td>
+        <td class="ff rj">16.0 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.57066</td>
+        <td class="ff">07 30 28.13</td>
+        <td class="ff">+10 26 26.0</td>
+        <td class="ff rj">16.0 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.57219</td>
+        <td class="ff">07 30 23.75</td>
+        <td class="ff">+10 26 38.3</td>
+        <td class="ff rj">16.3 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.57294</td>
+        <td class="ff">07 30 21.58</td>
+        <td class="ff">+10 26 44.4</td>
+        <td class="ff rj">16.2 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.57368</td>
+        <td class="ff">07 30 19.45</td>
+        <td class="ff">+10 26 50.5</td>
+        <td class="ff rj">16.0 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.57440</td>
+        <td class="ff">07 30 17.39</td>
+        <td class="ff">+10 26 56.3</td>
+        <td class="ff rj">16.1 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.57753</td>
+        <td class="ff">07 30 08.32</td>
+        <td class="ff">+10 27 22.2</td>
+        <td class="ff rj">16.2 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.57969</td>
+        <td class="ff">07 30 02.01</td>
+        <td class="ff">+10 27 39.8</td>
+        <td class="ff rj">16.1 R</td>
+        <td>E10 &ndash; Siding Spring-Faulkes Telescope South</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.59363</td>
+        <td class="ff">07 29 20.84</td>
+        <td class="ff">+10 31 00.3</td>
+        <td class="ff rj">17.0 V</td>
+        <td>415 &ndash; Kambah</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.59767</td>
+        <td class="ff">07 29 08.82</td>
+        <td class="ff">+10 31 34.2</td>
+        <td class="ff rj">16.8 V</td>
+        <td>415 &ndash; Kambah</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.60514</td>
+        <td class="ff">07 28 46.17</td>
+        <td class="ff">+10 32 37.3</td>
+        <td class="ff rj">16.6 V</td>
+        <td>415 &ndash; Kambah</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.61594</td>
+        <td class="ff">07 28 12.98</td>
+        <td class="ff">+10 34 08.7</td>
+        <td class="ff rj">16.6 V</td>
+        <td>415 &ndash; Kambah</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.62132</td>
+        <td class="ff">07 27 56.11</td>
+        <td class="ff">+10 34 54.6</td>
+        <td class="ff rj">16.8 V</td>
+        <td>415 &ndash; Kambah</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.63002</td>
+        <td class="ff">07 27 28.54</td>
+        <td class="ff">+10 36 08.6</td>
+        <td class="ff rj">16.9 V</td>
+        <td>415 &ndash; Kambah</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.64387</td>
+        <td class="ff">07 26 43.73</td>
+        <td class="ff">+10 38 08.7</td>
+        <td class="ff rj">16.6 V</td>
+        <td>415 &ndash; Kambah</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.65693</td>
+        <td class="ff">07 26 00.50</td>
+        <td class="ff">+10 40 02.5</td>
+        <td class="ff rj">16.6 V</td>
+        <td>415 &ndash; Kambah</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.68147</td>
+        <td class="ff">07 24 36.64</td>
+        <td class="ff">+10 43 40.5</td>
+        <td class="ff rj">16.3 V</td>
+        <td>415 &ndash; Kambah</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.68855</td>
+        <td class="ff">07 24 11.82</td>
+        <td class="ff">+10 44 44.1</td>
+        <td class="ff rj">16.5 V</td>
+        <td>415 &ndash; Kambah</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.70394</td>
+        <td class="ff">07 23 16.92</td>
+        <td class="ff">+10 47 04.2</td>
+        <td class="ff rj">16.0 V</td>
+        <td>415 &ndash; Kambah</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.73063</td>
+        <td class="ff">07 23 51.10</td>
+        <td class="ff">+10 14 42.3</td>
+        <td class="ff rj">16.3 C</td>
+        <td>190 &ndash; Gissar</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.73201</td>
+        <td class="ff">07 23 45.88</td>
+        <td class="ff">+10 14 55.0</td>
+        <td class="ff rj">14.8 C</td>
+        <td>190 &ndash; Gissar</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.73340</td>
+        <td class="ff">07 23 40.64</td>
+        <td class="ff">+10 15 08.4</td>
+        <td class="ff rj">16.4 C</td>
+        <td>190 &ndash; Gissar</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.73479</td>
+        <td class="ff">07 23 35.28</td>
+        <td class="ff">+10 15 21.0</td>
+        <td class="ff rj">16.3 C</td>
+        <td>190 &ndash; Gissar</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.73896</td>
+        <td class="ff">07 23 19.28</td>
+        <td class="ff">+10 16 00.4</td>
+        <td class="ff rj">15.7 C</td>
+        <td>190 &ndash; Gissar</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.74046</td>
+        <td class="ff">07 23 13.44</td>
+        <td class="ff">+10 16 13.9</td>
+        <td class="ff rj">15.6 C</td>
+        <td>190 &ndash; Gissar</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.74174</td>
+        <td class="ff">07 23 08.47</td>
+        <td class="ff">+10 16 26.2</td>
+        <td class="ff rj">15.7 C</td>
+        <td>190 &ndash; Gissar</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.74314</td>
+        <td class="ff">07 23 02.97</td>
+        <td class="ff">+10 16 38.7</td>
+        <td class="ff rj">14.9 C</td>
+        <td>190 &ndash; Gissar</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.75076</td>
+        <td class="ff">07 22 32.84</td>
+        <td class="ff">+10 17 50.5</td>
+        <td class="ff rj">14.9 C</td>
+        <td>190 &ndash; Gissar</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.75215</td>
+        <td class="ff">07 22 27.22</td>
+        <td class="ff">+10 18 05.4</td>
+        <td class="ff rj">16.8 C</td>
+        <td>190 &ndash; Gissar</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.75363</td>
+        <td class="ff">07 22 21.28</td>
+        <td class="ff">+10 18 17.7</td>
+        <td class="ff rj">16.3 C</td>
+        <td>190 &ndash; Gissar</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.75493</td>
+        <td class="ff">07 22 16.05</td>
+        <td class="ff">+10 18 30.7</td>
+        <td class="ff rj">15.2 C</td>
+        <td>190 &ndash; Gissar</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.88672</td>
+        <td class="ff">07 13 23.66</td>
+        <td class="ff">+10 34 26.0</td>
+        <td class="ff rj">15.4 R</td>
+        <td>113 &ndash; Volkssternwarte Drebach, Schoenbrunn</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.88759</td>
+        <td class="ff">07 13 18.90</td>
+        <td class="ff">+10 34 36.8</td>
+        <td class="ff rj">15.4 R</td>
+        <td>113 &ndash; Volkssternwarte Drebach, Schoenbrunn</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.88810</td>
+        <td class="ff">07 13 16.05</td>
+        <td class="ff">+10 34 43.3</td>
+        <td class="ff rj">15.1 R</td>
+        <td>113 &ndash; Volkssternwarte Drebach, Schoenbrunn</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.88862</td>
+        <td class="ff">07 13 13.28</td>
+        <td class="ff">+10 34 49.4</td>
+        <td class="ff rj">15.4 R</td>
+        <td>113 &ndash; Volkssternwarte Drebach, Schoenbrunn</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.88895</td>
+        <td class="ff">07 13 11.35</td>
+        <td class="ff">+10 34 53.6</td>
+        <td class="ff rj">15.3 R</td>
+        <td>113 &ndash; Volkssternwarte Drebach, Schoenbrunn</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.88913</td>
+        <td class="ff">07 13 10.40</td>
+        <td class="ff">+10 34 55.7</td>
+        <td class="ff rj">15.4 R</td>
+        <td>113 &ndash; Volkssternwarte Drebach, Schoenbrunn</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.89119</td>
+        <td class="ff">07 12 59.00</td>
+        <td class="ff">+10 35 21.4</td>
+        <td class="ff rj">15.3 R</td>
+        <td>113 &ndash; Volkssternwarte Drebach, Schoenbrunn</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.89136</td>
+        <td class="ff">07 12 58.10</td>
+        <td class="ff">+10 35 23.6</td>
+        <td class="ff rj">15.3 R</td>
+        <td>113 &ndash; Volkssternwarte Drebach, Schoenbrunn</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.89171</td>
+        <td class="ff">07 12 56.11</td>
+        <td class="ff">+10 35 27.7</td>
+        <td class="ff rj">15.1 R</td>
+        <td>113 &ndash; Volkssternwarte Drebach, Schoenbrunn</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.89308</td>
+        <td class="ff">07 12 48.48</td>
+        <td class="ff">+10 35 44.8</td>
+        <td class="ff rj">15.2 R</td>
+        <td>113 &ndash; Volkssternwarte Drebach, Schoenbrunn</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.89469</td>
+        <td class="ff">07 12 38.58</td>
+        <td class="ff">+10 37 05.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.93253</td>
+        <td class="ff">07 10 03.53</td>
+        <td class="ff">+10 57 04.3</td>
+        <td class="ff rj">15.3 R</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.93299</td>
+        <td class="ff">07 08 48.30</td>
+        <td class="ff">+10 45 23.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.93354</td>
+        <td class="ff">07 08 44.83</td>
+        <td class="ff">+10 45 30.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.93399</td>
+        <td class="ff">07 09 54.24</td>
+        <td class="ff">+10 57 28.1</td>
+        <td class="ff rj">15.1 R</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.93403</td>
+        <td class="ff">07 08 41.64</td>
+        <td class="ff">+10 45 37.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.93508</td>
+        <td class="ff">07 09 47.25</td>
+        <td class="ff">+10 57 44.9</td>
+        <td class="ff rj">15.6 R</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.93516</td>
+        <td class="ff">07 09 46.74</td>
+        <td class="ff">+10 57 46.2</td>
+        <td class="ff rj">15.5 R</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.93624</td>
+        <td class="ff">07 08 40.06</td>
+        <td class="ff">+10 44 36.7</td>
+        <td class="ff rj">16.0 C</td>
+        <td>B86 &ndash; Sternwarte Hagen</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.93666</td>
+        <td class="ff">07 09 37.02</td>
+        <td class="ff">+10 58 10.1</td>
+        <td class="ff rj">15.2 R</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.93719</td>
+        <td class="ff">07 08 33.96</td>
+        <td class="ff">+10 44 49.4</td>
+        <td class="ff rj">15.4 C</td>
+        <td>B86 &ndash; Sternwarte Hagen</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.93795</td>
+        <td class="ff">07 09 28.72</td>
+        <td class="ff">+10 58 30.8</td>
+        <td class="ff rj">15.3 R</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.93816</td>
+        <td class="ff">07 08 27.74</td>
+        <td class="ff">+10 45 02.8</td>
+        <td class="ff rj">15.7 C</td>
+        <td>B86 &ndash; Sternwarte Hagen</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.93912</td>
+        <td class="ff">07 08 21.56</td>
+        <td class="ff">+10 45 15.7</td>
+        <td class="ff rj">15.4 C</td>
+        <td>B86 &ndash; Sternwarte Hagen</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.94007</td>
+        <td class="ff">07 08 15.36</td>
+        <td class="ff">+10 45 28.8</td>
+        <td class="ff rj">15.1 C</td>
+        <td>B86 &ndash; Sternwarte Hagen</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.94136</td>
+        <td class="ff">07 09 06.47</td>
+        <td class="ff">+10 59 26.2</td>
+        <td class="ff rj">15.3 R</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.94267</td>
+        <td class="ff">07 08 57.86</td>
+        <td class="ff">+10 59 46.8</td>
+        <td class="ff rj">15.3 R</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.94343</td>
+        <td class="ff">07 08 52.81</td>
+        <td class="ff">+10 59 59.0</td>
+        <td class="ff rj">15.0 R</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.94375</td>
+        <td class="ff">07 08 50.69</td>
+        <td class="ff">+11 00 04.4</td>
+        <td class="ff rj">15.1 R</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.94414</td>
+        <td class="ff">07 08 48.08</td>
+        <td class="ff">+11 00 10.6</td>
+        <td class="ff rj">15.1 R</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.94491</td>
+        <td class="ff">07 08 42.97</td>
+        <td class="ff">+11 00 23.0</td>
+        <td class="ff rj">15.2 R</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.94564</td>
+        <td class="ff">07 08 38.01</td>
+        <td class="ff">+11 00 35.7</td>
+        <td class="ff rj">15.0 R</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.94636</td>
+        <td class="ff">07 08 33.30</td>
+        <td class="ff">+11 00 47.3</td>
+        <td class="ff rj">14.9 R</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.94676</td>
+        <td class="ff">07 08 30.59</td>
+        <td class="ff">+11 00 53.5</td>
+        <td class="ff rj">15.0 R</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.94729</td>
+        <td class="ff">07 08 27.02</td>
+        <td class="ff">+11 01 02.1</td>
+        <td class="ff rj">14.8 R</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.94805</td>
+        <td class="ff">07 08 21.91</td>
+        <td class="ff">+11 01 14.5</td>
+        <td class="ff rj">15.4 R</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.94875</td>
+        <td class="ff">07 08 17.15</td>
+        <td class="ff">+11 01 26.0</td>
+        <td class="ff rj">15.2 R</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.94943</td>
+        <td class="ff">07 08 12.56</td>
+        <td class="ff">+11 01 37.5</td>
+        <td class="ff rj">15.1 R</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.94979</td>
+        <td class="ff">07 08 10.13</td>
+        <td class="ff">+11 01 43.2</td>
+        <td class="ff rj">15.1 R</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.95024</td>
+        <td class="ff">07 08 07.02</td>
+        <td class="ff">+11 01 50.5</td>
+        <td class="ff rj">15.2 R</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.95094</td>
+        <td class="ff">07 08 02.26</td>
+        <td class="ff">+11 02 02.1</td>
+        <td class="ff rj">15.1 R</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.95097</td>
+        <td class="ff">07 06 49.85</td>
+        <td class="ff">+10 49 24.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.95148</td>
+        <td class="ff">07 06 46.52</td>
+        <td class="ff">+10 49 35.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.95167</td>
+        <td class="ff">07 07 57.31</td>
+        <td class="ff">+11 02 13.7</td>
+        <td class="ff rj">15.0 R</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.95239</td>
+        <td class="ff">07 07 52.43</td>
+        <td class="ff">+11 02 25.5</td>
+        <td class="ff rj">15.0 R</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.95267</td>
+        <td class="ff">07 07 50.52</td>
+        <td class="ff">+11 02 30.2</td>
+        <td class="ff rj">15.2 R</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.95285</td>
+        <td class="ff">07 06 37.16</td>
+        <td class="ff">+10 49 53.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.95308</td>
+        <td class="ff">07 07 47.66</td>
+        <td class="ff">+11 02 37.5</td>
+        <td class="ff rj">15.2 R</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.95379</td>
+        <td class="ff">07 06 30.85</td>
+        <td class="ff">+10 50 05.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.95381</td>
+        <td class="ff">07 07 42.65</td>
+        <td class="ff">+11 02 49.3</td>
+        <td class="ff rj">15.1 R</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.95425</td>
+        <td class="ff">07 06 27.56</td>
+        <td class="ff">+10 50 13.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.95452</td>
+        <td class="ff">07 07 37.78</td>
+        <td class="ff">+11 03 00.4</td>
+        <td class="ff rj">15.3 R</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.95473</td>
+        <td class="ff">07 06 24.31</td>
+        <td class="ff">+10 50 18.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.95516</td>
+        <td class="ff">07 07 33.35</td>
+        <td class="ff">+11 03 11.6</td>
+        <td class="ff rj">15.3 R</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.95591</td>
+        <td class="ff">07 07 28.13</td>
+        <td class="ff">+11 03 23.6</td>
+        <td class="ff rj">15.5 R</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 12.95657</td>
+        <td class="ff">07 07 23.52</td>
+        <td class="ff">+11 03 34.9</td>
+        <td class="ff rj">15.0 R</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.01021</td>
+        <td class="ff">07 00 38.79</td>
+        <td class="ff">+11 19 32.4</td>
+        <td class="ff rj">14.6 R</td>
+        <td>J51 &ndash; Observatorio Atlante, Tenerife</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.01213</td>
+        <td class="ff">07 00 22.52</td>
+        <td class="ff">+11 20 08.4</td>
+        <td class="ff rj">14.6 R</td>
+        <td>J51 &ndash; Observatorio Atlante, Tenerife</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.01838</td>
+        <td class="ff">06 59 28.55</td>
+        <td class="ff">+11 22 03.8</td>
+        <td class="ff rj">14.6 R</td>
+        <td>J51 &ndash; Observatorio Atlante, Tenerife</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.03582</td>
+        <td class="ff">06 55 57.83</td>
+        <td class="ff">+11 10 03.2</td>
+        <td class="ff rj">15.0 R</td>
+        <td>B82 &ndash; Maidbronn</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.03611</td>
+        <td class="ff">06 55 55.27</td>
+        <td class="ff">+11 10 08.1</td>
+        <td class="ff rj">15.1 R</td>
+        <td>B82 &ndash; Maidbronn</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.03621</td>
+        <td class="ff">06 55 54.32</td>
+        <td class="ff">+11 10 09.4</td>
+        <td class="ff rj">15.1 R</td>
+        <td>B82 &ndash; Maidbronn</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.03641</td>
+        <td class="ff">06 55 52.47</td>
+        <td class="ff">+11 10 13.1</td>
+        <td class="ff rj">14.9 R</td>
+        <td>B82 &ndash; Maidbronn</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.03651</td>
+        <td class="ff">06 55 51.73</td>
+        <td class="ff">+11 10 14.4</td>
+        <td class="ff rj">15.0 R</td>
+        <td>B82 &ndash; Maidbronn</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.03672</td>
+        <td class="ff">06 55 49.74</td>
+        <td class="ff">+11 10 17.7</td>
+        <td class="ff rj">14.7 R</td>
+        <td>B82 &ndash; Maidbronn</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.04340</td>
+        <td class="ff">06 54 49.19</td>
+        <td class="ff">+11 12 06.1</td>
+        <td class="ff rj">15.0 R</td>
+        <td>B82 &ndash; Maidbronn</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.04360</td>
+        <td class="ff">06 54 47.36</td>
+        <td class="ff">+11 12 09.1</td>
+        <td class="ff rj">14.9 R</td>
+        <td>B82 &ndash; Maidbronn</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.04413</td>
+        <td class="ff">06 54 42.54</td>
+        <td class="ff">+11 12 18.3</td>
+        <td class="ff rj">15.0 R</td>
+        <td>B82 &ndash; Maidbronn</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.04433</td>
+        <td class="ff">06 54 40.60</td>
+        <td class="ff">+11 12 21.7</td>
+        <td class="ff rj">14.7 R</td>
+        <td>B82 &ndash; Maidbronn</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.05487</td>
+        <td class="ff">06 53 01.95</td>
+        <td class="ff">+11 15 15.2</td>
+        <td class="ff rj">14.8 R</td>
+        <td>B82 &ndash; Maidbronn</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.05508</td>
+        <td class="ff">06 52 59.90</td>
+        <td class="ff">+11 15 18.8</td>
+        <td class="ff rj">14.9 R</td>
+        <td>B82 &ndash; Maidbronn</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.05519</td>
+        <td class="ff">06 52 58.92</td>
+        <td class="ff">+11 15 20.6</td>
+        <td class="ff rj">14.7 R</td>
+        <td>B82 &ndash; Maidbronn</td>
+        <td class="ff lj">MPS 310394</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.05529</td>
+        <td class="ff">06 52 57.93</td>
+        <td class="ff">+11 15 22.6</td>
+        <td class="ff rj">14.7 R</td>
+        <td>B82 &ndash; Maidbronn</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.05561</td>
+        <td class="ff">06 52 54.79</td>
+        <td class="ff">+11 15 27.9</td>
+        <td class="ff rj">14.8 R</td>
+        <td>B82 &ndash; Maidbronn</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.05584</td>
+        <td class="ff">06 52 52.70</td>
+        <td class="ff">+11 15 31.4</td>
+        <td class="ff rj">14.7 R</td>
+        <td>B82 &ndash; Maidbronn</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.06663</td>
+        <td class="ff">06 51 07.47</td>
+        <td class="ff">+11 18 33.8</td>
+        <td class="ff rj">14.9 R</td>
+        <td>B82 &ndash; Maidbronn</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.06670</td>
+        <td class="ff">06 53 22.17</td>
+        <td class="ff">+12 21 22.5</td>
+        <td class="ff rj">14.6 R</td>
+        <td>I77 &ndash; CEAMIG-REA Observatory, Belo Horizonte</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.06674</td>
+        <td class="ff">06 51 06.38</td>
+        <td class="ff">+11 18 35.5</td>
+        <td class="ff rj">14.7 R</td>
+        <td>B82 &ndash; Maidbronn</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.06689</td>
+        <td class="ff">06 53 20.26</td>
+        <td class="ff">+12 21 27.2</td>
+        <td class="ff rj">14.9 R</td>
+        <td>I77 &ndash; CEAMIG-REA Observatory, Belo Horizonte</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.06729</td>
+        <td class="ff">06 51 00.98</td>
+        <td class="ff">+11 18 45.0</td>
+        <td class="ff rj">14.6 R</td>
+        <td>B82 &ndash; Maidbronn</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.06735</td>
+        <td class="ff">06 53 15.45</td>
+        <td class="ff">+12 21 40.3</td>
+        <td class="ff rj">15.1 R</td>
+        <td>I77 &ndash; CEAMIG-REA Observatory, Belo Horizonte</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.06762</td>
+        <td class="ff">06 50 57.63</td>
+        <td class="ff">+11 18 50.4</td>
+        <td class="ff rj">14.5 R</td>
+        <td>B82 &ndash; Maidbronn</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.06772</td>
+        <td class="ff">06 53 11.57</td>
+        <td class="ff">+12 21 51.2</td>
+        <td class="ff rj">15.4 R</td>
+        <td>I77 &ndash; CEAMIG-REA Observatory, Belo Horizonte</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.06773</td>
+        <td class="ff">06 50 56.60</td>
+        <td class="ff">+11 18 53.0</td>
+        <td class="ff rj">14.5 R</td>
+        <td>B82 &ndash; Maidbronn</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.06809</td>
+        <td class="ff">06 53 07.74</td>
+        <td class="ff">+12 22 00.9</td>
+        <td class="ff rj">14.8 R</td>
+        <td>I77 &ndash; CEAMIG-REA Observatory, Belo Horizonte</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.06846</td>
+        <td class="ff">06 53 03.91</td>
+        <td class="ff">+12 22 11.6</td>
+        <td class="ff rj">15.1 R</td>
+        <td>I77 &ndash; CEAMIG-REA Observatory, Belo Horizonte</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.06920</td>
+        <td class="ff">06 52 56.12</td>
+        <td class="ff">+12 22 31.9</td>
+        <td class="ff rj">14.9 R</td>
+        <td>I77 &ndash; CEAMIG-REA Observatory, Belo Horizonte</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.07051</td>
+        <td class="ff">06 52 42.42</td>
+        <td class="ff">+12 23 07.7</td>
+        <td class="ff rj">14.9 R</td>
+        <td>I77 &ndash; CEAMIG-REA Observatory, Belo Horizonte</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.07106</td>
+        <td class="ff">06 52 36.55</td>
+        <td class="ff">+12 23 21.9</td>
+        <td class="ff rj">14.4 R</td>
+        <td>I77 &ndash; CEAMIG-REA Observatory, Belo Horizonte</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.07776</td>
+        <td class="ff">06 49 14.80</td>
+        <td class="ff">+11 21 46.3</td>
+        <td class="ff rj">14.7 R</td>
+        <td>B82 &ndash; Maidbronn</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.07798</td>
+        <td class="ff">06 49 12.58</td>
+        <td class="ff">+11 21 49.2</td>
+        <td class="ff rj">14.6 R</td>
+        <td>B82 &ndash; Maidbronn</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.07819</td>
+        <td class="ff">06 49 10.42</td>
+        <td class="ff">+11 21 52.5</td>
+        <td class="ff rj">14.8 R</td>
+        <td>B82 &ndash; Maidbronn</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.07852</td>
+        <td class="ff">06 49 07.03</td>
+        <td class="ff">+11 21 58.9</td>
+        <td class="ff rj">14.8 R</td>
+        <td>B82 &ndash; Maidbronn</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.07971</td>
+        <td class="ff">06 48 54.68</td>
+        <td class="ff">+11 22 19.6</td>
+        <td class="ff rj">14.6 R</td>
+        <td>B82 &ndash; Maidbronn</td>
+        <td class="ff lj">MPS 311261</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.08003</td>
+        <td class="ff">06 48 51.31</td>
+        <td class="ff">+11 22 24.9</td>
+        <td class="ff rj">14.6 R</td>
+        <td>B82 &ndash; Maidbronn</td>
+        <td class="ff lj">MPS 311261</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.08035</td>
+        <td class="ff">06 48 47.92</td>
+        <td class="ff">+11 22 31.2</td>
+        <td class="ff rj">14.6 R</td>
+        <td>B82 &ndash; Maidbronn</td>
+        <td class="ff lj">MPS 311261</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.10998</td>
+        <td class="ff">06 46 24.65</td>
+        <td class="ff">+12 52 14.6</td>
+        <td class="ff rj">15.1 V</td>
+        <td>I20 &ndash; Observatorio Astronomico Salvador, Rio Cuarto</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.12380</td>
+        <td class="ff">06 43 32.85</td>
+        <td class="ff">+12 59 56.1</td>
+        <td class="ff rj">15.2 V</td>
+        <td>I20 &ndash; Observatorio Astronomico Salvador, Rio Cuarto</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.13115</td>
+        <td class="ff">06 41 56.94</td>
+        <td class="ff">+13 04 07.9</td>
+        <td class="ff rj">15.0 V</td>
+        <td>I20 &ndash; Observatorio Astronomico Salvador, Rio Cuarto</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.248426</td>
+        <td class="ff">06 09 09.45</td>
+        <td class="ff">+12 50 08.5</td>
+        <td class="ff rj">15.0 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.250675</td>
+        <td class="ff">06 08 16.91</td>
+        <td class="ff">+12 51 22.1</td>
+        <td class="ff rj">15.1 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.251422</td>
+        <td class="ff">06 07 59.29</td>
+        <td class="ff">+12 51 46.2</td>
+        <td class="ff rj">15.2 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.252168</td>
+        <td class="ff">06 07 41.65</td>
+        <td class="ff">+12 52 10.4</td>
+        <td class="ff rj">15.3 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.27800</td>
+        <td class="ff">05 58 00.56</td>
+        <td class="ff">+13 18 39.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>448 &ndash; Desert Moon Observatory, Las Cruces</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.27811</td>
+        <td class="ff">05 57 57.34</td>
+        <td class="ff">+13 18 42.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>448 &ndash; Desert Moon Observatory, Las Cruces</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.27829</td>
+        <td class="ff">05 57 54.38</td>
+        <td class="ff">+13 18 47.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>448 &ndash; Desert Moon Observatory, Las Cruces</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.27834</td>
+        <td class="ff">05 57 50.98</td>
+        <td class="ff">+13 18 51.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>448 &ndash; Desert Moon Observatory, Las Cruces</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.27847</td>
+        <td class="ff">05 57 47.62</td>
+        <td class="ff">+13 18 56.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>448 &ndash; Desert Moon Observatory, Las Cruces</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.27859</td>
+        <td class="ff">05 57 44.53</td>
+        <td class="ff">+13 18 59.5</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>448 &ndash; Desert Moon Observatory, Las Cruces</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.28741</td>
+        <td class="ff">05 53 33.24</td>
+        <td class="ff">+13 24 25.7</td>
+        <td class="ff rj">14.3 C</td>
+        <td>448 &ndash; Desert Moon Observatory, Las Cruces</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.28780</td>
+        <td class="ff">05 53 22.07</td>
+        <td class="ff">+13 24 39.8</td>
+        <td class="ff rj">14.3 C</td>
+        <td>448 &ndash; Desert Moon Observatory, Las Cruces</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.28819</td>
+        <td class="ff">05 53 10.83</td>
+        <td class="ff">+13 24 53.8</td>
+        <td class="ff rj">14.3 C</td>
+        <td>448 &ndash; Desert Moon Observatory, Las Cruces</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.28857</td>
+        <td class="ff">05 52 59.57</td>
+        <td class="ff">+13 25 07.8</td>
+        <td class="ff rj">14.2 C</td>
+        <td>448 &ndash; Desert Moon Observatory, Las Cruces</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.28895</td>
+        <td class="ff">05 52 48.24</td>
+        <td class="ff">+13 25 22.1</td>
+        <td class="ff rj">14.6 C</td>
+        <td>448 &ndash; Desert Moon Observatory, Las Cruces</td>
+        <td class="ff lj">MPS 310395</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.436920</td>
+        <td class="ff">04 05 10.73</td>
+        <td class="ff">+17 03 20.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>428 &ndash; Reedy Creek</td>
+        <td class="ff lj">MPS 311261</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.437020</td>
+        <td class="ff">04 05 03.26</td>
+        <td class="ff">+17 03 21.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>428 &ndash; Reedy Creek</td>
+        <td class="ff lj">MPS 311261</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.437120</td>
+        <td class="ff">04 04 55.77</td>
+        <td class="ff">+17 03 22.5</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>428 &ndash; Reedy Creek</td>
+        <td class="ff lj">MPS 311261</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.437220</td>
+        <td class="ff">04 04 48.24</td>
+        <td class="ff">+17 03 23.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>428 &ndash; Reedy Creek</td>
+        <td class="ff lj">MPS 311262</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.437320</td>
+        <td class="ff">04 04 40.83</td>
+        <td class="ff">+17 03 24.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>428 &ndash; Reedy Creek</td>
+        <td class="ff lj">MPS 311262</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.437420</td>
+        <td class="ff">04 04 33.33</td>
+        <td class="ff">+17 03 25.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>428 &ndash; Reedy Creek</td>
+        <td class="ff lj">MPS 311262</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.443472</td>
+        <td class="ff">03 56 50.95</td>
+        <td class="ff">+17 03 40.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>428 &ndash; Reedy Creek</td>
+        <td class="ff lj">MPS 311262</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.443572</td>
+        <td class="ff">03 56 43.23</td>
+        <td class="ff">+17 03 40.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>428 &ndash; Reedy Creek</td>
+        <td class="ff lj">MPS 311262</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.443672</td>
+        <td class="ff">03 56 35.44</td>
+        <td class="ff">+17 03 39.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>428 &ndash; Reedy Creek</td>
+        <td class="ff lj">MPS 311262</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.443772</td>
+        <td class="ff">03 56 27.64</td>
+        <td class="ff">+17 03 40.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>428 &ndash; Reedy Creek</td>
+        <td class="ff lj">MPS 311262</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.443872</td>
+        <td class="ff">03 56 19.84</td>
+        <td class="ff">+17 03 39.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>428 &ndash; Reedy Creek</td>
+        <td class="ff lj">MPS 311262</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.443972</td>
+        <td class="ff">03 56 12.07</td>
+        <td class="ff">+17 03 39.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>428 &ndash; Reedy Creek</td>
+        <td class="ff lj">MPS 311262</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.444072</td>
+        <td class="ff">03 56 04.23</td>
+        <td class="ff">+17 03 38.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>428 &ndash; Reedy Creek</td>
+        <td class="ff lj">MPS 311262</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.451087</td>
+        <td class="ff">03 46 46.23</td>
+        <td class="ff">+17 02 17.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>428 &ndash; Reedy Creek</td>
+        <td class="ff lj">MPS 311262</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.451187</td>
+        <td class="ff">03 46 38.17</td>
+        <td class="ff">+17 02 15.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>428 &ndash; Reedy Creek</td>
+        <td class="ff lj">MPS 311262</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.451287</td>
+        <td class="ff">03 46 30.06</td>
+        <td class="ff">+17 02 13.6</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>428 &ndash; Reedy Creek</td>
+        <td class="ff lj">MPS 311262</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.451387</td>
+        <td class="ff">03 46 21.87</td>
+        <td class="ff">+17 02 11.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>428 &ndash; Reedy Creek</td>
+        <td class="ff lj">MPS 311262</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.451487</td>
+        <td class="ff">03 46 13.78</td>
+        <td class="ff">+17 02 09.6</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>428 &ndash; Reedy Creek</td>
+        <td class="ff lj">MPS 311262</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.451587</td>
+        <td class="ff">03 46 05.64</td>
+        <td class="ff">+17 02 07.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>428 &ndash; Reedy Creek</td>
+        <td class="ff lj">MPS 311262</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.451687</td>
+        <td class="ff">03 45 57.50</td>
+        <td class="ff">+17 02 05.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>428 &ndash; Reedy Creek</td>
+        <td class="ff lj">MPS 311262</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.458402</td>
+        <td class="ff">03 36 41.92</td>
+        <td class="ff">+16 58 57.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>428 &ndash; Reedy Creek</td>
+        <td class="ff lj">MPS 311262</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.458439</td>
+        <td class="ff">03 36 38.82</td>
+        <td class="ff">+16 58 56.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>428 &ndash; Reedy Creek</td>
+        <td class="ff lj">MPS 311262</td>
+      </tr>
+      <tr>
+        <td class="ff">2010 01 13.458502</td>
+        <td class="ff">03 36 33.48</td>
+        <td class="ff">+16 58 54.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>428 &ndash; Reedy Creek</td>
+        <td class="ff lj">MPS 311262</td>
+      </tr>
+  </table>
+
+
+        </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer id="footer">
+    <div class="holder">
+      <nav class="nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+	  <!-- Contact link changed to Jira -->
+          <li><a href="https://mpc-service.atlassian.net/servicedesk/customer/portals">Contact</a></li>
+          <li><a href="https://www.cfa.harvard.edu/content/privacy-statement">Privacy</a></li>
+        </ul>
+      </nav>
+      
+      <a href="https://www.cfa.harvard.edu">
+      <img src="/images/CfA_Logo_Vertical_CMYK.png" width="110" height="47"></a>
+      <p>
+      <p>
+      <p>
+      <div class="copy">The Minor Planet Center is hosted by the Center for Astrophysics | Harvard &amp; Smithsonian.<center>The Minor Planet Center is funded by NASA.</center></div> 
+  </footer>
+
+<script type="text/javascript">
+  $(window).on('load', (function() {
+    $("table").tablesorter();
+  })); 
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var _tag=new WebTrends();
+_tag.dcsGetId();
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+_tag.dcsCustom=function(){
+// Add custom parameters here.
+//_tag.DCSext.param_name=param_value;
+}
+_tag.dcsCollect();
+//]]>
+</script>
+
+<noscript>
+<div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="//logs1.smithsonian.museum/dcsa7yzrmbdzpxzrosrn4tyep_5i1d/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=9.4.0&amp;dcssip=www.minorplanetcenter.net"/></div>
+</noscript>
+</body>
+
+</html>

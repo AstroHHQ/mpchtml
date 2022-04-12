@@ -1,0 +1,1911 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IAU Minor Planet Center</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/mpc.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/table-sorter.css">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+  <link media="all" rel="stylesheet" href="/css/all.css">
+
+  <link rel="icon" type="image/png" href="/iau/figs/MPClogo16.png">
+  <meta name="description" content="We are the official body that deals with
+      astrometric observations and orbits of minor planets (asteroids) and comets.">
+
+  <meta name="keywords" content="astrometry, observations, orbits,
+      minor planets, asteroids, comets, near earth objects, 
+      potentially hazardous asteroids">
+
+  <script type="text/javascript" src="/js/jquery-latest.js"></script>
+<!--  <script type="text/javascript" src="/js/jquery.main.js"></script> -->
+<!--  <script type="text/javascript" src="/js/jquery.metadata.js"></script> -->
+  <script type="text/javascript" src="/js/jquery.tablesorter.js"></script>
+  <script type="text/javascript" src="/js/webtrends.js"></script>
+  <script type="text/javascript" src="/js/track_pdfs.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic|PT+Sans:400,700,400italic,700italic|PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+  
+<body>
+  <!-- wrapper -->
+  <div id="wrapper">
+    <div class="w1">
+      <!-- header -->
+      <header id="header">
+        <div class="holder">
+          <!-- logo -->
+          <h1 class="logo"><a href="/">The International Astronomical Union Minor Planet Center</a></h1>
+          <div class="area">
+            <!-- top-nav -->
+            <nav class="top-nav">
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+		<!-- Contact link changed to Jira -->
+                <li><a href="https://mpc-service.atlassian.net/servicedesk/customer/portals">Contact</a></li>
+              </ul>
+            </nav>
+            <!-- search-form -->
+            <div class="form-holder">
+              <!-- This commented code opens a new page for the search. -->
+              <!--<form class="search-form" method="get" action="https://www.google.com/search" target="_blank">-->
+              <form class="search-form" method="get" action="https://www.google.com/search">
+                <fieldset>
+                  <!--<label for="search">Search</label>-->
+                  <input type="hidden" name="sitesearch" value="minorplanetcenter.net">
+                  <input type="text" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" id="search" name="q" value="Search MPC">
+                </fieldset>
+              </form>
+            </div>
+            <div class="social-bar">
+<!--              <a href="https://twitter.com/MinorPlanetCtr"><span class="social twitter">L</span></a> -->
+<!--              <a href="https://www.facebook.com/MinorPlanetCenter"><span class="social facebook">F</span></a> -->
+<!--              <a href="https://www.youtube.com/channel/UCtALMOQHuBxh5XMsYNiDhMg"><span class="social youtube">X</span></a> -->
+<!--              <a href="/iau/rss/mpc_feeds.html"><span class="social rss">R</span></a> -->
+            </div>
+          </div>
+        </div>
+        <nav class="nav-holder">
+          <!-- main navigation -->
+          <ul id="nav">
+            <li>
+              <a href="/iau/mpc.html"><span>OBSERVERS</span></a>
+              <ul>
+                <li><a href="/iau/MPEph/MPEph.html">Ephemeris Service</a></li>
+                <li><a href="/mpec/RecentMPECs.html">MPECs</a></li>
+                <li><a href="/iau/NEO/toconfirm_tabular.html">NEO Confirmation</a></li>
+                <li><a href="/iau/NEO/pccp_tabular.html">Possible Comet Confirmation</a></li>
+                <li><a href="/iau/Ephemerides/EphemOrbEls.html" class="nested">Orbital Elements</a>
+                  <ul>
+                    <li><a href="/iau/MPCORB.html">MPCORB</a></li>
+                    <li><a href="/iau/ECS/MPCAT/MPCAT.html">MPCAT</a></li>
+                    <li><a href="/iau/ECS/MPCUPDATE/MPCUPDATE.html">MPCUPDATE</a></li>
+                    <li><a href="/iau/Ephemerides/SoftwareEls.html">Orbital Elements for Software</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/services/MPCServices.html">Publications Overview</a></li>
+                <li><a href="/iau/ECS/MPCArchive/MPCArchive_TBL.html">Publications Archive</a></li>              
+                <li><a href="/iau/NEO/TheNEOPage.html" class="nested">NEO Services</a>
+                  <ul>
+                    <li><a href="/iau/NEO/toconfirm_tabular.html">Confirmation</a></li>
+                    <li><a href="/iau/NEO/PossNEO.html">Ratings</a></li>
+                    <li><a href="/cgi-bin/neaobs.cgi">Observation Planning Aid</a></li>
+                    <li><a href="/cgi-bin/checkneo.cgi">NEOChecker</a></li>
+                    <li><a href="/cgi-bin/checkneocmt.cgi">NEOCMTChecker</a></li>
+                    <li><a href="/neocp_followup_report/">NEOCP Followup Report Form</a></li>
+                    <li><a href="/neocp_followup_reports/">NEOCP Followup Reports</a></li>
+                    <li><a href="/neocp_obs">NEOCP Recent Observations</a></li>
+                  </ul>
+                </li>
+                <li><a href="/iau/services/WebCSAccess.html" class="nested">Other Observer Services</a>
+                  <ul>
+                    <li><a href="/whatsup">Observing Target List</a></li>
+                    <li><a href="/iau/NatSats/NaturalSatellites.html">Natural Satellite Ephemerides</a></li>
+                    <li><a href="/iau/MPEph/NewObjEphems.html">New Object Ephemerides</a></li>
+                    <li><a href="/cgi-bin/checkmp.cgi">MPChecker</a></li>
+                    <li><a href="/cgi-bin/checkcmt.cgi">CMTChecker</a></li>
+                    <li><a href="/iau/artsats/artsats.html">Distant Artificial Satellites</a></li>
+                    <li><a href="/iau/lists/Customize.html">Observing List Customizer</a></li>
+                  </ul>
+                </li>
+                <li><a href="/db_search">Orbits/Observations Database</a></li>
+
+                <li><a href='http://alcdef.org'>Light Curve Database</a></li>
+
+                <li><a href="/iau/ECS/MPCAT-OBS/MPCAT-OBS.html">MPCAT-OBS</a></li>
+                <li><a href="/iau/SkyCoverage.html">Sky Coverage</a></li>
+                <li><a href="/iau/MPC_Documentation.html" class="nested">Documentation</a>
+                  <ul>
+                    <li><a href="/iau/info/TechInfo.html">MPC Submission Info</a></li>
+                    <li><a href="/iau/info/Astrometry.html">Astrometry Guide</a></li>
+                    <li><a href="/iau/WhatsNew.html">What's New</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/lists/Lists.html" class="nested">Lists and Plots</a>
+                  <ul>
+                    <li><a href="/iau/lists/MPLists.html">Minor Planets</a></li>
+                      <!--<ul>
+                        <li><a href="/iau/lists/t_atens.html">Atens</a></li>
+                        <li><a href="/iau/lists/t_apollos.html">Apollos</a></li>
+                        <li><a href="/iau/lists/t_amors.html">Amors</a></li>
+                        <li><a href="/iau/lists/t_centaurs.html">Centaurs and Scattered Disk Objects</a></li>
+                        <li><a href="/iau/lists/t_tnos.html">Transneptunian Objects</a></li>
+                        <li><a href="/iau/lists/t_others.html">Other Unusual Objects</a></li>
+                        <li><a href="/iau/lists/t_dangerous.html">Potentially Hazardous Asteroids</a></li>
+                      </ul>-->
+                    <li><a href="/iau/lists/CometLists.html">Comets</a></li>
+                      <!--<ul>
+                        <li><a href="/iau/lists/LastCometObs.html">Date of Last Observation</a></li>
+                        <li><a href="/iau/lists/LastYear.html">Designations from the Past Year</a></li>
+                        <li><a href="http://www.icq.eps.harvard.edu/CometMags.html">Comet Magnitude Estimates</a></li>
+                        <li><a href="/iau/lists/ClosestComets.html">Closest Approaches</a></li>
+                        <li><a href="/iau/lists/PeriodicCodes.html">Periodic Comets</a></li>
+                      </ul>-->
+                    <li><a href="/iau/lists/ObsCodesF.html">Observatory Codes</a></li>		    
+                    <li><a href="/iau/Animations/Animations.html">Animations</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/MPCStatus.html">MPC Status</a></li>
+                <!--<li><a href="/summary">Summary</a></li>-->
+                <li><a href='/mpc/obs_stats_2014_2018'>2014-18 NEO Obs Statistics</a></li>
+                <li><a href='/mpc/summary'>Summary of Latest Data</a></li>
+              </ul>
+            </li>
+            <li><a href="/data"><span>DATA</span></a>
+            </li>
+            <li><a href="http://iawn.net/"><span>IAWN</span></a>
+            </li>
+            <li><a href="https://minorplanetcenter.net/mpcops/beta/"><span>BETA</span></a></li>
+            <li><a href="/iau/MPCStatus.html"><span style="color:Green">STATUS</a></li>
+            <li><a href="https://sbnmpc.astro.umd.edu/"><span>SBN ANNEX</span></a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- main -->
+      <div id="main">
+
+  <h3>
+  
+   2012 TV
+  
+  
+   
+  
+</h3>
+
+    First observed at Tenagra II Observatory, Nogales
+  on 2012-10-05.
+
+
+  <br>(Discoverer will be defined when the object is numbered. 
+  See <a href="/mpec/K10/K10U20.html">this note</a>
+  on how discoverers are determined.)
+
+
+<br>
+<h2>Orbit</h2>
+
+    Orbit type: Apollo
+  <br>
+
+
+    Near-Earth Object<br>
+    One opposition object seen prior.<br>
+
+    <br>
+    <div class="show-orbit-button">
+      <form accept-charset="UTF-8" action="/db_search/show_orbit" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+        <input id="number" name="number" type="hidden" />
+        <input id="designation" name="designation" type="hidden" value="2012 TV" />
+        <input id="name" name="name" type="hidden" />
+        <input id="epoch" name="epoch" type="hidden" value="2019-04-27.0" />
+        <input id="peri" name="peri" type="hidden" value="269.8919992" />
+        <input id="m" name="m" type="hidden" value="172.75438" />
+        <input id="node" name="node" type="hidden" value="193.5230543" />
+        <input id="incl" name="incl" type="hidden" value="5.5411733" />
+        <input id="e" name="e" type="hidden" value="0.571790182" />
+        <input id="a" name="a" type="hidden" value="1.502497462587371" />
+        <input name="commit" type="submit" value="Interactive Orbit Sketch" />
+</form>    </div>
+    <div>
+       Note: WebGL enabled browser required.
+    </div>
+
+    
+
+
+  <br>
+  <table class="nb">
+    <tr>
+      <td valign="top" class="nb">
+        <table>
+          <tr><td>epoch</td><td class="rj">2019-04-27.0</td></tr>
+          <tr><td>epoch JD</td><td class="rj">2458600.5</td></tr>
+          <tr><td>perihelion date</td><td class="rj">2018-06-08.19085</td></tr>
+          <tr><td>perihelion JD</td><td class="rj">2458277.69085</td></tr>
+          <tr><td>argument of perihelion (°)</td><td class="rj">269.89200</td></tr>
+          <tr><td>ascending node (°)</td><td class="rj">193.52305</td></tr>
+          <tr><td>inclination (°)</td><td class="rj">5.54117</td></tr>
+          <tr><td>eccentricity</td><td class="rj">0.5717902</td></tr>
+          <tr><td>perihelion distance (AU)</td><td class="rj">0.6433842</td></tr>
+          <tr><td>Tisserand w.r.t. Jupiter</td><td class="rj">4.3</td></tr>
+          <tr><td>&Delta;V w.r.t. Earth (km/sec)</td><td class="rj">7.5</td></tr>
+        </table>
+      </td>
+      <td valign="top" class="nb">
+        <table>
+          <tr><td>semimajor axis (AU)</td><td class="rj">1.5024975</td></tr>
+          <tr><td>mean anomaly (°)</td><td class="rj">172.75438</td></tr>
+          <tr><td>mean daily motion (°/day)</td><td class="rj">0.53515950</td></tr>
+          <tr><td>aphelion distance (AU)</td><td class="rj">2.362</td></tr>
+          <tr><td>period (years)</td><td class="rj">1.84</td></tr>
+          <tr><td>P-vector [x]</td><td class="rj">-0.23091077</td></tr>
+          <tr><td>P-vector [y]</td><td class="rj">0.92668976</td></tr>
+          <tr><td>P-vector [z]</td><td class="rj">0.29652368</td></tr>
+          <tr><td>Q-vector [x]</td><td class="rj">-0.97271290</td></tr>
+          <tr><td>Q-vector [y]</td><td class="rj">-0.21279448</td></tr>
+          <tr><td>Q-vector [z]</td><td class="rj">-0.09245608</td></tr>
+          <tr><td>absolute magnitude</td><td class="rj">25.2</td></tr>
+          <tr><td>phase slope</td><td class="rj">0.15</td></tr>
+        </table>
+      </td>
+      <td valign="top" class="nb">
+        <table>
+
+            <tr><td><a href="/iau/info/UValue.html">uncertainty</a></td><td class="rj">5</td></tr>
+
+          <tr><td>reference</td><td class="rj">MPO 240124</td></tr>
+          <tr><td>observations used</td><td class="rj">189</td></tr>
+          <tr><td>oppositions</td><td class="rj">1</td></tr>
+          <tr><td>arc length (days)</td><td class="rj">2</td></tr>
+          <tr><td>first opposition used</td><td class="rj">2012</td></tr>
+          <tr><td>last opposition used</td><td class="rj">2012</td></tr>
+          <tr><td>residual rms (arc-secs)</td><td class="rj">0.34</td></tr>
+          <tr><td><a href="/iau/info/Perturbers.html">perturbers coarse indicator</a></td><td class="rj">M-v</td></tr>
+          <tr><td><a href="/iau/info/Perturbers.html">perturbers precise indicator</a></td><td class="rj">003Eh</td></tr>
+          <tr><td>first observation date used</td><td class="rj">2012-10-05.0</td></tr>
+          <tr><td>last observation date used</td><td class="rj">2012-10-07.0</td></tr>
+          <tr><td>computer name</td><td class="rj">MPCW</td></tr>
+        </table>
+      </td>
+    </tr>
+  </table>    
+
+  <table class="nb">
+    <tr>
+      <td valign="top" class="nb">
+          <table>
+            <tr><td>JD of orbit computation</td><td class="rj">2456208.778831</td></tr>
+            <tr><td>perihelion JD uncertainty (days)</td><td class="rj">1.1280E-03</td></tr>
+            <tr><td>argument of perihelion uncertainty (°)</td><td class="rj">1.1394E-04</td></tr>
+            <tr><td>ascending node uncertainty (°)</td><td class="rj">1.0153E-05</td></tr>
+            <tr><td>inclination uncertainty (°)</td><td class="rj">3.2615E-04</td></tr>
+            <tr><td>eccentricity uncertainty </td><td class="rj">2.7961E-05</td></tr>
+            <tr><td>perihelion distance uncertainty (AU)</td><td class="rj">1.0444E-05</td></tr>
+          </table>    
+      </td>
+      <td width=100px> </td>
+
+      <td valign="top" class="nb">
+    Minimum Orbit Intersection Distances (in AU)<br>for orbit epoch: 2458600.5, reference: MPO240124<br>
+          <table>
+            <tr><td>Mercury</td><td>0.34106</td></tr>
+            <tr><td>Venus</td><td>0.03238</td></tr>
+            <tr><td>Earth</td><td>0.0018</td></tr>
+            <tr><td>Mars</td><td>0.09049</td></tr>
+            <tr><td>Jupiter</td><td>2.83629</td></tr>
+            <tr><td>Saturn</td><td>7.70338</td></tr>
+            <tr><td>Uranus</td><td>16.7713</td></tr>
+            <tr><td>Neptune</td><td>27.8052</td></tr>
+          </table>    
+          <br>
+      </td>
+    </tr>
+  </table>
+
+
+<h2>Observations</h2>
+  191 total observations over interval:
+  2012 10 05.32361 &ndash; 2012 10 07.139772
+  <br>
+  These data are available for
+  <a href="../tmp/2012_TV.txt" target="_blank">download</a>
+  (<a href="/iau/info/OpticalObs.html" target="_blank">format description</a>).
+  <br>
+  <br>
+  <table>
+    <tr>
+      <th>Date (UT)</th>
+      <th>J2000 RA</th>
+      <th>J2000 Dec</th>
+      <th>Magn</th>
+      <th><a href="/iau/lists/ObsCodesF.html">Location</a></th>
+      <th><a href="/iau/info/References.html">Ref</a></th>
+    </tr>
+
+      <tr>
+        <td class="ff">2012 10 05.32361</td>
+        <td class="ff">00 45 23.15</td>
+        <td class="ff">+11 31 09.0</td>
+        <td class="ff rj">17.6 R</td>
+        <td>926 &ndash; Tenagra II Observatory, Nogales</td>
+        <td class="ff lj">MPS 434247</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 05.33308</td>
+        <td class="ff">00 45 24.06</td>
+        <td class="ff">+11 30 12.1</td>
+        <td class="ff rj">17.6 R</td>
+        <td>926 &ndash; Tenagra II Observatory, Nogales</td>
+        <td class="ff lj">MPS 434247</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 05.34704</td>
+        <td class="ff">00 45 25.43</td>
+        <td class="ff">+11 28 45.8</td>
+        <td class="ff rj">17.5 R</td>
+        <td>926 &ndash; Tenagra II Observatory, Nogales</td>
+        <td class="ff lj">MPS 434247</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 05.90640</td>
+        <td class="ff">00 48 42.22</td>
+        <td class="ff">+10 10 35.1</td>
+        <td class="ff rj">16.6 R</td>
+        <td>J16 &ndash; An Carraig Observatory, Loughinisland</td>
+        <td class="ff lj">MPS 434247</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 05.90800</td>
+        <td class="ff">00 48 42.68</td>
+        <td class="ff">+10 10 19.3</td>
+        <td class="ff rj">16.5 R</td>
+        <td>J16 &ndash; An Carraig Observatory, Loughinisland</td>
+        <td class="ff lj">MPS 434247</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 05.90954</td>
+        <td class="ff">00 48 43.10</td>
+        <td class="ff">+10 10 03.3</td>
+        <td class="ff rj">16.1 R</td>
+        <td>J16 &ndash; An Carraig Observatory, Loughinisland</td>
+        <td class="ff lj">MPS 434247</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 05.91119</td>
+        <td class="ff">00 48 43.71</td>
+        <td class="ff">+10 09 46.2</td>
+        <td class="ff rj">16.0 R</td>
+        <td>J16 &ndash; An Carraig Observatory, Loughinisland</td>
+        <td class="ff lj">MPS 434247</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 05.91372</td>
+        <td class="ff">00 48 44.50</td>
+        <td class="ff">+10 09 19.1</td>
+        <td class="ff rj">15.1 R</td>
+        <td>J16 &ndash; An Carraig Observatory, Loughinisland</td>
+        <td class="ff lj">MPS 434247</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 05.92939</td>
+        <td class="ff">00 48 49.91</td>
+        <td class="ff">+10 06 36.0</td>
+        <td class="ff rj">16.7 V</td>
+        <td>J41 &ndash; Raheny</td>
+        <td class="ff lj">MPS 434247</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 05.93066</td>
+        <td class="ff">00 48 50.30</td>
+        <td class="ff">+10 06 22.0</td>
+        <td class="ff rj">16.8 V</td>
+        <td>J41 &ndash; Raheny</td>
+        <td class="ff lj">MPS 434247</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 05.93194</td>
+        <td class="ff">00 48 50.71</td>
+        <td class="ff">+10 06 08.3</td>
+        <td class="ff rj">16.8 V</td>
+        <td>J41 &ndash; Raheny</td>
+        <td class="ff lj">MPS 434247</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 05.93338</td>
+        <td class="ff">00 48 51.16</td>
+        <td class="ff">+10 05 52.6</td>
+        <td class="ff rj">16.8 V</td>
+        <td>J41 &ndash; Raheny</td>
+        <td class="ff lj">MPS 434247</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 05.93466</td>
+        <td class="ff">00 48 51.56</td>
+        <td class="ff">+10 05 38.6</td>
+        <td class="ff rj">16.7 V</td>
+        <td>J41 &ndash; Raheny</td>
+        <td class="ff lj">MPS 434247</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 05.93581</td>
+        <td class="ff">00 48 51.93</td>
+        <td class="ff">+10 05 25.9</td>
+        <td class="ff rj">16.8 V</td>
+        <td>J41 &ndash; Raheny</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 05.94093</td>
+        <td class="ff">00 48 53.16</td>
+        <td class="ff">+10 04 23.3</td>
+        <td class="ff rj">16.3 R</td>
+        <td>J16 &ndash; An Carraig Observatory, Loughinisland</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 05.94394</td>
+        <td class="ff">00 48 54.15</td>
+        <td class="ff">+10 03 49.8</td>
+        <td class="ff rj">16.2 R</td>
+        <td>J16 &ndash; An Carraig Observatory, Loughinisland</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 05.94715</td>
+        <td class="ff">00 48 55.16</td>
+        <td class="ff">+10 03 14.3</td>
+        <td class="ff rj">16.6 R</td>
+        <td>J16 &ndash; An Carraig Observatory, Loughinisland</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 05.95465</td>
+        <td class="ff">00 48 55.93</td>
+        <td class="ff">+10 03 26.9</td>
+        <td class="ff rj">16.8 R</td>
+        <td>B49 &ndash; Paus Observatory, Sabadell</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 05.95566</td>
+        <td class="ff">00 48 56.20</td>
+        <td class="ff">+10 03 15.4</td>
+        <td class="ff rj">17.0 R</td>
+        <td>B49 &ndash; Paus Observatory, Sabadell</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 05.95828</td>
+        <td class="ff">00 48 56.92</td>
+        <td class="ff">+10 02 46.1</td>
+        <td class="ff rj">16.4 R</td>
+        <td>B49 &ndash; Paus Observatory, Sabadell</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.00426</td>
+        <td class="ff">00 49 20.10</td>
+        <td class="ff">+09 55 43.0</td>
+        <td class="ff rj">16.5 V</td>
+        <td>G40 &ndash; Slooh.com Canary Islands Observatory</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.01664</td>
+        <td class="ff">00 49 14.83</td>
+        <td class="ff">+09 50 53.4</td>
+        <td class="ff rj">16.6 V</td>
+        <td>I93 &ndash; St Pardon de Conques</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.02820</td>
+        <td class="ff">00 49 18.36</td>
+        <td class="ff">+09 48 29.9</td>
+        <td class="ff rj">16.2 V</td>
+        <td>I93 &ndash; St Pardon de Conques</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.03227</td>
+        <td class="ff">00 49 19.63</td>
+        <td class="ff">+09 47 38.9</td>
+        <td class="ff rj">16.5 V</td>
+        <td>I93 &ndash; St Pardon de Conques</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.03896</td>
+        <td class="ff">00 49 21.74</td>
+        <td class="ff">+09 46 14.4</td>
+        <td class="ff rj">16.4 V</td>
+        <td>I93 &ndash; St Pardon de Conques</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.05556</td>
+        <td class="ff">00 49 27.29</td>
+        <td class="ff">+09 42 48.2</td>
+        <td class="ff rj">16.3 R</td>
+        <td>958 &ndash; Observatoire de Dax</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.05982</td>
+        <td class="ff">00 49 28.74</td>
+        <td class="ff">+09 41 52.3</td>
+        <td class="ff rj">16.1 R</td>
+        <td>958 &ndash; Observatoire de Dax</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.06405</td>
+        <td class="ff">00 49 30.14</td>
+        <td class="ff">+09 40 57.0</td>
+        <td class="ff rj">16.2 R</td>
+        <td>958 &ndash; Observatoire de Dax</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.06839</td>
+        <td class="ff">00 49 31.58</td>
+        <td class="ff">+09 39 59.6</td>
+        <td class="ff rj">16.4 R</td>
+        <td>958 &ndash; Observatoire de Dax</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.07254</td>
+        <td class="ff">00 49 32.99</td>
+        <td class="ff">+09 39 04.0</td>
+        <td class="ff rj">16.2 R</td>
+        <td>958 &ndash; Observatoire de Dax</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.07673</td>
+        <td class="ff">00 49 34.44</td>
+        <td class="ff">+09 38 08.2</td>
+        <td class="ff rj">16.0 R</td>
+        <td>958 &ndash; Observatoire de Dax</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.08116</td>
+        <td class="ff">00 49 35.97</td>
+        <td class="ff">+09 37 09.0</td>
+        <td class="ff rj">16.3 R</td>
+        <td>958 &ndash; Observatoire de Dax</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.08536</td>
+        <td class="ff">00 49 37.44</td>
+        <td class="ff">+09 36 11.6</td>
+        <td class="ff rj">16.3 R</td>
+        <td>958 &ndash; Observatoire de Dax</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.12007</td>
+        <td class="ff">00 50 41.90</td>
+        <td class="ff">+09 29 30.4</td>
+        <td class="ff rj">15.8 R</td>
+        <td>G48 &ndash; Harlingten Research Observatory, Rancho Hildal</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.12045</td>
+        <td class="ff">00 50 42.09</td>
+        <td class="ff">+09 29 25.3</td>
+        <td class="ff rj">15.5 R</td>
+        <td>G48 &ndash; Harlingten Research Observatory, Rancho Hildal</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.12083</td>
+        <td class="ff">00 50 42.28</td>
+        <td class="ff">+09 29 20.1</td>
+        <td class="ff rj">16.1 R</td>
+        <td>G48 &ndash; Harlingten Research Observatory, Rancho Hildal</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.12161</td>
+        <td class="ff">00 50 42.58</td>
+        <td class="ff">+09 29 09.2</td>
+        <td class="ff rj">15.8 R</td>
+        <td>G48 &ndash; Harlingten Research Observatory, Rancho Hildal</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.12199</td>
+        <td class="ff">00 50 42.76</td>
+        <td class="ff">+09 29 04.4</td>
+        <td class="ff rj">16.2 R</td>
+        <td>G48 &ndash; Harlingten Research Observatory, Rancho Hildal</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.14000</td>
+        <td class="ff">00 50 51.01</td>
+        <td class="ff">+09 24 59.1</td>
+        <td class="ff rj">15.7 R</td>
+        <td>G48 &ndash; Harlingten Research Observatory, Rancho Hildal</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.14038</td>
+        <td class="ff">00 50 51.18</td>
+        <td class="ff">+09 24 53.6</td>
+        <td class="ff rj">16.0 R</td>
+        <td>G48 &ndash; Harlingten Research Observatory, Rancho Hildal</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.14078</td>
+        <td class="ff">00 50 51.36</td>
+        <td class="ff">+09 24 48.5</td>
+        <td class="ff rj">16.0 R</td>
+        <td>G48 &ndash; Harlingten Research Observatory, Rancho Hildal</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.14116</td>
+        <td class="ff">00 50 51.56</td>
+        <td class="ff">+09 24 43.0</td>
+        <td class="ff rj">15.8 R</td>
+        <td>G48 &ndash; Harlingten Research Observatory, Rancho Hildal</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.14155</td>
+        <td class="ff">00 50 51.72</td>
+        <td class="ff">+09 24 37.3</td>
+        <td class="ff rj">16.4 R</td>
+        <td>G48 &ndash; Harlingten Research Observatory, Rancho Hildal</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.14194</td>
+        <td class="ff">00 50 51.92</td>
+        <td class="ff">+09 24 31.9</td>
+        <td class="ff rj">15.9 R</td>
+        <td>G48 &ndash; Harlingten Research Observatory, Rancho Hildal</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.14231</td>
+        <td class="ff">00 50 50.56</td>
+        <td class="ff">+09 24 22.4</td>
+        <td class="ff rj">15.6 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.14375</td>
+        <td class="ff">00 50 51.18</td>
+        <td class="ff">+09 24 02.2</td>
+        <td class="ff rj">16.0 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.14519</td>
+        <td class="ff">00 50 51.84</td>
+        <td class="ff">+09 23 42.2</td>
+        <td class="ff rj">15.8 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.14720</td>
+        <td class="ff">00 50 52.72</td>
+        <td class="ff">+09 23 13.9</td>
+        <td class="ff rj">16.2 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.14911</td>
+        <td class="ff">00 50 53.52</td>
+        <td class="ff">+09 22 47.6</td>
+        <td class="ff rj">16.0 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.15103</td>
+        <td class="ff">00 50 54.37</td>
+        <td class="ff">+09 22 20.4</td>
+        <td class="ff rj">15.7 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.15618</td>
+        <td class="ff">00 50 58.27</td>
+        <td class="ff">+09 21 12.2</td>
+        <td class="ff rj">16.2 R</td>
+        <td>G48 &ndash; Harlingten Research Observatory, Rancho Hildal</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.15657</td>
+        <td class="ff">00 50 58.44</td>
+        <td class="ff">+09 21 06.8</td>
+        <td class="ff rj">16.3 R</td>
+        <td>G48 &ndash; Harlingten Research Observatory, Rancho Hildal</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.15735</td>
+        <td class="ff">00 50 58.78</td>
+        <td class="ff">+09 20 55.7</td>
+        <td class="ff rj">16.1 R</td>
+        <td>G48 &ndash; Harlingten Research Observatory, Rancho Hildal</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.15774</td>
+        <td class="ff">00 50 58.97</td>
+        <td class="ff">+09 20 50.1</td>
+        <td class="ff rj">16.1 R</td>
+        <td>G48 &ndash; Harlingten Research Observatory, Rancho Hildal</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.15815</td>
+        <td class="ff">00 50 59.15</td>
+        <td class="ff">+09 20 44.5</td>
+        <td class="ff rj">16.6 R</td>
+        <td>G48 &ndash; Harlingten Research Observatory, Rancho Hildal</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.18832</td>
+        <td class="ff">00 50 19.50</td>
+        <td class="ff">+09 13 46.1</td>
+        <td class="ff rj">16.5 V</td>
+        <td>G40 &ndash; Slooh.com Canary Islands Observatory</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.19561</td>
+        <td class="ff">00 50 22.74</td>
+        <td class="ff">+09 11 49.7</td>
+        <td class="ff rj">16.9 V</td>
+        <td>G40 &ndash; Slooh.com Canary Islands Observatory</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.20791</td>
+        <td class="ff">00 51 12.07</td>
+        <td class="ff">+09 07 30.1</td>
+        <td class="ff rj">15.8 R</td>
+        <td>H36 &ndash; Sandlot Observatory, Scranton</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.20900</td>
+        <td class="ff">00 51 12.53</td>
+        <td class="ff">+09 07 13.3</td>
+        <td class="ff rj">15.8 R</td>
+        <td>H36 &ndash; Sandlot Observatory, Scranton</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.21043</td>
+        <td class="ff">00 51 13.13</td>
+        <td class="ff">+09 06 50.9</td>
+        <td class="ff rj">15.9 R</td>
+        <td>H36 &ndash; Sandlot Observatory, Scranton</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.21259</td>
+        <td class="ff">00 51 14.02</td>
+        <td class="ff">+09 06 17.5</td>
+        <td class="ff rj">15.8 R</td>
+        <td>H36 &ndash; Sandlot Observatory, Scranton</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.21367</td>
+        <td class="ff">00 51 14.47</td>
+        <td class="ff">+09 06 00.4</td>
+        <td class="ff rj">16.0 R</td>
+        <td>H36 &ndash; Sandlot Observatory, Scranton</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.21617</td>
+        <td class="ff">00 51 29.34</td>
+        <td class="ff">+09 05 12.1</td>
+        <td class="ff rj">15.9 R</td>
+        <td>G56 &ndash; Walnut Creek</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.21913</td>
+        <td class="ff">00 51 30.66</td>
+        <td class="ff">+09 04 25.5</td>
+        <td class="ff rj">15.6 R</td>
+        <td>G56 &ndash; Walnut Creek</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.22214</td>
+        <td class="ff">00 51 32.07</td>
+        <td class="ff">+09 03 38.9</td>
+        <td class="ff rj">15.5 R</td>
+        <td>G56 &ndash; Walnut Creek</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.22850</td>
+        <td class="ff">00 51 35.05</td>
+        <td class="ff">+09 01 58.4</td>
+        <td class="ff rj">15.6 R</td>
+        <td>G56 &ndash; Walnut Creek</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.264830</td>
+        <td class="ff">00 51 31.50</td>
+        <td class="ff">+08 51 56.6</td>
+        <td class="ff rj">15.8 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.266326</td>
+        <td class="ff">00 51 32.16</td>
+        <td class="ff">+08 51 31.3</td>
+        <td class="ff rj">16.1 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.267628</td>
+        <td class="ff">00 51 32.73</td>
+        <td class="ff">+08 51 08.7</td>
+        <td class="ff rj">16.2 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.269307</td>
+        <td class="ff">00 51 33.49</td>
+        <td class="ff">+08 50 39.6</td>
+        <td class="ff rj">15.8 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.271167</td>
+        <td class="ff">00 51 34.32</td>
+        <td class="ff">+08 50 07.5</td>
+        <td class="ff rj">16.3 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.273006</td>
+        <td class="ff">00 51 35.12</td>
+        <td class="ff">+08 49 35.9</td>
+        <td class="ff rj">16.2 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.27866</td>
+        <td class="ff">00 51 48.45</td>
+        <td class="ff">+08 49 08.3</td>
+        <td class="ff rj">16.3 V</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.27916</td>
+        <td class="ff">00 51 48.66</td>
+        <td class="ff">+08 48 59.4</td>
+        <td class="ff rj">16.1 V</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.27965</td>
+        <td class="ff">00 51 48.86</td>
+        <td class="ff">+08 48 50.8</td>
+        <td class="ff rj">16.5 V</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.28015</td>
+        <td class="ff">00 51 49.09</td>
+        <td class="ff">+08 48 42.2</td>
+        <td class="ff rj">16.1 V</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.28065</td>
+        <td class="ff">00 51 49.31</td>
+        <td class="ff">+08 48 33.5</td>
+        <td class="ff rj">16.5 V</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.28108</td>
+        <td class="ff">00 51 59.56</td>
+        <td class="ff">+08 47 29.7</td>
+        <td class="ff rj">15.8 R</td>
+        <td>G56 &ndash; Walnut Creek</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.28114</td>
+        <td class="ff">00 51 49.53</td>
+        <td class="ff">+08 48 24.9</td>
+        <td class="ff rj">16.1 V</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.28592</td>
+        <td class="ff">00 52 01.85</td>
+        <td class="ff">+08 46 05.8</td>
+        <td class="ff rj">15.6 R</td>
+        <td>G56 &ndash; Walnut Creek</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.29377</td>
+        <td class="ff">00 52 05.50</td>
+        <td class="ff">+08 43 48.2</td>
+        <td class="ff rj">15.6 R</td>
+        <td>G56 &ndash; Walnut Creek</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.30068</td>
+        <td class="ff">00 52 08.76</td>
+        <td class="ff">+08 41 46.3</td>
+        <td class="ff rj">15.6 R</td>
+        <td>G56 &ndash; Walnut Creek</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.32823</td>
+        <td class="ff">00 52 10.81</td>
+        <td class="ff">+08 34 14.3</td>
+        <td class="ff rj">15.7 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.34259</td>
+        <td class="ff">00 52 17.70</td>
+        <td class="ff">+08 29 41.0</td>
+        <td class="ff rj">15.6 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.35956</td>
+        <td class="ff">00 52 26.23</td>
+        <td class="ff">+08 24 09.3</td>
+        <td class="ff rj">15.4 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.36001</td>
+        <td class="ff">00 52 26.47</td>
+        <td class="ff">+08 23 59.7</td>
+        <td class="ff rj">15.5 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.36047</td>
+        <td class="ff">00 52 26.70</td>
+        <td class="ff">+08 23 51.0</td>
+        <td class="ff rj">15.4 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.36091</td>
+        <td class="ff">00 52 26.92</td>
+        <td class="ff">+08 23 42.4</td>
+        <td class="ff rj">15.5 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.36137</td>
+        <td class="ff">00 52 27.14</td>
+        <td class="ff">+08 23 33.7</td>
+        <td class="ff rj">15.2 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.36182</td>
+        <td class="ff">00 52 27.41</td>
+        <td class="ff">+08 23 24.1</td>
+        <td class="ff rj">15.4 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.36228</td>
+        <td class="ff">00 52 27.63</td>
+        <td class="ff">+08 23 14.8</td>
+        <td class="ff rj">15.4 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.36275</td>
+        <td class="ff">00 52 27.85</td>
+        <td class="ff">+08 23 05.8</td>
+        <td class="ff rj">15.3 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.36322</td>
+        <td class="ff">00 52 28.15</td>
+        <td class="ff">+08 22 56.2</td>
+        <td class="ff rj">15.8 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.36368</td>
+        <td class="ff">00 52 28.35</td>
+        <td class="ff">+08 22 47.4</td>
+        <td class="ff rj">15.2 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.36412</td>
+        <td class="ff">00 52 28.57</td>
+        <td class="ff">+08 22 38.7</td>
+        <td class="ff rj">15.3 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.36457</td>
+        <td class="ff">00 52 28.81</td>
+        <td class="ff">+08 22 29.6</td>
+        <td class="ff rj">15.1 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.36501</td>
+        <td class="ff">00 52 29.07</td>
+        <td class="ff">+08 22 20.3</td>
+        <td class="ff rj">15.2 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.36546</td>
+        <td class="ff">00 52 29.29</td>
+        <td class="ff">+08 22 11.4</td>
+        <td class="ff rj">15.2 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.36568</td>
+        <td class="ff">00 52 32.59</td>
+        <td class="ff">+08 22 17.1</td>
+        <td class="ff rj">15.5 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.36591</td>
+        <td class="ff">00 52 29.51</td>
+        <td class="ff">+08 22 02.9</td>
+        <td class="ff rj">15.1 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.36638</td>
+        <td class="ff">00 52 29.76</td>
+        <td class="ff">+08 21 53.4</td>
+        <td class="ff rj">15.6 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.36682</td>
+        <td class="ff">00 52 29.99</td>
+        <td class="ff">+08 21 44.6</td>
+        <td class="ff rj">15.3 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.36726</td>
+        <td class="ff">00 52 30.21</td>
+        <td class="ff">+08 21 35.6</td>
+        <td class="ff rj">15.5 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.36771</td>
+        <td class="ff">00 52 30.44</td>
+        <td class="ff">+08 21 26.9</td>
+        <td class="ff rj">15.3 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.36816</td>
+        <td class="ff">00 52 30.70</td>
+        <td class="ff">+08 21 17.8</td>
+        <td class="ff rj">15.2 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.37230</td>
+        <td class="ff">00 52 36.04</td>
+        <td class="ff">+08 20 03.3</td>
+        <td class="ff rj">15.5 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.37912</td>
+        <td class="ff">00 52 39.61</td>
+        <td class="ff">+08 17 45.2</td>
+        <td class="ff rj">15.7 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.38442</td>
+        <td class="ff">00 52 45.47</td>
+        <td class="ff">+08 14 27.4</td>
+        <td class="ff rj">15.7 &nbsp;</td>
+        <td>718 &ndash; Tooele</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.38586</td>
+        <td class="ff">00 52 43.28</td>
+        <td class="ff">+08 15 26.8</td>
+        <td class="ff rj">15.7 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.38625</td>
+        <td class="ff">00 52 46.54</td>
+        <td class="ff">+08 13 49.4</td>
+        <td class="ff rj">16.0 &nbsp;</td>
+        <td>718 &ndash; Tooele</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.38807</td>
+        <td class="ff">00 52 47.56</td>
+        <td class="ff">+08 13 11.8</td>
+        <td class="ff rj">15.9 &nbsp;</td>
+        <td>718 &ndash; Tooele</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.39875</td>
+        <td class="ff">00 52 47.62</td>
+        <td class="ff">+08 10 46.4</td>
+        <td class="ff rj">15.7 R</td>
+        <td>H15 &ndash; ISON-NM Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.40105</td>
+        <td class="ff">00 52 48.96</td>
+        <td class="ff">+08 09 57.7</td>
+        <td class="ff rj">15.8 R</td>
+        <td>H15 &ndash; ISON-NM Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.40349</td>
+        <td class="ff">00 52 50.40</td>
+        <td class="ff">+08 09 05.8</td>
+        <td class="ff rj">15.7 R</td>
+        <td>H15 &ndash; ISON-NM Observatory, Mayhill</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.65779</td>
+        <td class="ff">00 57 24.17</td>
+        <td class="ff">+06 17 16.9</td>
+        <td class="ff rj">15.3 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.65869</td>
+        <td class="ff">00 57 25.02</td>
+        <td class="ff">+06 16 46.6</td>
+        <td class="ff rj">15.2 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.66004</td>
+        <td class="ff">00 57 26.30</td>
+        <td class="ff">+06 16 01.4</td>
+        <td class="ff rj">15.5 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.66096</td>
+        <td class="ff">00 57 27.16</td>
+        <td class="ff">+06 15 31.1</td>
+        <td class="ff rj">15.3 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.66188</td>
+        <td class="ff">00 57 28.04</td>
+        <td class="ff">+06 15 00.0</td>
+        <td class="ff rj">15.0 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.67116</td>
+        <td class="ff">00 57 36.92</td>
+        <td class="ff">+06 09 46.0</td>
+        <td class="ff rj">15.4 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.67152</td>
+        <td class="ff">00 57 37.25</td>
+        <td class="ff">+06 09 33.4</td>
+        <td class="ff rj">14.9 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.67224</td>
+        <td class="ff">00 57 37.97</td>
+        <td class="ff">+06 09 09.1</td>
+        <td class="ff rj">15.4 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.67260</td>
+        <td class="ff">00 57 38.30</td>
+        <td class="ff">+06 08 56.5</td>
+        <td class="ff rj">14.9 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.67296</td>
+        <td class="ff">00 57 38.64</td>
+        <td class="ff">+06 08 44.3</td>
+        <td class="ff rj">15.0 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.67333</td>
+        <td class="ff">00 57 39.01</td>
+        <td class="ff">+06 08 31.7</td>
+        <td class="ff rj">15.3 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.67369</td>
+        <td class="ff">00 57 39.37</td>
+        <td class="ff">+06 08 18.8</td>
+        <td class="ff rj">15.0 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.67405</td>
+        <td class="ff">00 57 39.73</td>
+        <td class="ff">+06 08 06.7</td>
+        <td class="ff rj">15.2 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.67443</td>
+        <td class="ff">00 57 40.09</td>
+        <td class="ff">+06 07 53.6</td>
+        <td class="ff rj">15.4 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.67479</td>
+        <td class="ff">00 57 40.44</td>
+        <td class="ff">+06 07 41.3</td>
+        <td class="ff rj">14.9 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.67515</td>
+        <td class="ff">00 57 40.80</td>
+        <td class="ff">+06 07 29.1</td>
+        <td class="ff rj">15.0 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.67551</td>
+        <td class="ff">00 57 41.15</td>
+        <td class="ff">+06 07 16.5</td>
+        <td class="ff rj">15.4 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.67587</td>
+        <td class="ff">00 57 41.51</td>
+        <td class="ff">+06 07 03.9</td>
+        <td class="ff rj">14.9 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.67623</td>
+        <td class="ff">00 57 41.84</td>
+        <td class="ff">+06 06 51.8</td>
+        <td class="ff rj">15.1 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.67659</td>
+        <td class="ff">00 57 42.20</td>
+        <td class="ff">+06 06 39.3</td>
+        <td class="ff rj">15.4 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.67695</td>
+        <td class="ff">00 57 42.55</td>
+        <td class="ff">+06 06 26.8</td>
+        <td class="ff rj">14.8 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.67733</td>
+        <td class="ff">00 57 42.94</td>
+        <td class="ff">+06 06 13.4</td>
+        <td class="ff rj">15.1 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.67804</td>
+        <td class="ff">00 57 43.63</td>
+        <td class="ff">+06 05 48.8</td>
+        <td class="ff rj">15.0 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.67840</td>
+        <td class="ff">00 57 44.01</td>
+        <td class="ff">+06 05 36.5</td>
+        <td class="ff rj">15.1 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.67911</td>
+        <td class="ff">00 57 44.71</td>
+        <td class="ff">+06 05 11.6</td>
+        <td class="ff rj">14.9 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.67948</td>
+        <td class="ff">00 57 45.04</td>
+        <td class="ff">+06 04 59.0</td>
+        <td class="ff rj">14.9 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.68021</td>
+        <td class="ff">00 57 45.79</td>
+        <td class="ff">+06 04 33.3</td>
+        <td class="ff rj">14.9 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.68057</td>
+        <td class="ff">00 57 46.12</td>
+        <td class="ff">+06 04 21.1</td>
+        <td class="ff rj">15.1 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.68093</td>
+        <td class="ff">00 57 46.50</td>
+        <td class="ff">+06 04 08.5</td>
+        <td class="ff rj">15.3 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.68129</td>
+        <td class="ff">00 57 46.87</td>
+        <td class="ff">+06 03 55.8</td>
+        <td class="ff rj">14.9 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.68165</td>
+        <td class="ff">00 57 47.23</td>
+        <td class="ff">+06 03 43.3</td>
+        <td class="ff rj">14.9 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.68238</td>
+        <td class="ff">00 57 47.93</td>
+        <td class="ff">+06 03 17.5</td>
+        <td class="ff rj">15.0 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.68274</td>
+        <td class="ff">00 57 48.29</td>
+        <td class="ff">+06 03 04.9</td>
+        <td class="ff rj">15.1 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.68347</td>
+        <td class="ff">00 57 49.02</td>
+        <td class="ff">+06 02 39.4</td>
+        <td class="ff rj">15.0 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.68383</td>
+        <td class="ff">00 57 49.39</td>
+        <td class="ff">+06 02 26.8</td>
+        <td class="ff rj">14.9 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.68419</td>
+        <td class="ff">00 57 49.75</td>
+        <td class="ff">+06 02 13.9</td>
+        <td class="ff rj">15.3 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.68491</td>
+        <td class="ff">00 57 50.46</td>
+        <td class="ff">+06 01 48.9</td>
+        <td class="ff rj">15.2 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.68527</td>
+        <td class="ff">00 57 50.83</td>
+        <td class="ff">+06 01 36.3</td>
+        <td class="ff rj">15.3 R</td>
+        <td>300 &ndash; Bisei Spaceguard Center-BATTeRS</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.766407</td>
+        <td class="ff">01 00 50.00</td>
+        <td class="ff">+05 06 03.7</td>
+        <td class="ff rj">14.9 V</td>
+        <td>B03 &ndash; Alter Satzberg, Vienna</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.768686</td>
+        <td class="ff">01 00 53.48</td>
+        <td class="ff">+05 04 28.9</td>
+        <td class="ff rj">15.0 V</td>
+        <td>B03 &ndash; Alter Satzberg, Vienna</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.770963</td>
+        <td class="ff">01 00 56.93</td>
+        <td class="ff">+05 02 53.7</td>
+        <td class="ff rj">15.2 V</td>
+        <td>B03 &ndash; Alter Satzberg, Vienna</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.773240</td>
+        <td class="ff">01 01 00.40</td>
+        <td class="ff">+05 01 17.8</td>
+        <td class="ff rj">15.0 V</td>
+        <td>B03 &ndash; Alter Satzberg, Vienna</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.775516</td>
+        <td class="ff">01 01 03.87</td>
+        <td class="ff">+04 59 41.6</td>
+        <td class="ff rj">15.4 V</td>
+        <td>B03 &ndash; Alter Satzberg, Vienna</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.78910</td>
+        <td class="ff">01 01 17.58</td>
+        <td class="ff">+04 51 07.6</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>094 &ndash; Crimea-Simeis</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.79114</td>
+        <td class="ff">01 01 20.70</td>
+        <td class="ff">+04 49 33.5</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>094 &ndash; Crimea-Simeis</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.79177</td>
+        <td class="ff">01 01 21.62</td>
+        <td class="ff">+04 49 05.5</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>094 &ndash; Crimea-Simeis</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.79254</td>
+        <td class="ff">01 01 22.76</td>
+        <td class="ff">+04 48 31.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>094 &ndash; Crimea-Simeis</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.79274</td>
+        <td class="ff">01 01 23.05</td>
+        <td class="ff">+04 48 22.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>094 &ndash; Crimea-Simeis</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.79284</td>
+        <td class="ff">01 01 23.21</td>
+        <td class="ff">+04 48 17.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>094 &ndash; Crimea-Simeis</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.79325</td>
+        <td class="ff">01 01 23.81</td>
+        <td class="ff">+04 48 00.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>094 &ndash; Crimea-Simeis</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.79365</td>
+        <td class="ff">01 01 24.38</td>
+        <td class="ff">+04 47 41.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>094 &ndash; Crimea-Simeis</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.83338</td>
+        <td class="ff">01 02 42.35</td>
+        <td class="ff">+04 17 20.1</td>
+        <td class="ff rj">14.6 R</td>
+        <td>A81 &ndash; Balzaretto Observatory, Rome</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.83486</td>
+        <td class="ff">01 02 44.79</td>
+        <td class="ff">+04 16 08.4</td>
+        <td class="ff rj">14.7 R</td>
+        <td>A81 &ndash; Balzaretto Observatory, Rome</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.83636</td>
+        <td class="ff">01 02 47.29</td>
+        <td class="ff">+04 14 54.8</td>
+        <td class="ff rj">14.6 R</td>
+        <td>A81 &ndash; Balzaretto Observatory, Rome</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.83788</td>
+        <td class="ff">01 02 49.79</td>
+        <td class="ff">+04 13 40.6</td>
+        <td class="ff rj">14.7 R</td>
+        <td>A81 &ndash; Balzaretto Observatory, Rome</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.85732</td>
+        <td class="ff">01 03 24.97</td>
+        <td class="ff">+03 55 01.1</td>
+        <td class="ff rj">15.0 V</td>
+        <td>J84 &ndash; South Observatory, Clanfield</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.858522</td>
+        <td class="ff">01 03 26.88</td>
+        <td class="ff">+03 53 52.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.85940</td>
+        <td class="ff">01 03 28.74</td>
+        <td class="ff">+03 53 13.0</td>
+        <td class="ff rj">14.8 V</td>
+        <td>J84 &ndash; South Observatory, Clanfield</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.859924</td>
+        <td class="ff">01 03 29.43</td>
+        <td class="ff">+03 52 39.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.861385</td>
+        <td class="ff">01 03 32.09</td>
+        <td class="ff">+03 51 23.2</td>
+        <td class="ff rj">14.6 R</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.86148</td>
+        <td class="ff">01 03 32.50</td>
+        <td class="ff">+03 51 25.1</td>
+        <td class="ff rj">14.9 V</td>
+        <td>J84 &ndash; South Observatory, Clanfield</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.86951</td>
+        <td class="ff">01 03 47.18</td>
+        <td class="ff">+03 44 22.1</td>
+        <td class="ff rj">14.8 V</td>
+        <td>J84 &ndash; South Observatory, Clanfield</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.87266</td>
+        <td class="ff">01 03 21.21</td>
+        <td class="ff">+03 43 36.7</td>
+        <td class="ff rj">15.0 V</td>
+        <td>C32 &ndash; Ka-Dar Observatory, TAU Station, Nizhny Arkhyz</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.87339</td>
+        <td class="ff">01 03 22.43</td>
+        <td class="ff">+03 42 57.0</td>
+        <td class="ff rj">14.6 V</td>
+        <td>C32 &ndash; Ka-Dar Observatory, TAU Station, Nizhny Arkhyz</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.87366</td>
+        <td class="ff">01 03 54.90</td>
+        <td class="ff">+03 40 38.4</td>
+        <td class="ff rj">14.9 V</td>
+        <td>J84 &ndash; South Observatory, Clanfield</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.87430</td>
+        <td class="ff">01 03 23.97</td>
+        <td class="ff">+03 42 07.5</td>
+        <td class="ff rj">14.5 V</td>
+        <td>C32 &ndash; Ka-Dar Observatory, TAU Station, Nizhny Arkhyz</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.87487</td>
+        <td class="ff">01 03 24.90</td>
+        <td class="ff">+03 41 37.3</td>
+        <td class="ff rj">14.9 V</td>
+        <td>C32 &ndash; Ka-Dar Observatory, TAU Station, Nizhny Arkhyz</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.87533</td>
+        <td class="ff">01 03 25.68</td>
+        <td class="ff">+03 41 12.3</td>
+        <td class="ff rj">14.7 V</td>
+        <td>C32 &ndash; Ka-Dar Observatory, TAU Station, Nizhny Arkhyz</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.87573</td>
+        <td class="ff">01 03 58.74</td>
+        <td class="ff">+03 38 47.2</td>
+        <td class="ff rj">14.8 V</td>
+        <td>J84 &ndash; South Observatory, Clanfield</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.87641</td>
+        <td class="ff">01 03 27.52</td>
+        <td class="ff">+03 40 13.5</td>
+        <td class="ff rj">14.5 V</td>
+        <td>C32 &ndash; Ka-Dar Observatory, TAU Station, Nizhny Arkhyz</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.87781</td>
+        <td class="ff">01 04 02.63</td>
+        <td class="ff">+03 36 53.2</td>
+        <td class="ff rj">14.8 V</td>
+        <td>J84 &ndash; South Observatory, Clanfield</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.87988</td>
+        <td class="ff">01 04 06.52</td>
+        <td class="ff">+03 35 00.5</td>
+        <td class="ff rj">14.9 V</td>
+        <td>J84 &ndash; South Observatory, Clanfield</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.91086</td>
+        <td class="ff">01 05 32.54</td>
+        <td class="ff">+03 11 49.7</td>
+        <td class="ff rj">14.8 V</td>
+        <td>G40 &ndash; Slooh.com Canary Islands Observatory</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 06.93169</td>
+        <td class="ff">01 06 15.00</td>
+        <td class="ff">+02 50 47.7</td>
+        <td class="ff rj">14.7 V</td>
+        <td>G40 &ndash; Slooh.com Canary Islands Observatory</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 07.138203</td>
+        <td class="ff">01 15 41.71</td>
+        <td class="ff">-02 15 39.2</td>
+        <td class="ff rj">14.0 R</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 07.138986</td>
+        <td class="ff">01 15 44.90</td>
+        <td class="ff">-02 17 13.3</td>
+        <td class="ff rj">14.1 R</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+      <tr>
+        <td class="ff">2012 10 07.139772</td>
+        <td class="ff">01 15 48.10</td>
+        <td class="ff">-02 18 47.6</td>
+        <td class="ff rj">13.8 R</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 434248</td>
+      </tr>
+  </table>
+
+
+        </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer id="footer">
+    <div class="holder">
+      <nav class="nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+	  <!-- Contact link changed to Jira -->
+          <li><a href="https://mpc-service.atlassian.net/servicedesk/customer/portals">Contact</a></li>
+          <li><a href="https://www.cfa.harvard.edu/content/privacy-statement">Privacy</a></li>
+        </ul>
+      </nav>
+      
+      <a href="https://www.cfa.harvard.edu">
+      <img src="/images/CfA_Logo_Vertical_CMYK.png" width="110" height="47"></a>
+      <p>
+      <p>
+      <p>
+      <div class="copy">The Minor Planet Center is hosted by the Center for Astrophysics | Harvard &amp; Smithsonian.<center>The Minor Planet Center is funded by NASA.</center></div> 
+  </footer>
+
+<script type="text/javascript">
+  $(window).on('load', (function() {
+    $("table").tablesorter();
+  })); 
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var _tag=new WebTrends();
+_tag.dcsGetId();
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+_tag.dcsCustom=function(){
+// Add custom parameters here.
+//_tag.DCSext.param_name=param_value;
+}
+_tag.dcsCollect();
+//]]>
+</script>
+
+<noscript>
+<div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="//logs1.smithsonian.museum/dcsa7yzrmbdzpxzrosrn4tyep_5i1d/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=9.4.0&amp;dcssip=www.minorplanetcenter.net"/></div>
+</noscript>
+</body>
+
+</html>

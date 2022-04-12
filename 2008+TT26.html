@@ -1,0 +1,3478 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IAU Minor Planet Center</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/mpc.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/table-sorter.css">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+  <link media="all" rel="stylesheet" href="/css/all.css">
+
+  <link rel="icon" type="image/png" href="/iau/figs/MPClogo16.png">
+  <meta name="description" content="We are the official body that deals with
+      astrometric observations and orbits of minor planets (asteroids) and comets.">
+
+  <meta name="keywords" content="astrometry, observations, orbits,
+      minor planets, asteroids, comets, near earth objects, 
+      potentially hazardous asteroids">
+
+  <script type="text/javascript" src="/js/jquery-latest.js"></script>
+<!--  <script type="text/javascript" src="/js/jquery.main.js"></script> -->
+<!--  <script type="text/javascript" src="/js/jquery.metadata.js"></script> -->
+  <script type="text/javascript" src="/js/jquery.tablesorter.js"></script>
+  <script type="text/javascript" src="/js/webtrends.js"></script>
+  <script type="text/javascript" src="/js/track_pdfs.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic|PT+Sans:400,700,400italic,700italic|PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+  
+<body>
+  <!-- wrapper -->
+  <div id="wrapper">
+    <div class="w1">
+      <!-- header -->
+      <header id="header">
+        <div class="holder">
+          <!-- logo -->
+          <h1 class="logo"><a href="/">The International Astronomical Union Minor Planet Center</a></h1>
+          <div class="area">
+            <!-- top-nav -->
+            <nav class="top-nav">
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+		<!-- Contact link changed to Jira -->
+                <li><a href="https://mpc-service.atlassian.net/servicedesk/customer/portals">Contact</a></li>
+              </ul>
+            </nav>
+            <!-- search-form -->
+            <div class="form-holder">
+              <!-- This commented code opens a new page for the search. -->
+              <!--<form class="search-form" method="get" action="https://www.google.com/search" target="_blank">-->
+              <form class="search-form" method="get" action="https://www.google.com/search">
+                <fieldset>
+                  <!--<label for="search">Search</label>-->
+                  <input type="hidden" name="sitesearch" value="minorplanetcenter.net">
+                  <input type="text" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" id="search" name="q" value="Search MPC">
+                </fieldset>
+              </form>
+            </div>
+            <div class="social-bar">
+<!--              <a href="https://twitter.com/MinorPlanetCtr"><span class="social twitter">L</span></a> -->
+<!--              <a href="https://www.facebook.com/MinorPlanetCenter"><span class="social facebook">F</span></a> -->
+<!--              <a href="https://www.youtube.com/channel/UCtALMOQHuBxh5XMsYNiDhMg"><span class="social youtube">X</span></a> -->
+<!--              <a href="/iau/rss/mpc_feeds.html"><span class="social rss">R</span></a> -->
+            </div>
+          </div>
+        </div>
+        <nav class="nav-holder">
+          <!-- main navigation -->
+          <ul id="nav">
+            <li>
+              <a href="/iau/mpc.html"><span>OBSERVERS</span></a>
+              <ul>
+                <li><a href="/iau/MPEph/MPEph.html">Ephemeris Service</a></li>
+                <li><a href="/mpec/RecentMPECs.html">MPECs</a></li>
+                <li><a href="/iau/NEO/toconfirm_tabular.html">NEO Confirmation</a></li>
+                <li><a href="/iau/NEO/pccp_tabular.html">Possible Comet Confirmation</a></li>
+                <li><a href="/iau/Ephemerides/EphemOrbEls.html" class="nested">Orbital Elements</a>
+                  <ul>
+                    <li><a href="/iau/MPCORB.html">MPCORB</a></li>
+                    <li><a href="/iau/ECS/MPCAT/MPCAT.html">MPCAT</a></li>
+                    <li><a href="/iau/ECS/MPCUPDATE/MPCUPDATE.html">MPCUPDATE</a></li>
+                    <li><a href="/iau/Ephemerides/SoftwareEls.html">Orbital Elements for Software</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/services/MPCServices.html">Publications Overview</a></li>
+                <li><a href="/iau/ECS/MPCArchive/MPCArchive_TBL.html">Publications Archive</a></li>              
+                <li><a href="/iau/NEO/TheNEOPage.html" class="nested">NEO Services</a>
+                  <ul>
+                    <li><a href="/iau/NEO/toconfirm_tabular.html">Confirmation</a></li>
+                    <li><a href="/iau/NEO/PossNEO.html">Ratings</a></li>
+                    <li><a href="/cgi-bin/neaobs.cgi">Observation Planning Aid</a></li>
+                    <li><a href="/cgi-bin/checkneo.cgi">NEOChecker</a></li>
+                    <li><a href="/cgi-bin/checkneocmt.cgi">NEOCMTChecker</a></li>
+                    <li><a href="/neocp_followup_report/">NEOCP Followup Report Form</a></li>
+                    <li><a href="/neocp_followup_reports/">NEOCP Followup Reports</a></li>
+                    <li><a href="/neocp_obs">NEOCP Recent Observations</a></li>
+                  </ul>
+                </li>
+                <li><a href="/iau/services/WebCSAccess.html" class="nested">Other Observer Services</a>
+                  <ul>
+                    <li><a href="/whatsup">Observing Target List</a></li>
+                    <li><a href="/iau/NatSats/NaturalSatellites.html">Natural Satellite Ephemerides</a></li>
+                    <li><a href="/iau/MPEph/NewObjEphems.html">New Object Ephemerides</a></li>
+                    <li><a href="/cgi-bin/checkmp.cgi">MPChecker</a></li>
+                    <li><a href="/cgi-bin/checkcmt.cgi">CMTChecker</a></li>
+                    <li><a href="/iau/artsats/artsats.html">Distant Artificial Satellites</a></li>
+                    <li><a href="/iau/lists/Customize.html">Observing List Customizer</a></li>
+                  </ul>
+                </li>
+                <li><a href="/db_search">Orbits/Observations Database</a></li>
+
+                <li><a href='http://alcdef.org'>Light Curve Database</a></li>
+
+                <li><a href="/iau/ECS/MPCAT-OBS/MPCAT-OBS.html">MPCAT-OBS</a></li>
+                <li><a href="/iau/SkyCoverage.html">Sky Coverage</a></li>
+                <li><a href="/iau/MPC_Documentation.html" class="nested">Documentation</a>
+                  <ul>
+                    <li><a href="/iau/info/TechInfo.html">MPC Submission Info</a></li>
+                    <li><a href="/iau/info/Astrometry.html">Astrometry Guide</a></li>
+                    <li><a href="/iau/WhatsNew.html">What's New</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/lists/Lists.html" class="nested">Lists and Plots</a>
+                  <ul>
+                    <li><a href="/iau/lists/MPLists.html">Minor Planets</a></li>
+                      <!--<ul>
+                        <li><a href="/iau/lists/t_atens.html">Atens</a></li>
+                        <li><a href="/iau/lists/t_apollos.html">Apollos</a></li>
+                        <li><a href="/iau/lists/t_amors.html">Amors</a></li>
+                        <li><a href="/iau/lists/t_centaurs.html">Centaurs and Scattered Disk Objects</a></li>
+                        <li><a href="/iau/lists/t_tnos.html">Transneptunian Objects</a></li>
+                        <li><a href="/iau/lists/t_others.html">Other Unusual Objects</a></li>
+                        <li><a href="/iau/lists/t_dangerous.html">Potentially Hazardous Asteroids</a></li>
+                      </ul>-->
+                    <li><a href="/iau/lists/CometLists.html">Comets</a></li>
+                      <!--<ul>
+                        <li><a href="/iau/lists/LastCometObs.html">Date of Last Observation</a></li>
+                        <li><a href="/iau/lists/LastYear.html">Designations from the Past Year</a></li>
+                        <li><a href="http://www.icq.eps.harvard.edu/CometMags.html">Comet Magnitude Estimates</a></li>
+                        <li><a href="/iau/lists/ClosestComets.html">Closest Approaches</a></li>
+                        <li><a href="/iau/lists/PeriodicCodes.html">Periodic Comets</a></li>
+                      </ul>-->
+                    <li><a href="/iau/lists/ObsCodesF.html">Observatory Codes</a></li>		    
+                    <li><a href="/iau/Animations/Animations.html">Animations</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/MPCStatus.html">MPC Status</a></li>
+                <!--<li><a href="/summary">Summary</a></li>-->
+                <li><a href='/mpc/obs_stats_2014_2018'>2014-18 NEO Obs Statistics</a></li>
+                <li><a href='/mpc/summary'>Summary of Latest Data</a></li>
+              </ul>
+            </li>
+            <li><a href="/data"><span>DATA</span></a>
+            </li>
+            <li><a href="http://iawn.net/"><span>IAWN</span></a>
+            </li>
+            <li><a href="https://minorplanetcenter.net/mpcops/beta/"><span>BETA</span></a></li>
+            <li><a href="/iau/MPCStatus.html"><span style="color:Green">STATUS</a></li>
+            <li><a href="https://sbnmpc.astro.umd.edu/"><span>SBN ANNEX</span></a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- main -->
+      <div id="main">
+
+  <h3>
+  
+   2008 TT26
+  
+  
+   
+  
+</h3>
+
+    First observed at Lincoln Laboratory ETS, New Mexico
+  on 2008-10-09.
+
+
+  <br>(Discoverer will be defined when the object is numbered. 
+  See <a href="/mpec/K10/K10U20.html">this note</a>
+  on how discoverers are determined.)
+
+
+<br>
+<h2>Orbit</h2>
+
+    Orbit type: Apollo
+  <br>
+
+
+    Near-Earth Object<br>
+    One opposition object seen prior.<br>
+
+    <br>
+    <div class="show-orbit-button">
+      <form accept-charset="UTF-8" action="/db_search/show_orbit" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+        <input id="number" name="number" type="hidden" />
+        <input id="designation" name="designation" type="hidden" value="2008 TT26" />
+        <input id="name" name="name" type="hidden" />
+        <input id="epoch" name="epoch" type="hidden" value="2019-04-27.0" />
+        <input id="peri" name="peri" type="hidden" value="190.0972031" />
+        <input id="m" name="m" type="hidden" value="258.14324" />
+        <input id="node" name="node" type="hidden" value="210.5216761" />
+        <input id="incl" name="incl" type="hidden" value="8.4754402" />
+        <input id="e" name="e" type="hidden" value="0.257179825" />
+        <input id="a" name="a" type="hidden" value="1.345336164301138" />
+        <input name="commit" type="submit" value="Interactive Orbit Sketch" />
+</form>    </div>
+    <div>
+       Note: WebGL enabled browser required.
+    </div>
+
+    
+
+
+  <br>
+  <table class="nb">
+    <tr>
+      <td valign="top" class="nb">
+        <table>
+          <tr><td>epoch</td><td class="rj">2019-04-27.0</td></tr>
+          <tr><td>epoch JD</td><td class="rj">2458600.5</td></tr>
+          <tr><td>perihelion date</td><td class="rj">2019-10-05.26208</td></tr>
+          <tr><td>perihelion JD</td><td class="rj">2458761.76208</td></tr>
+          <tr><td>argument of perihelion (°)</td><td class="rj">190.09720</td></tr>
+          <tr><td>ascending node (°)</td><td class="rj">210.52168</td></tr>
+          <tr><td>inclination (°)</td><td class="rj">8.47544</td></tr>
+          <tr><td>eccentricity</td><td class="rj">0.2571798</td></tr>
+          <tr><td>perihelion distance (AU)</td><td class="rj">0.9993428</td></tr>
+          <tr><td>Tisserand w.r.t. Jupiter</td><td class="rj">4.8</td></tr>
+          <tr><td>&Delta;V w.r.t. Earth (km/sec)</td><td class="rj">5.0</td></tr>
+        </table>
+      </td>
+      <td valign="top" class="nb">
+        <table>
+          <tr><td>semimajor axis (AU)</td><td class="rj">1.3453362</td></tr>
+          <tr><td>mean anomaly (°)</td><td class="rj">258.14324</td></tr>
+          <tr><td>mean daily motion (°/day)</td><td class="rj">0.63162250</td></tr>
+          <tr><td>aphelion distance (AU)</td><td class="rj">1.691</td></tr>
+          <tr><td>period (years)</td><td class="rj">1.56</td></tr>
+          <tr><td>P-vector [x]</td><td class="rj">0.76002921</td></tr>
+          <tr><td>P-vector [y]</td><td class="rj">0.60606827</td></tr>
+          <tr><td>P-vector [z]</td><td class="rj">0.23459935</td></tr>
+          <tr><td>Q-vector [x]</td><td class="rj">-0.64556395</td></tr>
+          <tr><td>Q-vector [y]</td><td class="rj">0.74564191</td></tr>
+          <tr><td>Q-vector [z]</td><td class="rj">0.16512215</td></tr>
+          <tr><td>absolute magnitude</td><td class="rj">23.6</td></tr>
+          <tr><td>phase slope</td><td class="rj">0.15</td></tr>
+        </table>
+      </td>
+      <td valign="top" class="nb">
+        <table>
+
+            <tr><td><a href="/iau/info/UValue.html">uncertainty</a></td><td class="rj">4</td></tr>
+
+          <tr><td>reference</td><td class="rj">MPO 152511</td></tr>
+          <tr><td>observations used</td><td class="rj">378</td></tr>
+          <tr><td>oppositions</td><td class="rj">1</td></tr>
+          <tr><td>arc length (days)</td><td class="rj">20</td></tr>
+          <tr><td>first opposition used</td><td class="rj">2008</td></tr>
+          <tr><td>last opposition used</td><td class="rj">2008</td></tr>
+          <tr><td>residual rms (arc-secs)</td><td class="rj">0.37</td></tr>
+          <tr><td><a href="/iau/info/Perturbers.html">perturbers coarse indicator</a></td><td class="rj">M-v</td></tr>
+          <tr><td><a href="/iau/info/Perturbers.html">perturbers precise indicator</a></td><td class="rj">003Eh</td></tr>
+          <tr><td>first observation date used</td><td class="rj">2008-10-09.0</td></tr>
+          <tr><td>last observation date used</td><td class="rj">2008-10-29.0</td></tr>
+          <tr><td>computer name</td><td class="rj">MPCADO</td></tr>
+        </table>
+      </td>
+    </tr>
+  </table>    
+
+  <table class="nb">
+    <tr>
+      <td valign="top" class="nb">
+      </td>
+      <td width=100px> </td>
+
+      <td valign="top" class="nb">
+    Minimum Orbit Intersection Distances (in AU)<br>for orbit epoch: 2458600.5, reference: MPO152511<br>
+          <table>
+            <tr><td>Mercury</td><td>0.6757</td></tr>
+            <tr><td>Venus</td><td>0.27606</td></tr>
+            <tr><td>Earth</td><td>0.00771</td></tr>
+            <tr><td>Mars</td><td>0.07491</td></tr>
+            <tr><td>Jupiter</td><td>3.71091</td></tr>
+            <tr><td>Saturn</td><td>7.90561</td></tr>
+            <tr><td>Uranus</td><td>16.6457</td></tr>
+            <tr><td>Neptune</td><td>28.6756</td></tr>
+          </table>    
+          <br>
+      </td>
+    </tr>
+  </table>
+
+
+<h2>Observations</h2>
+  388 total observations over interval:
+  2008 10 09.17165 &ndash; 2008 10 29.32709
+  <br>
+  These data are available for
+  <a href="../tmp/2008_TT26.txt" target="_blank">download</a>
+  (<a href="/iau/info/OpticalObs.html" target="_blank">format description</a>).
+  <br>
+  <br>
+  <table>
+    <tr>
+      <th>Date (UT)</th>
+      <th>J2000 RA</th>
+      <th>J2000 Dec</th>
+      <th>Magn</th>
+      <th><a href="/iau/lists/ObsCodesF.html">Location</a></th>
+      <th><a href="/iau/info/References.html">Ref</a></th>
+    </tr>
+
+      <tr>
+        <td class="ff">2008 10 09.17165</td>
+        <td class="ff">20 50 57.63</td>
+        <td class="ff">+44 18 46.9</td>
+        <td class="ff rj">19.7 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 260318</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 09.18457</td>
+        <td class="ff">20 50 59.22</td>
+        <td class="ff">+44 19 02.5</td>
+        <td class="ff rj">20.6 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 260318</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 09.19745</td>
+        <td class="ff">20 51 00.83</td>
+        <td class="ff">+44 19 16.9</td>
+        <td class="ff rj">20.4 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 260318</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 09.21035</td>
+        <td class="ff">20 51 02.41</td>
+        <td class="ff">+44 19 32.2</td>
+        <td class="ff rj">20.0 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 260318</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 10.10406</td>
+        <td class="ff">20 54 24.39</td>
+        <td class="ff">+44 42 41.5</td>
+        <td class="ff rj">19.8 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 260318</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 10.10809</td>
+        <td class="ff">20 54 25.02</td>
+        <td class="ff">+44 42 48.3</td>
+        <td class="ff rj">19.5 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 260318</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 10.11206</td>
+        <td class="ff">20 54 25.57</td>
+        <td class="ff">+44 42 52.9</td>
+        <td class="ff rj">19.6 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 260318</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 10.84102</td>
+        <td class="ff">20 57 32.35</td>
+        <td class="ff">+45 03 08.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>118 &ndash; Astronomical and Geophysical Observatory, Modra</td>
+        <td class="ff lj">MPS 260318</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 10.84455</td>
+        <td class="ff">20 57 32.99</td>
+        <td class="ff">+45 03 13.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>118 &ndash; Astronomical and Geophysical Observatory, Modra</td>
+        <td class="ff lj">MPS 260318</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 10.84781</td>
+        <td class="ff">20 57 33.68</td>
+        <td class="ff">+45 03 18.6</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>118 &ndash; Astronomical and Geophysical Observatory, Modra</td>
+        <td class="ff lj">MPS 260318</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 10.88567</td>
+        <td class="ff">20 57 42.70</td>
+        <td class="ff">+45 04 31.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>204 &ndash; Schiaparelli Observatory</td>
+        <td class="ff lj">MPS 260318</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 10.89334</td>
+        <td class="ff">20 57 44.28</td>
+        <td class="ff">+45 04 42.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>204 &ndash; Schiaparelli Observatory</td>
+        <td class="ff lj">MPS 260318</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 10.90100</td>
+        <td class="ff">20 57 45.87</td>
+        <td class="ff">+45 04 53.1</td>
+        <td class="ff rj">17.6 R</td>
+        <td>204 &ndash; Schiaparelli Observatory</td>
+        <td class="ff lj">MPS 260318</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 12.05795</td>
+        <td class="ff">21 03 59.03</td>
+        <td class="ff">+45 43 18.0</td>
+        <td class="ff rj">18.8 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 260318</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 12.06259</td>
+        <td class="ff">21 04 00.09</td>
+        <td class="ff">+45 43 26.7</td>
+        <td class="ff rj">18.9 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 260318</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 12.06693</td>
+        <td class="ff">21 04 01.21</td>
+        <td class="ff">+45 43 35.9</td>
+        <td class="ff rj">18.6 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 260318</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 12.85399</td>
+        <td class="ff">21 09 01.71</td>
+        <td class="ff">+46 11 48.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 260318</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 12.85896</td>
+        <td class="ff">21 09 03.31</td>
+        <td class="ff">+46 11 59.6</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 260318</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 12.86405</td>
+        <td class="ff">21 09 05.00</td>
+        <td class="ff">+46 12 10.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 260318</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 12.86622</td>
+        <td class="ff">21 09 05.76</td>
+        <td class="ff">+46 12 15.0</td>
+        <td class="ff rj">18.5 R</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 260318</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 13.92853</td>
+        <td class="ff">21 17 22.96</td>
+        <td class="ff">+46 57 14.8</td>
+        <td class="ff rj">17.7 R</td>
+        <td>J34 &ndash; La Fecha</td>
+        <td class="ff lj">MPS 260318</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 13.93289</td>
+        <td class="ff">21 17 24.83</td>
+        <td class="ff">+46 57 24.3</td>
+        <td class="ff rj">17.9 R</td>
+        <td>J34 &ndash; La Fecha</td>
+        <td class="ff lj">MPS 260318</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 13.93862</td>
+        <td class="ff">21 17 27.29</td>
+        <td class="ff">+46 57 36.9</td>
+        <td class="ff rj">17.7 R</td>
+        <td>J34 &ndash; La Fecha</td>
+        <td class="ff lj">MPS 260318</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 15.84032</td>
+        <td class="ff">21 39 29.48</td>
+        <td class="ff">+48 35 29.4</td>
+        <td class="ff rj">18.3 V</td>
+        <td>560 &ndash; Madonna di Dossobuono</td>
+        <td class="ff lj">MPS 260318</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 15.84122</td>
+        <td class="ff">21 39 30.15</td>
+        <td class="ff">+48 35 32.5</td>
+        <td class="ff rj">18.2 V</td>
+        <td>560 &ndash; Madonna di Dossobuono</td>
+        <td class="ff lj">MPS 260318</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 15.84190</td>
+        <td class="ff">21 39 30.66</td>
+        <td class="ff">+48 35 35.0</td>
+        <td class="ff rj">18.2 V</td>
+        <td>560 &ndash; Madonna di Dossobuono</td>
+        <td class="ff lj">MPS 260318</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 15.89325</td>
+        <td class="ff">21 40 14.84</td>
+        <td class="ff">+48 38 53.2</td>
+        <td class="ff rj">17.3 R</td>
+        <td>J34 &ndash; La Fecha</td>
+        <td class="ff lj">MPS 260318</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 15.90266</td>
+        <td class="ff">21 40 21.88</td>
+        <td class="ff">+48 39 22.5</td>
+        <td class="ff rj">17.4 R</td>
+        <td>J34 &ndash; La Fecha</td>
+        <td class="ff lj">MPS 260318</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 15.90688</td>
+        <td class="ff">21 40 25.02</td>
+        <td class="ff">+48 39 35.2</td>
+        <td class="ff rj">17.5 R</td>
+        <td>J34 &ndash; La Fecha</td>
+        <td class="ff lj">MPS 260318</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 17.06154</td>
+        <td class="ff">22 01 27.57</td>
+        <td class="ff">+49 51 01.5</td>
+        <td class="ff rj">17.4 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 260754</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 17.06284</td>
+        <td class="ff">22 01 29.00</td>
+        <td class="ff">+49 51 07.0</td>
+        <td class="ff rj">17.3 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 260754</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 17.06564</td>
+        <td class="ff">22 01 32.06</td>
+        <td class="ff">+49 51 18.4</td>
+        <td class="ff rj">17.3 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 260754</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 17.06768</td>
+        <td class="ff">22 01 34.30</td>
+        <td class="ff">+49 51 26.6</td>
+        <td class="ff rj">17.4 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 260754</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 17.71366</td>
+        <td class="ff">22 17 11.28</td>
+        <td class="ff">+50 33 13.1</td>
+        <td class="ff rj">17.0 C</td>
+        <td>B34 &ndash; Green Island Observatory, Gecitkale</td>
+        <td class="ff lj">MPS 260754</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 17.73419</td>
+        <td class="ff">22 17 39.31</td>
+        <td class="ff">+50 34 46.8</td>
+        <td class="ff rj">17.6 C</td>
+        <td>B34 &ndash; Green Island Observatory, Gecitkale</td>
+        <td class="ff lj">MPS 260754</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 17.74696</td>
+        <td class="ff">22 17 56.82</td>
+        <td class="ff">+50 35 43.4</td>
+        <td class="ff rj">17.3 C</td>
+        <td>B34 &ndash; Green Island Observatory, Gecitkale</td>
+        <td class="ff lj">MPS 260754</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 18.82712</td>
+        <td class="ff">22 53 37.77</td>
+        <td class="ff">+51 35 23.5</td>
+        <td class="ff rj">15.9 C</td>
+        <td>A81 &ndash; Balzaretto Observatory, Rome</td>
+        <td class="ff lj">MPS 260754</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 18.83041</td>
+        <td class="ff">22 53 44.83</td>
+        <td class="ff">+51 35 32.9</td>
+        <td class="ff rj">16.3 C</td>
+        <td>A81 &ndash; Balzaretto Observatory, Rome</td>
+        <td class="ff lj">MPS 260754</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 18.83773</td>
+        <td class="ff">22 54 00.55</td>
+        <td class="ff">+51 35 52.5</td>
+        <td class="ff rj">16.2 C</td>
+        <td>A81 &ndash; Balzaretto Observatory, Rome</td>
+        <td class="ff lj">MPS 260754</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 18.84130</td>
+        <td class="ff">22 54 08.24</td>
+        <td class="ff">+51 36 01.8</td>
+        <td class="ff rj">15.7 C</td>
+        <td>A81 &ndash; Balzaretto Observatory, Rome</td>
+        <td class="ff lj">MPS 260754</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 18.84377</td>
+        <td class="ff">22 54 13.54</td>
+        <td class="ff">+51 36 08.1</td>
+        <td class="ff rj">16.0 C</td>
+        <td>A81 &ndash; Balzaretto Observatory, Rome</td>
+        <td class="ff lj">MPS 260754</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 18.84645</td>
+        <td class="ff">22 54 19.33</td>
+        <td class="ff">+51 36 14.9</td>
+        <td class="ff rj">16.0 C</td>
+        <td>A81 &ndash; Balzaretto Observatory, Rome</td>
+        <td class="ff lj">MPS 260754</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 18.96579</td>
+        <td class="ff">22 58 50.98</td>
+        <td class="ff">+51 38 56.9</td>
+        <td class="ff rj">14.7 R</td>
+        <td>B50 &ndash; Corner Observatory, Durmersheim</td>
+        <td class="ff lj">MPS 260754</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 18.97745</td>
+        <td class="ff">22 59 18.40</td>
+        <td class="ff">+51 39 09.4</td>
+        <td class="ff rj">15.5 R</td>
+        <td>B50 &ndash; Corner Observatory, Durmersheim</td>
+        <td class="ff lj">MPS 260754</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 18.98468</td>
+        <td class="ff">22 59 35.45</td>
+        <td class="ff">+51 39 16.8</td>
+        <td class="ff rj">15.9 R</td>
+        <td>B50 &ndash; Corner Observatory, Durmersheim</td>
+        <td class="ff lj">MPS 260754</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 18.99580</td>
+        <td class="ff">23 00 01.95</td>
+        <td class="ff">+51 39 26.6</td>
+        <td class="ff rj">15.8 R</td>
+        <td>B50 &ndash; Corner Observatory, Durmersheim</td>
+        <td class="ff lj">MPS 260754</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 19.00447</td>
+        <td class="ff">23 00 22.82</td>
+        <td class="ff">+51 39 33.5</td>
+        <td class="ff rj">15.9 R</td>
+        <td>B50 &ndash; Corner Observatory, Durmersheim</td>
+        <td class="ff lj">MPS 260754</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 19.01288</td>
+        <td class="ff">23 00 43.21</td>
+        <td class="ff">+51 39 40.5</td>
+        <td class="ff rj">15.8 R</td>
+        <td>B50 &ndash; Corner Observatory, Durmersheim</td>
+        <td class="ff lj">MPS 260754</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 19.01921</td>
+        <td class="ff">23 00 58.70</td>
+        <td class="ff">+51 39 44.4</td>
+        <td class="ff rj">15.6 R</td>
+        <td>B50 &ndash; Corner Observatory, Durmersheim</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 19.03481</td>
+        <td class="ff">23 01 37.12</td>
+        <td class="ff">+51 39 54.0</td>
+        <td class="ff rj">16.2 R</td>
+        <td>B50 &ndash; Corner Observatory, Durmersheim</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 19.12415</td>
+        <td class="ff">23 06 08.11</td>
+        <td class="ff">+51 46 47.8</td>
+        <td class="ff rj">16.6 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 19.12550</td>
+        <td class="ff">23 06 11.34</td>
+        <td class="ff">+51 46 50.5</td>
+        <td class="ff rj">16.5 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 19.12685</td>
+        <td class="ff">23 06 14.59</td>
+        <td class="ff">+51 46 52.9</td>
+        <td class="ff rj">16.4 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 19.12820</td>
+        <td class="ff">23 06 17.81</td>
+        <td class="ff">+51 46 55.4</td>
+        <td class="ff rj">16.5 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 19.12956</td>
+        <td class="ff">23 06 21.08</td>
+        <td class="ff">+51 46 57.8</td>
+        <td class="ff rj">16.5 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 19.82887</td>
+        <td class="ff">23 42 11.07</td>
+        <td class="ff">+51 48 40.8</td>
+        <td class="ff rj">16.2 V</td>
+        <td>A48 &ndash; Povegliano Veronese</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 19.82966</td>
+        <td class="ff">23 42 13.61</td>
+        <td class="ff">+51 48 39.8</td>
+        <td class="ff rj">16.3 V</td>
+        <td>A48 &ndash; Povegliano Veronese</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 19.83046</td>
+        <td class="ff">23 42 16.13</td>
+        <td class="ff">+51 48 39.0</td>
+        <td class="ff rj">16.3 V</td>
+        <td>A48 &ndash; Povegliano Veronese</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 19.83125</td>
+        <td class="ff">23 42 18.64</td>
+        <td class="ff">+51 48 38.1</td>
+        <td class="ff rj">16.3 V</td>
+        <td>A48 &ndash; Povegliano Veronese</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 19.97819</td>
+        <td class="ff">23 50 28.82</td>
+        <td class="ff">+51 43 41.4</td>
+        <td class="ff rj">16.0 R</td>
+        <td>J34 &ndash; La Fecha</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 19.98283</td>
+        <td class="ff">23 50 44.34</td>
+        <td class="ff">+51 43 24.6</td>
+        <td class="ff rj">15.9 R</td>
+        <td>J34 &ndash; La Fecha</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 19.98667</td>
+        <td class="ff">23 50 57.15</td>
+        <td class="ff">+51 43 10.7</td>
+        <td class="ff rj">15.6 R</td>
+        <td>J34 &ndash; La Fecha</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 20.79779</td>
+        <td class="ff">00 47 30.97</td>
+        <td class="ff">+50 03 35.5</td>
+        <td class="ff rj">14.6 C</td>
+        <td>A97 &ndash; Stammersdorf</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 20.80248</td>
+        <td class="ff">00 47 51.32</td>
+        <td class="ff">+50 02 42.4</td>
+        <td class="ff rj">14.3 C</td>
+        <td>A97 &ndash; Stammersdorf</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 20.80717</td>
+        <td class="ff">00 48 11.63</td>
+        <td class="ff">+50 01 50.0</td>
+        <td class="ff rj">14.9 C</td>
+        <td>A97 &ndash; Stammersdorf</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 20.81185</td>
+        <td class="ff">00 48 31.96</td>
+        <td class="ff">+50 00 56.3</td>
+        <td class="ff rj">15.0 C</td>
+        <td>A97 &ndash; Stammersdorf</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 20.81771</td>
+        <td class="ff">00 48 57.36</td>
+        <td class="ff">+49 59 48.1</td>
+        <td class="ff rj">14.7 C</td>
+        <td>A97 &ndash; Stammersdorf</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 20.83067</td>
+        <td class="ff">00 49 53.57</td>
+        <td class="ff">+49 57 14.3</td>
+        <td class="ff rj">15.2 C</td>
+        <td>A97 &ndash; Stammersdorf</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 20.83588</td>
+        <td class="ff">00 50 16.09</td>
+        <td class="ff">+49 56 11.5</td>
+        <td class="ff rj">15.0 C</td>
+        <td>A97 &ndash; Stammersdorf</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 20.84118</td>
+        <td class="ff">00 50 39.03</td>
+        <td class="ff">+49 55 07.2</td>
+        <td class="ff rj">16.0 C</td>
+        <td>A97 &ndash; Stammersdorf</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 20.86442</td>
+        <td class="ff">00 52 19.91</td>
+        <td class="ff">+49 50 12.4</td>
+        <td class="ff rj">14.6 C</td>
+        <td>A97 &ndash; Stammersdorf</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 20.86963</td>
+        <td class="ff">00 52 42.58</td>
+        <td class="ff">+49 49 04.9</td>
+        <td class="ff rj">15.6 C</td>
+        <td>A97 &ndash; Stammersdorf</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.211117</td>
+        <td class="ff">01 20 55.49</td>
+        <td class="ff">+48 13 49.5</td>
+        <td class="ff rj">14.6 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.215698</td>
+        <td class="ff">01 21 17.25</td>
+        <td class="ff">+48 12 32.3</td>
+        <td class="ff rj">14.6 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.222513</td>
+        <td class="ff">01 21 49.68</td>
+        <td class="ff">+48 10 36.0</td>
+        <td class="ff rj">14.5 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.226618</td>
+        <td class="ff">01 22 09.11</td>
+        <td class="ff">+48 09 25.6</td>
+        <td class="ff rj">14.4 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.230671</td>
+        <td class="ff">01 22 28.29</td>
+        <td class="ff">+48 08 15.4</td>
+        <td class="ff rj">14.4 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.234047</td>
+        <td class="ff">01 22 44.27</td>
+        <td class="ff">+48 07 16.6</td>
+        <td class="ff rj">14.4 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.238020</td>
+        <td class="ff">01 23 03.03</td>
+        <td class="ff">+48 06 07.0</td>
+        <td class="ff rj">14.4 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.242516</td>
+        <td class="ff">01 23 24.20</td>
+        <td class="ff">+48 04 47.8</td>
+        <td class="ff rj">14.5 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.247817</td>
+        <td class="ff">01 23 49.12</td>
+        <td class="ff">+48 03 13.6</td>
+        <td class="ff rj">14.5 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.253227</td>
+        <td class="ff">01 24 14.56</td>
+        <td class="ff">+48 01 36.5</td>
+        <td class="ff rj">14.5 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.258339</td>
+        <td class="ff">01 24 38.56</td>
+        <td class="ff">+48 00 03.9</td>
+        <td class="ff rj">14.6 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.262295</td>
+        <td class="ff">01 24 57.02</td>
+        <td class="ff">+47 58 51.7</td>
+        <td class="ff rj">14.6 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.266311</td>
+        <td class="ff">01 25 15.78</td>
+        <td class="ff">+47 57 38.0</td>
+        <td class="ff rj">14.7 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.270728</td>
+        <td class="ff">01 25 36.40</td>
+        <td class="ff">+47 56 16.2</td>
+        <td class="ff rj">14.7 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.274596</td>
+        <td class="ff">01 25 54.47</td>
+        <td class="ff">+47 55 03.9</td>
+        <td class="ff rj">14.7 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.278519</td>
+        <td class="ff">01 26 12.75</td>
+        <td class="ff">+47 53 50.2</td>
+        <td class="ff rj">14.9 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.282580</td>
+        <td class="ff">01 26 31.59</td>
+        <td class="ff">+47 52 33.5</td>
+        <td class="ff rj">14.8 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.28632</td>
+        <td class="ff">01 25 34.62</td>
+        <td class="ff">+47 50 29.1</td>
+        <td class="ff rj">15.4 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.286561</td>
+        <td class="ff">01 26 50.03</td>
+        <td class="ff">+47 51 17.6</td>
+        <td class="ff rj">14.8 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.28686</td>
+        <td class="ff">01 25 37.13</td>
+        <td class="ff">+47 50 16.9</td>
+        <td class="ff rj">15.3 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.28743</td>
+        <td class="ff">01 25 39.69</td>
+        <td class="ff">+47 50 04.0</td>
+        <td class="ff rj">15.4 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.28935</td>
+        <td class="ff">01 25 48.55</td>
+        <td class="ff">+47 49 20.6</td>
+        <td class="ff rj">15.4 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.289394</td>
+        <td class="ff">01 27 03.15</td>
+        <td class="ff">+47 50 23.4</td>
+        <td class="ff rj">14.8 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.29061</td>
+        <td class="ff">01 25 54.30</td>
+        <td class="ff">+47 48 52.2</td>
+        <td class="ff rj">15.2 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.29166</td>
+        <td class="ff">01 25 59.11</td>
+        <td class="ff">+47 48 28.1</td>
+        <td class="ff rj">15.5 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.29205</td>
+        <td class="ff">01 26 00.95</td>
+        <td class="ff">+47 48 19.3</td>
+        <td class="ff rj">15.4 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.29333</td>
+        <td class="ff">01 26 06.77</td>
+        <td class="ff">+47 47 50.8</td>
+        <td class="ff rj">15.2 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.79422</td>
+        <td class="ff">02 09 24.41</td>
+        <td class="ff">+43 55 57.0</td>
+        <td class="ff rj">14.5 V</td>
+        <td>A55 &ndash; Osservatorio Astronomico Vallemare di Borbona</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.81381</td>
+        <td class="ff">02 10 59.65</td>
+        <td class="ff">+43 45 54.8</td>
+        <td class="ff rj">14.6 V</td>
+        <td>A55 &ndash; Osservatorio Astronomico Vallemare di Borbona</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.84315</td>
+        <td class="ff">02 13 22.38</td>
+        <td class="ff">+43 27 23.2</td>
+        <td class="ff rj">14.5 C</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.84391</td>
+        <td class="ff">02 13 26.11</td>
+        <td class="ff">+43 26 58.5</td>
+        <td class="ff rj">14.5 C</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.84469</td>
+        <td class="ff">02 13 29.87</td>
+        <td class="ff">+43 26 34.0</td>
+        <td class="ff rj">14.6 C</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.84545</td>
+        <td class="ff">02 13 33.63</td>
+        <td class="ff">+43 26 09.3</td>
+        <td class="ff rj">14.5 C</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.84622</td>
+        <td class="ff">02 13 37.38</td>
+        <td class="ff">+43 25 44.7</td>
+        <td class="ff rj">14.6 C</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.86080</td>
+        <td class="ff">02 14 46.30</td>
+        <td class="ff">+43 20 51.7</td>
+        <td class="ff rj">14.7 C</td>
+        <td>589 &ndash; Santa Lucia Stroncone</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.874216</td>
+        <td class="ff">02 15 30.175</td>
+        <td class="ff">+43 13 33.90</td>
+        <td class="ff rj">14.8 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.874995</td>
+        <td class="ff">02 15 33.786</td>
+        <td class="ff">+43 13 06.35</td>
+        <td class="ff rj">14.2 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.875760</td>
+        <td class="ff">02 15 37.493</td>
+        <td class="ff">+43 12 41.61</td>
+        <td class="ff rj">15.1 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.876525</td>
+        <td class="ff">02 15 41.147</td>
+        <td class="ff">+43 12 15.44</td>
+        <td class="ff rj">15.1 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.883836</td>
+        <td class="ff">02 16 15.590</td>
+        <td class="ff">+43 08 05.07</td>
+        <td class="ff rj">14.7 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.88622</td>
+        <td class="ff">02 16 46.40</td>
+        <td class="ff">+43 06 54.5</td>
+        <td class="ff rj">14.8 C</td>
+        <td>589 &ndash; Santa Lucia Stroncone</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.890717</td>
+        <td class="ff">02 16 47.881</td>
+        <td class="ff">+43 04 07.71</td>
+        <td class="ff rj">14.7 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.891770</td>
+        <td class="ff">02 16 52.909</td>
+        <td class="ff">+43 03 31.82</td>
+        <td class="ff rj">14.6 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.892824</td>
+        <td class="ff">02 16 57.899</td>
+        <td class="ff">+43 02 55.31</td>
+        <td class="ff rj">14.5 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.894699</td>
+        <td class="ff">02 17 06.620</td>
+        <td class="ff">+43 01 49.68</td>
+        <td class="ff rj">14.6 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.895751</td>
+        <td class="ff">02 17 11.601</td>
+        <td class="ff">+43 01 13.15</td>
+        <td class="ff rj">14.7 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.896806</td>
+        <td class="ff">02 17 16.596</td>
+        <td class="ff">+43 00 36.31</td>
+        <td class="ff rj">14.7 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.903456</td>
+        <td class="ff">02 17 47.751</td>
+        <td class="ff">+42 56 43.66</td>
+        <td class="ff rj">14.7 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.904508</td>
+        <td class="ff">02 17 52.713</td>
+        <td class="ff">+42 56 06.92</td>
+        <td class="ff rj">14.6 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.905559</td>
+        <td class="ff">02 17 57.713</td>
+        <td class="ff">+42 55 30.25</td>
+        <td class="ff rj">14.7 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.91405</td>
+        <td class="ff">02 18 57.49</td>
+        <td class="ff">+42 51 05.7</td>
+        <td class="ff rj">14.6 C</td>
+        <td>589 &ndash; Santa Lucia Stroncone</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.918405</td>
+        <td class="ff">02 18 57.917</td>
+        <td class="ff">+42 47 55.08</td>
+        <td class="ff rj">14.5 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.919453</td>
+        <td class="ff">02 19 02.884</td>
+        <td class="ff">+42 47 17.64</td>
+        <td class="ff rj">14.5 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.920498</td>
+        <td class="ff">02 19 07.816</td>
+        <td class="ff">+42 46 40.28</td>
+        <td class="ff rj">14.5 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.92182</td>
+        <td class="ff">02 19 33.34</td>
+        <td class="ff">+42 46 38.6</td>
+        <td class="ff rj">14.5 V</td>
+        <td>A55 &ndash; Osservatorio Astronomico Vallemare di Borbona</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.93602</td>
+        <td class="ff">02 20 39.70</td>
+        <td class="ff">+42 38 19.1</td>
+        <td class="ff rj">14.6 V</td>
+        <td>A55 &ndash; Osservatorio Astronomico Vallemare di Borbona</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.938237</td>
+        <td class="ff">02 20 30.891</td>
+        <td class="ff">+42 36 00.47</td>
+        <td class="ff rj">14.3 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.940323</td>
+        <td class="ff">02 20 40.740</td>
+        <td class="ff">+42 34 44.60</td>
+        <td class="ff rj">14.2 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.951277</td>
+        <td class="ff">02 21 31.984</td>
+        <td class="ff">+42 28 02.79</td>
+        <td class="ff rj">14.2 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.95179</td>
+        <td class="ff">02 21 53.81</td>
+        <td class="ff">+42 28 53.3</td>
+        <td class="ff rj">14.1 C</td>
+        <td>589 &ndash; Santa Lucia Stroncone</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.952318</td>
+        <td class="ff">02 21 36.888</td>
+        <td class="ff">+42 27 24.26</td>
+        <td class="ff rj">14.2 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.953361</td>
+        <td class="ff">02 21 41.784</td>
+        <td class="ff">+42 26 45.87</td>
+        <td class="ff rj">14.1 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.965518</td>
+        <td class="ff">02 22 38.673</td>
+        <td class="ff">+42 19 13.90</td>
+        <td class="ff rj">14.1 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.966559</td>
+        <td class="ff">02 22 43.589</td>
+        <td class="ff">+42 18 34.90</td>
+        <td class="ff rj">14.1 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.967600</td>
+        <td class="ff">02 22 48.526</td>
+        <td class="ff">+42 17 55.86</td>
+        <td class="ff rj">14.1 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.97233</td>
+        <td class="ff">02 23 29.33</td>
+        <td class="ff">+42 16 25.3</td>
+        <td class="ff rj">14.2 C</td>
+        <td>589 &ndash; Santa Lucia Stroncone</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.97403</td>
+        <td class="ff">02 23 36.59</td>
+        <td class="ff">+42 15 25.6</td>
+        <td class="ff rj">14.5 V</td>
+        <td>A55 &ndash; Osservatorio Astronomico Vallemare di Borbona</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.981771</td>
+        <td class="ff">02 23 54.816</td>
+        <td class="ff">+42 09 00.81</td>
+        <td class="ff rj">14.2 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.982817</td>
+        <td class="ff">02 23 59.770</td>
+        <td class="ff">+42 08 21.04</td>
+        <td class="ff rj">14.3 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 21.983873</td>
+        <td class="ff">02 24 04.766</td>
+        <td class="ff">+42 07 40.67</td>
+        <td class="ff rj">14.2 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.006493</td>
+        <td class="ff">02 25 50.895</td>
+        <td class="ff">+41 53 09.76</td>
+        <td class="ff rj">14.5 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.007529</td>
+        <td class="ff">02 25 55.824</td>
+        <td class="ff">+41 52 29.91</td>
+        <td class="ff rj">14.2 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.008561</td>
+        <td class="ff">02 26 00.671</td>
+        <td class="ff">+41 51 49.25</td>
+        <td class="ff rj">14.6 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.026111</td>
+        <td class="ff">02 27 23.167</td>
+        <td class="ff">+41 40 19.91</td>
+        <td class="ff rj">14.9 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.027140</td>
+        <td class="ff">02 27 28.044</td>
+        <td class="ff">+41 39 39.19</td>
+        <td class="ff rj">14.9 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.028169</td>
+        <td class="ff">02 27 32.977</td>
+        <td class="ff">+41 38 58.41</td>
+        <td class="ff rj">14.8 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.043886</td>
+        <td class="ff">02 28 47.044</td>
+        <td class="ff">+41 28 30.69</td>
+        <td class="ff rj">14.8 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.044916</td>
+        <td class="ff">02 28 51.957</td>
+        <td class="ff">+41 27 49.49</td>
+        <td class="ff rj">14.8 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.045947</td>
+        <td class="ff">02 28 56.830</td>
+        <td class="ff">+41 27 07.71</td>
+        <td class="ff rj">14.8 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.149317</td>
+        <td class="ff">02 37 29.88</td>
+        <td class="ff">+40 17 26.5</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.149826</td>
+        <td class="ff">02 37 32.27</td>
+        <td class="ff">+40 17 04.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.150367</td>
+        <td class="ff">02 37 34.82</td>
+        <td class="ff">+40 16 41.8</td>
+        <td class="ff rj">14.2 R</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.274263</td>
+        <td class="ff">02 49 22.48</td>
+        <td class="ff">+38 53 30.2</td>
+        <td class="ff rj">13.7 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.277850</td>
+        <td class="ff">02 49 39.20</td>
+        <td class="ff">+38 51 04.7</td>
+        <td class="ff rj">13.8 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.280408</td>
+        <td class="ff">02 49 51.07</td>
+        <td class="ff">+38 49 20.9</td>
+        <td class="ff rj">13.9 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.283429</td>
+        <td class="ff">02 50 05.09</td>
+        <td class="ff">+38 47 18.0</td>
+        <td class="ff rj">14.0 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.286004</td>
+        <td class="ff">02 50 17.00</td>
+        <td class="ff">+38 45 33.2</td>
+        <td class="ff rj">14.0 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.289886</td>
+        <td class="ff">02 50 34.95</td>
+        <td class="ff">+38 42 54.6</td>
+        <td class="ff rj">14.1 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.42031</td>
+        <td class="ff">02 59 14.71</td>
+        <td class="ff">+37 05 14.5</td>
+        <td class="ff rj">14.2 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.42089</td>
+        <td class="ff">02 59 17.25</td>
+        <td class="ff">+37 04 46.5</td>
+        <td class="ff rj">14.2 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.42129</td>
+        <td class="ff">02 59 19.03</td>
+        <td class="ff">+37 04 27.1</td>
+        <td class="ff rj">14.2 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.42168</td>
+        <td class="ff">02 59 20.71</td>
+        <td class="ff">+37 04 08.4</td>
+        <td class="ff rj">14.3 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.42207</td>
+        <td class="ff">02 59 22.43</td>
+        <td class="ff">+37 03 49.6</td>
+        <td class="ff rj">14.2 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.42233</td>
+        <td class="ff">02 59 23.58</td>
+        <td class="ff">+37 03 37.1</td>
+        <td class="ff rj">14.2 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.42272</td>
+        <td class="ff">02 59 25.23</td>
+        <td class="ff">+37 03 19.1</td>
+        <td class="ff rj">14.3 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.42311</td>
+        <td class="ff">02 59 27.02</td>
+        <td class="ff">+37 02 59.3</td>
+        <td class="ff rj">14.2 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.42351</td>
+        <td class="ff">02 59 28.75</td>
+        <td class="ff">+37 02 40.4</td>
+        <td class="ff rj">14.2 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.42389</td>
+        <td class="ff">02 59 30.42</td>
+        <td class="ff">+37 02 22.0</td>
+        <td class="ff rj">14.3 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.42428</td>
+        <td class="ff">02 59 32.17</td>
+        <td class="ff">+37 02 02.8</td>
+        <td class="ff rj">14.3 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.42467</td>
+        <td class="ff">02 59 33.85</td>
+        <td class="ff">+37 01 44.4</td>
+        <td class="ff rj">14.2 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.42507</td>
+        <td class="ff">02 59 35.58</td>
+        <td class="ff">+37 01 25.2</td>
+        <td class="ff rj">14.3 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.42547</td>
+        <td class="ff">02 59 37.31</td>
+        <td class="ff">+37 01 06.3</td>
+        <td class="ff rj">14.2 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.42595</td>
+        <td class="ff">02 59 39.42</td>
+        <td class="ff">+37 00 42.9</td>
+        <td class="ff rj">14.3 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.42634</td>
+        <td class="ff">02 59 41.13</td>
+        <td class="ff">+37 00 24.3</td>
+        <td class="ff rj">14.3 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.42672</td>
+        <td class="ff">02 59 42.80</td>
+        <td class="ff">+37 00 05.9</td>
+        <td class="ff rj">14.3 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.43193</td>
+        <td class="ff">03 00 05.65</td>
+        <td class="ff">+36 55 54.3</td>
+        <td class="ff rj">14.2 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.43253</td>
+        <td class="ff">03 00 08.22</td>
+        <td class="ff">+36 55 25.7</td>
+        <td class="ff rj">14.1 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.43292</td>
+        <td class="ff">03 00 09.96</td>
+        <td class="ff">+36 55 06.8</td>
+        <td class="ff rj">14.2 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.43331</td>
+        <td class="ff">03 00 11.67</td>
+        <td class="ff">+36 54 47.8</td>
+        <td class="ff rj">14.2 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.43370</td>
+        <td class="ff">03 00 13.36</td>
+        <td class="ff">+36 54 29.1</td>
+        <td class="ff rj">14.2 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.43410</td>
+        <td class="ff">03 00 15.19</td>
+        <td class="ff">+36 54 09.0</td>
+        <td class="ff rj">14.3 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.43450</td>
+        <td class="ff">03 00 16.89</td>
+        <td class="ff">+36 53 50.0</td>
+        <td class="ff rj">14.2 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.43489</td>
+        <td class="ff">03 00 18.58</td>
+        <td class="ff">+36 53 31.3</td>
+        <td class="ff rj">14.2 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.43528</td>
+        <td class="ff">03 00 20.31</td>
+        <td class="ff">+36 53 12.4</td>
+        <td class="ff rj">14.2 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.43568</td>
+        <td class="ff">03 00 22.09</td>
+        <td class="ff">+36 52 52.8</td>
+        <td class="ff rj">14.2 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.43607</td>
+        <td class="ff">03 00 23.82</td>
+        <td class="ff">+36 52 33.5</td>
+        <td class="ff rj">14.3 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.43647</td>
+        <td class="ff">03 00 25.52</td>
+        <td class="ff">+36 52 14.8</td>
+        <td class="ff rj">14.3 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.43685</td>
+        <td class="ff">03 00 27.20</td>
+        <td class="ff">+36 51 56.1</td>
+        <td class="ff rj">14.3 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.43712</td>
+        <td class="ff">03 00 28.37</td>
+        <td class="ff">+36 51 43.0</td>
+        <td class="ff rj">14.3 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.43779</td>
+        <td class="ff">03 00 31.33</td>
+        <td class="ff">+36 51 10.5</td>
+        <td class="ff rj">14.3 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.43818</td>
+        <td class="ff">03 00 33.05</td>
+        <td class="ff">+36 50 51.3</td>
+        <td class="ff rj">14.3 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.43856</td>
+        <td class="ff">03 00 34.74</td>
+        <td class="ff">+36 50 32.6</td>
+        <td class="ff rj">14.1 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.45744</td>
+        <td class="ff">03 01 57.67</td>
+        <td class="ff">+36 35 10.9</td>
+        <td class="ff rj">14.4 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.45783</td>
+        <td class="ff">03 01 59.40</td>
+        <td class="ff">+36 34 51.4</td>
+        <td class="ff rj">14.5 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.45822</td>
+        <td class="ff">03 02 01.13</td>
+        <td class="ff">+36 34 32.1</td>
+        <td class="ff rj">14.4 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.45863</td>
+        <td class="ff">03 02 02.91</td>
+        <td class="ff">+36 34 12.2</td>
+        <td class="ff rj">14.4 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.507168</td>
+        <td class="ff">03 06 21.55</td>
+        <td class="ff">+36 01 08.3</td>
+        <td class="ff rj">14.2 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.508426</td>
+        <td class="ff">03 06 26.83</td>
+        <td class="ff">+36 00 07.3</td>
+        <td class="ff rj">14.3 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.802753</td>
+        <td class="ff">03 29 23.826</td>
+        <td class="ff">+31 42 48.14</td>
+        <td class="ff rj">14.6 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.803668</td>
+        <td class="ff">03 29 27.635</td>
+        <td class="ff">+31 42 02.17</td>
+        <td class="ff rj">14.4 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.804582</td>
+        <td class="ff">03 29 31.456</td>
+        <td class="ff">+31 41 15.39</td>
+        <td class="ff rj">14.4 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.809916</td>
+        <td class="ff">03 29 53.509</td>
+        <td class="ff">+31 36 44.74</td>
+        <td class="ff rj">14.3 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.810829</td>
+        <td class="ff">03 29 57.328</td>
+        <td class="ff">+31 35 58.15</td>
+        <td class="ff rj">14.4 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.811743</td>
+        <td class="ff">03 30 01.149</td>
+        <td class="ff">+31 35 11.72</td>
+        <td class="ff rj">14.3 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.847549</td>
+        <td class="ff">03 32 27.548</td>
+        <td class="ff">+31 04 38.00</td>
+        <td class="ff rj">14.1 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.848457</td>
+        <td class="ff">03 32 31.262</td>
+        <td class="ff">+31 03 51.17</td>
+        <td class="ff rj">14.0 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.849366</td>
+        <td class="ff">03 32 34.961</td>
+        <td class="ff">+31 03 04.19</td>
+        <td class="ff rj">14.0 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.864139</td>
+        <td class="ff">03 33 34.381</td>
+        <td class="ff">+30 50 19.62</td>
+        <td class="ff rj">14.1 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.865046</td>
+        <td class="ff">03 33 38.034</td>
+        <td class="ff">+30 49 32.63</td>
+        <td class="ff rj">14.0 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.865952</td>
+        <td class="ff">03 33 41.707</td>
+        <td class="ff">+30 48 45.20</td>
+        <td class="ff rj">14.1 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.886653</td>
+        <td class="ff">03 35 04.067</td>
+        <td class="ff">+30 30 44.52</td>
+        <td class="ff rj">14.3 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.887558</td>
+        <td class="ff">03 35 07.672</td>
+        <td class="ff">+30 29 57.24</td>
+        <td class="ff rj">14.3 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.888462</td>
+        <td class="ff">03 35 11.262</td>
+        <td class="ff">+30 29 09.95</td>
+        <td class="ff rj">14.4 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.906157</td>
+        <td class="ff">03 36 20.965</td>
+        <td class="ff">+30 13 38.55</td>
+        <td class="ff rj">14.3 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.907055</td>
+        <td class="ff">03 36 24.466</td>
+        <td class="ff">+30 12 50.94</td>
+        <td class="ff rj">14.6 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.907954</td>
+        <td class="ff">03 36 28.016</td>
+        <td class="ff">+30 12 03.45</td>
+        <td class="ff rj">14.7 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.91012</td>
+        <td class="ff">03 36 55.49</td>
+        <td class="ff">+30 07 17.9</td>
+        <td class="ff rj">14.9 C</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.91088</td>
+        <td class="ff">03 36 58.63</td>
+        <td class="ff">+30 06 37.6</td>
+        <td class="ff rj">14.9 C</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.91166</td>
+        <td class="ff">03 37 01.71</td>
+        <td class="ff">+30 05 57.7</td>
+        <td class="ff rj">14.9 C</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.91242</td>
+        <td class="ff">03 37 04.79</td>
+        <td class="ff">+30 05 17.7</td>
+        <td class="ff rj">14.9 C</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.91318</td>
+        <td class="ff">03 37 07.90</td>
+        <td class="ff">+30 04 37.9</td>
+        <td class="ff rj">15.0 C</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.91396</td>
+        <td class="ff">03 37 10.98</td>
+        <td class="ff">+30 03 57.6</td>
+        <td class="ff rj">15.0 C</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.91472</td>
+        <td class="ff">03 37 14.07</td>
+        <td class="ff">+30 03 17.8</td>
+        <td class="ff rj">15.0 C</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.91549</td>
+        <td class="ff">03 37 17.16</td>
+        <td class="ff">+30 02 37.6</td>
+        <td class="ff rj">15.0 C</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.91625</td>
+        <td class="ff">03 37 20.22</td>
+        <td class="ff">+30 01 57.5</td>
+        <td class="ff rj">15.0 C</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.91703</td>
+        <td class="ff">03 37 23.31</td>
+        <td class="ff">+30 01 17.3</td>
+        <td class="ff rj">15.1 C</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.91779</td>
+        <td class="ff">03 37 26.39</td>
+        <td class="ff">+30 00 37.4</td>
+        <td class="ff rj">14.9 C</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.91855</td>
+        <td class="ff">03 37 29.47</td>
+        <td class="ff">+29 59 57.2</td>
+        <td class="ff rj">15.0 C</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.91933</td>
+        <td class="ff">03 37 32.55</td>
+        <td class="ff">+29 59 17.0</td>
+        <td class="ff rj">14.8 C</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.92009</td>
+        <td class="ff">03 37 35.65</td>
+        <td class="ff">+29 58 37.0</td>
+        <td class="ff rj">15.0 C</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.92086</td>
+        <td class="ff">03 37 38.72</td>
+        <td class="ff">+29 57 57.1</td>
+        <td class="ff rj">15.0 C</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.92163</td>
+        <td class="ff">03 37 41.79</td>
+        <td class="ff">+29 57 17.0</td>
+        <td class="ff rj">15.0 C</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.92240</td>
+        <td class="ff">03 37 44.84</td>
+        <td class="ff">+29 56 36.7</td>
+        <td class="ff rj">15.1 C</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.92316</td>
+        <td class="ff">03 37 47.90</td>
+        <td class="ff">+29 55 56.5</td>
+        <td class="ff rj">15.0 C</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.92394</td>
+        <td class="ff">03 37 50.97</td>
+        <td class="ff">+29 55 16.8</td>
+        <td class="ff rj">15.0 C</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.927222</td>
+        <td class="ff">03 37 43.122</td>
+        <td class="ff">+29 55 00.60</td>
+        <td class="ff rj">14.9 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.928119</td>
+        <td class="ff">03 37 46.632</td>
+        <td class="ff">+29 54 12.85</td>
+        <td class="ff rj">15.0 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.929016</td>
+        <td class="ff">03 37 50.151</td>
+        <td class="ff">+29 53 25.03</td>
+        <td class="ff rj">14.8 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.935163</td>
+        <td class="ff">03 38 35.62</td>
+        <td class="ff">+29 45 17.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.935699</td>
+        <td class="ff">03 38 37.75</td>
+        <td class="ff">+29 44 49.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.936231</td>
+        <td class="ff">03 38 39.87</td>
+        <td class="ff">+29 44 21.5</td>
+        <td class="ff rj">15.0 R</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.946808</td>
+        <td class="ff">03 38 58.927</td>
+        <td class="ff">+29 37 32.83</td>
+        <td class="ff rj">14.3 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.947702</td>
+        <td class="ff">03 39 02.396</td>
+        <td class="ff">+29 36 44.75</td>
+        <td class="ff rj">14.4 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.948600</td>
+        <td class="ff">03 39 05.906</td>
+        <td class="ff">+29 35 56.66</td>
+        <td class="ff rj">14.4 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.967022</td>
+        <td class="ff">03 40 16.580</td>
+        <td class="ff">+29 19 23.18</td>
+        <td class="ff rj">14.1 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.967911</td>
+        <td class="ff">03 40 20.020</td>
+        <td class="ff">+29 18 34.73</td>
+        <td class="ff rj">14.0 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.968801</td>
+        <td class="ff">03 40 23.448</td>
+        <td class="ff">+29 17 46.81</td>
+        <td class="ff rj">14.1 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.994008</td>
+        <td class="ff">03 41 59.482</td>
+        <td class="ff">+28 54 55.14</td>
+        <td class="ff rj">13.9 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.994895</td>
+        <td class="ff">03 42 02.885</td>
+        <td class="ff">+28 54 06.38</td>
+        <td class="ff rj">13.9 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.998280</td>
+        <td class="ff">03 42 15.714</td>
+        <td class="ff">+28 51 01.44</td>
+        <td class="ff rj">13.9 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 22.999170</td>
+        <td class="ff">03 42 19.115</td>
+        <td class="ff">+28 50 12.89</td>
+        <td class="ff rj">13.8 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.000067</td>
+        <td class="ff">03 42 22.564</td>
+        <td class="ff">+28 49 23.56</td>
+        <td class="ff rj">13.8 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.025200</td>
+        <td class="ff">03 43 57.656</td>
+        <td class="ff">+28 26 21.10</td>
+        <td class="ff rj">13.9 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.026978</td>
+        <td class="ff">03 44 04.427</td>
+        <td class="ff">+28 24 42.87</td>
+        <td class="ff rj">14.0 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.045204</td>
+        <td class="ff">03 45 13.109</td>
+        <td class="ff">+28 07 52.27</td>
+        <td class="ff rj">14.2 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.046086</td>
+        <td class="ff">03 45 16.423</td>
+        <td class="ff">+28 07 03.34</td>
+        <td class="ff rj">14.2 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.046967</td>
+        <td class="ff">03 45 19.770</td>
+        <td class="ff">+28 06 14.71</td>
+        <td class="ff rj">14.3 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.065451</td>
+        <td class="ff">03 46 29.298</td>
+        <td class="ff">+27 49 03.25</td>
+        <td class="ff rj">14.4 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.066331</td>
+        <td class="ff">03 46 32.656</td>
+        <td class="ff">+27 48 13.12</td>
+        <td class="ff rj">14.2 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.067211</td>
+        <td class="ff">03 46 36.000</td>
+        <td class="ff">+27 47 22.88</td>
+        <td class="ff rj">14.4 C</td>
+        <td>089 &ndash; Nikolaev</td>
+        <td class="ff lj">MPS 272757</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.37845</td>
+        <td class="ff">04 06 51.02</td>
+        <td class="ff">+23 03 18.0</td>
+        <td class="ff rj">14.6 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.37904</td>
+        <td class="ff">04 06 52.96</td>
+        <td class="ff">+23 02 44.9</td>
+        <td class="ff rj">14.5 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.37933</td>
+        <td class="ff">04 06 53.90</td>
+        <td class="ff">+23 02 28.8</td>
+        <td class="ff rj">14.6 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.37977</td>
+        <td class="ff">04 06 55.36</td>
+        <td class="ff">+23 02 03.8</td>
+        <td class="ff rj">14.6 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.38018</td>
+        <td class="ff">04 06 56.69</td>
+        <td class="ff">+23 01 41.1</td>
+        <td class="ff rj">14.6 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.38059</td>
+        <td class="ff">04 06 58.03</td>
+        <td class="ff">+23 01 18.7</td>
+        <td class="ff rj">14.5 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.38100</td>
+        <td class="ff">04 06 59.37</td>
+        <td class="ff">+23 00 55.8</td>
+        <td class="ff rj">14.6 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.38140</td>
+        <td class="ff">04 07 00.72</td>
+        <td class="ff">+23 00 32.8</td>
+        <td class="ff rj">14.5 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.38182</td>
+        <td class="ff">04 07 02.07</td>
+        <td class="ff">+23 00 09.4</td>
+        <td class="ff rj">14.6 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.38222</td>
+        <td class="ff">04 07 03.40</td>
+        <td class="ff">+22 59 46.7</td>
+        <td class="ff rj">14.6 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.38263</td>
+        <td class="ff">04 07 04.73</td>
+        <td class="ff">+22 59 23.8</td>
+        <td class="ff rj">14.6 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.38304</td>
+        <td class="ff">04 07 06.08</td>
+        <td class="ff">+22 59 01.1</td>
+        <td class="ff rj">14.6 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.38344</td>
+        <td class="ff">04 07 07.42</td>
+        <td class="ff">+22 58 38.2</td>
+        <td class="ff rj">14.6 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.38393</td>
+        <td class="ff">04 07 09.01</td>
+        <td class="ff">+22 58 10.8</td>
+        <td class="ff rj">14.6 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.38434</td>
+        <td class="ff">04 07 10.32</td>
+        <td class="ff">+22 57 48.1</td>
+        <td class="ff rj">14.5 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.38437</td>
+        <td class="ff">04 07 16.72</td>
+        <td class="ff">+22 58 01.4</td>
+        <td class="ff rj">14.6 V</td>
+        <td>691 &ndash; Steward Observatory, Kitt Peak-Spacewatch</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.38474</td>
+        <td class="ff">04 07 11.63</td>
+        <td class="ff">+22 57 26.2</td>
+        <td class="ff rj">14.5 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.38518</td>
+        <td class="ff">04 07 13.09</td>
+        <td class="ff">+22 57 01.1</td>
+        <td class="ff rj">14.6 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.40206</td>
+        <td class="ff">04 08 14.46</td>
+        <td class="ff">+22 41 31.5</td>
+        <td class="ff rj">14.5 V</td>
+        <td>691 &ndash; Steward Observatory, Kitt Peak-Spacewatch</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.40607</td>
+        <td class="ff">04 08 21.38</td>
+        <td class="ff">+22 37 27.6</td>
+        <td class="ff rj">14.3 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.40659</td>
+        <td class="ff">04 08 23.09</td>
+        <td class="ff">+22 36 58.3</td>
+        <td class="ff rj">14.3 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.40686</td>
+        <td class="ff">04 08 23.96</td>
+        <td class="ff">+22 36 43.3</td>
+        <td class="ff rj">14.3 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.40726</td>
+        <td class="ff">04 08 25.28</td>
+        <td class="ff">+22 36 20.6</td>
+        <td class="ff rj">14.3 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.40766</td>
+        <td class="ff">04 08 26.61</td>
+        <td class="ff">+22 35 57.5</td>
+        <td class="ff rj">14.3 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.40808</td>
+        <td class="ff">04 08 27.94</td>
+        <td class="ff">+22 35 35.0</td>
+        <td class="ff rj">14.3 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.40847</td>
+        <td class="ff">04 08 29.23</td>
+        <td class="ff">+22 35 12.0</td>
+        <td class="ff rj">14.3 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.40929</td>
+        <td class="ff">04 08 31.89</td>
+        <td class="ff">+22 34 26.5</td>
+        <td class="ff rj">14.3 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.40968</td>
+        <td class="ff">04 08 33.18</td>
+        <td class="ff">+22 34 04.1</td>
+        <td class="ff rj">14.3 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.41009</td>
+        <td class="ff">04 08 34.51</td>
+        <td class="ff">+22 33 40.9</td>
+        <td class="ff rj">14.2 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.41036</td>
+        <td class="ff">04 08 35.39</td>
+        <td class="ff">+22 33 25.7</td>
+        <td class="ff rj">14.2 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.41079</td>
+        <td class="ff">04 08 36.80</td>
+        <td class="ff">+22 33 01.7</td>
+        <td class="ff rj">14.2 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.41120</td>
+        <td class="ff">04 08 38.13</td>
+        <td class="ff">+22 32 38.6</td>
+        <td class="ff rj">14.3 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.41160</td>
+        <td class="ff">04 08 39.43</td>
+        <td class="ff">+22 32 15.9</td>
+        <td class="ff rj">14.2 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.41200</td>
+        <td class="ff">04 08 40.75</td>
+        <td class="ff">+22 31 53.3</td>
+        <td class="ff rj">14.2 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.41264</td>
+        <td class="ff">04 08 42.80</td>
+        <td class="ff">+22 31 17.8</td>
+        <td class="ff rj">14.2 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.44775</td>
+        <td class="ff">04 10 36.88</td>
+        <td class="ff">+21 58 13.4</td>
+        <td class="ff rj">14.0 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.44827</td>
+        <td class="ff">04 10 38.56</td>
+        <td class="ff">+21 57 43.9</td>
+        <td class="ff rj">14.0 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.44868</td>
+        <td class="ff">04 10 39.89</td>
+        <td class="ff">+21 57 21.0</td>
+        <td class="ff rj">13.9 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.44908</td>
+        <td class="ff">04 10 41.18</td>
+        <td class="ff">+21 56 58.3</td>
+        <td class="ff rj">14.0 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.44948</td>
+        <td class="ff">04 10 42.48</td>
+        <td class="ff">+21 56 35.7</td>
+        <td class="ff rj">14.0 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.44988</td>
+        <td class="ff">04 10 43.79</td>
+        <td class="ff">+21 56 13.2</td>
+        <td class="ff rj">14.0 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.45030</td>
+        <td class="ff">04 10 45.16</td>
+        <td class="ff">+21 55 49.4</td>
+        <td class="ff rj">14.0 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.45071</td>
+        <td class="ff">04 10 46.48</td>
+        <td class="ff">+21 55 26.1</td>
+        <td class="ff rj">14.0 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.45151</td>
+        <td class="ff">04 10 49.10</td>
+        <td class="ff">+21 54 40.3</td>
+        <td class="ff rj">14.0 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.45193</td>
+        <td class="ff">04 10 50.44</td>
+        <td class="ff">+21 54 16.9</td>
+        <td class="ff rj">14.0 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.45233</td>
+        <td class="ff">04 10 51.75</td>
+        <td class="ff">+21 53 54.0</td>
+        <td class="ff rj">14.0 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.94934</td>
+        <td class="ff">04 38 46.34</td>
+        <td class="ff">+14 16 27.6</td>
+        <td class="ff rj">15.9 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.95089</td>
+        <td class="ff">04 38 50.71</td>
+        <td class="ff">+14 15 06.7</td>
+        <td class="ff rj">15.7 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.95170</td>
+        <td class="ff">04 38 52.96</td>
+        <td class="ff">+14 14 24.5</td>
+        <td class="ff rj">15.8 V</td>
+        <td>510 &ndash; Siegen</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.95729</td>
+        <td class="ff">04 39 30.93</td>
+        <td class="ff">+14 13 27.2</td>
+        <td class="ff rj">14.6 C</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.96526</td>
+        <td class="ff">04 39 53.38</td>
+        <td class="ff">+14 06 37.0</td>
+        <td class="ff rj">15.0 C</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.96828</td>
+        <td class="ff">04 40 01.86</td>
+        <td class="ff">+14 04 00.9</td>
+        <td class="ff rj">15.1 C</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.97650</td>
+        <td class="ff">04 40 24.76</td>
+        <td class="ff">+13 56 57.8</td>
+        <td class="ff rj">15.0 C</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 23.98006</td>
+        <td class="ff">04 40 34.61</td>
+        <td class="ff">+13 53 54.4</td>
+        <td class="ff rj">15.0 C</td>
+        <td>J47 &ndash; Observatorio Nazaret</td>
+        <td class="ff lj">MPS 260755</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.24071</td>
+        <td class="ff">04 52 22.26</td>
+        <td class="ff">+10 27 05.6</td>
+        <td class="ff rj">15.1 R</td>
+        <td>304 &ndash; Las Campanas Observatory</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.24078</td>
+        <td class="ff">04 52 43.91</td>
+        <td class="ff">+10 11 23.3</td>
+        <td class="ff rj">14.8 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.24135</td>
+        <td class="ff">04 52 45.36</td>
+        <td class="ff">+10 10 55.4</td>
+        <td class="ff rj">14.8 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.24174</td>
+        <td class="ff">04 52 46.35</td>
+        <td class="ff">+10 10 36.6</td>
+        <td class="ff rj">14.9 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.24211</td>
+        <td class="ff">04 52 47.28</td>
+        <td class="ff">+10 10 17.7</td>
+        <td class="ff rj">14.8 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.24219</td>
+        <td class="ff">04 52 25.86</td>
+        <td class="ff">+10 25 51.9</td>
+        <td class="ff rj">15.0 R</td>
+        <td>304 &ndash; Las Campanas Observatory</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.24288</td>
+        <td class="ff">04 52 49.22</td>
+        <td class="ff">+10 09 40.5</td>
+        <td class="ff rj">14.8 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.24330</td>
+        <td class="ff">04 52 50.29</td>
+        <td class="ff">+10 09 19.8</td>
+        <td class="ff rj">14.9 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.24369</td>
+        <td class="ff">04 52 51.23</td>
+        <td class="ff">+10 09 01.1</td>
+        <td class="ff rj">14.9 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.24408</td>
+        <td class="ff">04 52 52.17</td>
+        <td class="ff">+10 08 42.6</td>
+        <td class="ff rj">14.8 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.24445</td>
+        <td class="ff">04 52 53.15</td>
+        <td class="ff">+10 08 23.8</td>
+        <td class="ff rj">14.8 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.24487</td>
+        <td class="ff">04 52 54.19</td>
+        <td class="ff">+10 08 03.3</td>
+        <td class="ff rj">14.9 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.24519</td>
+        <td class="ff">04 52 32.98</td>
+        <td class="ff">+10 23 24.2</td>
+        <td class="ff rj">15.0 R</td>
+        <td>304 &ndash; Las Campanas Observatory</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.24526</td>
+        <td class="ff">04 52 55.14</td>
+        <td class="ff">+10 07 45.1</td>
+        <td class="ff rj">14.9 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.24563</td>
+        <td class="ff">04 52 56.13</td>
+        <td class="ff">+10 07 26.5</td>
+        <td class="ff rj">14.8 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.24602</td>
+        <td class="ff">04 52 57.07</td>
+        <td class="ff">+10 07 07.4</td>
+        <td class="ff rj">14.8 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.24640</td>
+        <td class="ff">04 52 58.03</td>
+        <td class="ff">+10 06 48.9</td>
+        <td class="ff rj">14.8 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.24669</td>
+        <td class="ff">04 52 36.51</td>
+        <td class="ff">+10 22 10.8</td>
+        <td class="ff rj">15.2 R</td>
+        <td>304 &ndash; Las Campanas Observatory</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.24678</td>
+        <td class="ff">04 52 58.97</td>
+        <td class="ff">+10 06 30.0</td>
+        <td class="ff rj">14.9 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.24716</td>
+        <td class="ff">04 52 59.93</td>
+        <td class="ff">+10 06 12.0</td>
+        <td class="ff rj">14.9 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.24973</td>
+        <td class="ff">04 52 43.76</td>
+        <td class="ff">+10 19 40.6</td>
+        <td class="ff rj">15.0 R</td>
+        <td>304 &ndash; Las Campanas Observatory</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.33012</td>
+        <td class="ff">04 56 19.43</td>
+        <td class="ff">+08 59 16.5</td>
+        <td class="ff rj">14.3 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.33065</td>
+        <td class="ff">04 56 20.66</td>
+        <td class="ff">+08 58 51.1</td>
+        <td class="ff rj">13.3 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.33106</td>
+        <td class="ff">04 56 21.54</td>
+        <td class="ff">+08 58 32.0</td>
+        <td class="ff rj">13.0 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.33135</td>
+        <td class="ff">04 56 22.23</td>
+        <td class="ff">+08 58 18.7</td>
+        <td class="ff rj">14.2 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.33167</td>
+        <td class="ff">04 56 22.99</td>
+        <td class="ff">+08 58 02.3</td>
+        <td class="ff rj">14.2 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.33197</td>
+        <td class="ff">04 56 23.72</td>
+        <td class="ff">+08 57 47.8</td>
+        <td class="ff rj">14.2 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.33226</td>
+        <td class="ff">04 56 24.39</td>
+        <td class="ff">+08 57 33.7</td>
+        <td class="ff rj">14.3 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.33292</td>
+        <td class="ff">04 56 25.92</td>
+        <td class="ff">+08 57 02.1</td>
+        <td class="ff rj">14.3 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.33333</td>
+        <td class="ff">04 56 26.87</td>
+        <td class="ff">+08 56 42.3</td>
+        <td class="ff rj">14.3 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.33372</td>
+        <td class="ff">04 56 27.76</td>
+        <td class="ff">+08 56 23.6</td>
+        <td class="ff rj">14.3 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.47292</td>
+        <td class="ff">05 01 38.91</td>
+        <td class="ff">+07 06 23.6</td>
+        <td class="ff rj">14.5 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.47332</td>
+        <td class="ff">05 01 39.77</td>
+        <td class="ff">+07 06 05.2</td>
+        <td class="ff rj">14.5 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.47371</td>
+        <td class="ff">05 01 40.65</td>
+        <td class="ff">+07 05 46.5</td>
+        <td class="ff rj">14.4 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.47410</td>
+        <td class="ff">05 01 41.49</td>
+        <td class="ff">+07 05 28.4</td>
+        <td class="ff rj">14.5 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.47449</td>
+        <td class="ff">05 01 42.35</td>
+        <td class="ff">+07 05 10.2</td>
+        <td class="ff rj">14.5 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.47488</td>
+        <td class="ff">05 01 43.21</td>
+        <td class="ff">+07 04 51.9</td>
+        <td class="ff rj">14.5 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.47527</td>
+        <td class="ff">05 01 44.07</td>
+        <td class="ff">+07 04 33.6</td>
+        <td class="ff rj">14.5 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.47567</td>
+        <td class="ff">05 01 44.93</td>
+        <td class="ff">+07 04 15.2</td>
+        <td class="ff rj">14.5 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.47606</td>
+        <td class="ff">05 01 45.78</td>
+        <td class="ff">+07 03 56.9</td>
+        <td class="ff rj">14.5 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.47645</td>
+        <td class="ff">05 01 46.64</td>
+        <td class="ff">+07 03 38.6</td>
+        <td class="ff rj">14.5 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.47685</td>
+        <td class="ff">05 01 47.52</td>
+        <td class="ff">+07 03 20.0</td>
+        <td class="ff rj">14.5 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.47723</td>
+        <td class="ff">05 01 48.34</td>
+        <td class="ff">+07 03 02.5</td>
+        <td class="ff rj">14.5 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.47761</td>
+        <td class="ff">05 01 49.20</td>
+        <td class="ff">+07 02 44.2</td>
+        <td class="ff rj">14.5 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.47800</td>
+        <td class="ff">05 01 50.05</td>
+        <td class="ff">+07 02 26.2</td>
+        <td class="ff rj">14.5 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.47839</td>
+        <td class="ff">05 01 50.92</td>
+        <td class="ff">+07 02 07.8</td>
+        <td class="ff rj">14.5 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 24.47881</td>
+        <td class="ff">05 01 51.81</td>
+        <td class="ff">+07 01 49.0</td>
+        <td class="ff rj">14.5 C</td>
+        <td>H10 &ndash; Tzec Maun Observatory, Mayhill</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 25.01108</td>
+        <td class="ff">05 22 20.84</td>
+        <td class="ff">+00 39 48.8</td>
+        <td class="ff rj">15.7 C</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 25.01260</td>
+        <td class="ff">05 22 23.74</td>
+        <td class="ff">+00 38 49.2</td>
+        <td class="ff rj">15.7 C</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 25.01412</td>
+        <td class="ff">05 22 26.53</td>
+        <td class="ff">+00 37 50.3</td>
+        <td class="ff rj">15.8 C</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 25.01564</td>
+        <td class="ff">05 22 29.36</td>
+        <td class="ff">+00 36 51.0</td>
+        <td class="ff rj">16.0 C</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 25.01716</td>
+        <td class="ff">05 22 32.20</td>
+        <td class="ff">+00 35 52.0</td>
+        <td class="ff rj">15.7 C</td>
+        <td>J69 &ndash; North Observatory, Clanfield</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 25.28953</td>
+        <td class="ff">05 31 18.03</td>
+        <td class="ff">-02 09 44.3</td>
+        <td class="ff rj">16.2 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 25.29050</td>
+        <td class="ff">05 31 19.62</td>
+        <td class="ff">-02 10 19.8</td>
+        <td class="ff rj">16.8 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 25.29091</td>
+        <td class="ff">05 31 20.23</td>
+        <td class="ff">-02 10 33.1</td>
+        <td class="ff rj">16.6 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 261741</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 25.29209</td>
+        <td class="ff">05 31 22.21</td>
+        <td class="ff">-02 11 15.4</td>
+        <td class="ff rj">16.4 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 261742</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 25.29304</td>
+        <td class="ff">05 31 23.72</td>
+        <td class="ff">-02 11 48.6</td>
+        <td class="ff rj">16.6 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 261742</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 25.29361</td>
+        <td class="ff">05 31 24.65</td>
+        <td class="ff">-02 12 08.8</td>
+        <td class="ff rj">16.3 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 261742</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 25.29405</td>
+        <td class="ff">05 31 25.40</td>
+        <td class="ff">-02 12 24.1</td>
+        <td class="ff rj">16.1 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 261742</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 25.29506</td>
+        <td class="ff">05 31 27.00</td>
+        <td class="ff">-02 12 59.5</td>
+        <td class="ff rj">16.2 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 261742</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 25.32736</td>
+        <td class="ff">05 32 14.71</td>
+        <td class="ff">-02 32 36.1</td>
+        <td class="ff rj">16.1 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 261742</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 25.32922</td>
+        <td class="ff">05 32 17.65</td>
+        <td class="ff">-02 33 40.7</td>
+        <td class="ff rj">16.0 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 261742</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 25.33015</td>
+        <td class="ff">05 32 19.12</td>
+        <td class="ff">-02 34 13.1</td>
+        <td class="ff rj">16.1 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 261742</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 25.33200</td>
+        <td class="ff">05 32 22.05</td>
+        <td class="ff">-02 35 17.6</td>
+        <td class="ff rj">16.1 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 261742</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 25.33293</td>
+        <td class="ff">05 32 23.50</td>
+        <td class="ff">-02 35 49.8</td>
+        <td class="ff rj">16.0 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 261742</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 25.33482</td>
+        <td class="ff">05 32 26.48</td>
+        <td class="ff">-02 36 55.4</td>
+        <td class="ff rj">16.1 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 261742</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 29.32013</td>
+        <td class="ff">06 40 21.85</td>
+        <td class="ff">-22 50 45.1</td>
+        <td class="ff rj">18.4 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 261742</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 29.32127</td>
+        <td class="ff">06 40 22.31</td>
+        <td class="ff">-22 50 56.9</td>
+        <td class="ff rj">17.8 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 261742</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 29.32282</td>
+        <td class="ff">06 40 22.99</td>
+        <td class="ff">-22 51 10.7</td>
+        <td class="ff rj">17.9 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 261742</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 29.32457</td>
+        <td class="ff">06 40 23.81</td>
+        <td class="ff">-22 51 27.7</td>
+        <td class="ff rj">18.1 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 261742</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 29.32573</td>
+        <td class="ff">06 40 24.32</td>
+        <td class="ff">-22 51 38.3</td>
+        <td class="ff rj">18.0 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 261742</td>
+      </tr>
+      <tr>
+        <td class="ff">2008 10 29.32709</td>
+        <td class="ff">06 40 24.97</td>
+        <td class="ff">-22 51 50.5</td>
+        <td class="ff rj">18.1 V</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 261742</td>
+      </tr>
+  </table>
+
+
+        </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer id="footer">
+    <div class="holder">
+      <nav class="nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+	  <!-- Contact link changed to Jira -->
+          <li><a href="https://mpc-service.atlassian.net/servicedesk/customer/portals">Contact</a></li>
+          <li><a href="https://www.cfa.harvard.edu/content/privacy-statement">Privacy</a></li>
+        </ul>
+      </nav>
+      
+      <a href="https://www.cfa.harvard.edu">
+      <img src="/images/CfA_Logo_Vertical_CMYK.png" width="110" height="47"></a>
+      <p>
+      <p>
+      <p>
+      <div class="copy">The Minor Planet Center is hosted by the Center for Astrophysics | Harvard &amp; Smithsonian.<center>The Minor Planet Center is funded by NASA.</center></div> 
+  </footer>
+
+<script type="text/javascript">
+  $(window).on('load', (function() {
+    $("table").tablesorter();
+  })); 
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var _tag=new WebTrends();
+_tag.dcsGetId();
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+_tag.dcsCustom=function(){
+// Add custom parameters here.
+//_tag.DCSext.param_name=param_value;
+}
+_tag.dcsCollect();
+//]]>
+</script>
+
+<noscript>
+<div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="//logs1.smithsonian.museum/dcsa7yzrmbdzpxzrosrn4tyep_5i1d/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=9.4.0&amp;dcssip=www.minorplanetcenter.net"/></div>
+</noscript>
+</body>
+
+</html>

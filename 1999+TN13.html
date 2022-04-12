@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IAU Minor Planet Center</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/mpc.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/table-sorter.css">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+  <link media="all" rel="stylesheet" href="/css/all.css">
+
+  <link rel="icon" type="image/png" href="/iau/figs/MPClogo16.png">
+  <meta name="description" content="We are the official body that deals with
+      astrometric observations and orbits of minor planets (asteroids) and comets.">
+
+  <meta name="keywords" content="astrometry, observations, orbits,
+      minor planets, asteroids, comets, near earth objects, 
+      potentially hazardous asteroids">
+
+  <script type="text/javascript" src="/js/jquery-latest.js"></script>
+<!--  <script type="text/javascript" src="/js/jquery.main.js"></script> -->
+<!--  <script type="text/javascript" src="/js/jquery.metadata.js"></script> -->
+  <script type="text/javascript" src="/js/jquery.tablesorter.js"></script>
+  <script type="text/javascript" src="/js/webtrends.js"></script>
+  <script type="text/javascript" src="/js/track_pdfs.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic|PT+Sans:400,700,400italic,700italic|PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+  
+<body>
+  <!-- wrapper -->
+  <div id="wrapper">
+    <div class="w1">
+      <!-- header -->
+      <header id="header">
+        <div class="holder">
+          <!-- logo -->
+          <h1 class="logo"><a href="/">The International Astronomical Union Minor Planet Center</a></h1>
+          <div class="area">
+            <!-- top-nav -->
+            <nav class="top-nav">
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+		<!-- Contact link changed to Jira -->
+                <li><a href="https://mpc-service.atlassian.net/servicedesk/customer/portals">Contact</a></li>
+              </ul>
+            </nav>
+            <!-- search-form -->
+            <div class="form-holder">
+              <!-- This commented code opens a new page for the search. -->
+              <!--<form class="search-form" method="get" action="https://www.google.com/search" target="_blank">-->
+              <form class="search-form" method="get" action="https://www.google.com/search">
+                <fieldset>
+                  <!--<label for="search">Search</label>-->
+                  <input type="hidden" name="sitesearch" value="minorplanetcenter.net">
+                  <input type="text" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" id="search" name="q" value="Search MPC">
+                </fieldset>
+              </form>
+            </div>
+            <div class="social-bar">
+<!--              <a href="https://twitter.com/MinorPlanetCtr"><span class="social twitter">L</span></a> -->
+<!--              <a href="https://www.facebook.com/MinorPlanetCenter"><span class="social facebook">F</span></a> -->
+<!--              <a href="https://www.youtube.com/channel/UCtALMOQHuBxh5XMsYNiDhMg"><span class="social youtube">X</span></a> -->
+<!--              <a href="/iau/rss/mpc_feeds.html"><span class="social rss">R</span></a> -->
+            </div>
+          </div>
+        </div>
+        <nav class="nav-holder">
+          <!-- main navigation -->
+          <ul id="nav">
+            <li>
+              <a href="/iau/mpc.html"><span>OBSERVERS</span></a>
+              <ul>
+                <li><a href="/iau/MPEph/MPEph.html">Ephemeris Service</a></li>
+                <li><a href="/mpec/RecentMPECs.html">MPECs</a></li>
+                <li><a href="/iau/NEO/toconfirm_tabular.html">NEO Confirmation</a></li>
+                <li><a href="/iau/NEO/pccp_tabular.html">Possible Comet Confirmation</a></li>
+                <li><a href="/iau/Ephemerides/EphemOrbEls.html" class="nested">Orbital Elements</a>
+                  <ul>
+                    <li><a href="/iau/MPCORB.html">MPCORB</a></li>
+                    <li><a href="/iau/ECS/MPCAT/MPCAT.html">MPCAT</a></li>
+                    <li><a href="/iau/ECS/MPCUPDATE/MPCUPDATE.html">MPCUPDATE</a></li>
+                    <li><a href="/iau/Ephemerides/SoftwareEls.html">Orbital Elements for Software</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/services/MPCServices.html">Publications Overview</a></li>
+                <li><a href="/iau/ECS/MPCArchive/MPCArchive_TBL.html">Publications Archive</a></li>              
+                <li><a href="/iau/NEO/TheNEOPage.html" class="nested">NEO Services</a>
+                  <ul>
+                    <li><a href="/iau/NEO/toconfirm_tabular.html">Confirmation</a></li>
+                    <li><a href="/iau/NEO/PossNEO.html">Ratings</a></li>
+                    <li><a href="/cgi-bin/neaobs.cgi">Observation Planning Aid</a></li>
+                    <li><a href="/cgi-bin/checkneo.cgi">NEOChecker</a></li>
+                    <li><a href="/cgi-bin/checkneocmt.cgi">NEOCMTChecker</a></li>
+                    <li><a href="/neocp_followup_report/">NEOCP Followup Report Form</a></li>
+                    <li><a href="/neocp_followup_reports/">NEOCP Followup Reports</a></li>
+                    <li><a href="/neocp_obs">NEOCP Recent Observations</a></li>
+                  </ul>
+                </li>
+                <li><a href="/iau/services/WebCSAccess.html" class="nested">Other Observer Services</a>
+                  <ul>
+                    <li><a href="/whatsup">Observing Target List</a></li>
+                    <li><a href="/iau/NatSats/NaturalSatellites.html">Natural Satellite Ephemerides</a></li>
+                    <li><a href="/iau/MPEph/NewObjEphems.html">New Object Ephemerides</a></li>
+                    <li><a href="/cgi-bin/checkmp.cgi">MPChecker</a></li>
+                    <li><a href="/cgi-bin/checkcmt.cgi">CMTChecker</a></li>
+                    <li><a href="/iau/artsats/artsats.html">Distant Artificial Satellites</a></li>
+                    <li><a href="/iau/lists/Customize.html">Observing List Customizer</a></li>
+                  </ul>
+                </li>
+                <li><a href="/db_search">Orbits/Observations Database</a></li>
+
+                <li><a href='http://alcdef.org'>Light Curve Database</a></li>
+
+                <li><a href="/iau/ECS/MPCAT-OBS/MPCAT-OBS.html">MPCAT-OBS</a></li>
+                <li><a href="/iau/SkyCoverage.html">Sky Coverage</a></li>
+                <li><a href="/iau/MPC_Documentation.html" class="nested">Documentation</a>
+                  <ul>
+                    <li><a href="/iau/info/TechInfo.html">MPC Submission Info</a></li>
+                    <li><a href="/iau/info/Astrometry.html">Astrometry Guide</a></li>
+                    <li><a href="/iau/WhatsNew.html">What's New</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/lists/Lists.html" class="nested">Lists and Plots</a>
+                  <ul>
+                    <li><a href="/iau/lists/MPLists.html">Minor Planets</a></li>
+                      <!--<ul>
+                        <li><a href="/iau/lists/t_atens.html">Atens</a></li>
+                        <li><a href="/iau/lists/t_apollos.html">Apollos</a></li>
+                        <li><a href="/iau/lists/t_amors.html">Amors</a></li>
+                        <li><a href="/iau/lists/t_centaurs.html">Centaurs and Scattered Disk Objects</a></li>
+                        <li><a href="/iau/lists/t_tnos.html">Transneptunian Objects</a></li>
+                        <li><a href="/iau/lists/t_others.html">Other Unusual Objects</a></li>
+                        <li><a href="/iau/lists/t_dangerous.html">Potentially Hazardous Asteroids</a></li>
+                      </ul>-->
+                    <li><a href="/iau/lists/CometLists.html">Comets</a></li>
+                      <!--<ul>
+                        <li><a href="/iau/lists/LastCometObs.html">Date of Last Observation</a></li>
+                        <li><a href="/iau/lists/LastYear.html">Designations from the Past Year</a></li>
+                        <li><a href="http://www.icq.eps.harvard.edu/CometMags.html">Comet Magnitude Estimates</a></li>
+                        <li><a href="/iau/lists/ClosestComets.html">Closest Approaches</a></li>
+                        <li><a href="/iau/lists/PeriodicCodes.html">Periodic Comets</a></li>
+                      </ul>-->
+                    <li><a href="/iau/lists/ObsCodesF.html">Observatory Codes</a></li>		    
+                    <li><a href="/iau/Animations/Animations.html">Animations</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/MPCStatus.html">MPC Status</a></li>
+                <!--<li><a href="/summary">Summary</a></li>-->
+                <li><a href='/mpc/obs_stats_2014_2018'>2014-18 NEO Obs Statistics</a></li>
+                <li><a href='/mpc/summary'>Summary of Latest Data</a></li>
+              </ul>
+            </li>
+            <li><a href="/data"><span>DATA</span></a>
+            </li>
+            <li><a href="http://iawn.net/"><span>IAWN</span></a>
+            </li>
+            <li><a href="https://minorplanetcenter.net/mpcops/beta/"><span>BETA</span></a></li>
+            <li><a href="/iau/MPCStatus.html"><span style="color:Green">STATUS</a></li>
+            <li><a href="https://sbnmpc.astro.umd.edu/"><span>SBN ANNEX</span></a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- main -->
+      <div id="main">
+
+  <h3>
+  
+   1999 TN13
+  
+  
+   
+  
+</h3>
+
+    First observed at Lincoln Laboratory ETS, New Mexico
+  on 1999-10-12.
+
+
+  <br>(Discoverer will be defined when the object is numbered. 
+  See <a href="/mpec/K10/K10U20.html">this note</a>
+  on how discoverers are determined.)
+
+
+<br>
+<h2>Orbit</h2>
+
+    Orbit type: Apollo
+  <br>
+
+
+    Near-Earth Object<br>
+    One opposition object seen prior.<br>
+
+    <br>
+    <div class="show-orbit-button">
+      <form accept-charset="UTF-8" action="/db_search/show_orbit" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+        <input id="number" name="number" type="hidden" />
+        <input id="designation" name="designation" type="hidden" value="1999 TN13" />
+        <input id="name" name="name" type="hidden" />
+        <input id="epoch" name="epoch" type="hidden" value="2019-04-27.0" />
+        <input id="peri" name="peri" type="hidden" value="217.2206037" />
+        <input id="m" name="m" type="hidden" value="256.44685" />
+        <input id="node" name="node" type="hidden" value="202.229117" />
+        <input id="incl" name="incl" type="hidden" value="9.4924159" />
+        <input id="e" name="e" type="hidden" value="0.52592793" />
+        <input id="a" name="a" type="hidden" value="2.032379555707638" />
+        <input name="commit" type="submit" value="Interactive Orbit Sketch" />
+</form>    </div>
+    <div>
+       Note: WebGL enabled browser required.
+    </div>
+
+    
+
+
+  <br>
+  <table class="nb">
+    <tr>
+      <td valign="top" class="nb">
+        <table>
+          <tr><td>epoch</td><td class="rj">2019-04-27.0</td></tr>
+          <tr><td>epoch JD</td><td class="rj">2458600.5</td></tr>
+          <tr><td>perihelion date</td><td class="rj">2020-02-25.41545</td></tr>
+          <tr><td>perihelion JD</td><td class="rj">2458904.91545</td></tr>
+          <tr><td>argument of perihelion (°)</td><td class="rj">217.22060</td></tr>
+          <tr><td>ascending node (°)</td><td class="rj">202.22912</td></tr>
+          <tr><td>inclination (°)</td><td class="rj">9.49242</td></tr>
+          <tr><td>eccentricity</td><td class="rj">0.5259279</td></tr>
+          <tr><td>perihelion distance (AU)</td><td class="rj">0.9634944</td></tr>
+          <tr><td>Tisserand w.r.t. Jupiter</td><td class="rj">3.6</td></tr>
+          <tr><td>&Delta;V w.r.t. Earth (km/sec)</td><td class="rj">6.5</td></tr>
+        </table>
+      </td>
+      <td valign="top" class="nb">
+        <table>
+          <tr><td>semimajor axis (AU)</td><td class="rj">2.0323796</td></tr>
+          <tr><td>mean anomaly (°)</td><td class="rj">256.44685</td></tr>
+          <tr><td>mean daily motion (°/day)</td><td class="rj">0.34017050</td></tr>
+          <tr><td>aphelion distance (AU)</td><td class="rj">3.101</td></tr>
+          <tr><td>period (years)</td><td class="rj">2.9</td></tr>
+          <tr><td>P-vector [x]</td><td class="rj">0.51142762</td></tr>
+          <tr><td>P-vector [y]</td><td class="rj">0.82276678</td></tr>
+          <tr><td>P-vector [z]</td><td class="rj">0.24798511</td></tr>
+          <tr><td>Q-vector [x]</td><td class="rj">-0.85705851</td></tr>
+          <tr><td>Q-vector [y]</td><td class="rj">0.50932885</td></tr>
+          <tr><td>Q-vector [z]</td><td class="rj">0.07768422</td></tr>
+          <tr><td>absolute magnitude</td><td class="rj">23.6</td></tr>
+          <tr><td>phase slope</td><td class="rj">0.15</td></tr>
+        </table>
+      </td>
+      <td valign="top" class="nb">
+        <table>
+
+            <tr><td><a href="/iau/info/UValue.html">uncertainty</a></td><td class="rj">5</td></tr>
+
+          <tr><td>reference</td><td class="rj">MPO  41582</td></tr>
+          <tr><td>observations used</td><td class="rj">65</td></tr>
+          <tr><td>oppositions</td><td class="rj">1</td></tr>
+          <tr><td>arc length (days)</td><td class="rj">7</td></tr>
+          <tr><td>first opposition used</td><td class="rj">1999</td></tr>
+          <tr><td>last opposition used</td><td class="rj">1999</td></tr>
+          <tr><td>residual rms (arc-secs)</td><td class="rj">0.62</td></tr>
+          <tr><td><a href="/iau/info/Perturbers.html">perturbers coarse indicator</a></td><td class="rj">M-v</td></tr>
+          <tr><td><a href="/iau/info/Perturbers.html">perturbers precise indicator</a></td><td class="rj">003Eh</td></tr>
+          <tr><td>first observation date used</td><td class="rj">1999-10-12.0</td></tr>
+          <tr><td>last observation date used</td><td class="rj">1999-10-18.0</td></tr>
+          <tr><td>computer name</td><td class="rj">MPCW</td></tr>
+        </table>
+      </td>
+    </tr>
+  </table>    
+
+  <table class="nb">
+    <tr>
+      <td valign="top" class="nb">
+      </td>
+      <td width=100px> </td>
+
+      <td valign="top" class="nb">
+    Minimum Orbit Intersection Distances (in AU)<br>for orbit epoch: 2458600.5, reference: MPO<br>
+          <table>
+            <tr><td>Mercury</td><td>0.65428</td></tr>
+            <tr><td>Venus</td><td>0.24838</td></tr>
+            <tr><td>Earth</td><td>0.02541</td></tr>
+            <tr><td>Mars</td><td>0.19438</td></tr>
+            <tr><td>Jupiter</td><td>2.29725</td></tr>
+            <tr><td>Saturn</td><td>6.85454</td></tr>
+            <tr><td>Uranus</td><td>15.5048</td></tr>
+            <tr><td>Neptune</td><td>27.2446</td></tr>
+          </table>    
+          <br>
+      </td>
+    </tr>
+  </table>
+
+
+<h2>Observations</h2>
+  71 total observations over interval:
+  1999 10 12.20289 &ndash; 1999 10 18.98774
+  <br>
+  These data are available for
+  <a href="../tmp/1999_TN13.txt" target="_blank">download</a>
+  (<a href="/iau/info/OpticalObs.html" target="_blank">format description</a>).
+  <br>
+  <br>
+  <table>
+    <tr>
+      <th>Date (UT)</th>
+      <th>J2000 RA</th>
+      <th>J2000 Dec</th>
+      <th>Magn</th>
+      <th><a href="/iau/lists/ObsCodesF.html">Location</a></th>
+      <th><a href="/iau/info/References.html">Ref</a></th>
+    </tr>
+
+      <tr>
+        <td class="ff">1999 10 12.20289</td>
+        <td class="ff">00 59 48.03</td>
+        <td class="ff">+21 08 04.0</td>
+        <td class="ff rj">19.2 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 12.21714</td>
+        <td class="ff">01 00 00.45</td>
+        <td class="ff">+21 07 09.6</td>
+        <td class="ff rj">18.9 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 12.23276</td>
+        <td class="ff">01 00 14.17</td>
+        <td class="ff">+21 06 10.3</td>
+        <td class="ff rj">18.4 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 12.24668</td>
+        <td class="ff">01 00 26.43</td>
+        <td class="ff">+21 05 16.0</td>
+        <td class="ff rj">18.6 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 12.26061</td>
+        <td class="ff">01 00 38.66</td>
+        <td class="ff">+21 04 21.8</td>
+        <td class="ff rj">19.2 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 12.98003</td>
+        <td class="ff">01 12 41.12</td>
+        <td class="ff">+20 10 34.5</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 12.98106</td>
+        <td class="ff">01 12 42.15</td>
+        <td class="ff">+20 10 29.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 12.98205</td>
+        <td class="ff">01 12 43.12</td>
+        <td class="ff">+20 10 24.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 12.99627</td>
+        <td class="ff">01 12 56.91</td>
+        <td class="ff">+20 09 12.6</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>557 &ndash; Ondrejov</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 12.99686</td>
+        <td class="ff">01 12 57.49</td>
+        <td class="ff">+20 09 10.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>557 &ndash; Ondrejov</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 12.99745</td>
+        <td class="ff">01 12 58.09</td>
+        <td class="ff">+20 09 06.5</td>
+        <td class="ff rj">18.3 V</td>
+        <td>557 &ndash; Ondrejov</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 13.13135</td>
+        <td class="ff">01 15 19.00</td>
+        <td class="ff">+19 57 35.5</td>
+        <td class="ff rj">17.1 R</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 13.13227</td>
+        <td class="ff">01 15 19.98</td>
+        <td class="ff">+19 57 30.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 13.13314</td>
+        <td class="ff">01 15 20.85</td>
+        <td class="ff">+19 57 25.8</td>
+        <td class="ff rj">17.3 R</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 13.24682</td>
+        <td class="ff">01 17 38.83</td>
+        <td class="ff">+19 48 40.4</td>
+        <td class="ff rj">18.4 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 13.26413</td>
+        <td class="ff">01 17 57.28</td>
+        <td class="ff">+19 47 08.8</td>
+        <td class="ff rj">18.6 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 13.28151</td>
+        <td class="ff">01 18 15.72</td>
+        <td class="ff">+19 45 36.7</td>
+        <td class="ff rj">18.8 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 13.29833</td>
+        <td class="ff">01 18 33.70</td>
+        <td class="ff">+19 44 07.1</td>
+        <td class="ff rj">19.0 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 13.87765</td>
+        <td class="ff">01 30 16.16</td>
+        <td class="ff">+18 46 34.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>118 &ndash; Astronomical and Geophysical Observatory, Modra</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 13.87957</td>
+        <td class="ff">01 30 18.53</td>
+        <td class="ff">+18 46 22.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>118 &ndash; Astronomical and Geophysical Observatory, Modra</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 13.88079</td>
+        <td class="ff">01 30 20.04</td>
+        <td class="ff">+18 46 14.3</td>
+        <td class="ff rj">17.1 R</td>
+        <td>118 &ndash; Astronomical and Geophysical Observatory, Modra</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 13.92972</td>
+        <td class="ff">01 31 20.16</td>
+        <td class="ff">+18 41 01.5</td>
+        <td class="ff rj">16.9 R</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 13.93045</td>
+        <td class="ff">01 31 21.08</td>
+        <td class="ff">+18 40 57.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 13.93178</td>
+        <td class="ff">01 31 22.62</td>
+        <td class="ff">+18 40 51.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 13.93251</td>
+        <td class="ff">01 31 23.66</td>
+        <td class="ff">+18 40 42.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 13.93322</td>
+        <td class="ff">01 31 24.48</td>
+        <td class="ff">+18 40 39.3</td>
+        <td class="ff rj">17.2 R</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 14.05792</td>
+        <td class="ff">01 33 59.47</td>
+        <td class="ff">+18 26 43.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>557 &ndash; Ondrejov</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 14.05894</td>
+        <td class="ff">01 34 00.78</td>
+        <td class="ff">+18 26 36.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>557 &ndash; Ondrejov</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 14.05945</td>
+        <td class="ff">01 34 01.40</td>
+        <td class="ff">+18 26 32.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>557 &ndash; Ondrejov</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 14.23569</td>
+        <td class="ff">01 38 06.94</td>
+        <td class="ff">+18 07 07.8</td>
+        <td class="ff rj">18.0 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 14.25114</td>
+        <td class="ff">01 38 26.90</td>
+        <td class="ff">+18 05 19.9</td>
+        <td class="ff rj">18.1 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 14.26657</td>
+        <td class="ff">01 38 46.80</td>
+        <td class="ff">+18 03 30.6</td>
+        <td class="ff rj">17.9 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 14.28213</td>
+        <td class="ff">01 39 06.93</td>
+        <td class="ff">+18 01 40.0</td>
+        <td class="ff rj">17.8 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 15.34437</td>
+        <td class="ff">02 05 47.73</td>
+        <td class="ff">+15 32 07.8</td>
+        <td class="ff rj">18.0 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 15.35986</td>
+        <td class="ff">02 06 12.15</td>
+        <td class="ff">+15 29 34.5</td>
+        <td class="ff rj">17.9 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 15.37533</td>
+        <td class="ff">02 06 36.73</td>
+        <td class="ff">+15 27 00.6</td>
+        <td class="ff rj">17.2 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 15.39076</td>
+        <td class="ff">02 07 01.32</td>
+        <td class="ff">+15 24 25.4</td>
+        <td class="ff rj">18.1 &nbsp;</td>
+        <td>704 &ndash; Lincoln Laboratory ETS, New Mexico</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 16.94097</td>
+        <td class="ff">02 56 20.51</td>
+        <td class="ff">+10 05 44.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>118 &ndash; Astronomical and Geophysical Observatory, Modra</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 16.94164</td>
+        <td class="ff">02 56 21.80</td>
+        <td class="ff">+10 05 34.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>118 &ndash; Astronomical and Geophysical Observatory, Modra</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 16.94734</td>
+        <td class="ff">02 56 33.56</td>
+        <td class="ff">+10 04 11.6</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>118 &ndash; Astronomical and Geophysical Observatory, Modra</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 17.628924</td>
+        <td class="ff">03 21 46.36</td>
+        <td class="ff">+07 10 15.8</td>
+        <td class="ff rj">17.8 R</td>
+        <td>413 &ndash; Siding Spring Observatory</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 17.630301</td>
+        <td class="ff">03 21 49.40</td>
+        <td class="ff">+07 09 52.7</td>
+        <td class="ff rj">17.9 R</td>
+        <td>413 &ndash; Siding Spring Observatory</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 17.631679</td>
+        <td class="ff">03 21 52.44</td>
+        <td class="ff">+07 09 29.3</td>
+        <td class="ff rj">17.7 R</td>
+        <td>413 &ndash; Siding Spring Observatory</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 17.95331</td>
+        <td class="ff">03 34 30.99</td>
+        <td class="ff">+05 30 43.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 17.95422</td>
+        <td class="ff">03 34 33.01</td>
+        <td class="ff">+05 30 27.5</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 17.95505</td>
+        <td class="ff">03 34 34.89</td>
+        <td class="ff">+05 30 14.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 17.95573</td>
+        <td class="ff">03 34 36.53</td>
+        <td class="ff">+05 30 00.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 17.95648</td>
+        <td class="ff">03 34 38.27</td>
+        <td class="ff">+05 29 48.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>611 &ndash; Starkenburg Sternwarte, Heppenheim</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 18.01373</td>
+        <td class="ff">03 36 49.47</td>
+        <td class="ff">+05 12 57.8</td>
+        <td class="ff rj">16.5 R</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 18.01444</td>
+        <td class="ff">03 36 51.14</td>
+        <td class="ff">+05 12 44.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 18.01580</td>
+        <td class="ff">03 36 54.26</td>
+        <td class="ff">+05 12 21.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 18.01821</td>
+        <td class="ff">03 36 59.92</td>
+        <td class="ff">+05 11 36.6</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 18.01885</td>
+        <td class="ff">03 37 01.39</td>
+        <td class="ff">+05 11 26.8</td>
+        <td class="ff rj">16.2 R</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 18.259051</td>
+        <td class="ff">03 46 50.89</td>
+        <td class="ff">+04 00 02.7</td>
+        <td class="ff rj">18.1 R</td>
+        <td>853 &ndash; Biosphere 2 Observatory</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 18.260752</td>
+        <td class="ff">03 46 54.89</td>
+        <td class="ff">+03 59 32.1</td>
+        <td class="ff rj">17.7 R</td>
+        <td>853 &ndash; Biosphere 2 Observatory</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 18.261481</td>
+        <td class="ff">03 46 56.66</td>
+        <td class="ff">+03 59 18.0</td>
+        <td class="ff rj">17.8 R</td>
+        <td>853 &ndash; Biosphere 2 Observatory</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 18.262234</td>
+        <td class="ff">03 46 58.47</td>
+        <td class="ff">+03 59 04.5</td>
+        <td class="ff rj">18.2 R</td>
+        <td>853 &ndash; Biosphere 2 Observatory</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 18.31014</td>
+        <td class="ff">03 48 46.91</td>
+        <td class="ff">+03 43 59.1</td>
+        <td class="ff rj">16.5 R</td>
+        <td>734 &ndash; Farpoint Observatory, Eskridge</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 18.31117</td>
+        <td class="ff">03 48 49.73</td>
+        <td class="ff">+03 43 41.0</td>
+        <td class="ff rj">16.4 R</td>
+        <td>734 &ndash; Farpoint Observatory, Eskridge</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 18.31212</td>
+        <td class="ff">03 48 51.49</td>
+        <td class="ff">+03 43 27.4</td>
+        <td class="ff rj">16.4 R</td>
+        <td>734 &ndash; Farpoint Observatory, Eskridge</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 18.31351</td>
+        <td class="ff">03 48 54.94</td>
+        <td class="ff">+03 42 57.0</td>
+        <td class="ff rj">16.4 R</td>
+        <td>734 &ndash; Farpoint Observatory, Eskridge</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 18.31448</td>
+        <td class="ff">03 48 57.14</td>
+        <td class="ff">+03 42 41.5</td>
+        <td class="ff rj">16.3 R</td>
+        <td>734 &ndash; Farpoint Observatory, Eskridge</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 18.38170</td>
+        <td class="ff">03 51 39.41</td>
+        <td class="ff">+03 22 22.9</td>
+        <td class="ff rj">19.0 V</td>
+        <td>714 &ndash; Bagdad</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 18.38333</td>
+        <td class="ff">03 51 43.62</td>
+        <td class="ff">+03 21 50.0</td>
+        <td class="ff rj">17.6 V</td>
+        <td>714 &ndash; Bagdad</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 18.40303</td>
+        <td class="ff">03 52 31.62</td>
+        <td class="ff">+03 15 45.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>670 &ndash; Camarillo</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 18.40373</td>
+        <td class="ff">03 52 33.27</td>
+        <td class="ff">+03 15 31.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>670 &ndash; Camarillo</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 18.98462</td>
+        <td class="ff">04 16 39.62</td>
+        <td class="ff">+00 11 15.9</td>
+        <td class="ff rj">17.0 R</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 18.98541</td>
+        <td class="ff">04 16 41.50</td>
+        <td class="ff">+00 11 00.7</td>
+        <td class="ff rj">17.1 R</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 18.98606</td>
+        <td class="ff">04 16 43.02</td>
+        <td class="ff">+00 10 48.8</td>
+        <td class="ff rj">17.3 R</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 18.98689</td>
+        <td class="ff">04 16 45.17</td>
+        <td class="ff">+00 10 32.6</td>
+        <td class="ff rj">16.9 R</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+      <tr>
+        <td class="ff">1999 10 18.98774</td>
+        <td class="ff">04 16 47.17</td>
+        <td class="ff">+00 10 16.0</td>
+        <td class="ff rj">17.0 R</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPS 6922</td>
+      </tr>
+  </table>
+
+
+        </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer id="footer">
+    <div class="holder">
+      <nav class="nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+	  <!-- Contact link changed to Jira -->
+          <li><a href="https://mpc-service.atlassian.net/servicedesk/customer/portals">Contact</a></li>
+          <li><a href="https://www.cfa.harvard.edu/content/privacy-statement">Privacy</a></li>
+        </ul>
+      </nav>
+      
+      <a href="https://www.cfa.harvard.edu">
+      <img src="/images/CfA_Logo_Vertical_CMYK.png" width="110" height="47"></a>
+      <p>
+      <p>
+      <p>
+      <div class="copy">The Minor Planet Center is hosted by the Center for Astrophysics | Harvard &amp; Smithsonian.<center>The Minor Planet Center is funded by NASA.</center></div> 
+  </footer>
+
+<script type="text/javascript">
+  $(window).on('load', (function() {
+    $("table").tablesorter();
+  })); 
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var _tag=new WebTrends();
+_tag.dcsGetId();
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+_tag.dcsCustom=function(){
+// Add custom parameters here.
+//_tag.DCSext.param_name=param_value;
+}
+_tag.dcsCollect();
+//]]>
+</script>
+
+<noscript>
+<div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="//logs1.smithsonian.museum/dcsa7yzrmbdzpxzrosrn4tyep_5i1d/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=9.4.0&amp;dcssip=www.minorplanetcenter.net"/></div>
+</noscript>
+</body>
+
+</html>

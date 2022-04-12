@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IAU Minor Planet Center</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/mpc.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/table-sorter.css">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+  <link media="all" rel="stylesheet" href="/css/all.css">
+
+  <link rel="icon" type="image/png" href="/iau/figs/MPClogo16.png">
+  <meta name="description" content="We are the official body that deals with
+      astrometric observations and orbits of minor planets (asteroids) and comets.">
+
+  <meta name="keywords" content="astrometry, observations, orbits,
+      minor planets, asteroids, comets, near earth objects, 
+      potentially hazardous asteroids">
+
+  <script type="text/javascript" src="/js/jquery-latest.js"></script>
+<!--  <script type="text/javascript" src="/js/jquery.main.js"></script> -->
+<!--  <script type="text/javascript" src="/js/jquery.metadata.js"></script> -->
+  <script type="text/javascript" src="/js/jquery.tablesorter.js"></script>
+  <script type="text/javascript" src="/js/webtrends.js"></script>
+  <script type="text/javascript" src="/js/track_pdfs.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic|PT+Sans:400,700,400italic,700italic|PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+  
+<body>
+  <!-- wrapper -->
+  <div id="wrapper">
+    <div class="w1">
+      <!-- header -->
+      <header id="header">
+        <div class="holder">
+          <!-- logo -->
+          <h1 class="logo"><a href="/">The International Astronomical Union Minor Planet Center</a></h1>
+          <div class="area">
+            <!-- top-nav -->
+            <nav class="top-nav">
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+		<!-- Contact link changed to Jira -->
+                <li><a href="https://mpc-service.atlassian.net/servicedesk/customer/portals">Contact</a></li>
+              </ul>
+            </nav>
+            <!-- search-form -->
+            <div class="form-holder">
+              <!-- This commented code opens a new page for the search. -->
+              <!--<form class="search-form" method="get" action="https://www.google.com/search" target="_blank">-->
+              <form class="search-form" method="get" action="https://www.google.com/search">
+                <fieldset>
+                  <!--<label for="search">Search</label>-->
+                  <input type="hidden" name="sitesearch" value="minorplanetcenter.net">
+                  <input type="text" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" id="search" name="q" value="Search MPC">
+                </fieldset>
+              </form>
+            </div>
+            <div class="social-bar">
+<!--              <a href="https://twitter.com/MinorPlanetCtr"><span class="social twitter">L</span></a> -->
+<!--              <a href="https://www.facebook.com/MinorPlanetCenter"><span class="social facebook">F</span></a> -->
+<!--              <a href="https://www.youtube.com/channel/UCtALMOQHuBxh5XMsYNiDhMg"><span class="social youtube">X</span></a> -->
+<!--              <a href="/iau/rss/mpc_feeds.html"><span class="social rss">R</span></a> -->
+            </div>
+          </div>
+        </div>
+        <nav class="nav-holder">
+          <!-- main navigation -->
+          <ul id="nav">
+            <li>
+              <a href="/iau/mpc.html"><span>OBSERVERS</span></a>
+              <ul>
+                <li><a href="/iau/MPEph/MPEph.html">Ephemeris Service</a></li>
+                <li><a href="/mpec/RecentMPECs.html">MPECs</a></li>
+                <li><a href="/iau/NEO/toconfirm_tabular.html">NEO Confirmation</a></li>
+                <li><a href="/iau/NEO/pccp_tabular.html">Possible Comet Confirmation</a></li>
+                <li><a href="/iau/Ephemerides/EphemOrbEls.html" class="nested">Orbital Elements</a>
+                  <ul>
+                    <li><a href="/iau/MPCORB.html">MPCORB</a></li>
+                    <li><a href="/iau/ECS/MPCAT/MPCAT.html">MPCAT</a></li>
+                    <li><a href="/iau/ECS/MPCUPDATE/MPCUPDATE.html">MPCUPDATE</a></li>
+                    <li><a href="/iau/Ephemerides/SoftwareEls.html">Orbital Elements for Software</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/services/MPCServices.html">Publications Overview</a></li>
+                <li><a href="/iau/ECS/MPCArchive/MPCArchive_TBL.html">Publications Archive</a></li>              
+                <li><a href="/iau/NEO/TheNEOPage.html" class="nested">NEO Services</a>
+                  <ul>
+                    <li><a href="/iau/NEO/toconfirm_tabular.html">Confirmation</a></li>
+                    <li><a href="/iau/NEO/PossNEO.html">Ratings</a></li>
+                    <li><a href="/cgi-bin/neaobs.cgi">Observation Planning Aid</a></li>
+                    <li><a href="/cgi-bin/checkneo.cgi">NEOChecker</a></li>
+                    <li><a href="/cgi-bin/checkneocmt.cgi">NEOCMTChecker</a></li>
+                    <li><a href="/neocp_followup_report/">NEOCP Followup Report Form</a></li>
+                    <li><a href="/neocp_followup_reports/">NEOCP Followup Reports</a></li>
+                    <li><a href="/neocp_obs">NEOCP Recent Observations</a></li>
+                  </ul>
+                </li>
+                <li><a href="/iau/services/WebCSAccess.html" class="nested">Other Observer Services</a>
+                  <ul>
+                    <li><a href="/whatsup">Observing Target List</a></li>
+                    <li><a href="/iau/NatSats/NaturalSatellites.html">Natural Satellite Ephemerides</a></li>
+                    <li><a href="/iau/MPEph/NewObjEphems.html">New Object Ephemerides</a></li>
+                    <li><a href="/cgi-bin/checkmp.cgi">MPChecker</a></li>
+                    <li><a href="/cgi-bin/checkcmt.cgi">CMTChecker</a></li>
+                    <li><a href="/iau/artsats/artsats.html">Distant Artificial Satellites</a></li>
+                    <li><a href="/iau/lists/Customize.html">Observing List Customizer</a></li>
+                  </ul>
+                </li>
+                <li><a href="/db_search">Orbits/Observations Database</a></li>
+
+                <li><a href='http://alcdef.org'>Light Curve Database</a></li>
+
+                <li><a href="/iau/ECS/MPCAT-OBS/MPCAT-OBS.html">MPCAT-OBS</a></li>
+                <li><a href="/iau/SkyCoverage.html">Sky Coverage</a></li>
+                <li><a href="/iau/MPC_Documentation.html" class="nested">Documentation</a>
+                  <ul>
+                    <li><a href="/iau/info/TechInfo.html">MPC Submission Info</a></li>
+                    <li><a href="/iau/info/Astrometry.html">Astrometry Guide</a></li>
+                    <li><a href="/iau/WhatsNew.html">What's New</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/lists/Lists.html" class="nested">Lists and Plots</a>
+                  <ul>
+                    <li><a href="/iau/lists/MPLists.html">Minor Planets</a></li>
+                      <!--<ul>
+                        <li><a href="/iau/lists/t_atens.html">Atens</a></li>
+                        <li><a href="/iau/lists/t_apollos.html">Apollos</a></li>
+                        <li><a href="/iau/lists/t_amors.html">Amors</a></li>
+                        <li><a href="/iau/lists/t_centaurs.html">Centaurs and Scattered Disk Objects</a></li>
+                        <li><a href="/iau/lists/t_tnos.html">Transneptunian Objects</a></li>
+                        <li><a href="/iau/lists/t_others.html">Other Unusual Objects</a></li>
+                        <li><a href="/iau/lists/t_dangerous.html">Potentially Hazardous Asteroids</a></li>
+                      </ul>-->
+                    <li><a href="/iau/lists/CometLists.html">Comets</a></li>
+                      <!--<ul>
+                        <li><a href="/iau/lists/LastCometObs.html">Date of Last Observation</a></li>
+                        <li><a href="/iau/lists/LastYear.html">Designations from the Past Year</a></li>
+                        <li><a href="http://www.icq.eps.harvard.edu/CometMags.html">Comet Magnitude Estimates</a></li>
+                        <li><a href="/iau/lists/ClosestComets.html">Closest Approaches</a></li>
+                        <li><a href="/iau/lists/PeriodicCodes.html">Periodic Comets</a></li>
+                      </ul>-->
+                    <li><a href="/iau/lists/ObsCodesF.html">Observatory Codes</a></li>		    
+                    <li><a href="/iau/Animations/Animations.html">Animations</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/MPCStatus.html">MPC Status</a></li>
+                <!--<li><a href="/summary">Summary</a></li>-->
+                <li><a href='/mpc/obs_stats_2014_2018'>2014-18 NEO Obs Statistics</a></li>
+                <li><a href='/mpc/summary'>Summary of Latest Data</a></li>
+              </ul>
+            </li>
+            <li><a href="/data"><span>DATA</span></a>
+            </li>
+            <li><a href="http://iawn.net/"><span>IAWN</span></a>
+            </li>
+            <li><a href="https://minorplanetcenter.net/mpcops/beta/"><span>BETA</span></a></li>
+            <li><a href="/iau/MPCStatus.html"><span style="color:Green">STATUS</a></li>
+            <li><a href="https://sbnmpc.astro.umd.edu/"><span>SBN ANNEX</span></a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- main -->
+      <div id="main">
+
+  <h3>
+  
+   2006 UA216
+  
+  
+   
+  
+</h3>
+
+    First observed at Siding Spring Survey
+  on 2006-10-29.
+
+
+  <br>(Discoverer will be defined when the object is numbered. 
+  See <a href="/mpec/K10/K10U20.html">this note</a>
+  on how discoverers are determined.)
+
+
+<br>
+<h2>Orbit</h2>
+
+    Orbit type: Apollo
+  <br>
+
+
+    Near-Earth Object<br>
+    One opposition object seen prior.<br>
+
+    <br>
+    <div class="show-orbit-button">
+      <form accept-charset="UTF-8" action="/db_search/show_orbit" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+        <input id="number" name="number" type="hidden" />
+        <input id="designation" name="designation" type="hidden" value="2006 UA216" />
+        <input id="name" name="name" type="hidden" />
+        <input id="epoch" name="epoch" type="hidden" value="2019-04-27.0" />
+        <input id="peri" name="peri" type="hidden" value="340.90785" />
+        <input id="m" name="m" type="hidden" value="47.88432" />
+        <input id="node" name="node" type="hidden" value="42.7788927" />
+        <input id="incl" name="incl" type="hidden" value="6.7343872" />
+        <input id="e" name="e" type="hidden" value="0.315734347" />
+        <input id="a" name="a" type="hidden" value="1.455804405251947" />
+        <input name="commit" type="submit" value="Interactive Orbit Sketch" />
+</form>    </div>
+    <div>
+       Note: WebGL enabled browser required.
+    </div>
+
+    
+
+
+  <br>
+  <table class="nb">
+    <tr>
+      <td valign="top" class="nb">
+        <table>
+          <tr><td>epoch</td><td class="rj">2019-04-27.0</td></tr>
+          <tr><td>epoch JD</td><td class="rj">2458600.5</td></tr>
+          <tr><td>perihelion date</td><td class="rj">2019-01-31.66170</td></tr>
+          <tr><td>perihelion JD</td><td class="rj">2458515.16170</td></tr>
+          <tr><td>argument of perihelion (°)</td><td class="rj">340.90785</td></tr>
+          <tr><td>ascending node (°)</td><td class="rj">42.77889</td></tr>
+          <tr><td>inclination (°)</td><td class="rj">6.73439</td></tr>
+          <tr><td>eccentricity</td><td class="rj">0.3157343</td></tr>
+          <tr><td>perihelion distance (AU)</td><td class="rj">0.9961570</td></tr>
+          <tr><td>Tisserand w.r.t. Jupiter</td><td class="rj">4.6</td></tr>
+          <tr><td>&Delta;V w.r.t. Earth (km/sec)</td><td class="rj">5.0</td></tr>
+        </table>
+      </td>
+      <td valign="top" class="nb">
+        <table>
+          <tr><td>semimajor axis (AU)</td><td class="rj">1.4558044</td></tr>
+          <tr><td>mean anomaly (°)</td><td class="rj">47.88432</td></tr>
+          <tr><td>mean daily motion (°/day)</td><td class="rj">0.56111170</td></tr>
+          <tr><td>aphelion distance (AU)</td><td class="rj">1.915</td></tr>
+          <tr><td>period (years)</td><td class="rj">1.76</td></tr>
+          <tr><td>P-vector [x]</td><td class="rj">0.91422284</td></tr>
+          <tr><td>P-vector [y]</td><td class="rj">0.38536260</td></tr>
+          <tr><td>P-vector [z]</td><td class="rj">0.12526875</td></tr>
+          <tr><td>Q-vector [x]</td><td class="rj">-0.39730768</td></tr>
+          <tr><td>Q-vector [y]</td><td class="rj">0.79171841</td></tr>
+          <tr><td>Q-vector [z]</td><td class="rj">0.46403510</td></tr>
+          <tr><td>absolute magnitude</td><td class="rj">23.6</td></tr>
+          <tr><td>phase slope</td><td class="rj">0.15</td></tr>
+        </table>
+      </td>
+      <td valign="top" class="nb">
+        <table>
+
+            <tr><td><a href="/iau/info/UValue.html">uncertainty</a></td><td class="rj">5</td></tr>
+
+          <tr><td>reference</td><td class="rj">MPO 112959</td></tr>
+          <tr><td>observations used</td><td class="rj">71</td></tr>
+          <tr><td>oppositions</td><td class="rj">1</td></tr>
+          <tr><td>arc length (days)</td><td class="rj">40</td></tr>
+          <tr><td>first opposition used</td><td class="rj">2006</td></tr>
+          <tr><td>last opposition used</td><td class="rj">2006</td></tr>
+          <tr><td>residual rms (arc-secs)</td><td class="rj">0.37</td></tr>
+          <tr><td><a href="/iau/info/Perturbers.html">perturbers coarse indicator</a></td><td class="rj">M-v</td></tr>
+          <tr><td><a href="/iau/info/Perturbers.html">perturbers precise indicator</a></td><td class="rj">003Eh</td></tr>
+          <tr><td>first observation date used</td><td class="rj">2006-10-29.0</td></tr>
+          <tr><td>last observation date used</td><td class="rj">2006-12-08.0</td></tr>
+          <tr><td>computer name</td><td class="rj">MPCW</td></tr>
+        </table>
+      </td>
+    </tr>
+  </table>    
+
+  <table class="nb">
+    <tr>
+      <td valign="top" class="nb">
+      </td>
+      <td width=100px> </td>
+
+      <td valign="top" class="nb">
+    Minimum Orbit Intersection Distances (in AU)<br>for orbit epoch: 2458600.5, reference: MPO112959<br>
+          <table>
+            <tr><td>Mercury</td><td>0.65555</td></tr>
+            <tr><td>Venus</td><td>0.27139</td></tr>
+            <tr><td>Earth</td><td>0.0145</td></tr>
+            <tr><td>Mars</td><td>0.10219</td></tr>
+            <tr><td>Jupiter</td><td>3.53476</td></tr>
+            <tr><td>Saturn</td><td>7.6345</td></tr>
+            <tr><td>Uranus</td><td>16.3759</td></tr>
+            <tr><td>Neptune</td><td>28.4765</td></tr>
+          </table>    
+          <br>
+      </td>
+    </tr>
+  </table>
+
+
+<h2>Observations</h2>
+  72 total observations over interval:
+  2006 10 29.70049 &ndash; 2006 12 08.227235
+  <br>
+  These data are available for
+  <a href="../tmp/2006_UA216.txt" target="_blank">download</a>
+  (<a href="/iau/info/OpticalObs.html" target="_blank">format description</a>).
+  <br>
+  <br>
+  <table>
+    <tr>
+      <th>Date (UT)</th>
+      <th>J2000 RA</th>
+      <th>J2000 Dec</th>
+      <th>Magn</th>
+      <th><a href="/iau/lists/ObsCodesF.html">Location</a></th>
+      <th><a href="/iau/info/References.html">Ref</a></th>
+    </tr>
+
+      <tr>
+        <td class="ff">2006 10 29.70049</td>
+        <td class="ff">04 16 55.02</td>
+        <td class="ff">-39 05 56.4</td>
+        <td class="ff rj">16.7 V</td>
+        <td>E12 &ndash; Siding Spring Survey</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 29.70102</td>
+        <td class="ff">04 16 55.41</td>
+        <td class="ff">-39 05 35.3</td>
+        <td class="ff rj">16.5 V</td>
+        <td>E12 &ndash; Siding Spring Survey</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 29.70155</td>
+        <td class="ff">04 16 55.77</td>
+        <td class="ff">-39 05 13.7</td>
+        <td class="ff rj">16.6 V</td>
+        <td>E12 &ndash; Siding Spring Survey</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 29.70207</td>
+        <td class="ff">04 16 56.13</td>
+        <td class="ff">-39 04 52.1</td>
+        <td class="ff rj">16.4 V</td>
+        <td>E12 &ndash; Siding Spring Survey</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 29.70260</td>
+        <td class="ff">04 16 56.53</td>
+        <td class="ff">-39 04 29.9</td>
+        <td class="ff rj">16.4 V</td>
+        <td>E12 &ndash; Siding Spring Survey</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 29.70347</td>
+        <td class="ff">04 16 57.10</td>
+        <td class="ff">-39 03 54.3</td>
+        <td class="ff rj">16.5 V</td>
+        <td>E12 &ndash; Siding Spring Survey</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 29.70401</td>
+        <td class="ff">04 16 57.50</td>
+        <td class="ff">-39 03 32.7</td>
+        <td class="ff rj">16.5 V</td>
+        <td>E12 &ndash; Siding Spring Survey</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 29.70454</td>
+        <td class="ff">04 16 57.86</td>
+        <td class="ff">-39 03 11.1</td>
+        <td class="ff rj">16.5 V</td>
+        <td>E12 &ndash; Siding Spring Survey</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 29.70506</td>
+        <td class="ff">04 16 58.22</td>
+        <td class="ff">-39 02 49.3</td>
+        <td class="ff rj">16.5 V</td>
+        <td>E12 &ndash; Siding Spring Survey</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 29.70559</td>
+        <td class="ff">04 16 58.62</td>
+        <td class="ff">-39 02 27.8</td>
+        <td class="ff rj">16.6 V</td>
+        <td>E12 &ndash; Siding Spring Survey</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 29.71664</td>
+        <td class="ff">04 17 06.339</td>
+        <td class="ff">-38 54 53.29</td>
+        <td class="ff rj">16.4 R</td>
+        <td>E12 &ndash; Siding Spring Survey</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 29.71819</td>
+        <td class="ff">04 17 07.426</td>
+        <td class="ff">-38 53 49.25</td>
+        <td class="ff rj">16.4 R</td>
+        <td>E12 &ndash; Siding Spring Survey</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 29.72591</td>
+        <td class="ff">04 17 12.866</td>
+        <td class="ff">-38 48 30.06</td>
+        <td class="ff rj">16.5 R</td>
+        <td>E12 &ndash; Siding Spring Survey</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 29.72752</td>
+        <td class="ff">04 17 14.011</td>
+        <td class="ff">-38 47 23.46</td>
+        <td class="ff rj">16.4 R</td>
+        <td>E12 &ndash; Siding Spring Survey</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 29.72915</td>
+        <td class="ff">04 17 15.164</td>
+        <td class="ff">-38 46 16.05</td>
+        <td class="ff rj">16.2 R</td>
+        <td>E12 &ndash; Siding Spring Survey</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 29.75821</td>
+        <td class="ff">04 17 36.018</td>
+        <td class="ff">-38 26 04.72</td>
+        <td class="ff rj">16.5 R</td>
+        <td>E12 &ndash; Siding Spring Survey</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 29.76136</td>
+        <td class="ff">04 17 38.299</td>
+        <td class="ff">-38 23 52.72</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>E12 &ndash; Siding Spring Survey</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 30.46009</td>
+        <td class="ff">04 28 32.89</td>
+        <td class="ff">-30 05 49.4</td>
+        <td class="ff rj">15.9 R</td>
+        <td>474 &ndash; Mount John Observatory, Lake Tekapo</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 30.46079</td>
+        <td class="ff">04 28 33.36</td>
+        <td class="ff">-30 05 19.7</td>
+        <td class="ff rj">15.8 R</td>
+        <td>474 &ndash; Mount John Observatory, Lake Tekapo</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 30.46147</td>
+        <td class="ff">04 28 33.80</td>
+        <td class="ff">-30 04 50.1</td>
+        <td class="ff rj">16.0 R</td>
+        <td>474 &ndash; Mount John Observatory, Lake Tekapo</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 30.46376</td>
+        <td class="ff">04 28 46.519</td>
+        <td class="ff">-30 03 42.53</td>
+        <td class="ff rj">16.8 R</td>
+        <td>E12 &ndash; Siding Spring Survey</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 30.46660</td>
+        <td class="ff">04 28 48.614</td>
+        <td class="ff">-30 01 42.09</td>
+        <td class="ff rj">16.9 R</td>
+        <td>E12 &ndash; Siding Spring Survey</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 30.48613</td>
+        <td class="ff">04 28 50.52</td>
+        <td class="ff">-29 47 08.6</td>
+        <td class="ff rj">15.6 R</td>
+        <td>474 &ndash; Mount John Observatory, Lake Tekapo</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 30.48683</td>
+        <td class="ff">04 28 50.98</td>
+        <td class="ff">-29 46 38.6</td>
+        <td class="ff rj">15.6 R</td>
+        <td>474 &ndash; Mount John Observatory, Lake Tekapo</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 30.48821</td>
+        <td class="ff">04 28 51.91</td>
+        <td class="ff">-29 45 38.7</td>
+        <td class="ff rj">15.5 R</td>
+        <td>474 &ndash; Mount John Observatory, Lake Tekapo</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 30.48961</td>
+        <td class="ff">04 28 52.81</td>
+        <td class="ff">-29 44 38.7</td>
+        <td class="ff rj">15.6 R</td>
+        <td>474 &ndash; Mount John Observatory, Lake Tekapo</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 30.57397</td>
+        <td class="ff">04 29 59.562</td>
+        <td class="ff">-28 44 49.41</td>
+        <td class="ff rj">16.7 R</td>
+        <td>E12 &ndash; Siding Spring Survey</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 30.57550</td>
+        <td class="ff">04 30 00.48</td>
+        <td class="ff">-28 43 42.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>E12 &ndash; Siding Spring Survey</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 30.58370</td>
+        <td class="ff">04 29 51.59</td>
+        <td class="ff">-28 36 09.2</td>
+        <td class="ff rj">15.4 R</td>
+        <td>474 &ndash; Mount John Observatory, Lake Tekapo</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 30.58544</td>
+        <td class="ff">04 29 52.63</td>
+        <td class="ff">-28 34 52.5</td>
+        <td class="ff rj">15.4 R</td>
+        <td>474 &ndash; Mount John Observatory, Lake Tekapo</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 30.58787</td>
+        <td class="ff">04 29 54.08</td>
+        <td class="ff">-28 33 05.4</td>
+        <td class="ff rj">15.9 R</td>
+        <td>474 &ndash; Mount John Observatory, Lake Tekapo</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 30.59296</td>
+        <td class="ff">04 29 57.12</td>
+        <td class="ff">-28 29 20.1</td>
+        <td class="ff rj">15.3 R</td>
+        <td>474 &ndash; Mount John Observatory, Lake Tekapo</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 30.76210</td>
+        <td class="ff">04 31 45.822</td>
+        <td class="ff">-26 25 12.88</td>
+        <td class="ff rj">16.1 R</td>
+        <td>E12 &ndash; Siding Spring Survey</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 30.76377</td>
+        <td class="ff">04 31 46.769</td>
+        <td class="ff">-26 23 57.14</td>
+        <td class="ff rj">16.1 R</td>
+        <td>E12 &ndash; Siding Spring Survey</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 31.03030</td>
+        <td class="ff">04 35 29.96</td>
+        <td class="ff">-23 14 58.6</td>
+        <td class="ff rj">16.8 V</td>
+        <td>A55 &ndash; Osservatorio Astronomico Vallemare di Borbona</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 31.03140</td>
+        <td class="ff">04 35 30.50</td>
+        <td class="ff">-23 14 08.6</td>
+        <td class="ff rj">16.9 V</td>
+        <td>A55 &ndash; Osservatorio Astronomico Vallemare di Borbona</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 31.03251</td>
+        <td class="ff">04 35 31.14</td>
+        <td class="ff">-23 13 19.0</td>
+        <td class="ff rj">16.7 V</td>
+        <td>A55 &ndash; Osservatorio Astronomico Vallemare di Borbona</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 31.03361</td>
+        <td class="ff">04 35 31.73</td>
+        <td class="ff">-23 12 29.2</td>
+        <td class="ff rj">16.7 V</td>
+        <td>A55 &ndash; Osservatorio Astronomico Vallemare di Borbona</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 31.03473</td>
+        <td class="ff">04 35 32.30</td>
+        <td class="ff">-23 11 39.8</td>
+        <td class="ff rj">16.5 V</td>
+        <td>A55 &ndash; Osservatorio Astronomico Vallemare di Borbona</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 31.40322</td>
+        <td class="ff">04 39 44.62</td>
+        <td class="ff">-18 34 23.8</td>
+        <td class="ff rj">15.9 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 31.40713</td>
+        <td class="ff">04 39 46.51</td>
+        <td class="ff">-18 31 27.8</td>
+        <td class="ff rj">15.6 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 31.41132</td>
+        <td class="ff">04 39 48.45</td>
+        <td class="ff">-18 28 18.9</td>
+        <td class="ff rj">16.2 R</td>
+        <td>H06 &ndash; iTelescope Observatory, Mayhill</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 31.68976</td>
+        <td class="ff">04 42 56.816</td>
+        <td class="ff">-14 51 17.22</td>
+        <td class="ff rj">16.4 R</td>
+        <td>E12 &ndash; Siding Spring Survey</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 10 31.69133</td>
+        <td class="ff">04 42 57.500</td>
+        <td class="ff">-14 50 07.36</td>
+        <td class="ff rj">16.2 R</td>
+        <td>E12 &ndash; Siding Spring Survey</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 11 01.071619</td>
+        <td class="ff">04 47 02.93</td>
+        <td class="ff">-10 23 21.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 11 01.072164</td>
+        <td class="ff">04 47 03.18</td>
+        <td class="ff">-10 22 58.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 11 01.072833</td>
+        <td class="ff">04 47 03.48</td>
+        <td class="ff">-10 22 29.4</td>
+        <td class="ff rj">16.3 R</td>
+        <td>J95 &ndash; Great Shefford</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 11 01.37078</td>
+        <td class="ff">04 50 01.71</td>
+        <td class="ff">-06 48 55.6</td>
+        <td class="ff rj">16.3 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 11 01.37784</td>
+        <td class="ff">04 50 04.41</td>
+        <td class="ff">-06 43 59.8</td>
+        <td class="ff rj">15.8 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 11 01.38490</td>
+        <td class="ff">04 50 07.08</td>
+        <td class="ff">-06 39 04.5</td>
+        <td class="ff rj">16.0 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 11 01.39198</td>
+        <td class="ff">04 50 09.70</td>
+        <td class="ff">-06 34 09.6</td>
+        <td class="ff rj">15.7 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 11 01.64418</td>
+        <td class="ff">04 52 36.568</td>
+        <td class="ff">-03 31 27.54</td>
+        <td class="ff rj">16.1 R</td>
+        <td>E12 &ndash; Siding Spring Survey</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 11 01.64928</td>
+        <td class="ff">04 52 38.401</td>
+        <td class="ff">-03 28 01.14</td>
+        <td class="ff rj">16.1 R</td>
+        <td>E12 &ndash; Siding Spring Survey</td>
+        <td class="ff lj">MPS 185768</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 11 04.92349</td>
+        <td class="ff">05 16 04.70</td>
+        <td class="ff">+23 57 08.3</td>
+        <td class="ff rj">16.8 R</td>
+        <td>204 &ndash; Schiaparelli Observatory</td>
+        <td class="ff lj">MPS 186571</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 11 04.92501</td>
+        <td class="ff">05 16 05.08</td>
+        <td class="ff">+23 57 41.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>204 &ndash; Schiaparelli Observatory</td>
+        <td class="ff lj">MPS 186571</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 11 04.92654</td>
+        <td class="ff">05 16 05.47</td>
+        <td class="ff">+23 58 13.6</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>204 &ndash; Schiaparelli Observatory</td>
+        <td class="ff lj">MPS 186571</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 11 04.92806</td>
+        <td class="ff">05 16 05.85</td>
+        <td class="ff">+23 58 46.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>204 &ndash; Schiaparelli Observatory</td>
+        <td class="ff lj">MPS 186571</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 11 04.92958</td>
+        <td class="ff">05 16 06.23</td>
+        <td class="ff">+23 59 19.0</td>
+        <td class="ff rj">17.1 R</td>
+        <td>204 &ndash; Schiaparelli Observatory</td>
+        <td class="ff lj">MPS 186571</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 11 05.23929</td>
+        <td class="ff">05 17 50.61</td>
+        <td class="ff">+25 44 01.2</td>
+        <td class="ff rj">16.8 R</td>
+        <td>673 &ndash; Table Mountain Observatory, Wrightwood</td>
+        <td class="ff lj">MPS 186571</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 11 05.24103</td>
+        <td class="ff">05 17 51.05</td>
+        <td class="ff">+25 44 36.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>673 &ndash; Table Mountain Observatory, Wrightwood</td>
+        <td class="ff lj">MPS 186571</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 11 05.24693</td>
+        <td class="ff">05 17 52.54</td>
+        <td class="ff">+25 46 35.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>673 &ndash; Table Mountain Observatory, Wrightwood</td>
+        <td class="ff lj">MPS 186571</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 11 05.25330</td>
+        <td class="ff">05 17 54.09</td>
+        <td class="ff">+25 48 43.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>673 &ndash; Table Mountain Observatory, Wrightwood</td>
+        <td class="ff lj">MPS 186571</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 11 20.44069</td>
+        <td class="ff">05 47 07.65</td>
+        <td class="ff">+52 46 20.8</td>
+        <td class="ff rj">18.9 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 188842</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 11 20.44243</td>
+        <td class="ff">05 47 07.55</td>
+        <td class="ff">+52 46 24.5</td>
+        <td class="ff rj">18.9 R</td>
+        <td>F65 &ndash; Haleakala-Faulkes Telescope North</td>
+        <td class="ff lj">MPS 188842</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 11 23.41429</td>
+        <td class="ff">05 46 47.66</td>
+        <td class="ff">+53 54 09.2</td>
+        <td class="ff rj">19.5 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 188842</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 11 23.42001</td>
+        <td class="ff">05 46 47.27</td>
+        <td class="ff">+53 54 14.4</td>
+        <td class="ff rj">19.5 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 188842</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 11 23.42139</td>
+        <td class="ff">05 46 47.21</td>
+        <td class="ff">+53 54 15.2</td>
+        <td class="ff rj">19.5 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 188842</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 11 23.42273</td>
+        <td class="ff">05 46 47.12</td>
+        <td class="ff">+53 54 16.5</td>
+        <td class="ff rj">19.4 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 188842</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 11 23.42405</td>
+        <td class="ff">05 46 46.98</td>
+        <td class="ff">+53 54 17.5</td>
+        <td class="ff rj">19.7 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 188842</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 12 08.220346</td>
+        <td class="ff">05 38 09.37</td>
+        <td class="ff">+55 11 56.7</td>
+        <td class="ff rj">21.3 &nbsp;</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 192374</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 12 08.223365</td>
+        <td class="ff">05 38 09.33</td>
+        <td class="ff">+55 11 57.0</td>
+        <td class="ff rj">21.2 &nbsp;</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 192374</td>
+      </tr>
+      <tr>
+        <td class="ff">2006 12 08.227235</td>
+        <td class="ff">05 38 08.90</td>
+        <td class="ff">+55 11 55.7</td>
+        <td class="ff rj">21.4 &nbsp;</td>
+        <td>H55 &ndash; Astronomical Research Observatory, Charleston</td>
+        <td class="ff lj">MPS 192374</td>
+      </tr>
+  </table>
+
+
+        </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer id="footer">
+    <div class="holder">
+      <nav class="nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+	  <!-- Contact link changed to Jira -->
+          <li><a href="https://mpc-service.atlassian.net/servicedesk/customer/portals">Contact</a></li>
+          <li><a href="https://www.cfa.harvard.edu/content/privacy-statement">Privacy</a></li>
+        </ul>
+      </nav>
+      
+      <a href="https://www.cfa.harvard.edu">
+      <img src="/images/CfA_Logo_Vertical_CMYK.png" width="110" height="47"></a>
+      <p>
+      <p>
+      <p>
+      <div class="copy">The Minor Planet Center is hosted by the Center for Astrophysics | Harvard &amp; Smithsonian.<center>The Minor Planet Center is funded by NASA.</center></div> 
+  </footer>
+
+<script type="text/javascript">
+  $(window).on('load', (function() {
+    $("table").tablesorter();
+  })); 
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var _tag=new WebTrends();
+_tag.dcsGetId();
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+_tag.dcsCustom=function(){
+// Add custom parameters here.
+//_tag.DCSext.param_name=param_value;
+}
+_tag.dcsCollect();
+//]]>
+</script>
+
+<noscript>
+<div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="//logs1.smithsonian.museum/dcsa7yzrmbdzpxzrosrn4tyep_5i1d/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=9.4.0&amp;dcssip=www.minorplanetcenter.net"/></div>
+</noscript>
+</body>
+
+</html>

@@ -1,0 +1,2462 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IAU Minor Planet Center</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/mpc.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/table-sorter.css">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+  <link media="all" rel="stylesheet" href="/css/all.css">
+
+  <link rel="icon" type="image/png" href="/iau/figs/MPClogo16.png">
+  <meta name="description" content="We are the official body that deals with
+      astrometric observations and orbits of minor planets (asteroids) and comets.">
+
+  <meta name="keywords" content="astrometry, observations, orbits,
+      minor planets, asteroids, comets, near earth objects, 
+      potentially hazardous asteroids">
+
+  <script type="text/javascript" src="/js/jquery-latest.js"></script>
+<!--  <script type="text/javascript" src="/js/jquery.main.js"></script> -->
+<!--  <script type="text/javascript" src="/js/jquery.metadata.js"></script> -->
+  <script type="text/javascript" src="/js/jquery.tablesorter.js"></script>
+  <script type="text/javascript" src="/js/webtrends.js"></script>
+  <script type="text/javascript" src="/js/track_pdfs.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic|PT+Sans:400,700,400italic,700italic|PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+  
+<body>
+  <!-- wrapper -->
+  <div id="wrapper">
+    <div class="w1">
+      <!-- header -->
+      <header id="header">
+        <div class="holder">
+          <!-- logo -->
+          <h1 class="logo"><a href="/">The International Astronomical Union Minor Planet Center</a></h1>
+          <div class="area">
+            <!-- top-nav -->
+            <nav class="top-nav">
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+		<!-- Contact link changed to Jira -->
+                <li><a href="https://mpc-service.atlassian.net/servicedesk/customer/portals">Contact</a></li>
+              </ul>
+            </nav>
+            <!-- search-form -->
+            <div class="form-holder">
+              <!-- This commented code opens a new page for the search. -->
+              <!--<form class="search-form" method="get" action="https://www.google.com/search" target="_blank">-->
+              <form class="search-form" method="get" action="https://www.google.com/search">
+                <fieldset>
+                  <!--<label for="search">Search</label>-->
+                  <input type="hidden" name="sitesearch" value="minorplanetcenter.net">
+                  <input type="text" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" id="search" name="q" value="Search MPC">
+                </fieldset>
+              </form>
+            </div>
+            <div class="social-bar">
+<!--              <a href="https://twitter.com/MinorPlanetCtr"><span class="social twitter">L</span></a> -->
+<!--              <a href="https://www.facebook.com/MinorPlanetCenter"><span class="social facebook">F</span></a> -->
+<!--              <a href="https://www.youtube.com/channel/UCtALMOQHuBxh5XMsYNiDhMg"><span class="social youtube">X</span></a> -->
+<!--              <a href="/iau/rss/mpc_feeds.html"><span class="social rss">R</span></a> -->
+            </div>
+          </div>
+        </div>
+        <nav class="nav-holder">
+          <!-- main navigation -->
+          <ul id="nav">
+            <li>
+              <a href="/iau/mpc.html"><span>OBSERVERS</span></a>
+              <ul>
+                <li><a href="/iau/MPEph/MPEph.html">Ephemeris Service</a></li>
+                <li><a href="/mpec/RecentMPECs.html">MPECs</a></li>
+                <li><a href="/iau/NEO/toconfirm_tabular.html">NEO Confirmation</a></li>
+                <li><a href="/iau/NEO/pccp_tabular.html">Possible Comet Confirmation</a></li>
+                <li><a href="/iau/Ephemerides/EphemOrbEls.html" class="nested">Orbital Elements</a>
+                  <ul>
+                    <li><a href="/iau/MPCORB.html">MPCORB</a></li>
+                    <li><a href="/iau/ECS/MPCAT/MPCAT.html">MPCAT</a></li>
+                    <li><a href="/iau/ECS/MPCUPDATE/MPCUPDATE.html">MPCUPDATE</a></li>
+                    <li><a href="/iau/Ephemerides/SoftwareEls.html">Orbital Elements for Software</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/services/MPCServices.html">Publications Overview</a></li>
+                <li><a href="/iau/ECS/MPCArchive/MPCArchive_TBL.html">Publications Archive</a></li>              
+                <li><a href="/iau/NEO/TheNEOPage.html" class="nested">NEO Services</a>
+                  <ul>
+                    <li><a href="/iau/NEO/toconfirm_tabular.html">Confirmation</a></li>
+                    <li><a href="/iau/NEO/PossNEO.html">Ratings</a></li>
+                    <li><a href="/cgi-bin/neaobs.cgi">Observation Planning Aid</a></li>
+                    <li><a href="/cgi-bin/checkneo.cgi">NEOChecker</a></li>
+                    <li><a href="/cgi-bin/checkneocmt.cgi">NEOCMTChecker</a></li>
+                    <li><a href="/neocp_followup_report/">NEOCP Followup Report Form</a></li>
+                    <li><a href="/neocp_followup_reports/">NEOCP Followup Reports</a></li>
+                    <li><a href="/neocp_obs">NEOCP Recent Observations</a></li>
+                  </ul>
+                </li>
+                <li><a href="/iau/services/WebCSAccess.html" class="nested">Other Observer Services</a>
+                  <ul>
+                    <li><a href="/whatsup">Observing Target List</a></li>
+                    <li><a href="/iau/NatSats/NaturalSatellites.html">Natural Satellite Ephemerides</a></li>
+                    <li><a href="/iau/MPEph/NewObjEphems.html">New Object Ephemerides</a></li>
+                    <li><a href="/cgi-bin/checkmp.cgi">MPChecker</a></li>
+                    <li><a href="/cgi-bin/checkcmt.cgi">CMTChecker</a></li>
+                    <li><a href="/iau/artsats/artsats.html">Distant Artificial Satellites</a></li>
+                    <li><a href="/iau/lists/Customize.html">Observing List Customizer</a></li>
+                  </ul>
+                </li>
+                <li><a href="/db_search">Orbits/Observations Database</a></li>
+
+                <li><a href='http://alcdef.org'>Light Curve Database</a></li>
+
+                <li><a href="/iau/ECS/MPCAT-OBS/MPCAT-OBS.html">MPCAT-OBS</a></li>
+                <li><a href="/iau/SkyCoverage.html">Sky Coverage</a></li>
+                <li><a href="/iau/MPC_Documentation.html" class="nested">Documentation</a>
+                  <ul>
+                    <li><a href="/iau/info/TechInfo.html">MPC Submission Info</a></li>
+                    <li><a href="/iau/info/Astrometry.html">Astrometry Guide</a></li>
+                    <li><a href="/iau/WhatsNew.html">What's New</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/lists/Lists.html" class="nested">Lists and Plots</a>
+                  <ul>
+                    <li><a href="/iau/lists/MPLists.html">Minor Planets</a></li>
+                      <!--<ul>
+                        <li><a href="/iau/lists/t_atens.html">Atens</a></li>
+                        <li><a href="/iau/lists/t_apollos.html">Apollos</a></li>
+                        <li><a href="/iau/lists/t_amors.html">Amors</a></li>
+                        <li><a href="/iau/lists/t_centaurs.html">Centaurs and Scattered Disk Objects</a></li>
+                        <li><a href="/iau/lists/t_tnos.html">Transneptunian Objects</a></li>
+                        <li><a href="/iau/lists/t_others.html">Other Unusual Objects</a></li>
+                        <li><a href="/iau/lists/t_dangerous.html">Potentially Hazardous Asteroids</a></li>
+                      </ul>-->
+                    <li><a href="/iau/lists/CometLists.html">Comets</a></li>
+                      <!--<ul>
+                        <li><a href="/iau/lists/LastCometObs.html">Date of Last Observation</a></li>
+                        <li><a href="/iau/lists/LastYear.html">Designations from the Past Year</a></li>
+                        <li><a href="http://www.icq.eps.harvard.edu/CometMags.html">Comet Magnitude Estimates</a></li>
+                        <li><a href="/iau/lists/ClosestComets.html">Closest Approaches</a></li>
+                        <li><a href="/iau/lists/PeriodicCodes.html">Periodic Comets</a></li>
+                      </ul>-->
+                    <li><a href="/iau/lists/ObsCodesF.html">Observatory Codes</a></li>		    
+                    <li><a href="/iau/Animations/Animations.html">Animations</a></li>
+                  </ul>                
+                </li>
+                <li><a href="/iau/MPCStatus.html">MPC Status</a></li>
+                <!--<li><a href="/summary">Summary</a></li>-->
+                <li><a href='/mpc/obs_stats_2014_2018'>2014-18 NEO Obs Statistics</a></li>
+                <li><a href='/mpc/summary'>Summary of Latest Data</a></li>
+              </ul>
+            </li>
+            <li><a href="/data"><span>DATA</span></a>
+            </li>
+            <li><a href="http://iawn.net/"><span>IAWN</span></a>
+            </li>
+            <li><a href="https://minorplanetcenter.net/mpcops/beta/"><span>BETA</span></a></li>
+            <li><a href="/iau/MPCStatus.html"><span style="color:Green">STATUS</a></li>
+            <li><a href="https://sbnmpc.astro.umd.edu/"><span>SBN ANNEX</span></a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- main -->
+      <div id="main">
+
+  <h3>
+  
+   1995 CR
+  
+  
+    = 2014 CL13
+  
+</h3>
+
+    First observed at Steward Observatory, Kitt Peak-Spacewatch
+  on 1995-02-03.
+
+
+  <br>(Discoverer will be defined when the object is numbered. 
+  See <a href="/mpec/K10/K10U20.html">this note</a>
+  on how discoverers are determined.)
+
+
+<br>
+<h2>Orbit</h2>
+
+    Orbit type: Aten
+  <br>
+
+
+    Potentially Hazardous Asteroid<br>
+
+    <br>
+    <div class="show-orbit-button">
+      <form accept-charset="UTF-8" action="/db_search/show_orbit" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+        <input id="number" name="number" type="hidden" />
+        <input id="designation" name="designation" type="hidden" value="1995 CR" />
+        <input id="name" name="name" type="hidden" />
+        <input id="epoch" name="epoch" type="hidden" value="2020-05-31.0" />
+        <input id="peri" name="peri" type="hidden" value="322.5812002" />
+        <input id="m" name="m" type="hidden" value="46.52308" />
+        <input id="node" name="node" type="hidden" value="342.5704034" />
+        <input id="incl" name="incl" type="hidden" value="4.0671104" />
+        <input id="e" name="e" type="hidden" value="0.868435781" />
+        <input id="a" name="a" type="hidden" value="0.9069408681702429" />
+        <input name="commit" type="submit" value="Interactive Orbit Sketch" />
+</form>    </div>
+    <div>
+       Note: WebGL enabled browser required.
+    </div>
+
+    
+
+
+  <br>
+  <table class="nb">
+    <tr>
+      <td valign="top" class="nb">
+        <table>
+          <tr><td>epoch</td><td class="rj">2020-05-31.0</td></tr>
+          <tr><td>epoch JD</td><td class="rj">2459000.5</td></tr>
+          <tr><td>perihelion date</td><td class="rj">2020-04-20.23071</td></tr>
+          <tr><td>perihelion JD</td><td class="rj">2458959.73071</td></tr>
+          <tr><td>argument of perihelion (°)</td><td class="rj">322.58120</td></tr>
+          <tr><td>ascending node (°)</td><td class="rj">342.57040</td></tr>
+          <tr><td>inclination (°)</td><td class="rj">4.06711</td></tr>
+          <tr><td>eccentricity</td><td class="rj">0.8684358</td></tr>
+          <tr><td>perihelion distance (AU)</td><td class="rj">0.1193210</td></tr>
+          <tr><td>Tisserand w.r.t. Jupiter</td><td class="rj">6.2</td></tr>
+          <tr><td>&Delta;V w.r.t. Earth (km/sec)</td><td class="rj">22.2</td></tr>
+        </table>
+      </td>
+      <td valign="top" class="nb">
+        <table>
+          <tr><td>semimajor axis (AU)</td><td class="rj">0.9069409</td></tr>
+          <tr><td>mean anomaly (°)</td><td class="rj">46.52308</td></tr>
+          <tr><td>mean daily motion (°/day)</td><td class="rj">1.14113070</td></tr>
+          <tr><td>aphelion distance (AU)</td><td class="rj">1.695</td></tr>
+          <tr><td>period (years)</td><td class="rj">0.86</td></tr>
+          <tr><td>P-vector [x]</td><td class="rj">0.57620024</td></tr>
+          <tr><td>P-vector [y]</td><td class="rj">-0.73167992</td></tr>
+          <tr><td>P-vector [z]</td><td class="rj">-0.36419469</td></tr>
+          <tr><td>Q-vector [x]</td><td class="rj">0.81703241</td></tr>
+          <tr><td>Q-vector [y]</td><td class="rj">0.50407542</td></tr>
+          <tr><td>Q-vector [z]</td><td class="rj">0.27993932</td></tr>
+          <tr><td>absolute magnitude</td><td class="rj">21.8</td></tr>
+          <tr><td>phase slope</td><td class="rj">0.15</td></tr>
+        </table>
+      </td>
+      <td valign="top" class="nb">
+        <table>
+
+            <tr><td><a href="/iau/info/UValue.html">uncertainty</a></td><td class="rj">3</td></tr>
+
+          <tr><td>reference</td><td class="rj">MPO 542755</td></tr>
+          <tr><td>observations used</td><td class="rj">100</td></tr>
+          <tr><td>oppositions</td><td class="rj">3</td></tr>
+          <tr><td>arc length (days)</td><td class="rj">2209</td></tr>
+          <tr><td>first opposition used</td><td class="rj">2014</td></tr>
+          <tr><td>last opposition used</td><td class="rj">2020</td></tr>
+          <tr><td>residual rms (arc-secs)</td><td class="rj">1.16</td></tr>
+          <tr><td><a href="/iau/info/Perturbers.html">perturbers coarse indicator</a></td><td class="rj">M-v</td></tr>
+          <tr><td><a href="/iau/info/Perturbers.html">perturbers precise indicator</a></td><td class="rj">003Eh</td></tr>
+          <tr><td>first observation date used</td><td class="rj">2014-02-10.0</td></tr>
+          <tr><td>last observation date used</td><td class="rj">2020-02-28.0</td></tr>
+          <tr><td>computer name</td><td class="rj">Rudenko</td></tr>
+        </table>
+      </td>
+    </tr>
+  </table>    
+
+  <table class="nb">
+    <tr>
+      <td valign="top" class="nb">
+          <table>
+            <tr><td>JD of orbit computation</td><td class="rj">2457772.300072</td></tr>
+            <tr><td>perihelion JD uncertainty (days)</td><td class="rj">6.5321E-06</td></tr>
+            <tr><td>argument of perihelion uncertainty (°)</td><td class="rj">7.3251E-05</td></tr>
+            <tr><td>ascending node uncertainty (°)</td><td class="rj">7.1289E-05</td></tr>
+            <tr><td>inclination uncertainty (°)</td><td class="rj">2.3604E-05</td></tr>
+            <tr><td>eccentricity uncertainty </td><td class="rj">1.0254E-07</td></tr>
+            <tr><td>perihelion distance uncertainty (AU)</td><td class="rj">9.2997E-08</td></tr>
+          </table>    
+      </td>
+      <td width=100px> </td>
+
+      <td valign="top" class="nb">
+    Minimum Orbit Intersection Distances (in AU)<br>for orbit epoch: 2458600.5, reference: MPO402921<br>
+          <table>
+            <tr><td>Mercury</td><td>0.01689</td></tr>
+            <tr><td>Venus</td><td>0.04092</td></tr>
+            <tr><td>Earth</td><td>0.01285</td></tr>
+            <tr><td>Mars</td><td>0.00975</td></tr>
+            <tr><td>Jupiter</td><td>3.57567</td></tr>
+            <tr><td>Saturn</td><td>7.45756</td></tr>
+            <tr><td>Uranus</td><td>16.7369</td></tr>
+            <tr><td>Neptune</td><td>28.4782</td></tr>
+          </table>    
+          <br>
+      </td>
+    </tr>
+  </table>
+
+
+<h2>Observations</h2>
+  260 total observations over interval:
+  1995 02 03.47597 &ndash; 2020 02 28.23285
+  <br>
+  These data are available for
+  <a href="../tmp/1995_CR.txt" target="_blank">download</a>
+  (<a href="/iau/info/OpticalObs.html" target="_blank">format description</a>).
+  <br>
+  <br>
+  <table>
+    <tr>
+      <th>Date (UT)</th>
+      <th>J2000 RA</th>
+      <th>J2000 Dec</th>
+      <th>Magn</th>
+      <th><a href="/iau/lists/ObsCodesF.html">Location</a></th>
+      <th><a href="/iau/info/References.html">Ref</a></th>
+    </tr>
+
+      <tr>
+        <td class="ff">1995 02 03.47597</td>
+        <td class="ff">11 55 35.03</td>
+        <td class="ff">+05 54 10.4</td>
+        <td class="ff rj">20.7 V</td>
+        <td>691 &ndash; Steward Observatory, Kitt Peak-Spacewatch</td>
+        <td class="ff lj">MPC 24665</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 03.50463</td>
+        <td class="ff">11 55 33.21</td>
+        <td class="ff">+05 54 36.3</td>
+        <td class="ff rj">21.1 V</td>
+        <td>691 &ndash; Steward Observatory, Kitt Peak-Spacewatch</td>
+        <td class="ff lj">MPC 24665</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 03.53301</td>
+        <td class="ff">11 55 31.36</td>
+        <td class="ff">+05 55 02.8</td>
+        <td class="ff rj">20.8 V</td>
+        <td>691 &ndash; Steward Observatory, Kitt Peak-Spacewatch</td>
+        <td class="ff lj">MPC 24665</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 04.36449</td>
+        <td class="ff">11 54 43.19</td>
+        <td class="ff">+06 08 43.2</td>
+        <td class="ff rj">20.7 V</td>
+        <td>691 &ndash; Steward Observatory, Kitt Peak-Spacewatch</td>
+        <td class="ff lj">MPC 24665</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 04.37236</td>
+        <td class="ff">11 54 42.63</td>
+        <td class="ff">+06 08 51.0</td>
+        <td class="ff rj">21.0 V</td>
+        <td>691 &ndash; Steward Observatory, Kitt Peak-Spacewatch</td>
+        <td class="ff lj">MPC 24665</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 04.38019</td>
+        <td class="ff">11 54 42.05</td>
+        <td class="ff">+06 08 59.3</td>
+        <td class="ff rj">20.7 V</td>
+        <td>691 &ndash; Steward Observatory, Kitt Peak-Spacewatch</td>
+        <td class="ff lj">MPC 24665</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 05.43668</td>
+        <td class="ff">11 53 26.52</td>
+        <td class="ff">+06 28 39.9</td>
+        <td class="ff rj">20.7 V</td>
+        <td>691 &ndash; Steward Observatory, Kitt Peak-Spacewatch</td>
+        <td class="ff lj">MPC 24665</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 05.44442</td>
+        <td class="ff">11 53 25.84</td>
+        <td class="ff">+06 28 49.2</td>
+        <td class="ff rj">20.6 V</td>
+        <td>691 &ndash; Steward Observatory, Kitt Peak-Spacewatch</td>
+        <td class="ff lj">MPC 24665</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 05.45213</td>
+        <td class="ff">11 53 25.16</td>
+        <td class="ff">+06 28 58.2</td>
+        <td class="ff rj">20.5 V</td>
+        <td>691 &ndash; Steward Observatory, Kitt Peak-Spacewatch</td>
+        <td class="ff lj">MPC 24665</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 07.52090</td>
+        <td class="ff">11 50 10.96</td>
+        <td class="ff">+07 16 39.1</td>
+        <td class="ff rj">20.7 V</td>
+        <td>691 &ndash; Steward Observatory, Kitt Peak-Spacewatch</td>
+        <td class="ff lj">MPC 24842</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 07.52686</td>
+        <td class="ff">11 50 10.26</td>
+        <td class="ff">+07 16 48.3</td>
+        <td class="ff rj">20.5 V</td>
+        <td>691 &ndash; Steward Observatory, Kitt Peak-Spacewatch</td>
+        <td class="ff lj">MPC 24842</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 07.53295</td>
+        <td class="ff">11 50 09.53</td>
+        <td class="ff">+07 16 57.6</td>
+        <td class="ff rj">20.5 V</td>
+        <td>691 &ndash; Steward Observatory, Kitt Peak-Spacewatch</td>
+        <td class="ff lj">MPC 24842</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 08.39936</td>
+        <td class="ff">11 48 27.20</td>
+        <td class="ff">+07 41 28.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>691 &ndash; Steward Observatory, Kitt Peak-Spacewatch</td>
+        <td class="ff lj">MPC 24842</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 08.40250</td>
+        <td class="ff">11 48 26.76</td>
+        <td class="ff">+07 41 34.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>691 &ndash; Steward Observatory, Kitt Peak-Spacewatch</td>
+        <td class="ff lj">MPC 24842</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 08.40564</td>
+        <td class="ff">11 48 26.28</td>
+        <td class="ff">+07 41 40.5</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>691 &ndash; Steward Observatory, Kitt Peak-Spacewatch</td>
+        <td class="ff lj">MPC 24842</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 09.56474</td>
+        <td class="ff">11 45 41.68</td>
+        <td class="ff">+08 20 28.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>413 &ndash; Siding Spring Observatory</td>
+        <td class="ff lj">MPC 24810</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 09.56859</td>
+        <td class="ff">11 45 41.05</td>
+        <td class="ff">+08 20 36.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>413 &ndash; Siding Spring Observatory</td>
+        <td class="ff lj">MPC 24810</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 09.77823</td>
+        <td class="ff">11 45 04.28</td>
+        <td class="ff">+08 28 16.6</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>413 &ndash; Siding Spring Observatory</td>
+        <td class="ff lj">MPC 24810</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 10.08170</td>
+        <td class="ff">11 44 13.88</td>
+        <td class="ff">+08 38 57.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>557 &ndash; Ondrejov</td>
+        <td class="ff lj">MPC 24812</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 10.08936</td>
+        <td class="ff">11 44 12.49</td>
+        <td class="ff">+08 39 15.3</td>
+        <td class="ff rj">19.5 V</td>
+        <td>557 &ndash; Ondrejov</td>
+        <td class="ff lj">MPC 24812</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 10.82465</td>
+        <td class="ff">11 41 54.20</td>
+        <td class="ff">+09 09 50.4</td>
+        <td class="ff rj">19.7 V</td>
+        <td>360 &ndash; Kuma Kogen</td>
+        <td class="ff lj">MPC 24797</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 10.82951</td>
+        <td class="ff">11 41 53.19</td>
+        <td class="ff">+09 10 02.6</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>360 &ndash; Kuma Kogen</td>
+        <td class="ff lj">MPC 24797</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 10.83403</td>
+        <td class="ff">11 41 52.17</td>
+        <td class="ff">+09 10 14.5</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>360 &ndash; Kuma Kogen</td>
+        <td class="ff lj">MPC 24797</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 17.53264</td>
+        <td class="ff">10 49 37.82</td>
+        <td class="ff">+19 27 08.2</td>
+        <td class="ff rj">17.5 V</td>
+        <td>360 &ndash; Kuma Kogen</td>
+        <td class="ff lj">MPC 24797</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 17.53438</td>
+        <td class="ff">10 49 35.98</td>
+        <td class="ff">+19 27 27.5</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>360 &ndash; Kuma Kogen</td>
+        <td class="ff lj">MPC 24797</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 17.53646</td>
+        <td class="ff">10 49 33.80</td>
+        <td class="ff">+19 27 50.5</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>360 &ndash; Kuma Kogen</td>
+        <td class="ff lj">MPC 24797</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 17.54097</td>
+        <td class="ff">10 49 29.01</td>
+        <td class="ff">+19 28 40.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>360 &ndash; Kuma Kogen</td>
+        <td class="ff lj">MPC 24797</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 18.206</td>
+        <td class="ff">10 36 27.68</td>
+        <td class="ff">+21 41 50.7</td>
+        <td class="ff rj">17.2 R</td>
+        <td>817 &ndash; Sudbury</td>
+        <td class="ff lj">MPC 24877</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 18.216</td>
+        <td class="ff">10 36 14.87</td>
+        <td class="ff">+21 43 57.4</td>
+        <td class="ff rj">17.2 R</td>
+        <td>817 &ndash; Sudbury</td>
+        <td class="ff lj">MPC 24877</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 18.33876</td>
+        <td class="ff">10 33 28.32</td>
+        <td class="ff">+22 11 39.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>695 &ndash; Kitt Peak</td>
+        <td class="ff lj">MPC 25019</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 18.76177</td>
+        <td class="ff">10 22 58.73</td>
+        <td class="ff">+23 52 08.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>557 &ndash; Ondrejov</td>
+        <td class="ff lj">MPC 24812</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 18.77841</td>
+        <td class="ff">10 22 31.46</td>
+        <td class="ff">+23 56 24.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>557 &ndash; Ondrejov</td>
+        <td class="ff lj">MPC 24812</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 18.78126</td>
+        <td class="ff">10 22 26.79</td>
+        <td class="ff">+23 57 08.6</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>557 &ndash; Ondrejov</td>
+        <td class="ff lj">MPC 24812</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 18.78777</td>
+        <td class="ff">10 22 16.00</td>
+        <td class="ff">+23 58 48.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>557 &ndash; Ondrejov</td>
+        <td class="ff lj">MPC 24812</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 18.79336</td>
+        <td class="ff">10 22 06.72</td>
+        <td class="ff">+24 00 15.3</td>
+        <td class="ff rj">17.4 V</td>
+        <td>557 &ndash; Ondrejov</td>
+        <td class="ff lj">MPC 24812</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 18.79828</td>
+        <td class="ff">10 21 58.58</td>
+        <td class="ff">+24 01 32.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>557 &ndash; Ondrejov</td>
+        <td class="ff lj">MPC 24812</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 18.85182</td>
+        <td class="ff">10 20 28.40</td>
+        <td class="ff">+24 15 27.7</td>
+        <td class="ff rj">16.6 R</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPC 24790</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 18.85297</td>
+        <td class="ff">10 20 26.31</td>
+        <td class="ff">+24 15 46.7</td>
+        <td class="ff rj">16.8 R</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPC 24790</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 18.85448</td>
+        <td class="ff">10 20 23.85</td>
+        <td class="ff">+24 16 09.8</td>
+        <td class="ff rj">16.8 R</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPC 24790</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 18.85939</td>
+        <td class="ff">10 20 15.43</td>
+        <td class="ff">+24 17 26.7</td>
+        <td class="ff rj">16.4 R</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPC 24790</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 18.86236</td>
+        <td class="ff">10 20 10.18</td>
+        <td class="ff">+24 18 14.6</td>
+        <td class="ff rj">16.4 R</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPC 24790</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 18.86345</td>
+        <td class="ff">10 20 08.38</td>
+        <td class="ff">+24 18 32.1</td>
+        <td class="ff rj">16.3 R</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPC 24790</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 18.86538</td>
+        <td class="ff">10 20 05.21</td>
+        <td class="ff">+24 19 00.9</td>
+        <td class="ff rj">16.2 R</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPC 24790</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 18.87803</td>
+        <td class="ff">10 19 43.04</td>
+        <td class="ff">+24 22 20.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>557 &ndash; Ondrejov</td>
+        <td class="ff lj">MPC 24812</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 18.90034</td>
+        <td class="ff">10 19 04.19</td>
+        <td class="ff">+24 28 13.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>557 &ndash; Ondrejov</td>
+        <td class="ff lj">MPC 24812</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 18.90597</td>
+        <td class="ff">10 18 54.29</td>
+        <td class="ff">+24 29 42.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>557 &ndash; Ondrejov</td>
+        <td class="ff lj">MPC 24812</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 19.20503</td>
+        <td class="ff">10 09 48.91</td>
+        <td class="ff">+25 51 37.2</td>
+        <td class="ff rj">16.8 V</td>
+        <td>670 &ndash; Camarillo</td>
+        <td class="ff lj">MPC 24817</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 19.20851</td>
+        <td class="ff">10 09 42.11</td>
+        <td class="ff">+25 52 36.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>670 &ndash; Camarillo</td>
+        <td class="ff lj">MPC 24817</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 19.21198</td>
+        <td class="ff">10 09 35.24</td>
+        <td class="ff">+25 53 37.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>670 &ndash; Camarillo</td>
+        <td class="ff lj">MPC 24817</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 19.21667</td>
+        <td class="ff">10 09 25.78</td>
+        <td class="ff">+25 54 57.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>670 &ndash; Camarillo</td>
+        <td class="ff lj">MPC 24817</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 19.47703</td>
+        <td class="ff">10 00 27.25</td>
+        <td class="ff">+27 10 59.4</td>
+        <td class="ff rj">16.6 V</td>
+        <td>897 &ndash; YGCO Chiyoda Station</td>
+        <td class="ff lj">MPC 24880</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 19.47818</td>
+        <td class="ff">10 00 24.54</td>
+        <td class="ff">+27 11 22.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>897 &ndash; YGCO Chiyoda Station</td>
+        <td class="ff lj">MPC 24880</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 19.55691</td>
+        <td class="ff">09 57 26.21</td>
+        <td class="ff">+27 35 31.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>897 &ndash; YGCO Chiyoda Station</td>
+        <td class="ff lj">MPC 24880</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 19.55857</td>
+        <td class="ff">09 57 22.33</td>
+        <td class="ff">+27 36 02.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>897 &ndash; YGCO Chiyoda Station</td>
+        <td class="ff lj">MPC 24880</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 19.66701</td>
+        <td class="ff">09 53 05.82</td>
+        <td class="ff">+28 09 47.5</td>
+        <td class="ff rj">16.7 V</td>
+        <td>360 &ndash; Kuma Kogen</td>
+        <td class="ff lj">MPC 24797</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 19.66910</td>
+        <td class="ff">09 53 00.77</td>
+        <td class="ff">+28 10 27.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>360 &ndash; Kuma Kogen</td>
+        <td class="ff lj">MPC 24797</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 19.67118</td>
+        <td class="ff">09 52 55.72</td>
+        <td class="ff">+28 11 06.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>360 &ndash; Kuma Kogen</td>
+        <td class="ff lj">MPC 24797</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 19.67396</td>
+        <td class="ff">09 52 48.97</td>
+        <td class="ff">+28 11 58.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>360 &ndash; Kuma Kogen</td>
+        <td class="ff lj">MPC 24797</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 19.82848</td>
+        <td class="ff">09 46 35.62</td>
+        <td class="ff">+29 00 34.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>587 &ndash; Sormano</td>
+        <td class="ff lj">MPC 24814</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 19.83117</td>
+        <td class="ff">09 46 28.65</td>
+        <td class="ff">+29 01 26.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>587 &ndash; Sormano</td>
+        <td class="ff lj">MPC 24814</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 19.83527</td>
+        <td class="ff">09 46 18.11</td>
+        <td class="ff">+29 02 53.0</td>
+        <td class="ff rj">16.8 V</td>
+        <td>104 &ndash; San Marcello Pistoiese</td>
+        <td class="ff lj">MPC 24795</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 19.83657</td>
+        <td class="ff">09 46 14.65</td>
+        <td class="ff">+29 03 19.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>104 &ndash; San Marcello Pistoiese</td>
+        <td class="ff lj">MPC 24795</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 19.83711</td>
+        <td class="ff">09 46 13.34</td>
+        <td class="ff">+29 03 24.6</td>
+        <td class="ff rj">17.0 V</td>
+        <td>587 &ndash; Sormano</td>
+        <td class="ff lj">MPC 24814</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 19.83866</td>
+        <td class="ff">09 46 09.28</td>
+        <td class="ff">+29 03 59.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>104 &ndash; San Marcello Pistoiese</td>
+        <td class="ff lj">MPC 24795</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 19.83993</td>
+        <td class="ff">09 46 05.96</td>
+        <td class="ff">+29 04 24.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>104 &ndash; San Marcello Pistoiese</td>
+        <td class="ff lj">MPC 24795</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 19.84132</td>
+        <td class="ff">09 46 02.31</td>
+        <td class="ff">+29 04 52.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>104 &ndash; San Marcello Pistoiese</td>
+        <td class="ff lj">MPC 24795</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 19.85702</td>
+        <td class="ff">09 45 21.38</td>
+        <td class="ff">+29 09 56.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>587 &ndash; Sormano</td>
+        <td class="ff lj">MPC 24814</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 19.86519</td>
+        <td class="ff">09 44 59.99</td>
+        <td class="ff">+29 12 36.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>587 &ndash; Sormano</td>
+        <td class="ff lj">MPC 24814</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 19.87192</td>
+        <td class="ff">09 44 42.30</td>
+        <td class="ff">+29 14 49.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>587 &ndash; Sormano</td>
+        <td class="ff lj">MPC 24814</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 19.87484</td>
+        <td class="ff">09 44 34.55</td>
+        <td class="ff">+29 15 47.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>587 &ndash; Sormano</td>
+        <td class="ff lj">MPC 24814</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 19.94861</td>
+        <td class="ff">09 41 15.74</td>
+        <td class="ff">+29 40 11.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>104 &ndash; San Marcello Pistoiese</td>
+        <td class="ff lj">MPC 24795</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 19.95012</td>
+        <td class="ff">09 41 11.70</td>
+        <td class="ff">+29 40 41.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>104 &ndash; San Marcello Pistoiese</td>
+        <td class="ff lj">MPC 24795</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 19.95159</td>
+        <td class="ff">09 41 07.60</td>
+        <td class="ff">+29 41 10.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>104 &ndash; San Marcello Pistoiese</td>
+        <td class="ff lj">MPC 24795</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 19.95336</td>
+        <td class="ff">09 41 02.91</td>
+        <td class="ff">+29 41 45.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>104 &ndash; San Marcello Pistoiese</td>
+        <td class="ff lj">MPC 24795</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 19.95451</td>
+        <td class="ff">09 40 59.52</td>
+        <td class="ff">+29 42 09.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>104 &ndash; San Marcello Pistoiese</td>
+        <td class="ff lj">MPC 24795</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 20.16409</td>
+        <td class="ff">09 31 13.45</td>
+        <td class="ff">+30 52 41.5</td>
+        <td class="ff rj">16.1 V</td>
+        <td>691 &ndash; Steward Observatory, Kitt Peak-Spacewatch</td>
+        <td class="ff lj">MPC 24842</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 20.28545</td>
+        <td class="ff">09 24 57.25</td>
+        <td class="ff">+31 34 37.7</td>
+        <td class="ff rj">16.6 V</td>
+        <td>691 &ndash; Steward Observatory, Kitt Peak-Spacewatch</td>
+        <td class="ff lj">MPC 24842</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 20.37884</td>
+        <td class="ff">09 19 53.18</td>
+        <td class="ff">+32 06 48.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>695 &ndash; Kitt Peak</td>
+        <td class="ff lj">MPC 25019</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 20.39311</td>
+        <td class="ff">09 19 05.73</td>
+        <td class="ff">+32 11 41.6</td>
+        <td class="ff rj">16.8 V</td>
+        <td>691 &ndash; Steward Observatory, Kitt Peak-Spacewatch</td>
+        <td class="ff lj">MPC 24842</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 20.43411</td>
+        <td class="ff">09 16 48.28</td>
+        <td class="ff">+32 25 44.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>695 &ndash; Kitt Peak</td>
+        <td class="ff lj">MPC 25020</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 20.46359</td>
+        <td class="ff">09 15 23.43</td>
+        <td class="ff">+32 36 04.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>411 &ndash; Oizumi</td>
+        <td class="ff lj">MPC 24806</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 20.46814</td>
+        <td class="ff">09 15 07.78</td>
+        <td class="ff">+32 37 41.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>411 &ndash; Oizumi</td>
+        <td class="ff lj">MPC 24806</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 20.47573</td>
+        <td class="ff">09 14 41.69</td>
+        <td class="ff">+32 40 22.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>411 &ndash; Oizumi</td>
+        <td class="ff lj">MPC 24806</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 20.530426</td>
+        <td class="ff">09 11 28.69</td>
+        <td class="ff">+33 02 07.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>413 &ndash; Siding Spring Observatory</td>
+        <td class="ff lj">MPC 24810</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 20.532513</td>
+        <td class="ff">09 11 21.27</td>
+        <td class="ff">+33 02 51.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>413 &ndash; Siding Spring Observatory</td>
+        <td class="ff lj">MPC 24810</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 20.534606</td>
+        <td class="ff">09 11 13.79</td>
+        <td class="ff">+33 03 36.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>413 &ndash; Siding Spring Observatory</td>
+        <td class="ff lj">MPC 24810</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 20.538272</td>
+        <td class="ff">09 11 00.72</td>
+        <td class="ff">+33 04 53.5</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>413 &ndash; Siding Spring Observatory</td>
+        <td class="ff lj">MPC 24810</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 20.540690</td>
+        <td class="ff">09 10 52.13</td>
+        <td class="ff">+33 05 44.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>413 &ndash; Siding Spring Observatory</td>
+        <td class="ff lj">MPC 24810</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 20.543067</td>
+        <td class="ff">09 10 43.60</td>
+        <td class="ff">+33 06 33.6</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>413 &ndash; Siding Spring Observatory</td>
+        <td class="ff lj">MPC 24810</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 20.54493</td>
+        <td class="ff">09 10 38.63</td>
+        <td class="ff">+33 04 47.6</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>897 &ndash; YGCO Chiyoda Station</td>
+        <td class="ff lj">MPC 24880</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 20.545572</td>
+        <td class="ff">09 10 34.67</td>
+        <td class="ff">+33 07 27.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>413 &ndash; Siding Spring Observatory</td>
+        <td class="ff lj">MPC 24810</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 20.54608</td>
+        <td class="ff">09 10 34.67</td>
+        <td class="ff">+33 05 11.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>897 &ndash; YGCO Chiyoda Station</td>
+        <td class="ff lj">MPC 24880</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 20.55284</td>
+        <td class="ff">09 10 10.43</td>
+        <td class="ff">+33 07 35.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>897 &ndash; YGCO Chiyoda Station</td>
+        <td class="ff lj">MPC 24880</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 20.659815</td>
+        <td class="ff">09 03 35.72</td>
+        <td class="ff">+33 47 11.5</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>413 &ndash; Siding Spring Observatory</td>
+        <td class="ff lj">MPC 24810</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 20.662079</td>
+        <td class="ff">09 03 27.25</td>
+        <td class="ff">+33 47 57.6</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>413 &ndash; Siding Spring Observatory</td>
+        <td class="ff lj">MPC 24810</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 20.85087</td>
+        <td class="ff">08 51 30.68</td>
+        <td class="ff">+34 51 06.4</td>
+        <td class="ff rj">16.8 V</td>
+        <td>104 &ndash; San Marcello Pistoiese</td>
+        <td class="ff lj">MPC 24795</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 20.85625</td>
+        <td class="ff">08 51 08.69</td>
+        <td class="ff">+34 52 59.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>104 &ndash; San Marcello Pistoiese</td>
+        <td class="ff lj">MPC 24795</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 20.95411</td>
+        <td class="ff">08 44 21.46</td>
+        <td class="ff">+35 26 29.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>587 &ndash; Sormano</td>
+        <td class="ff lj">MPC 24814</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 20.97358</td>
+        <td class="ff">08 42 58.40</td>
+        <td class="ff">+35 33 05.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>587 &ndash; Sormano</td>
+        <td class="ff lj">MPC 24814</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.12556</td>
+        <td class="ff">08 32 06.89</td>
+        <td class="ff">+36 24 09.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>691 &ndash; Steward Observatory, Kitt Peak-Spacewatch</td>
+        <td class="ff lj">MPC 24842</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.12875</td>
+        <td class="ff">08 31 52.41</td>
+        <td class="ff">+36 25 13.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>691 &ndash; Steward Observatory, Kitt Peak-Spacewatch</td>
+        <td class="ff lj">MPC 24842</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.25325</td>
+        <td class="ff">08 22 09.68</td>
+        <td class="ff">+37 05 32.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>695 &ndash; Kitt Peak</td>
+        <td class="ff lj">MPC 25020</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.42729</td>
+        <td class="ff">08 08 09.12</td>
+        <td class="ff">+37 57 42.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>411 &ndash; Oizumi</td>
+        <td class="ff lj">MPC 24806</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.43068</td>
+        <td class="ff">08 07 33.39</td>
+        <td class="ff">+37 58 08.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>695 &ndash; Kitt Peak</td>
+        <td class="ff lj">MPC 25020</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.43545</td>
+        <td class="ff">08 07 27.59</td>
+        <td class="ff">+38 00 05.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>411 &ndash; Oizumi</td>
+        <td class="ff lj">MPC 24806</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.45589</td>
+        <td class="ff">08 05 28.40</td>
+        <td class="ff">+38 04 49.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>658 &ndash; Dominion Astrophysical Observatory</td>
+        <td class="ff lj">MPC 24817</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.46042</td>
+        <td class="ff">08 05 19.49</td>
+        <td class="ff">+38 07 21.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>411 &ndash; Oizumi</td>
+        <td class="ff lj">MPC 24806</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.46253</td>
+        <td class="ff">08 04 54.57</td>
+        <td class="ff">+38 06 39.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>658 &ndash; Dominion Astrophysical Observatory</td>
+        <td class="ff lj">MPC 24817</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.46381</td>
+        <td class="ff">08 04 48.10</td>
+        <td class="ff">+38 07 01.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>658 &ndash; Dominion Astrophysical Observatory</td>
+        <td class="ff lj">MPC 24817</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.47221</td>
+        <td class="ff">08 04 05.04</td>
+        <td class="ff">+38 09 19.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>658 &ndash; Dominion Astrophysical Observatory</td>
+        <td class="ff lj">MPC 24817</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.47334</td>
+        <td class="ff">08 03 59.24</td>
+        <td class="ff">+38 09 38.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>658 &ndash; Dominion Astrophysical Observatory</td>
+        <td class="ff lj">MPC 24817</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.47705</td>
+        <td class="ff">08 03 40.24</td>
+        <td class="ff">+38 10 40.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>658 &ndash; Dominion Astrophysical Observatory</td>
+        <td class="ff lj">MPC 24817</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.48639</td>
+        <td class="ff">08 02 52.26</td>
+        <td class="ff">+38 13 10.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>658 &ndash; Dominion Astrophysical Observatory</td>
+        <td class="ff lj">MPC 24817</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.48743</td>
+        <td class="ff">08 02 46.98</td>
+        <td class="ff">+38 13 28.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>658 &ndash; Dominion Astrophysical Observatory</td>
+        <td class="ff lj">MPC 24817</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.48869</td>
+        <td class="ff">08 02 40.46</td>
+        <td class="ff">+38 13 47.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>658 &ndash; Dominion Astrophysical Observatory</td>
+        <td class="ff lj">MPC 24817</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.489523</td>
+        <td class="ff">08 02 46.73</td>
+        <td class="ff">+38 18 14.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>413 &ndash; Siding Spring Observatory</td>
+        <td class="ff lj">MPC 24810</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.491640</td>
+        <td class="ff">08 02 35.68</td>
+        <td class="ff">+38 18 51.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>413 &ndash; Siding Spring Observatory</td>
+        <td class="ff lj">MPC 24810</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.494152</td>
+        <td class="ff">08 02 22.56</td>
+        <td class="ff">+38 19 33.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>413 &ndash; Siding Spring Observatory</td>
+        <td class="ff lj">MPC 24810</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.51441</td>
+        <td class="ff">08 00 38.57</td>
+        <td class="ff">+38 22 33.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>897 &ndash; YGCO Chiyoda Station</td>
+        <td class="ff lj">MPC 24880</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.55332</td>
+        <td class="ff">07 57 12.76</td>
+        <td class="ff">+38 33 05.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>897 &ndash; YGCO Chiyoda Station</td>
+        <td class="ff lj">MPC 24880</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.55454</td>
+        <td class="ff">07 57 06.31</td>
+        <td class="ff">+38 33 24.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>897 &ndash; YGCO Chiyoda Station</td>
+        <td class="ff lj">MPC 24880</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.62031</td>
+        <td class="ff">07 51 13.71</td>
+        <td class="ff">+38 50 29.9</td>
+        <td class="ff rj">16.9 V</td>
+        <td>360 &ndash; Kuma Kogen</td>
+        <td class="ff lj">MPC 24797</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.62170</td>
+        <td class="ff">07 51 06.21</td>
+        <td class="ff">+38 50 51.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>360 &ndash; Kuma Kogen</td>
+        <td class="ff lj">MPC 24797</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.62309</td>
+        <td class="ff">07 50 58.65</td>
+        <td class="ff">+38 51 11.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>360 &ndash; Kuma Kogen</td>
+        <td class="ff lj">MPC 24797</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.76983</td>
+        <td class="ff">07 37 47.77</td>
+        <td class="ff">+39 25 12.6</td>
+        <td class="ff rj">17.0 R</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPC 24790</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.77147</td>
+        <td class="ff">07 37 38.51</td>
+        <td class="ff">+39 25 34.2</td>
+        <td class="ff rj">16.7 R</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPC 24790</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.77216</td>
+        <td class="ff">07 37 34.56</td>
+        <td class="ff">+39 25 43.6</td>
+        <td class="ff rj">16.6 R</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPC 24790</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.77278</td>
+        <td class="ff">07 37 30.92</td>
+        <td class="ff">+39 25 52.4</td>
+        <td class="ff rj">16.6 R</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPC 24790</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.77413</td>
+        <td class="ff">07 37 24.54</td>
+        <td class="ff">+39 26 22.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>104 &ndash; San Marcello Pistoiese</td>
+        <td class="ff lj">MPC 24795</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.77630</td>
+        <td class="ff">07 37 11.32</td>
+        <td class="ff">+39 26 39.1</td>
+        <td class="ff rj">16.7 R</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPC 24790</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.78007</td>
+        <td class="ff">07 36 50.02</td>
+        <td class="ff">+39 27 28.9</td>
+        <td class="ff rj">16.5 R</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPC 24790</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.78078</td>
+        <td class="ff">07 36 45.84</td>
+        <td class="ff">+39 27 38.0</td>
+        <td class="ff rj">16.3 R</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPC 24790</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.78147</td>
+        <td class="ff">07 36 42.10</td>
+        <td class="ff">+39 27 47.7</td>
+        <td class="ff rj">16.7 R</td>
+        <td>046 &ndash; Klet Observatory, Ceske Budejovice</td>
+        <td class="ff lj">MPC 24790</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.79045</td>
+        <td class="ff">07 35 52.18</td>
+        <td class="ff">+39 29 57.6</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>104 &ndash; San Marcello Pistoiese</td>
+        <td class="ff lj">MPC 24795</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.79207</td>
+        <td class="ff">07 35 42.84</td>
+        <td class="ff">+39 30 19.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>104 &ndash; San Marcello Pistoiese</td>
+        <td class="ff lj">MPC 24795</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.94828</td>
+        <td class="ff">07 20 39.01</td>
+        <td class="ff">+40 00 12.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>557 &ndash; Ondrejov</td>
+        <td class="ff lj">MPC 24812</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 21.95743</td>
+        <td class="ff">07 19 45.32</td>
+        <td class="ff">+40 01 43.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>557 &ndash; Ondrejov</td>
+        <td class="ff lj">MPC 24812</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 22.28856</td>
+        <td class="ff">06 46 42.61</td>
+        <td class="ff">+40 42 10.5</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>691 &ndash; Steward Observatory, Kitt Peak-Spacewatch</td>
+        <td class="ff lj">MPC 24842</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 22.29125</td>
+        <td class="ff">06 46 26.11</td>
+        <td class="ff">+40 42 19.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>691 &ndash; Steward Observatory, Kitt Peak-Spacewatch</td>
+        <td class="ff lj">MPC 24842</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 22.30473</td>
+        <td class="ff">06 45 03.00</td>
+        <td class="ff">+40 43 04.7</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>691 &ndash; Steward Observatory, Kitt Peak-Spacewatch</td>
+        <td class="ff lj">MPC 24842</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 22.33363</td>
+        <td class="ff">06 42 04.90</td>
+        <td class="ff">+40 44 26.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>695 &ndash; Kitt Peak</td>
+        <td class="ff lj">MPC 25020</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 22.45060</td>
+        <td class="ff">06 30 20.11</td>
+        <td class="ff">+40 48 49.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>897 &ndash; YGCO Chiyoda Station</td>
+        <td class="ff lj">MPC 24880</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 22.50027</td>
+        <td class="ff">06 25 11.03</td>
+        <td class="ff">+40 48 56.8</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>897 &ndash; YGCO Chiyoda Station</td>
+        <td class="ff lj">MPC 24880</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 22.50159</td>
+        <td class="ff">06 25 02.70</td>
+        <td class="ff">+40 48 57.5</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>897 &ndash; YGCO Chiyoda Station</td>
+        <td class="ff lj">MPC 24880</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 22.50492</td>
+        <td class="ff">06 24 41.97</td>
+        <td class="ff">+40 48 55.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>897 &ndash; YGCO Chiyoda Station</td>
+        <td class="ff lj">MPC 24880</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 22.73127</td>
+        <td class="ff">06 01 45.13</td>
+        <td class="ff">+40 38 09.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>557 &ndash; Ondrejov</td>
+        <td class="ff lj">MPC 24812</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 22.74244</td>
+        <td class="ff">06 00 36.56</td>
+        <td class="ff">+40 37 13.7</td>
+        <td class="ff rj">17.3 V</td>
+        <td>557 &ndash; Ondrejov</td>
+        <td class="ff lj">MPC 24812</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 22.75154</td>
+        <td class="ff">05 59 40.75</td>
+        <td class="ff">+40 36 26.2</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>557 &ndash; Ondrejov</td>
+        <td class="ff lj">MPC 24812</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 22.794740</td>
+        <td class="ff">05 55 17.10</td>
+        <td class="ff">+40 32 26.0</td>
+        <td class="ff rj">16.7 R</td>
+        <td>540 &ndash; Linz</td>
+        <td class="ff lj">MPC 24811</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 22.796707</td>
+        <td class="ff">05 55 04.89</td>
+        <td class="ff">+40 32 14.2</td>
+        <td class="ff rj">17.1 R</td>
+        <td>540 &ndash; Linz</td>
+        <td class="ff lj">MPC 24811</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 22.799138</td>
+        <td class="ff">05 54 50.25</td>
+        <td class="ff">+40 31 58.3</td>
+        <td class="ff rj">16.9 R</td>
+        <td>540 &ndash; Linz</td>
+        <td class="ff lj">MPC 24811</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 22.800700</td>
+        <td class="ff">05 54 40.64</td>
+        <td class="ff">+40 31 48.5</td>
+        <td class="ff rj">17.0 R</td>
+        <td>540 &ndash; Linz</td>
+        <td class="ff lj">MPC 24811</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 22.802784</td>
+        <td class="ff">05 54 28.07</td>
+        <td class="ff">+40 31 36.1</td>
+        <td class="ff rj">17.1 R</td>
+        <td>540 &ndash; Linz</td>
+        <td class="ff lj">MPC 24811</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 22.804462</td>
+        <td class="ff">05 54 17.85</td>
+        <td class="ff">+40 31 24.5</td>
+        <td class="ff rj">17.1 R</td>
+        <td>540 &ndash; Linz</td>
+        <td class="ff lj">MPC 24811</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 22.807355</td>
+        <td class="ff">05 54 00.02</td>
+        <td class="ff">+40 31 06.0</td>
+        <td class="ff rj">16.9 R</td>
+        <td>540 &ndash; Linz</td>
+        <td class="ff lj">MPC 24811</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 22.91756</td>
+        <td class="ff">05 42 55.98</td>
+        <td class="ff">+40 16 54.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>557 &ndash; Ondrejov</td>
+        <td class="ff lj">MPC 24812</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 22.91976</td>
+        <td class="ff">05 42 42.87</td>
+        <td class="ff">+40 16 37.6</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>557 &ndash; Ondrejov</td>
+        <td class="ff lj">MPC 24812</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 23.48663</td>
+        <td class="ff">04 50 20.49</td>
+        <td class="ff">+38 15 31.6</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>360 &ndash; Kuma Kogen</td>
+        <td class="ff lj">MPC 24797</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 23.48802</td>
+        <td class="ff">04 50 13.28</td>
+        <td class="ff">+38 15 09.0</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>360 &ndash; Kuma Kogen</td>
+        <td class="ff lj">MPC 24797</td>
+      </tr>
+      <tr>
+        <td class="ff">1995 02 23.48958</td>
+        <td class="ff">04 50 05.12</td>
+        <td class="ff">+38 14 41.6</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>360 &ndash; Kuma Kogen</td>
+        <td class="ff lj">MPC 24797</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 10.49096</td>
+        <td class="ff">12 10 39.288</td>
+        <td class="ff">+05 55 36.89</td>
+        <td class="ff rj">19.3 i</td>
+        <td>F51 &ndash; Pan-STARRS 1, Haleakala</td>
+        <td class="ff lj">MPS 501659</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 10.50478</td>
+        <td class="ff">12 10 38.533</td>
+        <td class="ff">+05 56 00.67</td>
+        <td class="ff rj">19.8 i</td>
+        <td>F51 &ndash; Pan-STARRS 1, Haleakala</td>
+        <td class="ff lj">MPS 501659</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 10.51864</td>
+        <td class="ff">12 10 37.779</td>
+        <td class="ff">+05 56 24.80</td>
+        <td class="ff rj">19.7 i</td>
+        <td>F51 &ndash; Pan-STARRS 1, Haleakala</td>
+        <td class="ff lj">MPS 501659</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 10.53256</td>
+        <td class="ff">12 10 37.017</td>
+        <td class="ff">+05 56 48.92</td>
+        <td class="ff rj">19.6 i</td>
+        <td>F51 &ndash; Pan-STARRS 1, Haleakala</td>
+        <td class="ff lj">MPS 501659</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 11.17857</td>
+        <td class="ff">12 10 09.57</td>
+        <td class="ff">+06 16 27.1</td>
+        <td class="ff rj">19.4 V</td>
+        <td>958 &ndash; Observatoire de Dax</td>
+        <td class="ff lj">MPS 501659</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 11.19624</td>
+        <td class="ff">12 10 08.45</td>
+        <td class="ff">+06 17 00.1</td>
+        <td class="ff rj">19.7 V</td>
+        <td>958 &ndash; Observatoire de Dax</td>
+        <td class="ff lj">MPS 501659</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 11.20512</td>
+        <td class="ff">12 10 07.79</td>
+        <td class="ff">+06 17 17.0</td>
+        <td class="ff rj">20.3 V</td>
+        <td>958 &ndash; Observatoire de Dax</td>
+        <td class="ff lj">MPS 501659</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 11.34248</td>
+        <td class="ff">12 10 02.29</td>
+        <td class="ff">+06 22 54.4</td>
+        <td class="ff rj">20.4 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 501659</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 11.34598</td>
+        <td class="ff">12 10 02.06</td>
+        <td class="ff">+06 23 01.2</td>
+        <td class="ff rj">20.0 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 501659</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 11.34961</td>
+        <td class="ff">12 10 01.83</td>
+        <td class="ff">+06 23 08.4</td>
+        <td class="ff rj">20.0 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 501659</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 11.405197</td>
+        <td class="ff">12 09 59.11</td>
+        <td class="ff">+06 24 05.0</td>
+        <td class="ff rj">19.6 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 501659</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 11.408918</td>
+        <td class="ff">12 09 58.88</td>
+        <td class="ff">+06 24 12.4</td>
+        <td class="ff rj">19.4 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 501659</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 11.412807</td>
+        <td class="ff">12 09 58.63</td>
+        <td class="ff">+06 24 20.7</td>
+        <td class="ff rj">19.8 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 501659</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 11.43340</td>
+        <td class="ff">12 09 58.27</td>
+        <td class="ff">+06 25 08.9</td>
+        <td class="ff rj">19.4 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 501659</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 11.44016</td>
+        <td class="ff">12 09 57.84</td>
+        <td class="ff">+06 25 23.5</td>
+        <td class="ff rj">19.5 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 501659</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 11.44690</td>
+        <td class="ff">12 09 57.42</td>
+        <td class="ff">+06 25 36.3</td>
+        <td class="ff rj">19.3 V</td>
+        <td>703 &ndash; Catalina Sky Survey</td>
+        <td class="ff lj">MPS 501659</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 12.38128</td>
+        <td class="ff">12 09 04.13</td>
+        <td class="ff">+07 02 25.6</td>
+        <td class="ff rj">19.9 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 501613</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 12.38634</td>
+        <td class="ff">12 09 03.72</td>
+        <td class="ff">+07 02 38.4</td>
+        <td class="ff rj">19.5 V</td>
+        <td>807 &ndash; Cerro Tololo Observatory, La Serena</td>
+        <td class="ff lj">MPS 501613</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 12.436115</td>
+        <td class="ff">12 09 00.63</td>
+        <td class="ff">+07 03 42.1</td>
+        <td class="ff rj">19.2 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 501659</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 12.437989</td>
+        <td class="ff">12 09 00.46</td>
+        <td class="ff">+07 03 47.1</td>
+        <td class="ff rj">19.3 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 501659</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 12.439862</td>
+        <td class="ff">12 09 00.33</td>
+        <td class="ff">+07 03 51.9</td>
+        <td class="ff rj">19.3 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 501659</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 12.441632</td>
+        <td class="ff">12 09 00.18</td>
+        <td class="ff">+07 03 56.4</td>
+        <td class="ff rj">19.2 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 501659</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 12.444193</td>
+        <td class="ff">12 08 59.97</td>
+        <td class="ff">+07 04 02.9</td>
+        <td class="ff rj">19.4 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 501659</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 12.46623</td>
+        <td class="ff">12 08 59.15</td>
+        <td class="ff">+07 05 07.1</td>
+        <td class="ff rj">18.8 R</td>
+        <td>926 &ndash; Tenagra II Observatory, Nogales</td>
+        <td class="ff lj">MPS 501659</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 12.47741</td>
+        <td class="ff">12 08 58.18</td>
+        <td class="ff">+07 05 36.5</td>
+        <td class="ff rj">18.8 R</td>
+        <td>926 &ndash; Tenagra II Observatory, Nogales</td>
+        <td class="ff lj">MPS 501659</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 12.48961</td>
+        <td class="ff">12 08 57.14</td>
+        <td class="ff">+07 06 07.9</td>
+        <td class="ff rj">18.8 R</td>
+        <td>926 &ndash; Tenagra II Observatory, Nogales</td>
+        <td class="ff lj">MPS 501659</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 14.06867</td>
+        <td class="ff">12 06 47.11</td>
+        <td class="ff">+08 29 41.0</td>
+        <td class="ff rj">18.0 V</td>
+        <td>G40 &ndash; Slooh.com Canary Islands Observatory</td>
+        <td class="ff lj">MPS 501613</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 14.08366</td>
+        <td class="ff">12 06 45.19</td>
+        <td class="ff">+08 30 39.8</td>
+        <td class="ff rj">17.9 V</td>
+        <td>G40 &ndash; Slooh.com Canary Islands Observatory</td>
+        <td class="ff lj">MPS 501613</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 14.08440</td>
+        <td class="ff">12 06 45.10</td>
+        <td class="ff">+08 30 42.1</td>
+        <td class="ff rj">17.8 V</td>
+        <td>G40 &ndash; Slooh.com Canary Islands Observatory</td>
+        <td class="ff lj">MPS 501613</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 14.10425</td>
+        <td class="ff">12 06 42.45</td>
+        <td class="ff">+08 32 00.0</td>
+        <td class="ff rj">17.7 V</td>
+        <td>G40 &ndash; Slooh.com Canary Islands Observatory</td>
+        <td class="ff lj">MPS 501613</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 14.11022</td>
+        <td class="ff">12 06 41.67</td>
+        <td class="ff">+08 32 22.8</td>
+        <td class="ff rj">17.9 V</td>
+        <td>G40 &ndash; Slooh.com Canary Islands Observatory</td>
+        <td class="ff lj">MPS 501613</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 14.11098</td>
+        <td class="ff">12 06 41.56</td>
+        <td class="ff">+08 32 26.1</td>
+        <td class="ff rj">18.3 V</td>
+        <td>G40 &ndash; Slooh.com Canary Islands Observatory</td>
+        <td class="ff lj">MPS 501613</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 14.12610</td>
+        <td class="ff">12 06 39.56</td>
+        <td class="ff">+08 33 25.4</td>
+        <td class="ff rj">17.8 V</td>
+        <td>G40 &ndash; Slooh.com Canary Islands Observatory</td>
+        <td class="ff lj">MPS 501613</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 17.88132</td>
+        <td class="ff">11 51 53.90</td>
+        <td class="ff">+16 39 36.2</td>
+        <td class="ff rj">16.1 R</td>
+        <td>C23 &ndash; Olmen</td>
+        <td class="ff lj">MPS 501613</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 17.88281</td>
+        <td class="ff">11 51 53.11</td>
+        <td class="ff">+16 39 59.0</td>
+        <td class="ff rj">15.8 R</td>
+        <td>C23 &ndash; Olmen</td>
+        <td class="ff lj">MPS 501613</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 17.88431</td>
+        <td class="ff">11 51 52.36</td>
+        <td class="ff">+16 40 22.6</td>
+        <td class="ff rj">15.3 R</td>
+        <td>C23 &ndash; Olmen</td>
+        <td class="ff lj">MPS 501613</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 18.279185</td>
+        <td class="ff">11 48 08.90</td>
+        <td class="ff">+18 32 41.9</td>
+        <td class="ff rj">16.9 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 502305</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 18.280912</td>
+        <td class="ff">11 48 07.74</td>
+        <td class="ff">+18 33 14.4</td>
+        <td class="ff rj">16.9 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 502305</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 18.282641</td>
+        <td class="ff">11 48 06.57</td>
+        <td class="ff">+18 33 47.3</td>
+        <td class="ff rj">17.0 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 502305</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 18.284362</td>
+        <td class="ff">11 48 05.41</td>
+        <td class="ff">+18 34 19.6</td>
+        <td class="ff rj">16.8 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 502305</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 18.286013</td>
+        <td class="ff">11 48 04.27</td>
+        <td class="ff">+18 34 50.8</td>
+        <td class="ff rj">17.0 V</td>
+        <td>H21 &ndash; Astronomical Research Observatory, Westfield</td>
+        <td class="ff lj">MPS 502305</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 19.93964</td>
+        <td class="ff">11 12 50.90</td>
+        <td class="ff">+33 54 04.2</td>
+        <td class="ff rj">15.8 V</td>
+        <td>C77 &ndash; Bernezzo Observatory</td>
+        <td class="ff lj">MPS 501613</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 19.94032</td>
+        <td class="ff">11 12 49.13</td>
+        <td class="ff">+33 54 42.9</td>
+        <td class="ff rj">15.1 V</td>
+        <td>C77 &ndash; Bernezzo Observatory</td>
+        <td class="ff lj">MPS 501613</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 19.94098</td>
+        <td class="ff">11 12 47.26</td>
+        <td class="ff">+33 55 21.9</td>
+        <td class="ff rj">15.4 V</td>
+        <td>C77 &ndash; Bernezzo Observatory</td>
+        <td class="ff lj">MPS 501613</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 19.94167</td>
+        <td class="ff">11 12 45.43</td>
+        <td class="ff">+33 56 01.1</td>
+        <td class="ff rj">15.8 V</td>
+        <td>C77 &ndash; Bernezzo Observatory</td>
+        <td class="ff lj">MPS 501613</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 19.94235</td>
+        <td class="ff">11 12 43.61</td>
+        <td class="ff">+33 56 40.2</td>
+        <td class="ff rj">15.4 V</td>
+        <td>C77 &ndash; Bernezzo Observatory</td>
+        <td class="ff lj">MPS 501613</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 21.27347</td>
+        <td class="ff">07 46 07.84</td>
+        <td class="ff">+64 24 23.9</td>
+        <td class="ff rj">15.2 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 501613</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 21.27394</td>
+        <td class="ff">07 45 55.86</td>
+        <td class="ff">+64 24 49.7</td>
+        <td class="ff rj">15.5 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 501613</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 21.27436</td>
+        <td class="ff">07 45 44.93</td>
+        <td class="ff">+64 25 12.7</td>
+        <td class="ff rj">15.2 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 501613</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 21.27468</td>
+        <td class="ff">07 45 36.95</td>
+        <td class="ff">+64 25 29.6</td>
+        <td class="ff rj">15.7 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 501613</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 21.27494</td>
+        <td class="ff">07 45 30.22</td>
+        <td class="ff">+64 25 44.2</td>
+        <td class="ff rj">15.5 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 501613</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 21.27527</td>
+        <td class="ff">07 45 21.98</td>
+        <td class="ff">+64 26 01.2</td>
+        <td class="ff rj">15.4 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 501613</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 21.27574</td>
+        <td class="ff">07 45 09.77</td>
+        <td class="ff">+64 26 26.7</td>
+        <td class="ff rj">15.9 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 501613</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 21.27611</td>
+        <td class="ff">07 45 00.29</td>
+        <td class="ff">+64 26 46.7</td>
+        <td class="ff rj">15.4 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 501613</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 21.27639</td>
+        <td class="ff">07 44 53.26</td>
+        <td class="ff">+64 27 02.3</td>
+        <td class="ff rj">15.2 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 501613</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 21.27666</td>
+        <td class="ff">07 44 46.35</td>
+        <td class="ff">+64 27 16.2</td>
+        <td class="ff rj">15.3 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 501613</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 21.27704</td>
+        <td class="ff">07 44 36.62</td>
+        <td class="ff">+64 27 37.3</td>
+        <td class="ff rj">15.5 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 501613</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 21.27728</td>
+        <td class="ff">07 44 30.31</td>
+        <td class="ff">+64 27 50.0</td>
+        <td class="ff rj">15.2 R</td>
+        <td>H45 &ndash; Arkansas Sky Obs., Petit Jean Mountain South</td>
+        <td class="ff lj">MPS 501613</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 21.84690</td>
+        <td class="ff">03 44 17.68</td>
+        <td class="ff">+59 50 03.3</td>
+        <td class="ff rj">15.6 R</td>
+        <td>C23 &ndash; Olmen</td>
+        <td class="ff lj">MPS 502305</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 21.84713</td>
+        <td class="ff">03 44 13.87</td>
+        <td class="ff">+59 49 42.3</td>
+        <td class="ff rj">15.6 R</td>
+        <td>C23 &ndash; Olmen</td>
+        <td class="ff lj">MPS 502305</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 21.84747</td>
+        <td class="ff">03 44 07.89</td>
+        <td class="ff">+59 49 10.0</td>
+        <td class="ff rj">15.5 R</td>
+        <td>C23 &ndash; Olmen</td>
+        <td class="ff lj">MPS 502305</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 21.84780</td>
+        <td class="ff">03 44 01.99</td>
+        <td class="ff">+59 48 38.2</td>
+        <td class="ff rj">15.6 R</td>
+        <td>C23 &ndash; Olmen</td>
+        <td class="ff lj">MPS 502305</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 21.84814</td>
+        <td class="ff">03 43 56.21</td>
+        <td class="ff">+59 48 06.4</td>
+        <td class="ff rj">15.7 R</td>
+        <td>C23 &ndash; Olmen</td>
+        <td class="ff lj">MPS 502305</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 21.84837</td>
+        <td class="ff">03 43 52.24</td>
+        <td class="ff">+59 47 45.1</td>
+        <td class="ff rj">15.2 R</td>
+        <td>C23 &ndash; Olmen</td>
+        <td class="ff lj">MPS 502305</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 21.84859</td>
+        <td class="ff">03 43 48.29</td>
+        <td class="ff">+59 47 23.4</td>
+        <td class="ff rj">15.4 R</td>
+        <td>C23 &ndash; Olmen</td>
+        <td class="ff lj">MPS 502305</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 21.84882</td>
+        <td class="ff">03 43 44.42</td>
+        <td class="ff">+59 47 02.8</td>
+        <td class="ff rj">15.4 R</td>
+        <td>C23 &ndash; Olmen</td>
+        <td class="ff lj">MPS 502305</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 21.84893</td>
+        <td class="ff">03 43 42.53</td>
+        <td class="ff">+59 46 51.1</td>
+        <td class="ff rj">15.5 R</td>
+        <td>C23 &ndash; Olmen</td>
+        <td class="ff lj">MPS 502305</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 21.84915</td>
+        <td class="ff">03 43 38.70</td>
+        <td class="ff">+59 46 30.5</td>
+        <td class="ff rj">15.8 R</td>
+        <td>C23 &ndash; Olmen</td>
+        <td class="ff lj">MPS 502305</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 22.15098</td>
+        <td class="ff">02 39 19.40</td>
+        <td class="ff">+51 27 12.6</td>
+        <td class="ff rj">17.0 R</td>
+        <td>G48 &ndash; Harlingten Research Observatory, Rancho Hildal</td>
+        <td class="ff lj">MPS 502305</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 22.15119</td>
+        <td class="ff">02 39 17.38</td>
+        <td class="ff">+51 26 50.0</td>
+        <td class="ff rj">16.8 R</td>
+        <td>G48 &ndash; Harlingten Research Observatory, Rancho Hildal</td>
+        <td class="ff lj">MPS 502305</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 22.15139</td>
+        <td class="ff">02 39 15.55</td>
+        <td class="ff">+51 26 29.4</td>
+        <td class="ff rj">16.9 R</td>
+        <td>G48 &ndash; Harlingten Research Observatory, Rancho Hildal</td>
+        <td class="ff lj">MPS 502305</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 23.77784</td>
+        <td class="ff">01 08 20.23</td>
+        <td class="ff">+23 45 14.3</td>
+        <td class="ff rj">20.0 R</td>
+        <td>204 &ndash; Schiaparelli Observatory</td>
+        <td class="ff lj">MPS 503991</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 23.78958</td>
+        <td class="ff">01 08 06.36</td>
+        <td class="ff">+23 38 56.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>204 &ndash; Schiaparelli Observatory</td>
+        <td class="ff lj">MPS 503991</td>
+      </tr>
+      <tr>
+        <td class="ff">2014 02 23.80580</td>
+        <td class="ff">01 07 47.49</td>
+        <td class="ff">+23 30 18.1</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>204 &ndash; Schiaparelli Observatory</td>
+        <td class="ff lj">MPS 503991</td>
+      </tr>
+      <tr>
+        <td class="ff">2016 12 28.16104</td>
+        <td class="ff">09 47 21.11</td>
+        <td class="ff">+33 36 39.9</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>204 &ndash; Schiaparelli Observatory</td>
+        <td class="ff lj">MPS 758947</td>
+      </tr>
+      <tr>
+        <td class="ff">2016 12 28.16929</td>
+        <td class="ff">09 47 12.53</td>
+        <td class="ff">+33 37 16.1</td>
+        <td class="ff rj">20.0 G</td>
+        <td>204 &ndash; Schiaparelli Observatory</td>
+        <td class="ff lj">MPS 758947</td>
+      </tr>
+      <tr>
+        <td class="ff">2016 12 28.18241</td>
+        <td class="ff">09 46 58.96</td>
+        <td class="ff">+33 38 14.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>204 &ndash; Schiaparelli Observatory</td>
+        <td class="ff lj">MPS 758947</td>
+      </tr>
+      <tr>
+        <td class="ff">2016 12 30.28289</td>
+        <td class="ff">09 11 05.48</td>
+        <td class="ff">+35 50 41.4</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 753773</td>
+      </tr>
+      <tr>
+        <td class="ff">2016 12 30.28554</td>
+        <td class="ff">09 11 02.71</td>
+        <td class="ff">+35 50 50.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 753773</td>
+      </tr>
+      <tr>
+        <td class="ff">2016 12 30.28817</td>
+        <td class="ff">09 11 00.02</td>
+        <td class="ff">+35 50 58.4</td>
+        <td class="ff rj">20.2 R</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 753773</td>
+      </tr>
+      <tr>
+        <td class="ff">2017 01 03.41825</td>
+        <td class="ff">08 04 28.02</td>
+        <td class="ff">+37 52 42.3</td>
+        <td class="ff rj">19.3 R</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 755897</td>
+      </tr>
+      <tr>
+        <td class="ff">2017 01 03.41946</td>
+        <td class="ff">08 04 26.93</td>
+        <td class="ff">+37 52 43.0</td>
+        <td class="ff rj">19.5 R</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 755897</td>
+      </tr>
+      <tr>
+        <td class="ff">2017 01 03.42068</td>
+        <td class="ff">08 04 25.83</td>
+        <td class="ff">+37 52 43.6</td>
+        <td class="ff rj">19.2 R</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 755897</td>
+      </tr>
+      <tr>
+        <td class="ff">2020 01 30.557934</td>
+        <td class="ff">10 51 06.311</td>
+        <td class="ff">+12 32 17.87</td>
+        <td class="ff rj">21.91 G</td>
+        <td>T12 &ndash; Mauna Kea-UH/Tholen NEO Follow-Up (2.24-m)</td>
+        <td class="ff lj">MPS 1144659</td>
+      </tr>
+      <tr>
+        <td class="ff">2020 02 01.42235</td>
+        <td class="ff">10 44 46.17</td>
+        <td class="ff">+13 19 00.5</td>
+        <td class="ff rj">21.8 G</td>
+        <td>G96 &ndash; Mt. Lemmon Survey</td>
+        <td class="ff lj">MPS 1122945</td>
+      </tr>
+      <tr>
+        <td class="ff">2020 02 01.42746</td>
+        <td class="ff">10 44 45.06</td>
+        <td class="ff">+13 19 07.7</td>
+        <td class="ff rj">21.9 G</td>
+        <td>G96 &ndash; Mt. Lemmon Survey</td>
+        <td class="ff lj">MPS 1122945</td>
+      </tr>
+      <tr>
+        <td class="ff">2020 02 01.43256</td>
+        <td class="ff">10 44 43.86</td>
+        <td class="ff">+13 19 15.9</td>
+        <td class="ff rj">22.6 G</td>
+        <td>G96 &ndash; Mt. Lemmon Survey</td>
+        <td class="ff lj">MPS 1122945</td>
+      </tr>
+      <tr>
+        <td class="ff">2020 02 01.43766</td>
+        <td class="ff">10 44 42.68</td>
+        <td class="ff">+13 19 24.0</td>
+        <td class="ff rj">21.4 G</td>
+        <td>G96 &ndash; Mt. Lemmon Survey</td>
+        <td class="ff lj">MPS 1122945</td>
+      </tr>
+      <tr>
+        <td class="ff">2020 02 14.31920</td>
+        <td class="ff">09 26 16.25</td>
+        <td class="ff">+21 11 52.9</td>
+        <td class="ff rj">19.9 G</td>
+        <td>G96 &ndash; Mt. Lemmon Survey</td>
+        <td class="ff lj">MPS 1144659</td>
+      </tr>
+      <tr>
+        <td class="ff">2020 02 14.32433</td>
+        <td class="ff">09 26 13.40</td>
+        <td class="ff">+21 12 06.7</td>
+        <td class="ff rj">20.1 G</td>
+        <td>G96 &ndash; Mt. Lemmon Survey</td>
+        <td class="ff lj">MPS 1144659</td>
+      </tr>
+      <tr>
+        <td class="ff">2020 02 14.32946</td>
+        <td class="ff">09 26 10.46</td>
+        <td class="ff">+21 12 20.1</td>
+        <td class="ff rj">20.3 G</td>
+        <td>G96 &ndash; Mt. Lemmon Survey</td>
+        <td class="ff lj">MPS 1144659</td>
+      </tr>
+      <tr>
+        <td class="ff">2020 02 14.33458</td>
+        <td class="ff">09 26 07.53</td>
+        <td class="ff">+21 12 33.7</td>
+        <td class="ff rj">20.4 G</td>
+        <td>G96 &ndash; Mt. Lemmon Survey</td>
+        <td class="ff lj">MPS 1144659</td>
+      </tr>
+      <tr>
+        <td class="ff">2020 02 20.36994</td>
+        <td class="ff">08 19 56.59</td>
+        <td class="ff">+25 28 06.5</td>
+        <td class="ff rj">20.0 R</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 1144659</td>
+      </tr>
+      <tr>
+        <td class="ff">2020 02 20.37238</td>
+        <td class="ff">08 19 54.73</td>
+        <td class="ff">+25 28 11.5</td>
+        <td class="ff rj">20.0 R</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 1144659</td>
+      </tr>
+      <tr>
+        <td class="ff">2020 02 20.37480</td>
+        <td class="ff">08 19 52.87</td>
+        <td class="ff">+25 28 16.7</td>
+        <td class="ff rj">19.8 R</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 1144659</td>
+      </tr>
+      <tr>
+        <td class="ff">2020 02 21.21123</td>
+        <td class="ff">08 09 15.18</td>
+        <td class="ff">+25 57 33.5</td>
+        <td class="ff rj">19.6 R</td>
+        <td>691 &ndash; Steward Observatory, Kitt Peak-Spacewatch</td>
+        <td class="ff lj">MPS 1144659</td>
+      </tr>
+      <tr>
+        <td class="ff">2020 02 21.21777</td>
+        <td class="ff">08 09 10.00</td>
+        <td class="ff">+25 57 46.7</td>
+        <td class="ff rj">19.5 R</td>
+        <td>691 &ndash; Steward Observatory, Kitt Peak-Spacewatch</td>
+        <td class="ff lj">MPS 1144659</td>
+      </tr>
+      <tr>
+        <td class="ff">2020 02 21.22430</td>
+        <td class="ff">08 09 04.82</td>
+        <td class="ff">+25 57 59.7</td>
+        <td class="ff rj">19.6 R</td>
+        <td>691 &ndash; Steward Observatory, Kitt Peak-Spacewatch</td>
+        <td class="ff lj">MPS 1144659</td>
+      </tr>
+      <tr>
+        <td class="ff">2020 02 28.22460</td>
+        <td class="ff">06 34 33.08</td>
+        <td class="ff">+27 55 26.3</td>
+        <td class="ff rj"> &nbsp;</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 1144659</td>
+      </tr>
+      <tr>
+        <td class="ff">2020 02 28.23285</td>
+        <td class="ff">06 34 26.38</td>
+        <td class="ff">+27 55 25.7</td>
+        <td class="ff rj">20.7 R</td>
+        <td>291 &ndash; LPL/Spacewatch II</td>
+        <td class="ff lj">MPS 1144659</td>
+      </tr>
+  </table>
+
+
+        </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer id="footer">
+    <div class="holder">
+      <nav class="nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+	  <!-- Contact link changed to Jira -->
+          <li><a href="https://mpc-service.atlassian.net/servicedesk/customer/portals">Contact</a></li>
+          <li><a href="https://www.cfa.harvard.edu/content/privacy-statement">Privacy</a></li>
+        </ul>
+      </nav>
+      
+      <a href="https://www.cfa.harvard.edu">
+      <img src="/images/CfA_Logo_Vertical_CMYK.png" width="110" height="47"></a>
+      <p>
+      <p>
+      <p>
+      <div class="copy">The Minor Planet Center is hosted by the Center for Astrophysics | Harvard &amp; Smithsonian.<center>The Minor Planet Center is funded by NASA.</center></div> 
+  </footer>
+
+<script type="text/javascript">
+  $(window).on('load', (function() {
+    $("table").tablesorter();
+  })); 
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var _tag=new WebTrends();
+_tag.dcsGetId();
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+_tag.dcsCustom=function(){
+// Add custom parameters here.
+//_tag.DCSext.param_name=param_value;
+}
+_tag.dcsCollect();
+//]]>
+</script>
+
+<noscript>
+<div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="//logs1.smithsonian.museum/dcsa7yzrmbdzpxzrosrn4tyep_5i1d/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=9.4.0&amp;dcssip=www.minorplanetcenter.net"/></div>
+</noscript>
+</body>
+
+</html>
